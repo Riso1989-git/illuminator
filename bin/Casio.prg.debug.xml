@@ -1,0 +1,1414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\mirka\Vs-projects\Casio\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="1" lineNum="27" parent="globals" pc="268435460" symbol="getStorageValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="1" lineNum="28" parent="globals" pc="268435470" symbol="getStorageValue"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435485" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="3" lineNum="6" parent="globals/GoalMeter" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="4" lineNum="9" parent="globals/WorldMap" pc="268435517" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="4" lineNum="40" parent="globals/WorldMap" pc="268435528" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="5" lineNum="32" parent="globals" pc="268435538" symbol="setStorageValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="5" lineNum="33" parent="globals" pc="268435548" symbol="setStorageValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="6" lineNum="170" parent="globals" pc="268435566" symbol="getApp"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="6" lineNum="171" parent="globals" pc="268435576" symbol="getApp"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="7" lineNum="6" parent="globals/Background" pc="268435587" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="8" lineNum="6" parent="globals/Analogue" pc="268435599" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="9" lineNum="36" parent="globals/CasioApp" pc="268435611" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="9" lineNum="39" parent="globals/CasioApp" pc="268435622" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="9" lineNum="40" parent="globals/CasioApp" pc="268435631" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="9" lineNum="41" parent="globals/CasioApp" pc="268435640" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="10" lineNum="7" parent="globals/TimeField" pc="268435650" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="11" lineNum="17" parent="globals" pc="268435662" symbol="getPropertyValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="11" lineNum="18" parent="globals" pc="268435672" symbol="getPropertyValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="12" lineNum="6" parent="globals/MoveBar" pc="268435687" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="13" lineNum="22" parent="globals" pc="268435699" symbol="setPropertyValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="13" lineNum="23" parent="globals" pc="268435709" symbol="setPropertyValue"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="14" lineNum="7" parent="globals/CasioView" pc="268435727" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="15" lineNum="7" parent="globals/DateField" pc="268435739" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="16" lineNum="29" parent="globals/DataFields" pc="268435751" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="16" lineNum="39" parent="globals/DataFields" pc="268435762" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="45" parent="globals/GoalMeter" pc="268435772" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="47" parent="globals/GoalMeter" pc="268435775" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="48" parent="globals/GoalMeter" pc="268435787" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="49" parent="globals/GoalMeter" pc="268435809" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="51" parent="globals/GoalMeter" pc="268435833" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="52" parent="globals/GoalMeter" pc="268435855" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="55" parent="globals/GoalMeter" pc="268435878" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="56" parent="globals/GoalMeter" pc="268435890" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="58" parent="globals/GoalMeter" pc="268435902" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="58" parent="globals/GoalMeter" pc="268435910" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="59" parent="globals/GoalMeter" pc="268435917" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="59" parent="globals/GoalMeter" pc="268435925" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="62" parent="globals/GoalMeter" pc="268435932" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="63" parent="globals/GoalMeter" pc="268435945" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="65" parent="globals/GoalMeter" pc="268435958" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="67" parent="globals/GoalMeter" pc="268435962" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="74" parent="globals/GoalMeter" pc="268435979" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="82" parent="globals/GoalMeter" pc="268436014" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="83" parent="globals/GoalMeter" pc="268436033" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="85" parent="globals/GoalMeter" pc="268436052" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="86" parent="globals/GoalMeter" pc="268436056" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="87" parent="globals/GoalMeter" pc="268436068" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="88" parent="globals/GoalMeter" pc="268436092" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="89" parent="globals/GoalMeter" pc="268436100" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="91" parent="globals/GoalMeter" pc="268436139" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="98" parent="globals/GoalMeter" pc="268436162" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="101" parent="globals/GoalMeter" pc="268436181" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="109" parent="globals/GoalMeter" pc="268436213" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="110" parent="globals/GoalMeter" pc="268436232" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="111" parent="globals/GoalMeter" pc="268436236" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="112" parent="globals/GoalMeter" pc="268436248" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="113" parent="globals/GoalMeter" pc="268436269" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="114" parent="globals/GoalMeter" pc="268436277" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="17" lineNum="116" parent="globals/GoalMeter" pc="268436313" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="32" parent="globals/GoalMeter" pc="268436337" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="33" parent="globals/GoalMeter" pc="268436339" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="35" parent="globals/GoalMeter" pc="268436369" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="36" parent="globals/GoalMeter" pc="268436384" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="37" parent="globals/GoalMeter" pc="268436399" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="38" parent="globals/GoalMeter" pc="268436414" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="39" parent="globals/GoalMeter" pc="268436429" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="40" parent="globals/GoalMeter" pc="268436444" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\GoalMeter.mc" id="18" lineNum="42" parent="globals/GoalMeter" pc="268436459" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="162" parent="globals/WorldMap" pc="268436498" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="163" parent="globals/WorldMap" pc="268436501" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="164" parent="globals/WorldMap" pc="268436513" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="167" parent="globals/WorldMap" pc="268436530" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="168" parent="globals/WorldMap" pc="268436548" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="169" parent="globals/WorldMap" pc="268436559" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="170" parent="globals/WorldMap" pc="268436568" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="174" parent="globals/WorldMap" pc="268436582" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="175" parent="globals/WorldMap" pc="268436610" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="176" parent="globals/WorldMap" pc="268436630" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="19" lineNum="177" parent="globals/WorldMap" pc="268436640" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="74" parent="globals/WorldMap" pc="268436692" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="76" parent="globals/WorldMap" pc="268436695" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="78" parent="globals/WorldMap" pc="268436712" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="87" parent="globals/WorldMap" pc="268436745" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="89" parent="globals/WorldMap" pc="268436756" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="91" parent="globals/WorldMap" pc="268436765" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="93" parent="globals/WorldMap" pc="268436785" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="94" parent="globals/WorldMap" pc="268436802" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="20" lineNum="95" parent="globals/WorldMap" pc="268436851" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="49" parent="globals/WorldMap" pc="268436903" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="51" parent="globals/WorldMap" pc="268436906" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="55" parent="globals/WorldMap" pc="268436936" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="56" parent="globals/WorldMap" pc="268436951" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="57" parent="globals/WorldMap" pc="268436966" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="58" parent="globals/WorldMap" pc="268436981" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="61" parent="globals/WorldMap" pc="268436996" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="62" parent="globals/WorldMap" pc="268437034" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="65" parent="globals/WorldMap" pc="268437072" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="66" parent="globals/WorldMap" pc="268437079" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="68" parent="globals/WorldMap" pc="268437086" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="21" lineNum="70" parent="globals/WorldMap" pc="268437131" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="99" parent="globals/WorldMap" pc="268437177" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="107" parent="globals/WorldMap" pc="268437180" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="108" parent="globals/WorldMap" pc="268437199" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="111" parent="globals/WorldMap" pc="268437203" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="113" parent="globals/WorldMap" pc="268437219" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="114" parent="globals/WorldMap" pc="268437226" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="115" parent="globals/WorldMap" pc="268437232" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="118" parent="globals/WorldMap" pc="268437238" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="119" parent="globals/WorldMap" pc="268437246" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="120" parent="globals/WorldMap" pc="268437258" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="22" lineNum="122" parent="globals/WorldMap" pc="268437270" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="132" parent="globals/WorldMap" pc="268437318" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="138" parent="globals/WorldMap" pc="268437321" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="138" parent="globals/WorldMap" pc="268437330" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="139" parent="globals/WorldMap" pc="268437338" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="139" parent="globals/WorldMap" pc="268437347" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="141" parent="globals/WorldMap" pc="268437355" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="141" parent="globals/WorldMap" pc="268437366" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="142" parent="globals/WorldMap" pc="268437376" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="142" parent="globals/WorldMap" pc="268437387" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="145" parent="globals/WorldMap" pc="268437397" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="148" parent="globals/WorldMap" pc="268437413" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="149" parent="globals/WorldMap" pc="268437429" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="152" parent="globals/WorldMap" pc="268437469" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="23" lineNum="156" parent="globals/WorldMap" pc="268437491" symbol="latLonToPixel"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="186" parent="globals/WorldMap" pc="268437530" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="187" parent="globals/WorldMap" pc="268437533" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="190" parent="globals/WorldMap" pc="268437542" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="191" parent="globals/WorldMap" pc="268437590" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="192" parent="globals/WorldMap" pc="268437597" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="193" parent="globals/WorldMap" pc="268437614" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="195" parent="globals/WorldMap" pc="268437624" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="198" parent="globals/WorldMap" pc="268437645" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="199" parent="globals/WorldMap" pc="268437664" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="202" parent="globals/WorldMap" pc="268437686" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="203" parent="globals/WorldMap" pc="268437720" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="205" parent="globals/WorldMap" pc="268437742" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="206" parent="globals/WorldMap" pc="268437746" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="207" parent="globals/WorldMap" pc="268437762" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="209" parent="globals/WorldMap" pc="268437778" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="210" parent="globals/WorldMap" pc="268437792" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="212" parent="globals/WorldMap" pc="268437806" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="213" parent="globals/WorldMap" pc="268437833" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="214" parent="globals/WorldMap" pc="268437860" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="216" parent="globals/WorldMap" pc="268437876" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="217" parent="globals/WorldMap" pc="268437892" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="219" parent="globals/WorldMap" pc="268437908" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="221" parent="globals/WorldMap" pc="268437927" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="223" parent="globals/WorldMap" pc="268437955" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\WorldMap.mc" id="24" lineNum="224" parent="globals/WorldMap" pc="268437966" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="25" lineNum="8" parent="globals/Background" pc="268438023" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="25" lineNum="9" parent="globals/Background" pc="268438026" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="25" lineNum="13" parent="globals/Background" pc="268438044" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="26" lineNum="16" parent="globals/Background" pc="268438061" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="26" lineNum="18" parent="globals/Background" pc="268438063" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioBackground.mc" id="26" lineNum="19" parent="globals/Background" pc="268438080" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="27" lineNum="73" parent="globals/Analogue" pc="268438089" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="27" lineNum="75" parent="globals/Analogue" pc="268438091" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="27" lineNum="76" parent="globals/Analogue" pc="268438102" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="107" parent="globals/Analogue" pc="268438114" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="109" parent="globals/Analogue" pc="268438117" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="110" parent="globals/Analogue" pc="268438129" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="111" parent="globals/Analogue" pc="268438140" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="114" parent="globals/Analogue" pc="268438148" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="121" parent="globals/Analogue" pc="268438173" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="122" parent="globals/Analogue" pc="268438181" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="123" parent="globals/Analogue" pc="268438188" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="124" parent="globals/Analogue" pc="268438195" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="126" parent="globals/Analogue" pc="268438205" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="127" parent="globals/Analogue" pc="268438212" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="128" parent="globals/Analogue" pc="268438219" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="131" parent="globals/Analogue" pc="268438223" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="132" parent="globals/Analogue" pc="268438240" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="139" parent="globals/Analogue" pc="268438268" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="140" parent="globals/Analogue" pc="268438276" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="141" parent="globals/Analogue" pc="268438283" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="142" parent="globals/Analogue" pc="268438290" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="144" parent="globals/Analogue" pc="268438300" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="145" parent="globals/Analogue" pc="268438307" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="146" parent="globals/Analogue" pc="268438314" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="28" lineNum="149" parent="globals/Analogue" pc="268438318" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="47" parent="globals/Analogue" pc="268438347" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="49" parent="globals/Analogue" pc="268438349" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="53" parent="globals/Analogue" pc="268438379" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="54" parent="globals/Analogue" pc="268438394" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="56" parent="globals/Analogue" pc="268438409" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="57" parent="globals/Analogue" pc="268438447" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="59" parent="globals/Analogue" pc="268438485" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="60" parent="globals/Analogue" pc="268438523" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="61" parent="globals/Analogue" pc="268438561" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="62" parent="globals/Analogue" pc="268438599" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="64" parent="globals/Analogue" pc="268438637" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="65" parent="globals/Analogue" pc="268438675" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="66" parent="globals/Analogue" pc="268438713" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="29" lineNum="67" parent="globals/Analogue" pc="268438751" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="83" parent="globals/Analogue" pc="268438790" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="85" parent="globals/Analogue" pc="268438792" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="86" parent="globals/Analogue" pc="268438817" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="89" parent="globals/Analogue" pc="268438821" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="90" parent="globals/Analogue" pc="268438838" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="92" parent="globals/Analogue" pc="268438871" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="93" parent="globals/Analogue" pc="268438888" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="94" parent="globals/Analogue" pc="268438905" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="97" parent="globals/Analogue" pc="268438942" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="98" parent="globals/Analogue" pc="268438959" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="30" lineNum="99" parent="globals/Analogue" pc="268438976" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="156" parent="globals/Analogue" pc="268439014" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="164" parent="globals/Analogue" pc="268439017" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="165" parent="globals/Analogue" pc="268439023" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="168" parent="globals/Analogue" pc="268439027" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="170" parent="globals/Analogue" pc="268439043" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="171" parent="globals/Analogue" pc="268439050" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="172" parent="globals/Analogue" pc="268439056" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="175" parent="globals/Analogue" pc="268439062" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="176" parent="globals/Analogue" pc="268439070" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="177" parent="globals/Analogue" pc="268439082" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\Analogue.mc" id="31" lineNum="179" parent="globals/Analogue" pc="268439094" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="32" lineNum="164" parent="globals/CasioApp" pc="268439142" symbol="getBottomFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="32" lineNum="165" parent="globals/CasioApp" pc="268439144" symbol="getBottomFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="33" lineNum="53" parent="globals/CasioApp" pc="268439150" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="33" lineNum="54" parent="globals/CasioApp" pc="268439152" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="33" lineNum="55" parent="globals/CasioApp" pc="268439177" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="33" lineNum="56" parent="globals/CasioApp" pc="268439184" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="34" lineNum="160" parent="globals/CasioApp" pc="268439197" symbol="getMiddleFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="34" lineNum="161" parent="globals/CasioApp" pc="268439199" symbol="getMiddleFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="75" parent="globals/CasioApp" pc="268439205" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="77" parent="globals/CasioApp" pc="268439208" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="78" parent="globals/CasioApp" pc="268439224" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="79" parent="globals/CasioApp" pc="268439233" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="80" parent="globals/CasioApp" pc="268439245" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="84" parent="globals/CasioApp" pc="268439287" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="85" parent="globals/CasioApp" pc="268439303" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="86" parent="globals/CasioApp" pc="268439312" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="87" parent="globals/CasioApp" pc="268439324" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="91" parent="globals/CasioApp" pc="268439366" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="92" parent="globals/CasioApp" pc="268439382" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="93" parent="globals/CasioApp" pc="268439391" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="35" lineNum="94" parent="globals/CasioApp" pc="268439403" symbol="loadFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="36" lineNum="156" parent="globals/CasioApp" pc="268439446" symbol="getTopFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="36" lineNum="157" parent="globals/CasioApp" pc="268439448" symbol="getTopFields"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="64" parent="globals/CasioApp" pc="268439454" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="65" parent="globals/CasioApp" pc="268439457" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="66" parent="globals/CasioApp" pc="268439469" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="67" parent="globals/CasioApp" pc="268439475" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="68" parent="globals/CasioApp" pc="268439482" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="69" parent="globals/CasioApp" pc="268439498" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="37" lineNum="71" parent="globals/CasioApp" pc="268439511" symbol="getIntProperty"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="38" lineNum="47" parent="globals/CasioApp" pc="268439514" symbol="onStart"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="119" parent="globals/CasioApp" pc="268439517" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="121" parent="globals/CasioApp" pc="268439520" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="124" parent="globals/CasioApp" pc="268439527" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="126" parent="globals/CasioApp" pc="268439544" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="127" parent="globals/CasioApp" pc="268439550" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="128" parent="globals/CasioApp" pc="268439560" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="129" parent="globals/CasioApp" pc="268439577" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="131" parent="globals/CasioApp" pc="268439595" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="132" parent="globals/CasioApp" pc="268439614" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="135" parent="globals/CasioApp" pc="268439636" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="136" parent="globals/CasioApp" pc="268439651" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="137" parent="globals/CasioApp" pc="268439657" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="140" parent="globals/CasioApp" pc="268439669" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="141" parent="globals/CasioApp" pc="268439684" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="142" parent="globals/CasioApp" pc="268439690" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="147" parent="globals/CasioApp" pc="268439702" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="39" lineNum="152" parent="globals/CasioApp" pc="268439714" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="40" lineNum="43" parent="globals/CasioApp" pc="268439726" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="40" lineNum="44" parent="globals/CasioApp" pc="268439728" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="41" lineNum="59" parent="globals/CasioApp" pc="268439741" symbol="getView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="41" lineNum="60" parent="globals/CasioApp" pc="268439743" symbol="getView"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="42" lineNum="50" parent="globals/CasioApp" pc="268439749" symbol="onStop"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="99" parent="globals/CasioApp" pc="268439752" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="101" parent="globals/CasioApp" pc="268439755" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="102" parent="globals/CasioApp" pc="268439775" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="103" parent="globals/CasioApp" pc="268439789" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="106" parent="globals/CasioApp" pc="268439804" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="107" parent="globals/CasioApp" pc="268439824" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="108" parent="globals/CasioApp" pc="268439838" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="111" parent="globals/CasioApp" pc="268439853" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="112" parent="globals/CasioApp" pc="268439873" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="113" parent="globals/CasioApp" pc="268439887" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioApp.mc" id="43" lineNum="116" parent="globals/CasioApp" pc="268439902" symbol="hasField"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="20" parent="globals/TimeField" pc="268439904" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="22" parent="globals/TimeField" pc="268439906" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="26" parent="globals/TimeField" pc="268439936" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="27" parent="globals/TimeField" pc="268439951" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="29" parent="globals/TimeField" pc="268439966" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="30" parent="globals/TimeField" pc="268440004" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="44" lineNum="31" parent="globals/TimeField" pc="268440042" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="34" parent="globals/TimeField" pc="268440081" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="37" parent="globals/TimeField" pc="268440084" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="40" parent="globals/TimeField" pc="268440110" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="41" parent="globals/TimeField" pc="268440144" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="42" parent="globals/TimeField" pc="268440178" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="44" parent="globals/TimeField" pc="268440212" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="45" parent="globals/TimeField" pc="268440225" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="47" parent="globals/TimeField" pc="268440229" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="50" parent="globals/TimeField" pc="268440246" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="59" parent="globals/TimeField" pc="268440275" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="60" parent="globals/TimeField" pc="268440293" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="61" parent="globals/TimeField" pc="268440299" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="64" parent="globals/TimeField" pc="268440306" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="65" parent="globals/TimeField" pc="268440316" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\TimeField.mc" id="45" lineNum="68" parent="globals/TimeField" pc="268440332" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="22" parent="globals/MoveBar" pc="268440356" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="23" parent="globals/MoveBar" pc="268440358" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="25" parent="globals/MoveBar" pc="268440374" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="26" parent="globals/MoveBar" pc="268440389" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="27" parent="globals/MoveBar" pc="268440404" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="28" parent="globals/MoveBar" pc="268440419" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="46" lineNum="29" parent="globals/MoveBar" pc="268440434" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="32" parent="globals/MoveBar" pc="268440450" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="34" parent="globals/MoveBar" pc="268440453" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="35" parent="globals/MoveBar" pc="268440465" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="37" parent="globals/MoveBar" pc="268440469" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="38" parent="globals/MoveBar" pc="268440473" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="39" parent="globals/MoveBar" pc="268440480" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="43" parent="globals/MoveBar" pc="268440484" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="44" parent="globals/MoveBar" pc="268440497" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="46" parent="globals/MoveBar" pc="268440510" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="48" parent="globals/MoveBar" pc="268440517" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="50" parent="globals/MoveBar" pc="268440534" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="53" parent="globals/MoveBar" pc="268440546" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="56" parent="globals/MoveBar" pc="268440570" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="57" parent="globals/MoveBar" pc="268440578" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\MoveBar.mc" id="47" lineNum="65" parent="globals/MoveBar" pc="268440617" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="49" lineNum="130" parent="globals/CasioView" pc="268440641" symbol="onExitSleep"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="49" lineNum="131" parent="globals/CasioView" pc="268440643" symbol="onExitSleep"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="57" parent="globals/CasioView" pc="268440652" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="59" parent="globals/CasioView" pc="268440654" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="60" parent="globals/CasioView" pc="268440668" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="63" parent="globals/CasioView" pc="268440682" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="64" parent="globals/CasioView" pc="268440699" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="67" parent="globals/CasioView" pc="268440716" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="68" parent="globals/CasioView" pc="268440747" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="69" parent="globals/CasioView" pc="268440779" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="70" parent="globals/CasioView" pc="268440802" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="73" parent="globals/CasioView" pc="268440825" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="74" parent="globals/CasioView" pc="268440837" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="77" parent="globals/CasioView" pc="268440849" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="78" parent="globals/CasioView" pc="268440882" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="79" parent="globals/CasioView" pc="268440911" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="80" parent="globals/CasioView" pc="268440940" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="81" parent="globals/CasioView" pc="268440969" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="82" parent="globals/CasioView" pc="268440998" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="83" parent="globals/CasioView" pc="268441027" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="84" parent="globals/CasioView" pc="268441056" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="51" lineNum="85" parent="globals/CasioView" pc="268441085" symbol="onLayout"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="52" lineNum="135" parent="globals/CasioView" pc="268441115" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="52" lineNum="136" parent="globals/CasioView" pc="268441117" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="52" lineNum="137" parent="globals/CasioView" pc="268441125" symbol="onEnterSleep"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="53" lineNum="52" parent="globals/CasioView" pc="268441137" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="53" lineNum="53" parent="globals/CasioView" pc="268441139" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="95" parent="globals/CasioView" pc="268441152" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="97" parent="globals/CasioView" pc="268441155" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="100" parent="globals/CasioView" pc="268441167" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="101" parent="globals/CasioView" pc="268441180" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="102" parent="globals/CasioView" pc="268441193" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="105" parent="globals/CasioView" pc="268441206" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="106" parent="globals/CasioView" pc="268441227" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="107" parent="globals/CasioView" pc="268441241" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="108" parent="globals/CasioView" pc="268441251" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="110" parent="globals/CasioView" pc="268441263" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="116" parent="globals/CasioView" pc="268441284" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="117" parent="globals/CasioView" pc="268441297" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\CasioView.mc" id="54" lineNum="120" parent="globals/CasioView" pc="268441305" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="55" lineNum="20" parent="globals/DateField" pc="268441326" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="55" lineNum="21" parent="globals/DateField" pc="268441328" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="55" lineNum="23" parent="globals/DateField" pc="268441358" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="55" lineNum="24" parent="globals/DateField" pc="268441373" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="55" lineNum="25" parent="globals/DateField" pc="268441388" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="28" parent="globals/DateField" pc="268441427" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="31" parent="globals/DateField" pc="268441430" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="34" parent="globals/DateField" pc="268441455" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="37" parent="globals/DateField" pc="268441472" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="38" parent="globals/DateField" pc="268441506" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="41" parent="globals/DateField" pc="268441540" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="43" parent="globals/DateField" pc="268441562" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DateField.mc" id="56" lineNum="44" parent="globals/DateField" pc="268441579" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="96" parent="globals/DataFields" pc="268441609" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="98" parent="globals/DataFields" pc="268441612" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="99" parent="globals/DataFields" pc="268441625" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="100" parent="globals/DataFields" pc="268441632" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="103" parent="globals/DataFields" pc="268441636" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="106" parent="globals/DataFields" pc="268441647" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="107" parent="globals/DataFields" pc="268441655" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="108" parent="globals/DataFields" pc="268441674" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="109" parent="globals/DataFields" pc="268441682" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="113" parent="globals/DataFields" pc="268441743" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="57" lineNum="116" parent="globals/DataFields" pc="268441771" symbol="draw"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="122" parent="globals/DataFields" pc="268441803" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="124" parent="globals/DataFields" pc="268441806" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="127" parent="globals/DataFields" pc="268441818" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="145" parent="globals/DataFields" pc="268441828" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="147" parent="globals/DataFields" pc="268441835" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="149" parent="globals/DataFields" pc="268441855" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="150" parent="globals/DataFields" pc="268441862" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="151" parent="globals/DataFields" pc="268441879" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="155" parent="globals/DataFields" pc="268441907" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="159" parent="globals/DataFields" pc="268441917" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="162" parent="globals/DataFields" pc="268441934" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="166" parent="globals/DataFields" pc="268441966" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="168" parent="globals/DataFields" pc="268441984" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="169" parent="globals/DataFields" pc="268441990" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="170" parent="globals/DataFields" pc="268441997" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="172" parent="globals/DataFields" pc="268442004" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="175" parent="globals/DataFields" pc="268442020" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="176" parent="globals/DataFields" pc="268442024" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="179" parent="globals/DataFields" pc="268442034" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="180" parent="globals/DataFields" pc="268442040" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="190" parent="globals/DataFields" pc="268442066" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="58" lineNum="194" parent="globals/DataFields" pc="268442090" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="67" parent="globals/DataFields" pc="268442114" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="68" parent="globals/DataFields" pc="268442117" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="69" parent="globals/DataFields" pc="268442131" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="70" parent="globals/DataFields" pc="268442155" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="71" parent="globals/DataFields" pc="268442170" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="72" parent="globals/DataFields" pc="268442192" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="73" parent="globals/DataFields" pc="268442199" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="76" parent="globals/DataFields" pc="268442231" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="77" parent="globals/DataFields" pc="268442245" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="78" parent="globals/DataFields" pc="268442269" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="79" parent="globals/DataFields" pc="268442284" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="80" parent="globals/DataFields" pc="268442306" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="81" parent="globals/DataFields" pc="268442313" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="85" parent="globals/DataFields" pc="268442345" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="86" parent="globals/DataFields" pc="268442369" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="87" parent="globals/DataFields" pc="268442384" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="88" parent="globals/DataFields" pc="268442406" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="89" parent="globals/DataFields" pc="268442413" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="59" lineNum="93" parent="globals/DataFields" pc="268442442" symbol="loadSettings"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="413" parent="globals/DataFields" pc="268442461" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="416" parent="globals/DataFields" pc="268442464" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="417" parent="globals/DataFields" pc="268442473" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="419" parent="globals/DataFields" pc="268442482" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="420" parent="globals/DataFields" pc="268442494" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="421" parent="globals/DataFields" pc="268442499" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="423" parent="globals/DataFields" pc="268442539" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="424" parent="globals/DataFields" pc="268442564" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="425" parent="globals/DataFields" pc="268442575" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="428" parent="globals/DataFields" pc="268442586" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="429" parent="globals/DataFields" pc="268442612" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="430" parent="globals/DataFields" pc="268442627" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="431" parent="globals/DataFields" pc="268442644" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="440" parent="globals/DataFields" pc="268442743" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="444" parent="globals/DataFields" pc="268442767" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="448" parent="globals/DataFields" pc="268442784" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="449" parent="globals/DataFields" pc="268442808" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="450" parent="globals/DataFields" pc="268442824" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="451" parent="globals/DataFields" pc="268442831" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="452" parent="globals/DataFields" pc="268442844" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="456" parent="globals/DataFields" pc="268442851" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="462" parent="globals/DataFields" pc="268442942" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="463" parent="globals/DataFields" pc="268442963" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="464" parent="globals/DataFields" pc="268442979" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="465" parent="globals/DataFields" pc="268442986" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="466" parent="globals/DataFields" pc="268442999" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="470" parent="globals/DataFields" pc="268443006" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="476" parent="globals/DataFields" pc="268443079" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="480" parent="globals/DataFields" pc="268443135" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="485" parent="globals/DataFields" pc="268443227" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="486" parent="globals/DataFields" pc="268443235" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="490" parent="globals/DataFields" pc="268443244" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="491" parent="globals/DataFields" pc="268443252" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="495" parent="globals/DataFields" pc="268443261" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="496" parent="globals/DataFields" pc="268443280" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="497" parent="globals/DataFields" pc="268443293" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="498" parent="globals/DataFields" pc="268443306" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="499" parent="globals/DataFields" pc="268443313" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="501" parent="globals/DataFields" pc="268443320" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="60" lineNum="502" parent="globals/DataFields" pc="268443352" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="203" parent="globals/DataFields" pc="268443379" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="205" parent="globals/DataFields" pc="268443382" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="208" parent="globals/DataFields" pc="268443394" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="210" parent="globals/DataFields" pc="268443401" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="212" parent="globals/DataFields" pc="268443403" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="219" parent="globals/DataFields" pc="268443418" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="222" parent="globals/DataFields" pc="268443434" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="226" parent="globals/DataFields" pc="268443450" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="232" parent="globals/DataFields" pc="268443466" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="236" parent="globals/DataFields" pc="268443482" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="244" parent="globals/DataFields" pc="268443498" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="250" parent="globals/DataFields" pc="268443514" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="257" parent="globals/DataFields" pc="268443530" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="273" parent="globals/DataFields" pc="268443546" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="291" parent="globals/DataFields" pc="268443562" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="302" parent="globals/DataFields" pc="268443578" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="312" parent="globals/DataFields" pc="268443594" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="315" parent="globals/DataFields" pc="268443610" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="213" parent="globals/DataFields" pc="268443629" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="214" parent="globals/DataFields" pc="268443641" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="215" parent="globals/DataFields" pc="268443651" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="217" parent="globals/DataFields" pc="268443675" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="220" parent="globals/DataFields" pc="268443678" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="221" parent="globals/DataFields" pc="268443726" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="223" parent="globals/DataFields" pc="268443729" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="224" parent="globals/DataFields" pc="268443777" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="227" parent="globals/DataFields" pc="268443780" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="228" parent="globals/DataFields" pc="268443791" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="230" parent="globals/DataFields" pc="268443815" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="233" parent="globals/DataFields" pc="268443818" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="234" parent="globals/DataFields" pc="268443848" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="237" parent="globals/DataFields" pc="268443851" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="238" parent="globals/DataFields" pc="268443879" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="239" parent="globals/DataFields" pc="268443891" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="241" parent="globals/DataFields" pc="268443904" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="242" parent="globals/DataFields" pc="268443920" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="245" parent="globals/DataFields" pc="268443923" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="246" parent="globals/DataFields" pc="268443934" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="248" parent="globals/DataFields" pc="268443958" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="251" parent="globals/DataFields" pc="268443961" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="252" parent="globals/DataFields" pc="268443973" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="253" parent="globals/DataFields" pc="268443983" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="255" parent="globals/DataFields" pc="268444007" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="258" parent="globals/DataFields" pc="268444010" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="259" parent="globals/DataFields" pc="268444045" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="260" parent="globals/DataFields" pc="268444066" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="261" parent="globals/DataFields" pc="268444083" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="263" parent="globals/DataFields" pc="268444092" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="264" parent="globals/DataFields" pc="268444104" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="267" parent="globals/DataFields" pc="268444120" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="271" parent="globals/DataFields" pc="268444142" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="274" parent="globals/DataFields" pc="268444145" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="276" parent="globals/DataFields" pc="268444157" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="278" parent="globals/DataFields" pc="268444174" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="280" parent="globals/DataFields" pc="268444183" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="281" parent="globals/DataFields" pc="268444195" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="284" parent="globals/DataFields" pc="268444211" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="287" parent="globals/DataFields" pc="268444230" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="289" parent="globals/DataFields" pc="268444237" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="292" parent="globals/DataFields" pc="268444240" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="295" parent="globals/DataFields" pc="268444275" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="296" parent="globals/DataFields" pc="268444296" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="297" parent="globals/DataFields" pc="268444313" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="300" parent="globals/DataFields" pc="268444344" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="303" parent="globals/DataFields" pc="268444347" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="306" parent="globals/DataFields" pc="268444366" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="307" parent="globals/DataFields" pc="268444387" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="308" parent="globals/DataFields" pc="268444404" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="311" parent="globals/DataFields" pc="268444438" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="313" parent="globals/DataFields" pc="268444441" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="314" parent="globals/DataFields" pc="268444458" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="316" parent="globals/DataFields" pc="268444461" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="317" parent="globals/DataFields" pc="268444478" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="61" lineNum="320" parent="globals/DataFields" pc="268444482" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="325" parent="globals/DataFields" pc="268444519" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="327" parent="globals/DataFields" pc="268444522" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="328" parent="globals/DataFields" pc="268444540" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="331" parent="globals/DataFields" pc="268444549" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="334" parent="globals/DataFields" pc="268444574" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="338" parent="globals/DataFields" pc="268444598" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="341" parent="globals/DataFields" pc="268444601" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="342" parent="globals/DataFields" pc="268444623" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="344" parent="globals/DataFields" pc="268444642" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="347" parent="globals/DataFields" pc="268444656" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="352" parent="globals/DataFields" pc="268444663" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="353" parent="globals/DataFields" pc="268444685" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="357" parent="globals/DataFields" pc="268444704" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="358" parent="globals/DataFields" pc="268444710" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="362" parent="globals/DataFields" pc="268444719" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="363" parent="globals/DataFields" pc="268444744" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="368" parent="globals/DataFields" pc="268444784" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="368" parent="globals/DataFields" pc="268444791" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="369" parent="globals/DataFields" pc="268444797" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="369" parent="globals/DataFields" pc="268444805" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="371" parent="globals/DataFields" pc="268444812" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="374" parent="globals/DataFields" pc="268444817" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="382" parent="globals/DataFields" pc="268444876" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="383" parent="globals/DataFields" pc="268444899" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="384" parent="globals/DataFields" pc="268444906" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="384" parent="globals/DataFields" pc="268444913" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="62" lineNum="386" parent="globals/DataFields" pc="268444920" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="52" parent="globals/DataFields" pc="268444958" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="53" parent="globals/DataFields" pc="268444960" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="55" parent="globals/DataFields" pc="268444976" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="56" parent="globals/DataFields" pc="268444991" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="57" parent="globals/DataFields" pc="268445006" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="58" parent="globals/DataFields" pc="268445021" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="59" parent="globals/DataFields" pc="268445036" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="61" parent="globals/DataFields" pc="268445051" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="62" parent="globals/DataFields" pc="268445089" symbol="initialize"/>
+        <entry filename="C:\\Users\\mirka\\Vs-projects\\Casio\\source\\DataFields.mc" id="63" lineNum="64" parent="globals/DataFields" pc="268445127" symbol="initialize"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="35" parent="globals/Rez/Layouts" pc="268445135" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="36" parent="globals/Rez/Layouts" pc="268445146" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="38" parent="globals/Rez/Layouts" pc="268445220" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="40" parent="globals/Rez/Layouts" pc="268445276" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="42" parent="globals/Rez/Layouts" pc="268445333" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="44" parent="globals/Rez/Layouts" pc="268445390" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="46" parent="globals/Rez/Layouts" pc="268445473" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="48" parent="globals/Rez/Layouts" pc="268445563" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="50" parent="globals/Rez/Layouts" pc="268445649" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="52" parent="globals/Rez/Layouts" pc="268445735" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\mirka\\Vs-projects\\Casio\\bin\\gen\\006-B3703-00\\source\\Rez.mcgen" id="64" lineNum="54" parent="globals/Rez/Layouts" pc="268445820" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="20" method="true" symbol="getStorageValue"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="133" symbol="worldMap"/>
+        <entry field="true" id="8389346" symbol="text"/>
+        <entry field="true" id="38" symbol="&lt;globals/WorldMap/&lt;&gt;mNightOverlayPoints&gt;"/>
+        <entry field="true" id="37" symbol="&lt;globals/WorldMap/&lt;&gt;mMapFont&gt;"/>
+        <entry field="true" id="135" symbol="Altitude"/>
+        <entry field="true" id="46" symbol="&lt;globals/Analogue/&lt;&gt;dialFont&gt;"/>
+        <entry id="63" method="true" symbol="getTopFields"/>
+        <entry field="true" id="154" symbol="FieldCountBottomTitle"/>
+        <entry field="true" id="128" symbol="hour_30_59"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="179" symbol="getHumidityHistory"/>
+        <entry id="62" method="true" symbol="getMiddleFields"/>
+        <entry field="true" id="165" symbol="Temperature"/>
+        <entry field="true" id="159" symbol="Humidity"/>
+        <entry field="true" id="35" symbol="&lt;globals/WorldMap/&lt;&gt;mLastNightCalcMinute&gt;"/>
+        <entry field="true" id="42" symbol="&lt;globals/WorldMap/&lt;&gt;mapWidth&gt;"/>
+        <entry field="true" id="86" symbol="canvas_tall"/>
+        <entry id="11" object="true" symbol="DataFields"/>
+        <entry field="true" id="161" symbol="Pressure"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="75" symbol="&lt;globals/MoveBar/&lt;&gt;height&gt;"/>
+        <entry field="true" id="125" symbol="dial"/>
+        <entry id="49" method="true" symbol="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;"/>
+        <entry field="true" id="145" symbol="ColorRed"/>
+        <entry field="true" id="29" symbol="&lt;globals/GoalMeter/&lt;&gt;separator&gt;"/>
+        <entry field="true" id="130" symbol="minute_30_59"/>
+        <entry id="185" symbol="lower"/>
+        <entry field="true" id="121" symbol="&lt;globals/DataFields/&lt;&gt;mTop&gt;"/>
+        <entry field="true" id="74" symbol="&lt;globals/TimeField/&lt;&gt;smallTextFont&gt;"/>
+        <entry field="true" id="57" symbol="&lt;globals/Analogue/&lt;&gt;minFont30_59&gt;"/>
+        <entry id="8390424" module="true" symbol="Storage"/>
+        <entry id="105" symbol="&lt;globals/DateField/&lt;&gt;DAYS&gt;"/>
+        <entry field="true" id="90" symbol="datafieldsMiddleDrawable"/>
+        <entry field="true" id="67" symbol="mMiddleFields"/>
+        <entry id="8389800" method="true" symbol="getTemperatureHistory"/>
+        <entry field="true" id="160" symbol="MilitaryFormatTitle"/>
+        <entry field="true" id="171" symbol="worldMaminute_30_59Json"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry id="34" method="true" symbol="latLonToPixel"/>
+        <entry field="true" id="117" symbol="&lt;globals/DataFields/&lt;&gt;mFieldTypes&gt;"/>
+        <entry field="true" id="83" symbol="canvas_rect"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="147" symbol="DataField1Title"/>
+        <entry id="8389801" method="true" symbol="getPressureHistory"/>
+        <entry field="true" id="43" symbol="&lt;globals/WorldMap/&lt;&gt;mercatorBottom&gt;"/>
+        <entry id="8" object="true" symbol="Analogue"/>
+        <entry field="true" id="26" symbol="&lt;globals/GoalMeter/&lt;&gt;iconFont&gt;"/>
+        <entry field="true" id="69" symbol="mView"/>
+        <entry field="true" id="158" symbol="HeartRate"/>
+        <entry field="true" id="142" symbol="ColorBlue"/>
+        <entry field="true" id="81" symbol="canvas_circ"/>
+        <entry field="true" id="100" symbol="moveBarDrawable"/>
+        <entry id="110" method="true" symbol="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;"/>
+        <entry field="true" id="30" symbol="&lt;globals/GoalMeter/&lt;&gt;width&gt;"/>
+        <entry field="true" id="136" symbol="AppName"/>
+        <entry field="true" id="8389339" symbol="second"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry field="true" id="103" symbol="vert_layout"/>
+        <entry id="182" symbol="top"/>
+        <entry field="true" id="166" symbol="WeatherTemperature"/>
+        <entry id="7" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry field="true" id="127" symbol="hour_0_29"/>
+        <entry field="true" id="80" symbol="analogueDrawable"/>
+        <entry field="true" id="56" symbol="&lt;globals/Analogue/&lt;&gt;minFont0_29&gt;"/>
+        <entry id="184" symbol="fieldPosition"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="15" object="true" symbol="TimeField"/>
+        <entry field="true" id="88" symbol="datafieldsBottomDrawable"/>
+        <entry field="true" id="51" symbol="&lt;globals/Analogue/&lt;&gt;hourData30_59&gt;"/>
+        <entry field="true" id="8389338" symbol="minute"/>
+        <entry field="true" id="153" symbol="Distance"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="149" symbol="DataField3Title"/>
+        <entry field="true" id="73" symbol="&lt;globals/TimeField/&lt;&gt;posY&gt;"/>
+        <entry field="true" id="72" symbol="&lt;globals/TimeField/&lt;&gt;posX&gt;"/>
+        <entry id="183" symbol="bottom"/>
+        <entry id="8390425" module="true" symbol="Properties"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="94" symbol="dh_half"/>
+        <entry field="true" id="98" symbol="is_lowpower"/>
+        <entry field="true" id="116" symbol="&lt;globals/DataFields/&lt;&gt;mFieldCount&gt;"/>
+        <entry field="true" id="76" symbol="&lt;globals/MoveBar/&lt;&gt;separator&gt;"/>
+        <entry field="true" id="18" symbol="gLocationLng"/>
+        <entry id="177" symbol="upper"/>
+        <entry field="true" id="129" symbol="minute_0_29"/>
+        <entry field="true" id="99" symbol="lowerGoalMeterDrawable"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry id="47" method="true" symbol="&lt;globals/Analogue/&lt;&gt;drawDial&gt;"/>
+        <entry field="true" id="85" symbol="canvas_shape"/>
+        <entry field="true" id="164" symbol="Sunset"/>
+        <entry field="true" id="24" symbol="&lt;globals/GoalMeter/&lt;&gt;gap&gt;"/>
+        <entry id="175" symbol="gap"/>
+        <entry field="true" id="8391489" module="true" symbol="Weather"/>
+        <entry field="true" id="84" symbol="canvas_semicirc"/>
+        <entry field="true" id="97" symbol="goalMeterDrawable"/>
+        <entry field="true" id="71" symbol="&lt;globals/TimeField/&lt;&gt;mediumTextFont&gt;"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry field="true" id="79" symbol="&lt;globals/MoveBar/&lt;&gt;y&gt;"/>
+        <entry id="22" method="true" symbol="setStorageValue"/>
+        <entry id="14" object="true" symbol="MoveBar"/>
+        <entry field="true" id="17" symbol="gLocationLat"/>
+        <entry field="true" id="78" symbol="&lt;globals/MoveBar/&lt;&gt;x&gt;"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="143" symbol="ColorDarkGray"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="60" method="true" symbol="getBottomFields"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="151" symbol="DataFieldMiddle1Title"/>
+        <entry id="21" method="true" symbol="setPropertyValue"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="54" symbol="&lt;globals/Analogue/&lt;&gt;minData0_29&gt;"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="134" symbol="Alarms"/>
+        <entry field="true" id="169" symbol="hour_30_59Json"/>
+        <entry field="true" id="95" symbol="dw"/>
+        <entry field="true" id="93" symbol="dh"/>
+        <entry field="true" id="53" symbol="&lt;globals/Analogue/&lt;&gt;hourFont30_59&gt;"/>
+        <entry field="true" id="113" symbol="&lt;globals/DataFields/&lt;&gt;iconFont&gt;"/>
+        <entry field="true" id="120" symbol="&lt;globals/DataFields/&lt;&gt;mRight&gt;"/>
+        <entry id="178" symbol="middle"/>
+        <entry field="true" id="146" symbol="ColorWhite"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="141" symbol="ColorBlack"/>
+        <entry field="true" id="8389793" method="true" symbol="debug"/>
+        <entry id="12" object="true" symbol="DateField"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="32" method="true" symbol="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;"/>
+        <entry field="true" id="96" symbol="dw_half"/>
+        <entry field="true" id="77" symbol="&lt;globals/MoveBar/&lt;&gt;width&gt;"/>
+        <entry field="true" id="118" symbol="&lt;globals/DataFields/&lt;&gt;mLeft&gt;"/>
+        <entry id="174" symbol="positionY"/>
+        <entry id="173" symbol="positionX"/>
+        <entry id="64" method="true" symbol="hasField"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="31" method="true" symbol="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;"/>
+        <entry field="true" id="106" symbol="&lt;globals/DateField/&lt;&gt;mFont&gt;"/>
+        <entry field="true" id="119" symbol="&lt;globals/DataFields/&lt;&gt;mMaxFieldLength&gt;"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="33" method="true" symbol="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;"/>
+        <entry field="true" id="40" symbol="&lt;globals/WorldMap/&lt;&gt;mPositionY&gt;"/>
+        <entry field="true" id="39" symbol="&lt;globals/WorldMap/&lt;&gt;mPositionX&gt;"/>
+        <entry field="true" id="172" symbol="worldMapJson"/>
+        <entry field="true" id="8388720" symbol="hour"/>
+        <entry field="true" id="41" symbol="&lt;globals/WorldMap/&lt;&gt;mapPixelHeight&gt;"/>
+        <entry id="48" method="true" symbol="&lt;globals/Analogue/&lt;&gt;drawHands&gt;"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry id="112" method="true" symbol="&lt;globals/DataFields/&lt;&gt;getValue&gt;"/>
+        <entry id="181" symbol="right"/>
+        <entry field="true" id="124" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="28" symbol="&lt;globals/GoalMeter/&lt;&gt;posY&gt;"/>
+        <entry field="true" id="102" symbol="upperGoalMeterDrawable"/>
+        <entry field="true" id="27" symbol="&lt;globals/GoalMeter/&lt;&gt;posX&gt;"/>
+        <entry field="true" id="156" symbol="FieldCountTitle"/>
+        <entry field="true" id="162" symbol="Sunrise"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="137" symbol="BackgroundColorTitle"/>
+        <entry id="9" object="true" symbol="CasioApp"/>
+        <entry id="10" object="true" symbol="CasioView"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="138" symbol="Battery"/>
+        <entry id="19" method="true" symbol="getPropertyValue"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry field="true" id="148" symbol="DataField2Title"/>
+        <entry field="true" id="66" symbol="mBottomFields"/>
+        <entry field="true" id="163" symbol="SunriseSunset"/>
+        <entry field="true" id="36" symbol="&lt;globals/WorldMap/&lt;&gt;mMapData&gt;"/>
+        <entry field="true" id="87" symbol="canvas_w"/>
+        <entry field="true" id="82" symbol="canvas_h"/>
+        <entry field="true" id="108" symbol="&lt;globals/DateField/&lt;&gt;mY&gt;"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry field="true" id="107" symbol="&lt;globals/DateField/&lt;&gt;mX&gt;"/>
+        <entry field="true" id="45" symbol="&lt;globals/Analogue/&lt;&gt;dialData&gt;"/>
+        <entry field="true" id="68" symbol="mTopFields"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="16" object="true" symbol="WorldMap"/>
+        <entry field="true" id="167" symbol="dialJson"/>
+        <entry field="true" id="150" symbol="DataFieldBottom1Title"/>
+        <entry field="true" id="132" symbol="text_medium"/>
+        <entry field="true" id="91" symbol="dateFieldDrawable"/>
+        <entry field="true" id="144" symbol="ColorLightGray"/>
+        <entry field="true" id="123" symbol="&lt;globals/DataFields/&lt;&gt;textFont&gt;"/>
+        <entry id="65" method="true" symbol="loadFields"/>
+        <entry field="true" id="126" symbol="garmin_icons"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="13" object="true" symbol="GoalMeter"/>
+        <entry field="true" id="89" symbol="datafieldsDrawable"/>
+        <entry field="true" id="170" symbol="worldMaminute_0_29Json"/>
+        <entry field="true" id="50" symbol="&lt;globals/Analogue/&lt;&gt;hourData0_29&gt;"/>
+        <entry id="8389781" module="true" symbol="SensorHistory"/>
+        <entry id="61" method="true" symbol="getIntProperty"/>
+        <entry field="true" id="157" symbol="ForegroundColorTitle"/>
+        <entry field="true" id="155" symbol="FieldCountMiddleTitle"/>
+        <entry field="true" id="168" symbol="hour_0_29Json"/>
+        <entry field="true" id="131" symbol="text_big"/>
+        <entry id="23" module="true" symbol="Layouts"/>
+        <entry field="true" id="59" symbol="&lt;globals/Analogue/&lt;&gt;posY&gt;"/>
+        <entry field="true" id="140" symbol="Calories"/>
+        <entry field="true" id="58" symbol="&lt;globals/Analogue/&lt;&gt;posX&gt;"/>
+        <entry id="114" method="true" symbol="loadSettings"/>
+        <entry id="111" method="true" symbol="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;"/>
+        <entry id="180" symbol="left"/>
+        <entry field="true" id="25" symbol="&lt;globals/GoalMeter/&lt;&gt;height&gt;"/>
+        <entry field="true" id="8392365" module="true" symbol="Notifications"/>
+        <entry field="true" id="52" symbol="&lt;globals/Analogue/&lt;&gt;hourFont0_29&gt;"/>
+        <entry field="true" id="44" symbol="&lt;globals/WorldMap/&lt;&gt;mercatorTop&gt;"/>
+        <entry field="true" id="139" symbol="BatteryNoIcon"/>
+        <entry field="true" id="122" symbol="&lt;globals/DataFields/&lt;&gt;mfieldPosition&gt;"/>
+        <entry field="true" id="115" symbol="&lt;globals/DataFields/&lt;&gt;mBottom&gt;"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="92" symbol="deviceSettings"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8391945" method="true" symbol="getView"/>
+        <entry id="109" method="true" symbol="&lt;globals/DataFields/&lt;&gt;drawField&gt;"/>
+        <entry field="true" id="55" symbol="&lt;globals/Analogue/&lt;&gt;minData30_59&gt;"/>
+        <entry id="176" symbol="separator"/>
+        <entry field="true" id="104" symbol="worldMapDrawable"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="8390079" symbol="y"/>
+        <entry field="true" id="8390078" symbol="x"/>
+        <entry field="true" id="101" symbol="timeFieldDrawable"/>
+        <entry field="true" id="152" symbol="DataFieldMiddle2Title"/>
+        <entry field="true" id="70" symbol="&lt;globals/TimeField/&lt;&gt;bigTextFont&gt;"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435484" name="key" stackId="1" startPc="268435460"/>
+        <entry arg="true" endPc="268435565" name="key" stackId="1" startPc="268435538"/>
+        <entry arg="true" endPc="268435565" name="value" stackId="2" startPc="268435538"/>
+        <entry arg="true" endPc="268435686" name="key" stackId="1" startPc="268435662"/>
+        <entry arg="true" endPc="268435726" name="key" stackId="1" startPc="268435699"/>
+        <entry arg="true" endPc="268435726" name="value" stackId="2" startPc="268435699"/>
+        <entry arg="true" endPc="268436336" name="dc" stackId="1" startPc="268435772"/>
+        <entry endPc="268436335" name="info" stackId="2" startPc="268435775"/>
+        <entry endPc="268436335" name="steps" stackId="3" startPc="268435775"/>
+        <entry endPc="268436335" name="stesGoal" stackId="4" startPc="268435775"/>
+        <entry endPc="268436335" name="floors" stackId="5" startPc="268435775"/>
+        <entry endPc="268436335" name="floorsGoal" stackId="6" startPc="268435775"/>
+        <entry endPc="268436335" name="stepsRatio" stackId="7" startPc="268435775"/>
+        <entry endPc="268436335" name="floorsRatio" stackId="8" startPc="268435775"/>
+        <entry endPc="268436335" name="barX" stackId="9" startPc="268435775"/>
+        <entry endPc="268436335" name="barWidth" stackId="10" startPc="268435775"/>
+        <entry endPc="268436335" name="maxBars" stackId="11" startPc="268435775"/>
+        <entry endPc="268436335" name="stepsBars" stackId="12" startPc="268435775"/>
+        <entry endPc="268436335" name="stepBarWidth" stackId="13" startPc="268435775"/>
+        <entry endPc="268436335" name="barPosX" stackId="14" startPc="268435775"/>
+        <entry endPc="268436161" name="i" stackId="15" startPc="268436068"/>
+        <entry endPc="268436335" name="floorsY" stackId="16" startPc="268435775"/>
+        <entry endPc="268436335" name="floorsBars" stackId="17" startPc="268435775"/>
+        <entry endPc="268436335" name="i" stackId="18" startPc="268436248"/>
+        <entry arg="true" endPc="268436497" name="params" stackId="1" startPc="268436337"/>
+        <entry arg="true" endPc="268436691" name="dc" stackId="1" startPc="268436498"/>
+        <entry endPc="268436690" name="now" stackId="2" startPc="268436501"/>
+        <entry endPc="268436690" name="g" stackId="3" startPc="268436501"/>
+        <entry endPc="268436690" name="currentMinute" stackId="4" startPc="268436501"/>
+        <entry endPc="268436690" name="i" stackId="5" startPc="268436630"/>
+        <entry endPc="268436680" name="point" stackId="6" startPc="268436630"/>
+        <entry arg="true" endPc="268436902" name="dc" stackId="1" startPc="268436692"/>
+        <entry endPc="268436898" name="pixelLocation" stackId="2" startPc="268436765"/>
+        <entry arg="true" endPc="268437176" name="params" stackId="1" startPc="268436903"/>
+        <entry endPc="268437175" name="topRad" stackId="2" startPc="268436906"/>
+        <entry endPc="268437175" name="bottomRad" stackId="3" startPc="268436906"/>
+        <entry arg="true" endPc="268437317" name="tileData" stackId="1" startPc="268437177"/>
+        <entry arg="true" endPc="268437317" name="font" stackId="2" startPc="268437177"/>
+        <entry arg="true" endPc="268437317" name="dc" stackId="3" startPc="268437177"/>
+        <entry arg="true" endPc="268437317" name="xoff" stackId="4" startPc="268437177"/>
+        <entry arg="true" endPc="268437317" name="yoff" stackId="5" startPc="268437177"/>
+        <entry endPc="268437316" name="i" stackId="6" startPc="268437219"/>
+        <entry endPc="268437306" name="packed" stackId="7" startPc="268437219"/>
+        <entry endPc="268437306" name="char" stackId="8" startPc="268437219"/>
+        <entry endPc="268437306" name="xpos" stackId="9" startPc="268437219"/>
+        <entry endPc="268437306" name="ypos" stackId="10" startPc="268437219"/>
+        <entry arg="true" endPc="268437529" name="lat" stackId="1" startPc="268437318"/>
+        <entry arg="true" endPc="268437529" name="lon" stackId="2" startPc="268437318"/>
+        <entry endPc="268437529" name="xNorm" stackId="3" startPc="268437321"/>
+        <entry endPc="268437529" name="latRad" stackId="4" startPc="268437321"/>
+        <entry endPc="268437529" name="mercY" stackId="5" startPc="268437321"/>
+        <entry endPc="268437529" name="yNorm" stackId="6" startPc="268437321"/>
+        <entry arg="true" endPc="268438022" name="g" stackId="1" startPc="268437530"/>
+        <entry endPc="268438021" name="isLeapYear" stackId="2" startPc="268437533"/>
+        <entry endPc="268438021" name="daysInMonth" stackId="3" startPc="268437533"/>
+        <entry endPc="268438021" name="doy" stackId="4" startPc="268437533"/>
+        <entry endPc="268438021" name="dayAngle" stackId="5" startPc="268437533"/>
+        <entry endPc="268438021" name="decl" stackId="6" startPc="268437533"/>
+        <entry endPc="268438021" name="utcHours" stackId="7" startPc="268437533"/>
+        <entry endPc="268438021" name="subLon" stackId="8" startPc="268437533"/>
+        <entry endPc="268438021" name="step" stackId="9" startPc="268437533"/>
+        <entry endPc="268438021" name="sinDecl" stackId="10" startPc="268437533"/>
+        <entry endPc="268438021" name="cosDecl" stackId="11" startPc="268437533"/>
+        <entry endPc="268438021" name="x" stackId="12" startPc="268437792"/>
+        <entry endPc="268438011" name="y" stackId="13" startPc="268437806"/>
+        <entry endPc="268438001" name="lon" stackId="14" startPc="268437806"/>
+        <entry endPc="268438001" name="lat" stackId="15" startPc="268437806"/>
+        <entry endPc="268438001" name="latRad" stackId="16" startPc="268437806"/>
+        <entry endPc="268438001" name="sinLat" stackId="17" startPc="268437806"/>
+        <entry endPc="268438001" name="cosLat" stackId="18" startPc="268437806"/>
+        <entry endPc="268438001" name="hourAngle" stackId="19" startPc="268437806"/>
+        <entry endPc="268438001" name="solarElevation" stackId="20" startPc="268437806"/>
+        <entry endPc="268438059" name="dictionary" stackId="1" startPc="268438026"/>
+        <entry arg="true" endPc="268438088" name="dc" stackId="1" startPc="268438061"/>
+        <entry arg="true" endPc="268438113" name="dc" stackId="1" startPc="268438089"/>
+        <entry arg="true" endPc="268438346" name="dc" stackId="1" startPc="268438114"/>
+        <entry endPc="268438345" name="now" stackId="2" startPc="268438117"/>
+        <entry endPc="268438345" name="hour" stackId="3" startPc="268438117"/>
+        <entry endPc="268438345" name="minute" stackId="4" startPc="268438117"/>
+        <entry endPc="268438345" name="hourIndex" stackId="5" startPc="268438117"/>
+        <entry endPc="268438345" name="hFont" stackId="6" startPc="268438117"/>
+        <entry endPc="268438345" name="hData" stackId="7" startPc="268438117"/>
+        <entry endPc="268438345" name="hIdx" stackId="8" startPc="268438117"/>
+        <entry endPc="268438345" name="mFont" stackId="9" startPc="268438117"/>
+        <entry endPc="268438345" name="mData" stackId="10" startPc="268438117"/>
+        <entry endPc="268438345" name="mIdx" stackId="11" startPc="268438117"/>
+        <entry arg="true" endPc="268438789" name="params" stackId="1" startPc="268438347"/>
+        <entry arg="true" endPc="268439013" name="dc" stackId="1" startPc="268438790"/>
+        <entry arg="true" endPc="268439141" name="tileData" stackId="1" startPc="268439014"/>
+        <entry arg="true" endPc="268439141" name="font" stackId="2" startPc="268439014"/>
+        <entry arg="true" endPc="268439141" name="dc" stackId="3" startPc="268439014"/>
+        <entry arg="true" endPc="268439141" name="xoff" stackId="4" startPc="268439014"/>
+        <entry arg="true" endPc="268439141" name="yoff" stackId="5" startPc="268439014"/>
+        <entry endPc="268439140" name="i" stackId="6" startPc="268439043"/>
+        <entry endPc="268439130" name="packed" stackId="7" startPc="268439043"/>
+        <entry endPc="268439130" name="char" stackId="8" startPc="268439043"/>
+        <entry endPc="268439130" name="xpos" stackId="9" startPc="268439043"/>
+        <entry endPc="268439130" name="ypos" stackId="10" startPc="268439043"/>
+        <entry endPc="268439444" name="topCount" stackId="1" startPc="268439208"/>
+        <entry endPc="268439286" name="i" stackId="2" startPc="268439245"/>
+        <entry endPc="268439444" name="middleCount" stackId="3" startPc="268439208"/>
+        <entry endPc="268439365" name="i" stackId="4" startPc="268439324"/>
+        <entry endPc="268439444" name="bottomCount" stackId="5" startPc="268439208"/>
+        <entry endPc="268439444" name="i" stackId="6" startPc="268439403"/>
+        <entry arg="true" endPc="268439513" name="key" stackId="1" startPc="268439454"/>
+        <entry arg="true" endPc="268439513" name="defaultValue" stackId="2" startPc="268439454"/>
+        <entry endPc="268439513" name="value" stackId="3" startPc="268439457"/>
+        <entry endPc="268439724" name="location" stackId="1" startPc="268439520"/>
+        <entry endPc="268439701" name="lat" stackId="2" startPc="268439636"/>
+        <entry endPc="268439701" name="lng" stackId="3" startPc="268439636"/>
+        <entry arg="true" endPc="268439903" name="fieldType" stackId="1" startPc="268439752"/>
+        <entry endPc="268439803" name="i" stackId="2" startPc="268439775"/>
+        <entry endPc="268439852" name="i" stackId="3" startPc="268439824"/>
+        <entry endPc="268439901" name="i" stackId="4" startPc="268439873"/>
+        <entry arg="true" endPc="268440080" name="params" stackId="1" startPc="268439904"/>
+        <entry arg="true" endPc="268440355" name="dc" stackId="1" startPc="268440081"/>
+        <entry endPc="268440354" name="g" stackId="2" startPc="268440084"/>
+        <entry endPc="268440354" name="HH" stackId="3" startPc="268440084"/>
+        <entry endPc="268440354" name="MM" stackId="4" startPc="268440084"/>
+        <entry endPc="268440354" name="SS" stackId="5" startPc="268440084"/>
+        <entry endPc="268440354" name="timeString" stackId="6" startPc="268440084"/>
+        <entry endPc="268440354" name="secString" stackId="7" startPc="268440084"/>
+        <entry endPc="268440354" name="dims" stackId="8" startPc="268440084"/>
+        <entry endPc="268440354" name="timeWidth" stackId="9" startPc="268440084"/>
+        <entry endPc="268440354" name="timeHeight" stackId="10" startPc="268440084"/>
+        <entry endPc="268440354" name="secX" stackId="11" startPc="268440084"/>
+        <entry endPc="268440354" name="secY" stackId="12" startPc="268440084"/>
+        <entry arg="true" endPc="268440449" name="params" stackId="1" startPc="268440356"/>
+        <entry arg="true" endPc="268440640" name="dc" stackId="1" startPc="268440450"/>
+        <entry endPc="268440639" name="info" stackId="2" startPc="268440453"/>
+        <entry endPc="268440639" name="level" stackId="3" startPc="268440453"/>
+        <entry endPc="268440639" name="maxBars" stackId="4" startPc="268440453"/>
+        <entry endPc="268440639" name="totalSeparatorWidth" stackId="5" startPc="268440453"/>
+        <entry endPc="268440639" name="barWidth" stackId="6" startPc="268440453"/>
+        <entry endPc="268440639" name="barX" stackId="7" startPc="268440453"/>
+        <entry endPc="268440639" name="i" stackId="8" startPc="268440546"/>
+        <entry arg="true" endPc="268441114" name="dc" stackId="1" startPc="268440652"/>
+        <entry arg="true" endPc="268441325" name="dc" stackId="1" startPc="268441152"/>
+        <entry endPc="268441324" name="clockTime" stackId="2" startPc="268441155"/>
+        <entry arg="true" endPc="268441426" name="params" stackId="1" startPc="268441326"/>
+        <entry arg="true" endPc="268441608" name="dc" stackId="1" startPc="268441427"/>
+        <entry endPc="268441607" name="g" stackId="2" startPc="268441430"/>
+        <entry endPc="268441607" name="dayStr" stackId="3" startPc="268441430"/>
+        <entry endPc="268441607" name="dd" stackId="4" startPc="268441430"/>
+        <entry endPc="268441607" name="mm" stackId="5" startPc="268441430"/>
+        <entry endPc="268441607" name="text" stackId="6" startPc="268441430"/>
+        <entry arg="true" endPc="268441802" name="dc" stackId="1" startPc="268441609"/>
+        <entry endPc="268441801" name="count" stackId="2" startPc="268441612"/>
+        <entry endPc="268441801" name="i" stackId="3" startPc="268441647"/>
+        <entry endPc="268441791" name="x" stackId="4" startPc="268441647"/>
+        <entry arg="true" endPc="268442113" name="dc" stackId="1" startPc="268441803"/>
+        <entry arg="true" endPc="268442113" name="fieldType" stackId="2" startPc="268441803"/>
+        <entry arg="true" endPc="268442113" name="x" stackId="3" startPc="268441803"/>
+        <entry endPc="268442112" name="value" stackId="4" startPc="268441806"/>
+        <entry endPc="268442112" name="icon" stackId="5" startPc="268441806"/>
+        <entry endPc="268441913" name="hr" stackId="6" startPc="268441835"/>
+        <entry endPc="268441903" name="seconds" stackId="7" startPc="268441862"/>
+        <entry endPc="268442112" name="iconDims" stackId="8" startPc="268441806"/>
+        <entry endPc="268442112" name="textDims" stackId="9" startPc="268441806"/>
+        <entry endPc="268442112" name="iconW" stackId="10" startPc="268441806"/>
+        <entry endPc="268442112" name="iconH" stackId="11" startPc="268441806"/>
+        <entry endPc="268442112" name="textH" stackId="12" startPc="268441806"/>
+        <entry endPc="268442112" name="centerY" stackId="13" startPc="268441806"/>
+        <entry endPc="268442112" name="iconY" stackId="14" startPc="268441806"/>
+        <entry endPc="268442112" name="textY" stackId="15" startPc="268441806"/>
+        <entry endPc="268442112" name="valueX" stackId="16" startPc="268441806"/>
+        <entry endPc="268442227" name="i" stackId="1" startPc="268442170"/>
+        <entry endPc="268442217" name="field" stackId="2" startPc="268442170"/>
+        <entry endPc="268442341" name="i" stackId="3" startPc="268442284"/>
+        <entry endPc="268442331" name="field" stackId="4" startPc="268442284"/>
+        <entry endPc="268442441" name="i" stackId="5" startPc="268442384"/>
+        <entry endPc="268442431" name="field" stackId="6" startPc="268442384"/>
+        <entry arg="true" endPc="268443378" name="lat" stackId="1" startPc="268442461"/>
+        <entry arg="true" endPc="268443378" name="lng" stackId="2" startPc="268442461"/>
+        <entry arg="true" endPc="268443378" name="tz" stackId="3" startPc="268442461"/>
+        <entry arg="true" endPc="268443378" name="tomorrow" stackId="4" startPc="268442461"/>
+        <entry endPc="268443378" name="now" stackId="5" startPc="268442464"/>
+        <entry endPc="268443378" name="d" stackId="6" startPc="268442464"/>
+        <entry endPc="268443378" name="rad" stackId="7" startPc="268442464"/>
+        <entry endPc="268443378" name="deg" stackId="8" startPc="268442464"/>
+        <entry endPc="268443378" name="a" stackId="9" startPc="268442464"/>
+        <entry endPc="268443378" name="y" stackId="10" startPc="268442464"/>
+        <entry endPc="268443378" name="m" stackId="11" startPc="268442464"/>
+        <entry endPc="268443378" name="jDate" stackId="12" startPc="268442464"/>
+        <entry endPc="268443378" name="n" stackId="13" startPc="268442464"/>
+        <entry endPc="268443378" name="jStar" stackId="14" startPc="268442464"/>
+        <entry endPc="268443378" name="M" stackId="15" startPc="268442464"/>
+        <entry endPc="268443378" name="MFloor" stackId="16" startPc="268442464"/>
+        <entry endPc="268443378" name="MFrac" stackId="17" startPc="268442464"/>
+        <entry endPc="268443378" name="C" stackId="18" startPc="268442464"/>
+        <entry endPc="268443378" name="lambda" stackId="19" startPc="268442464"/>
+        <entry endPc="268443378" name="lambdaFloor" stackId="20" startPc="268442464"/>
+        <entry endPc="268443378" name="lambdaFrac" stackId="21" startPc="268442464"/>
+        <entry endPc="268443378" name="jTransit" stackId="22" startPc="268442464"/>
+        <entry endPc="268443378" name="delta" stackId="23" startPc="268442464"/>
+        <entry endPc="268443378" name="cosOmega" stackId="24" startPc="268442464"/>
+        <entry endPc="268443378" name="omega" stackId="25" startPc="268442464"/>
+        <entry endPc="268443378" name="jSet" stackId="26" startPc="268442464"/>
+        <entry endPc="268443378" name="jRise" stackId="27" startPc="268442464"/>
+        <entry endPc="268443378" name="deltaJSet" stackId="28" startPc="268442464"/>
+        <entry endPc="268443378" name="deltaJRise" stackId="29" startPc="268442464"/>
+        <entry endPc="268443378" name="tzOffset" stackId="30" startPc="268442464"/>
+        <entry arg="true" endPc="268444518" name="type" stackId="1" startPc="268443379"/>
+        <entry endPc="268444518" name="settings" stackId="2" startPc="268443382"/>
+        <entry endPc="268444518" name="info" stackId="3" startPc="268443382"/>
+        <entry endPc="268444518" name="sample" stackId="4" startPc="268443382"/>
+        <entry endPc="268444518" name="value" stackId="5" startPc="268443382"/>
+        <entry endPc="268444480" name="dist" stackId="6" startPc="268443403"/>
+        <entry endPc="268444135" name="temperature" stackId="7" startPc="268444083"/>
+        <entry endPc="268444480" name="weather" stackId="8" startPc="268443403"/>
+        <entry endPc="268444226" name="temp" stackId="9" startPc="268444174"/>
+        <entry arg="true" endPc="268444957" name="isSunrise" stackId="1" startPc="268444519"/>
+        <entry arg="true" endPc="268444957" name="is24Hour" stackId="2" startPc="268444519"/>
+        <entry endPc="268444956" name="nowInfo" stackId="3" startPc="268444522"/>
+        <entry endPc="268444956" name="now" stackId="4" startPc="268444522"/>
+        <entry endPc="268444956" name="eventTime" stackId="5" startPc="268444522"/>
+        <entry endPc="268444956" name="sunToday" stackId="6" startPc="268444522"/>
+        <entry endPc="268444956" name="todayEvent" stackId="7" startPc="268444522"/>
+        <entry endPc="268444703" name="sunTomorrow" stackId="8" startPc="268444663"/>
+        <entry endPc="268444956" name="h" stackId="9" startPc="268444522"/>
+        <entry endPc="268444956" name="m" stackId="10" startPc="268444522"/>
+        <entry endPc="268444956" name="amPm" stackId="11" startPc="268444876"/>
+        <entry endPc="268444956" name="h12" stackId="12" startPc="268444876"/>
+        <entry arg="true" endPc="268445134" name="params" stackId="1" startPc="268444958"/>
+        <entry arg="true" endPc="268445869" name="dc" stackId="1" startPc="268445135"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_WorldMapDisplay" stackId="2" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_AnalogueDisplay" stackId="3" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_DateFieldDisplay" stackId="4" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_TimeFieldDisplay" stackId="5" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_MoveBarDisplay" stackId="6" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_GoalMeterDisplay" stackId="7" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_DataFieldsDisplay" stackId="8" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay" stackId="9" startPc="268445146"/>
+        <entry endPc="268445869" name="rez_cmp_local_custom_drawable_DataFieldsBottomDisplay" stackId="10" startPc="268445146"/>
+    </localVars>
+    <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3703-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="garmin_icons"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="SunriseSunset"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="worldMaminute_0_29Json"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Battery"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Pressure"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="properties_and_storage" class="globals" module="" symbol="setPropertyValue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldCountTitle"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="dialJson"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="HeartRate"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Altitude"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="text_medium"/>
+        <annotationEntry annotation="properties_and_storage" class="globals" module="" symbol="setStorageValue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataFieldMiddle1Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataField3Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Notifications"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Sunset"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="hour_0_29Json"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Humidity"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataFieldBottom1Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldCountMiddleTitle"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="dial"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="hour_0_29"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="FieldCountBottomTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataField2Title"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="WeatherTemperature"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Calories"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataField1Title"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="minute_0_29"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Alarms"/>
+        <annotationEntry annotation="properties_and_storage" class="globals" module="" symbol="getStorageValue"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="hour_30_59Json"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="worldMap"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="worldMaminute_30_59Json"/>
+        <annotationEntry annotation="properties_and_storage" class="globals" module="" symbol="getPropertyValue"/>
+        <annotationEntry annotation="initialized" class="JsonData" module="globals/Rez" symbol="worldMapJson"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="minute_30_59"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Temperature"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Weather"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BatteryNoIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="DataFieldMiddle2Title"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="hour_30_59"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="text"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Sunrise"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="Distance"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="text_big"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="76" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="269" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/GoalMeter" offset="340" parentId="globals" symbolId="GoalMeter" type="class"/>
+        <dataEntry label="globals/WorldMap" offset="456" parentId="globals" symbolId="WorldMap" type="class"/>
+        <dataEntry label="globals/Background" offset="635" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Analogue" offset="688" parentId="globals" symbolId="Analogue" type="class"/>
+        <dataEntry label="globals/CasioApp" offset="876" parentId="globals" symbolId="CasioApp" type="class"/>
+        <dataEntry label="globals/TimeField" offset="1055" parentId="globals" symbolId="TimeField" type="class"/>
+        <dataEntry label="globals/MoveBar" offset="1153" parentId="globals" symbolId="MoveBar" type="class"/>
+        <dataEntry label="globals/CasioView" offset="1251" parentId="globals" symbolId="CasioView" type="class"/>
+        <dataEntry label="globals/DateField" offset="1610" parentId="globals" symbolId="DateField" type="class"/>
+        <dataEntry label="globals/DataFields" offset="1699" parentId="globals" symbolId="DataFields" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1887" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1922" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="1957" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2073" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="2414" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435484" name="getStorageValue" startPc="268435460">
+            <param id="key"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Rez" startPc="268435485">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435516" name="&lt;init&gt;" parent="GoalMeter" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435537" name="&lt;init&gt;" parent="WorldMap" startPc="268435517">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435565" name="setStorageValue" startPc="268435538">
+            <param id="key"/>
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435586" name="getApp" startPc="268435566">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435598" name="&lt;init&gt;" parent="Background" startPc="268435587">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435610" name="&lt;init&gt;" parent="Analogue" startPc="268435599">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435649" name="&lt;init&gt;" parent="CasioApp" startPc="268435611">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435661" name="&lt;init&gt;" parent="TimeField" startPc="268435650">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435686" name="getPropertyValue" startPc="268435662">
+            <param id="key"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435698" name="&lt;init&gt;" parent="MoveBar" startPc="268435687">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435726" name="setPropertyValue" startPc="268435699">
+            <param id="key"/>
+            <param id="value"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435738" name="&lt;init&gt;" parent="CasioView" startPc="268435727">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435750" name="&lt;init&gt;" parent="DateField" startPc="268435739">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435771" name="&lt;init&gt;" parent="DataFields" startPc="268435751">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436336" name="draw" parent="GoalMeter" startPc="268435772">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436497" name="initialize" parent="GoalMeter" startPc="268436337">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268436691" name="&lt;globals/WorldMap/&lt;&gt;drawDayNight&gt;" parent="WorldMap" startPc="268436498">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436902" name="draw" parent="WorldMap" startPc="268436692">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437176" name="initialize" parent="WorldMap" startPc="268436903">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268437317" name="&lt;globals/WorldMap/&lt;&gt;drawTiles&gt;" parent="WorldMap" startPc="268437177">
+            <param id="tileData"/>
+            <param id="font"/>
+            <param id="dc"/>
+            <param id="xoff"/>
+            <param id="yoff"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437529" name="latLonToPixel" parent="WorldMap" startPc="268437318">
+            <param id="lat"/>
+            <param id="lon"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438022" name="&lt;globals/WorldMap/&lt;&gt;calculateNightOverlay&gt;" parent="WorldMap" startPc="268437530">
+            <param id="g"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438060" name="initialize" parent="Background" startPc="268438023">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438088" name="draw" parent="Background" startPc="268438061">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438113" name="draw" parent="Analogue" startPc="268438089">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268438346" name="&lt;globals/Analogue/&lt;&gt;drawHands&gt;" parent="Analogue" startPc="268438114">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438789" name="initialize" parent="Analogue" startPc="268438347">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439013" name="&lt;globals/Analogue/&lt;&gt;drawDial&gt;" parent="Analogue" startPc="268438790">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268439141" name="&lt;globals/Analogue/&lt;&gt;drawTiles&gt;" parent="Analogue" startPc="268439014">
+            <param id="tileData"/>
+            <param id="font"/>
+            <param id="dc"/>
+            <param id="xoff"/>
+            <param id="yoff"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439149" name="getBottomFields" parent="CasioApp" startPc="268439142">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439196" name="getInitialView" parent="CasioApp" startPc="268439150">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439204" name="getMiddleFields" parent="CasioApp" startPc="268439197">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439445" name="loadFields" parent="CasioApp" startPc="268439205">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439453" name="getTopFields" parent="CasioApp" startPc="268439446">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439513" name="getIntProperty" parent="CasioApp" startPc="268439454">
+            <param id="key"/>
+            <param id="defaultValue"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439516" name="onStart" parent="CasioApp" startPc="268439514">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439725" name="onSettingsChanged" parent="CasioApp" startPc="268439517">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439740" name="initialize" parent="CasioApp" startPc="268439726">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439748" name="getView" parent="CasioApp" startPc="268439741">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439751" name="onStop" parent="CasioApp" startPc="268439749">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439903" name="hasField" parent="CasioApp" startPc="268439752">
+            <param id="fieldType"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440080" name="initialize" parent="TimeField" startPc="268439904">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440355" name="draw" parent="TimeField" startPc="268440081">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440449" name="initialize" parent="MoveBar" startPc="268440356">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440640" name="draw" parent="MoveBar" startPc="268440450">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="CasioView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440651" name="onExitSleep" parent="CasioView" startPc="268440641">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="CasioView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441114" name="onLayout" parent="CasioView" startPc="268440652">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441136" name="onEnterSleep" parent="CasioView" startPc="268441115">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441151" name="initialize" parent="CasioView" startPc="268441137">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441325" name="onUpdate" parent="CasioView" startPc="268441152">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441426" name="initialize" parent="DateField" startPc="268441326">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441608" name="draw" parent="DateField" startPc="268441427">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441802" name="draw" parent="DataFields" startPc="268441609">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268442113" name="&lt;globals/DataFields/&lt;&gt;drawField&gt;" parent="DataFields" startPc="268441803">
+            <param id="dc"/>
+            <param id="fieldType"/>
+            <param id="x"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268442460" name="loadSettings" parent="DataFields" startPc="268442114">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268443378" name="&lt;globals/DataFields/&lt;&gt;getSunTimes&gt;" parent="DataFields" startPc="268442461">
+            <param id="lat"/>
+            <param id="lng"/>
+            <param id="tz"/>
+            <param id="tomorrow"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268444518" name="&lt;globals/DataFields/&lt;&gt;getValue&gt;" parent="DataFields" startPc="268443379">
+            <param id="type"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="private" endPc="268444957" name="&lt;globals/DataFields/&lt;&gt;getSunEventTime&gt;" parent="DataFields" startPc="268444519">
+            <param id="isSunrise"/>
+            <param id="is24Hour"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445134" name="initialize" parent="DataFields" startPc="268444958">
+            <param id="params"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268445869" name="WatchFace" parent="Layouts" startPc="268445135">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

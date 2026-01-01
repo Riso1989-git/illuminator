@@ -1,0 +1,108 @@
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+	<setting propertyKey="@Properties.FieldCount" title="@Strings.FieldCountTitle">
+		<settingConfig type="numeric" min="0" max="3" required="true"/>
+	</setting>
+
+    <setting propertyKey="@Properties.Field1" title="@Strings.DataField1Title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.HeartRate</listEntry>
+			<listEntry value="1">@Strings.Battery</listEntry>
+			<listEntry value="2">@Strings.Notifications</listEntry>
+			<listEntry value="3">@Strings.Calories</listEntry>
+			<listEntry value="4">@Strings.Distance</listEntry>
+			<listEntry value="5">@Strings.Alarms</listEntry>
+			<listEntry value="6">@Strings.Altitude</listEntry>
+			<listEntry value="8">@Strings.Pressure</listEntry>
+			<listEntry value="7">@Strings.Temperature</listEntry>
+			<listEntry value="10">@Strings.Sunrise</listEntry>
+			<listEntry value="11">@Strings.Sunset</listEntry>
+			<listEntry value="9">@Strings.Humidity</listEntry>
+			<listEntry value="13">@Strings.WeatherTemperature</listEntry>
+		</settingConfig>
+	</setting>
+
+
+    <setting propertyKey="@Properties.Field2" title="@Strings.DataField2Title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.HeartRate</listEntry>
+			<listEntry value="1">@Strings.Battery</listEntry>
+			<listEntry value="2">@Strings.Notifications</listEntry>
+			<listEntry value="3">@Strings.Calories</listEntry>
+			<listEntry value="4">@Strings.Distance</listEntry>
+			<listEntry value="5">@Strings.Alarms</listEntry>
+			<listEntry value="6">@Strings.Altitude</listEntry>
+			<listEntry value="8">@Strings.Pressure</listEntry>
+			<listEntry value="7">@Strings.Temperature</listEntry>
+			<listEntry value="10">@Strings.Sunrise</listEntry>
+			<listEntry value="11">@Strings.Sunset</listEntry>
+			<listEntry value="9">@Strings.Humidity</listEntry>
+			<listEntry value="13">@Strings.WeatherTemperature</listEntry>
+		</settingConfig>
+	</setting>
+
+    
+    <setting propertyKey="@Properties.Field3" title="@Strings.DataField3Title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.HeartRate</listEntry>
+			<listEntry value="1">@Strings.Battery</listEntry>
+			<listEntry value="2">@Strings.Notifications</listEntry>
+			<listEntry value="3">@Strings.Calories</listEntry>
+			<listEntry value="4">@Strings.Distance</listEntry>
+			<listEntry value="5">@Strings.Alarms</listEntry>
+			<listEntry value="6">@Strings.Altitude</listEntry>
+			<listEntry value="8">@Strings.Pressure</listEntry>
+			<listEntry value="7">@Strings.Temperature</listEntry>
+			<listEntry value="10">@Strings.Sunrise</listEntry>
+			<listEntry value="11">@Strings.Sunset</listEntry>
+			<listEntry value="9">@Strings.Humidity</listEntry>
+			<listEntry value="13">@Strings.WeatherTemperature</listEntry>
+		</settingConfig>
+	</setting>
+
+    <setting propertyKey="@Properties.FieldMiddleCount" title="@Strings.FieldCountMiddleTitle">
+		<settingConfig type="numeric" min="0" max="2" required="true"/>
+	</setting>
+
+    <setting propertyKey="@Properties.FieldMiddle1" title="@Strings.DataFieldMiddle1Title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.HeartRate</listEntry>
+			<listEntry value="1">@Strings.Battery</listEntry>
+			<listEntry value="2">@Strings.Notifications</listEntry>
+			<listEntry value="3">@Strings.Calories</listEntry>
+			<listEntry value="4">@Strings.Distance</listEntry>
+			<listEntry value="5">@Strings.Alarms</listEntry>
+			<listEntry value="6">@Strings.Altitude</listEntry>
+			<listEntry value="8">@Strings.Pressure</listEntry>
+			<listEntry value="7">@Strings.Temperature</listEntry>
+			<listEntry value="10">@Strings.Sunrise</listEntry>
+			<listEntry value="11">@Strings.Sunset</listEntry>
+			<listEntry value="9">@Strings.Humidity</listEntry>
+			<listEntry value="13">@Strings.WeatherTemperature</listEntry>
+		</settingConfig>
+	</setting>
+
+    <setting propertyKey="@Properties.FieldBottomCount" title="@Strings.FieldCountBottomTitle">
+		<settingConfig type="numeric" min="0" max="1" required="true"/>
+	</setting>
+
+    <setting propertyKey="@Properties.FieldBottom1" title="@Strings.DataFieldBottom1Title">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.HeartRate</listEntry>
+			<listEntry value="12">@Strings.BatteryNoIcon</listEntry>
+			<listEntry value="1">@Strings.Battery</listEntry>
+			<listEntry value="2">@Strings.Notifications</listEntry>
+			<listEntry value="3">@Strings.Calories</listEntry>
+			<listEntry value="4">@Strings.Distance</listEntry>
+			<listEntry value="5">@Strings.Alarms</listEntry>
+			<listEntry value="6">@Strings.Altitude</listEntry>
+			<listEntry value="8">@Strings.Pressure</listEntry>
+			<listEntry value="7">@Strings.Temperature</listEntry>
+			<listEntry value="10">@Strings.Sunrise</listEntry>
+			<listEntry value="11">@Strings.Sunset</listEntry>
+			<listEntry value="9">@Strings.Humidity</listEntry>
+			<listEntry value="13">@Strings.WeatherTemperature</listEntry>
+		</settingConfig>
+	</setting>
+
+</settings>

@@ -1,0 +1,2023 @@
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Fonts,12,11,16]; ]
+    module Fonts {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; @symbol_vardef = [worldMap,13,27,35]; @symbol_type<0> = [ResourceId,13,39,49]; ]
+        var worldMap as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [garmin_icons,14,27,39]; @symbol_type<0> = [ResourceId,14,43,53]; ]
+        var garmin_icons as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [text,15,27,31]; @symbol_type<0> = [ResourceId,15,35,45]; ]
+        var text as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; @symbol_vardef = [text_medium,16,27,38]; @symbol_type<0> = [ResourceId,16,42,52]; ]
+        var text_medium as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; @symbol_vardef = [text_big,17,27,35]; @symbol_type<0> = [ResourceId,17,39,49]; ]
+        var text_big as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; @symbol_vardef = [dial,18,27,31]; @symbol_type<0> = [ResourceId,18,35,45]; ]
+        var dial as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; @symbol_vardef = [hour_0_29,19,27,36]; @symbol_type<0> = [ResourceId,19,40,50]; ]
+        var hour_0_29 as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; @symbol_vardef = [hour_30_59,20,27,37]; @symbol_type<0> = [ResourceId,20,41,51]; ]
+        var hour_30_59 as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; @symbol_vardef = [minute_0_29,21,27,38]; @symbol_type<0> = [ResourceId,21,42,52]; ]
+        var minute_0_29 as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 22; @position = 27; initialized = true; @symbol_vardef = [minute_30_59,22,27,39]; @symbol_type<0> = [ResourceId,22,43,53]; ]
+        var minute_30_59 as ResourceId;
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 25; @symbol_moduledef = [JsonData,25,11,19]; ]
+    module JsonData {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 25; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; @symbol_vardef = [worldMapJson,26,27,39]; @symbol_type<0> = [ResourceId,26,43,53]; ]
+        var worldMapJson as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [dialJson,27,27,35]; @symbol_type<0> = [ResourceId,27,39,49]; ]
+        var dialJson as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; @symbol_vardef = [worldMaminute_0_29Json,28,27,49]; @symbol_type<0> = [ResourceId,28,53,63]; ]
+        var worldMaminute_0_29Json as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [worldMaminute_30_59Json,29,27,50]; @symbol_type<0> = [ResourceId,29,54,64]; ]
+        var worldMaminute_30_59Json as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [hour_0_29Json,30,27,40]; @symbol_type<0> = [ResourceId,30,44,54]; ]
+        var hour_0_29Json as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [hour_30_59Json,31,27,41]; @symbol_type<0> = [ResourceId,31,45,55]; ]
+        var hour_30_59Json as ResourceId;
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 34; @symbol_moduledef = [Layouts,34,11,18]; ]
+    module Layouts {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 34; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 35; @symbol_functiondef = [WatchFace,35,17,26]; @symbol_param<0> = [dc,35,27,29]; @symbol_param<0>_type<0> = [Graphics,35,33,41]; @symbol_param<0>_type<1> = [Dc,35,42,44]; @symbol_return<0> = [Array,35,49,54]; @symbol_return<1> = [WatchUi,35,55,62]; @symbol_return<2> = [Drawable,35,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start:
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 36 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_WorldMapDisplay.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_WorldMapDisplay %rez_cmp_local_custom_drawable_WorldMapDisplay.1 36 16 61 ];
+            symbol [ WorldMap %tmp.4 36 68 76 ];
+            %tmp.4 = getv ? :WorldMap;
+            %tmp.5 = newd 5;
+            %tmp.7 = const :positionY;
+            symbol [ positionY %tmp.7 36 79 88 const ];
+            %tmp.8 = 30;
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :identifier;
+            symbol [ identifier %tmp.12 36 95 105 const ];
+            %tmp.13 = "WorldMapDisplay";
+            %tmp.14 = dup %tmp.10;
+            %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
+            %tmp.17 = const :width;
+            symbol [ width %tmp.17 36 127 132 const ];
+            %tmp.18 = 140;
+            %tmp.19 = dup %tmp.15;
+            %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+            %tmp.22 = const :height;
+            symbol [ height %tmp.22 36 140 146 const ];
+            %tmp.23 = 60;
+            %tmp.24 = dup %tmp.20;
+            %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+            %tmp.27 = const :positionX;
+            symbol [ positionX %tmp.27 36 153 162 const ];
+            %tmp.28 = 200;
+            %tmp.29 = dup %tmp.25;
+            %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+            %tmp.1 = newc %tmp.4 (%tmp.30);
+            lputv %rez_cmp_local_custom_drawable_WorldMapDisplay.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_WorldMapDisplay %rez_cmp_local_custom_drawable_WorldMapDisplay.1 36 16 61 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 38 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_AnalogueDisplay.2 = local;
+            symbol [ rez_cmp_local_custom_drawable_AnalogueDisplay %rez_cmp_local_custom_drawable_AnalogueDisplay.2 38 16 61 ];
+            symbol [ Analogue %tmp.34 38 68 76 ];
+            %tmp.34 = getv ? :Analogue;
+            %tmp.35 = newd 3;
+            %tmp.37 = const :positionY;
+            symbol [ positionY %tmp.37 38 79 88 const ];
+            %tmp.38 = 30;
+            %tmp.39 = dup %tmp.35;
+            %tmp.40 = aputv %tmp.39 %tmp.37 %tmp.38;
+            %tmp.42 = const :identifier;
+            symbol [ identifier %tmp.42 38 95 105 const ];
+            %tmp.43 = "AnalogueDisplay";
+            %tmp.44 = dup %tmp.40;
+            %tmp.45 = aputv %tmp.44 %tmp.42 %tmp.43;
+            %tmp.47 = const :positionX;
+            symbol [ positionX %tmp.47 38 127 136 const ];
+            %tmp.48 = 70;
+            %tmp.49 = dup %tmp.45;
+            %tmp.50 = aputv %tmp.49 %tmp.47 %tmp.48;
+            %tmp.31 = newc %tmp.34 (%tmp.50);
+            lputv %rez_cmp_local_custom_drawable_AnalogueDisplay.2 %tmp.31;
+            symbol [ rez_cmp_local_custom_drawable_AnalogueDisplay %rez_cmp_local_custom_drawable_AnalogueDisplay.2 38 16 61 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 40 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_DateFieldDisplay.3 = local;
+            symbol [ rez_cmp_local_custom_drawable_DateFieldDisplay %rez_cmp_local_custom_drawable_DateFieldDisplay.3 40 16 62 ];
+            symbol [ DateField %tmp.54 40 69 78 ];
+            %tmp.54 = getv ? :DateField;
+            %tmp.55 = newd 3;
+            %tmp.57 = const :positionY;
+            symbol [ positionY %tmp.57 40 81 90 const ];
+            %tmp.58 = 105;
+            %tmp.59 = dup %tmp.55;
+            %tmp.60 = aputv %tmp.59 %tmp.57 %tmp.58;
+            %tmp.62 = const :identifier;
+            symbol [ identifier %tmp.62 40 98 108 const ];
+            %tmp.63 = "DateFieldDisplay";
+            %tmp.64 = dup %tmp.60;
+            %tmp.65 = aputv %tmp.64 %tmp.62 %tmp.63;
+            %tmp.67 = const :positionX;
+            symbol [ positionX %tmp.67 40 131 140 const ];
+            %tmp.68 = 195;
+            %tmp.69 = dup %tmp.65;
+            %tmp.70 = aputv %tmp.69 %tmp.67 %tmp.68;
+            %tmp.51 = newc %tmp.54 (%tmp.70);
+            lputv %rez_cmp_local_custom_drawable_DateFieldDisplay.3 %tmp.51;
+            symbol [ rez_cmp_local_custom_drawable_DateFieldDisplay %rez_cmp_local_custom_drawable_DateFieldDisplay.3 40 16 62 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 42 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_TimeFieldDisplay.4 = local;
+            symbol [ rez_cmp_local_custom_drawable_TimeFieldDisplay %rez_cmp_local_custom_drawable_TimeFieldDisplay.4 42 16 62 ];
+            symbol [ TimeField %tmp.74 42 69 78 ];
+            %tmp.74 = getv ? :TimeField;
+            %tmp.75 = newd 3;
+            %tmp.77 = const :positionY;
+            symbol [ positionY %tmp.77 42 81 90 const ];
+            %tmp.78 = 220;
+            %tmp.79 = dup %tmp.75;
+            %tmp.80 = aputv %tmp.79 %tmp.77 %tmp.78;
+            %tmp.82 = const :identifier;
+            symbol [ identifier %tmp.82 42 98 108 const ];
+            %tmp.83 = "TimeFieldDisplay";
+            %tmp.84 = dup %tmp.80;
+            %tmp.85 = aputv %tmp.84 %tmp.82 %tmp.83;
+            %tmp.87 = const :positionX;
+            symbol [ positionX %tmp.87 42 131 140 const ];
+            %tmp.88 = 25;
+            %tmp.89 = dup %tmp.85;
+            %tmp.90 = aputv %tmp.89 %tmp.87 %tmp.88;
+            %tmp.71 = newc %tmp.74 (%tmp.90);
+            lputv %rez_cmp_local_custom_drawable_TimeFieldDisplay.4 %tmp.71;
+            symbol [ rez_cmp_local_custom_drawable_TimeFieldDisplay %rez_cmp_local_custom_drawable_TimeFieldDisplay.4 42 16 62 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 44 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_MoveBarDisplay.5 = local;
+            symbol [ rez_cmp_local_custom_drawable_MoveBarDisplay %rez_cmp_local_custom_drawable_MoveBarDisplay.5 44 16 60 ];
+            symbol [ MoveBar %tmp.94 44 67 74 ];
+            %tmp.94 = getv ? :MoveBar;
+            %tmp.95 = newd 6;
+            %tmp.97 = const :identifier;
+            symbol [ identifier %tmp.97 44 77 87 const ];
+            %tmp.98 = "MoveBarDisplay";
+            %tmp.99 = dup %tmp.95;
+            %tmp.100 = aputv %tmp.99 %tmp.97 %tmp.98;
+            %tmp.102 = const :width;
+            symbol [ width %tmp.102 44 108 113 const ];
+            %tmp.103 = 205;
+            %tmp.104 = dup %tmp.100;
+            %tmp.105 = aputv %tmp.104 %tmp.102 %tmp.103;
+            %tmp.107 = const :x;
+            symbol [ x %tmp.107 44 121 122 const ];
+            %tmp.108 = 197;
+            %tmp.109 = dup %tmp.105;
+            %tmp.110 = aputv %tmp.109 %tmp.107 %tmp.108;
+            %tmp.112 = const :y;
+            symbol [ y %tmp.112 44 130 131 const ];
+            %tmp.113 = 140;
+            %tmp.114 = dup %tmp.110;
+            %tmp.115 = aputv %tmp.114 %tmp.112 %tmp.113;
+            %tmp.117 = const :separator;
+            symbol [ separator %tmp.117 44 139 148 const ];
+            %tmp.118 = 4;
+            %tmp.119 = dup %tmp.115;
+            %tmp.120 = aputv %tmp.119 %tmp.117 %tmp.118;
+            %tmp.122 = const :height;
+            symbol [ height %tmp.122 44 154 160 const ];
+            %tmp.123 = 12;
+            %tmp.124 = dup %tmp.120;
+            %tmp.125 = aputv %tmp.124 %tmp.122 %tmp.123;
+            %tmp.91 = newc %tmp.94 (%tmp.125);
+            lputv %rez_cmp_local_custom_drawable_MoveBarDisplay.5 %tmp.91;
+            symbol [ rez_cmp_local_custom_drawable_MoveBarDisplay %rez_cmp_local_custom_drawable_MoveBarDisplay.5 44 16 60 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 46 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_GoalMeterDisplay.6 = local;
+            symbol [ rez_cmp_local_custom_drawable_GoalMeterDisplay %rez_cmp_local_custom_drawable_GoalMeterDisplay.6 46 16 62 ];
+            symbol [ GoalMeter %tmp.129 46 69 78 ];
+            %tmp.129 = getv ? :GoalMeter;
+            %tmp.130 = newd 7;
+            %tmp.132 = const :positionY;
+            symbol [ positionY %tmp.132 46 81 90 const ];
+            %tmp.133 = 160;
+            %tmp.134 = dup %tmp.130;
+            %tmp.135 = aputv %tmp.134 %tmp.132 %tmp.133;
+            %tmp.137 = const :identifier;
+            symbol [ identifier %tmp.137 46 98 108 const ];
+            %tmp.138 = "GoalMeterDisplay";
+            %tmp.139 = dup %tmp.135;
+            %tmp.140 = aputv %tmp.139 %tmp.137 %tmp.138;
+            %tmp.142 = const :gap;
+            symbol [ gap %tmp.142 46 131 134 const ];
+            %tmp.143 = 8;
+            %tmp.144 = dup %tmp.140;
+            %tmp.145 = aputv %tmp.144 %tmp.142 %tmp.143;
+            %tmp.147 = const :width;
+            symbol [ width %tmp.147 46 140 145 const ];
+            %tmp.148 = 395;
+            %tmp.149 = dup %tmp.145;
+            %tmp.150 = aputv %tmp.149 %tmp.147 %tmp.148;
+            %tmp.152 = const :separator;
+            symbol [ separator %tmp.152 46 153 162 const ];
+            %tmp.153 = 4;
+            %tmp.154 = dup %tmp.150;
+            %tmp.155 = aputv %tmp.154 %tmp.152 %tmp.153;
+            %tmp.157 = const :height;
+            symbol [ height %tmp.157 46 168 174 const ];
+            %tmp.158 = 12;
+            %tmp.159 = dup %tmp.155;
+            %tmp.160 = aputv %tmp.159 %tmp.157 %tmp.158;
+            %tmp.162 = const :positionX;
+            symbol [ positionX %tmp.162 46 181 190 const ];
+            %tmp.163 = 5;
+            %tmp.164 = dup %tmp.160;
+            %tmp.165 = aputv %tmp.164 %tmp.162 %tmp.163;
+            %tmp.126 = newc %tmp.129 (%tmp.165);
+            lputv %rez_cmp_local_custom_drawable_GoalMeterDisplay.6 %tmp.126;
+            symbol [ rez_cmp_local_custom_drawable_GoalMeterDisplay %rez_cmp_local_custom_drawable_GoalMeterDisplay.6 46 16 62 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 48 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_DataFieldsDisplay.7 = local;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsDisplay %rez_cmp_local_custom_drawable_DataFieldsDisplay.7 48 16 63 ];
+            symbol [ DataFields %tmp.169 48 70 80 ];
+            %tmp.169 = getv ? :DataFields;
+            %tmp.170 = newd 6;
+            %tmp.172 = const :identifier;
+            symbol [ identifier %tmp.172 48 83 93 const ];
+            %tmp.173 = "DataFieldsDisplay";
+            %tmp.174 = dup %tmp.170;
+            %tmp.175 = aputv %tmp.174 %tmp.172 %tmp.173;
+            %tmp.177 = const :fieldPosition;
+            symbol [ fieldPosition %tmp.177 48 117 130 const ];
+            %tmp.179 = const :upper;
+            symbol [ upper %tmp.179 48 133 138 const ];
+            %tmp.180 = dup %tmp.175;
+            %tmp.181 = aputv %tmp.180 %tmp.177 %tmp.179;
+            %tmp.183 = const :top;
+            symbol [ top %tmp.183 48 141 144 const ];
+            %tmp.184 = 185;
+            %tmp.185 = dup %tmp.181;
+            %tmp.186 = aputv %tmp.185 %tmp.183 %tmp.184;
+            %tmp.188 = const :left;
+            symbol [ left %tmp.188 48 152 156 const ];
+            %tmp.189 = 60;
+            %tmp.190 = dup %tmp.186;
+            %tmp.191 = aputv %tmp.190 %tmp.188 %tmp.189;
+            %tmp.193 = const :bottom;
+            symbol [ bottom %tmp.193 48 163 169 const ];
+            %tmp.194 = 200;
+            %tmp.195 = dup %tmp.191;
+            %tmp.196 = aputv %tmp.195 %tmp.193 %tmp.194;
+            %tmp.198 = const :right;
+            symbol [ right %tmp.198 48 177 182 const ];
+            %tmp.199 = 305;
+            %tmp.200 = dup %tmp.196;
+            %tmp.201 = aputv %tmp.200 %tmp.198 %tmp.199;
+            %tmp.166 = newc %tmp.169 (%tmp.201);
+            lputv %rez_cmp_local_custom_drawable_DataFieldsDisplay.7 %tmp.166;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsDisplay %rez_cmp_local_custom_drawable_DataFieldsDisplay.7 48 16 63 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 50 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay.8 = local;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay %rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay.8 50 16 69 ];
+            symbol [ DataFields %tmp.205 50 76 86 ];
+            %tmp.205 = getv ? :DataFields;
+            %tmp.206 = newd 6;
+            %tmp.208 = const :identifier;
+            symbol [ identifier %tmp.208 50 89 99 const ];
+            %tmp.209 = "DataFieldsMiddleDisplay";
+            %tmp.210 = dup %tmp.206;
+            %tmp.211 = aputv %tmp.210 %tmp.208 %tmp.209;
+            %tmp.213 = const :fieldPosition;
+            symbol [ fieldPosition %tmp.213 50 129 142 const ];
+            %tmp.215 = const :middle;
+            symbol [ middle %tmp.215 50 145 151 const ];
+            %tmp.216 = dup %tmp.211;
+            %tmp.217 = aputv %tmp.216 %tmp.213 %tmp.215;
+            %tmp.219 = const :top;
+            symbol [ top %tmp.219 50 154 157 const ];
+            %tmp.220 = 310;
+            %tmp.221 = dup %tmp.217;
+            %tmp.222 = aputv %tmp.221 %tmp.219 %tmp.220;
+            %tmp.224 = const :left;
+            symbol [ left %tmp.224 50 165 169 const ];
+            %tmp.225 = 50;
+            %tmp.226 = dup %tmp.222;
+            %tmp.227 = aputv %tmp.226 %tmp.224 %tmp.225;
+            %tmp.229 = const :bottom;
+            symbol [ bottom %tmp.229 50 176 182 const ];
+            %tmp.230 = 320;
+            %tmp.231 = dup %tmp.227;
+            %tmp.232 = aputv %tmp.231 %tmp.229 %tmp.230;
+            %tmp.234 = const :right;
+            symbol [ right %tmp.234 50 190 195 const ];
+            %tmp.235 = 300;
+            %tmp.236 = dup %tmp.232;
+            %tmp.237 = aputv %tmp.236 %tmp.234 %tmp.235;
+            %tmp.202 = newc %tmp.205 (%tmp.237);
+            lputv %rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay.8 %tmp.202;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay %rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay.8 50 16 69 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 52 12 ]
+            [ "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_start" "c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop" ]
+            %rez_cmp_local_custom_drawable_DataFieldsBottomDisplay.9 = local;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsBottomDisplay %rez_cmp_local_custom_drawable_DataFieldsBottomDisplay.9 52 16 69 ];
+            symbol [ DataFields %tmp.241 52 76 86 ];
+            %tmp.241 = getv ? :DataFields;
+            %tmp.242 = newd 6;
+            %tmp.244 = const :identifier;
+            symbol [ identifier %tmp.244 52 89 99 const ];
+            %tmp.245 = "DataFieldsBottomDisplay";
+            %tmp.246 = dup %tmp.242;
+            %tmp.247 = aputv %tmp.246 %tmp.244 %tmp.245;
+            %tmp.249 = const :fieldPosition;
+            symbol [ fieldPosition %tmp.249 52 129 142 const ];
+            %tmp.251 = const :lower;
+            symbol [ lower %tmp.251 52 145 150 const ];
+            %tmp.252 = dup %tmp.247;
+            %tmp.253 = aputv %tmp.252 %tmp.249 %tmp.251;
+            %tmp.255 = const :top;
+            symbol [ top %tmp.255 52 153 156 const ];
+            %tmp.256 = 390;
+            %tmp.257 = dup %tmp.253;
+            %tmp.258 = aputv %tmp.257 %tmp.255 %tmp.256;
+            %tmp.260 = const :left;
+            symbol [ left %tmp.260 52 164 168 const ];
+            %tmp.261 = 0;
+            %tmp.262 = dup %tmp.258;
+            %tmp.263 = aputv %tmp.262 %tmp.260 %tmp.261;
+            %tmp.265 = const :bottom;
+            symbol [ bottom %tmp.265 52 174 180 const ];
+            %tmp.266 = 410;
+            %tmp.267 = dup %tmp.263;
+            %tmp.268 = aputv %tmp.267 %tmp.265 %tmp.266;
+            %tmp.270 = const :right;
+            symbol [ right %tmp.270 52 188 193 const ];
+            %tmp.271 = 380;
+            %tmp.272 = dup %tmp.268;
+            %tmp.273 = aputv %tmp.272 %tmp.270 %tmp.271;
+            %tmp.238 = newc %tmp.241 (%tmp.273);
+            lputv %rez_cmp_local_custom_drawable_DataFieldsBottomDisplay.9 %tmp.238;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsBottomDisplay %rez_cmp_local_custom_drawable_DataFieldsBottomDisplay.9 52 16 69 ];
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 54 12 ]
+            %tmp.274 = newa 9 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.274 54 466 471 ];
+            symbol [ WatchUi %tmp.274 54 472 479 ];
+            symbol [ Drawable %tmp.274 54 480 488 ];
+            %tmp.275 = lgetv %rez_cmp_local_custom_drawable_WorldMapDisplay.1;
+            symbol [ rez_cmp_local_custom_drawable_WorldMapDisplay %tmp.275 54 20 65 ];
+            %tmp.276 = dup %tmp.274;
+            %tmp.277 = aputv %tmp.276 0 %tmp.275;
+            %tmp.278 = lgetv %rez_cmp_local_custom_drawable_AnalogueDisplay.2;
+            symbol [ rez_cmp_local_custom_drawable_AnalogueDisplay %tmp.278 54 67 112 ];
+            %tmp.279 = dup %tmp.277;
+            %tmp.280 = aputv %tmp.279 1 %tmp.278;
+            %tmp.281 = lgetv %rez_cmp_local_custom_drawable_DateFieldDisplay.3;
+            symbol [ rez_cmp_local_custom_drawable_DateFieldDisplay %tmp.281 54 114 160 ];
+            %tmp.282 = dup %tmp.280;
+            %tmp.283 = aputv %tmp.282 2 %tmp.281;
+            %tmp.284 = lgetv %rez_cmp_local_custom_drawable_TimeFieldDisplay.4;
+            symbol [ rez_cmp_local_custom_drawable_TimeFieldDisplay %tmp.284 54 162 208 ];
+            %tmp.285 = dup %tmp.283;
+            %tmp.286 = aputv %tmp.285 3 %tmp.284;
+            %tmp.287 = lgetv %rez_cmp_local_custom_drawable_MoveBarDisplay.5;
+            symbol [ rez_cmp_local_custom_drawable_MoveBarDisplay %tmp.287 54 210 254 ];
+            %tmp.288 = dup %tmp.286;
+            %tmp.289 = aputv %tmp.288 4 %tmp.287;
+            %tmp.290 = lgetv %rez_cmp_local_custom_drawable_GoalMeterDisplay.6;
+            symbol [ rez_cmp_local_custom_drawable_GoalMeterDisplay %tmp.290 54 256 302 ];
+            %tmp.291 = dup %tmp.289;
+            %tmp.292 = aputv %tmp.291 5 %tmp.290;
+            %tmp.293 = lgetv %rez_cmp_local_custom_drawable_DataFieldsDisplay.7;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsDisplay %tmp.293 54 304 351 ];
+            %tmp.294 = dup %tmp.292;
+            %tmp.295 = aputv %tmp.294 6 %tmp.293;
+            %tmp.296 = lgetv %rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay.8;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsMiddleDisplay %tmp.296 54 353 406 ];
+            %tmp.297 = dup %tmp.295;
+            %tmp.298 = aputv %tmp.297 7 %tmp.296;
+            %tmp.299 = lgetv %rez_cmp_local_custom_drawable_DataFieldsBottomDisplay.9;
+            symbol [ rez_cmp_local_custom_drawable_DataFieldsBottomDisplay %tmp.299 54 408 461 ];
+            %tmp.300 = dup %tmp.298;
+            %tmp.301 = aputv %tmp.300 8 %tmp.299;
+            ret %tmp.301;
+c__Users_mirka_Vs_projects_Casio_bin_gen_006_B3703_00_source_Rez_mcgen_35_73_55_8_stop:
+        }
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 58; @symbol_moduledef = [Strings,58,11,18]; ]
+    module Strings {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 58; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 59; @position = 27; initialized = true; @symbol_vardef = [ColorBlue,59,27,36]; @symbol_type<0> = [ResourceId,59,40,50]; ]
+        var ColorBlue as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 60; @position = 27; initialized = true; @symbol_vardef = [HeartRate,60,27,36]; @symbol_type<0> = [ResourceId,60,40,50]; ]
+        var HeartRate as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 61; @position = 27; initialized = true; @symbol_vardef = [Temperature,61,27,38]; @symbol_type<0> = [ResourceId,61,42,52]; ]
+        var Temperature as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 62; @position = 27; initialized = true; @symbol_vardef = [BackgroundColorTitle,62,27,47]; @symbol_type<0> = [ResourceId,62,51,61]; ]
+        var BackgroundColorTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 63; @position = 27; initialized = true; @symbol_vardef = [WeatherTemperature,63,27,45]; @symbol_type<0> = [ResourceId,63,49,59]; ]
+        var WeatherTemperature as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 64; @position = 27; initialized = true; @symbol_vardef = [AppName,64,27,34]; @symbol_type<0> = [ResourceId,64,38,48]; ]
+        var AppName as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 65; @position = 27; initialized = true; @symbol_vardef = [ColorRed,65,27,35]; @symbol_type<0> = [ResourceId,65,39,49]; ]
+        var ColorRed as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 66; @position = 27; initialized = true; @symbol_vardef = [FieldCountBottomTitle,66,27,48]; @symbol_type<0> = [ResourceId,66,52,62]; ]
+        var FieldCountBottomTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 67; @position = 27; initialized = true; @symbol_vardef = [SunriseSunset,67,27,40]; @symbol_type<0> = [ResourceId,67,44,54]; ]
+        var SunriseSunset as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 68; @position = 27; initialized = true; @symbol_vardef = [BatteryNoIcon,68,27,40]; @symbol_type<0> = [ResourceId,68,44,54]; ]
+        var BatteryNoIcon as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; @symbol_vardef = [Battery,69,27,34]; @symbol_type<0> = [ResourceId,69,38,48]; ]
+        var Battery as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; @symbol_vardef = [Humidity,70,27,35]; @symbol_type<0> = [ResourceId,70,39,49]; ]
+        var Humidity as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 71; @position = 27; initialized = true; @symbol_vardef = [DataField3Title,71,27,42]; @symbol_type<0> = [ResourceId,71,46,56]; ]
+        var DataField3Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 72; @position = 27; initialized = true; @symbol_vardef = [ColorWhite,72,27,37]; @symbol_type<0> = [ResourceId,72,41,51]; ]
+        var ColorWhite as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 73; @position = 27; initialized = true; @symbol_vardef = [DataFieldMiddle1Title,73,27,48]; @symbol_type<0> = [ResourceId,73,52,62]; ]
+        var DataFieldMiddle1Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 74; @position = 27; initialized = true; @symbol_vardef = [Distance,74,27,35]; @symbol_type<0> = [ResourceId,74,39,49]; ]
+        var Distance as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 75; @position = 27; initialized = true; @symbol_vardef = [FieldCountMiddleTitle,75,27,48]; @symbol_type<0> = [ResourceId,75,52,62]; ]
+        var FieldCountMiddleTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 76; @position = 27; initialized = true; @symbol_vardef = [DataFieldBottom1Title,76,27,48]; @symbol_type<0> = [ResourceId,76,52,62]; ]
+        var DataFieldBottom1Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 77; @position = 27; initialized = true; @symbol_vardef = [ColorLightGray,77,27,41]; @symbol_type<0> = [ResourceId,77,45,55]; ]
+        var ColorLightGray as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 78; @position = 27; initialized = true; @symbol_vardef = [ColorDarkGray,78,27,40]; @symbol_type<0> = [ResourceId,78,44,54]; ]
+        var ColorDarkGray as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 79; @position = 27; initialized = true; @symbol_vardef = [MilitaryFormatTitle,79,27,46]; @symbol_type<0> = [ResourceId,79,50,60]; ]
+        var MilitaryFormatTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 80; @position = 27; initialized = true; @symbol_vardef = [ColorBlack,80,27,37]; @symbol_type<0> = [ResourceId,80,41,51]; ]
+        var ColorBlack as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 81; @position = 27; initialized = true; @symbol_vardef = [Alarms,81,27,33]; @symbol_type<0> = [ResourceId,81,37,47]; ]
+        var Alarms as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 82; @position = 27; initialized = true; @symbol_vardef = [FieldCountTitle,82,27,42]; @symbol_type<0> = [ResourceId,82,46,56]; ]
+        var FieldCountTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 83; @position = 27; initialized = true; @symbol_vardef = [Pressure,83,27,35]; @symbol_type<0> = [ResourceId,83,39,49]; ]
+        var Pressure as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 84; @position = 27; initialized = true; @symbol_vardef = [DataFieldMiddle2Title,84,27,48]; @symbol_type<0> = [ResourceId,84,52,62]; ]
+        var DataFieldMiddle2Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 85; @position = 27; initialized = true; @symbol_vardef = [Calories,85,27,35]; @symbol_type<0> = [ResourceId,85,39,49]; ]
+        var Calories as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 86; @position = 27; initialized = true; @symbol_vardef = [DataField2Title,86,27,42]; @symbol_type<0> = [ResourceId,86,46,56]; ]
+        var DataField2Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 87; @position = 27; initialized = true; @symbol_vardef = [Weather,87,27,34]; @symbol_type<0> = [ResourceId,87,38,48]; ]
+        var Weather as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 88; @position = 27; initialized = true; @symbol_vardef = [Sunset,88,27,33]; @symbol_type<0> = [ResourceId,88,37,47]; ]
+        var Sunset as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 89; @position = 27; initialized = true; @symbol_vardef = [ForegroundColorTitle,89,27,47]; @symbol_type<0> = [ResourceId,89,51,61]; ]
+        var ForegroundColorTitle as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 90; @position = 27; initialized = true; @symbol_vardef = [DataField1Title,90,27,42]; @symbol_type<0> = [ResourceId,90,46,56]; ]
+        var DataField1Title as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 91; @position = 27; initialized = true; @symbol_vardef = [Sunrise,91,27,34]; @symbol_type<0> = [ResourceId,91,38,48]; ]
+        var Sunrise as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 92; @position = 27; initialized = true; @symbol_vardef = [Notifications,92,27,40]; @symbol_type<0> = [ResourceId,92,44,54]; ]
+        var Notifications as ResourceId;
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 93; @position = 27; initialized = true; @symbol_vardef = [Altitude,93,27,35]; @symbol_type<0> = [ResourceId,93,39,49]; ]
+        var Altitude as ResourceId;
+    }
+    [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 96; @symbol_moduledef = [Styles,96,11,17]; ]
+    module Styles {
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 96; ]
+        <init> {
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 97; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,97,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 97; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 98; @position = 18; @symbol_constdef = [exclude,98,18,25]; @symbol_type<0> = [Boolean,98,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 101; @symbol_moduledef = [system_size__menu_header,101,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 101; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [width,102,18,23]; @symbol_type<0> = [Number,102,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [height,103,18,24]; @symbol_type<0> = [Number,103,28,34]; ]
+            const height as Number = 95;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 106; @symbol_moduledef = [system_loc__hint_button_left_bottom,106,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 106; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [exclude,107,18,25]; @symbol_type<0> = [Boolean,107,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 110; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,110,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 110; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [exclude,111,18,25]; @symbol_type<0> = [Boolean,111,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 114; @symbol_moduledef = [prompt_loc__body_no_title,114,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 114; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 115; @position = 18; @symbol_constdef = [x,115,18,19]; @symbol_type<0> = [Number,115,23,29]; ]
+            const x as Number = 42;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [y,116,18,19]; @symbol_type<0> = [Number,116,23,29]; ]
+            const y as Number = 62;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 119; @symbol_moduledef = [system_icon_dark__about,119,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 119; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 120; @position = 18; @symbol_constdef = [filename,120,18,26]; @symbol_type<0> = [String,120,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__about.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [compress,121,18,26]; @symbol_type<0> = [String,121,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [dithering,122,18,27]; @symbol_type<0> = [String,122,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [automaticPalette,123,18,34]; @symbol_type<0> = [String,123,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 124; @position = 18; @symbol_constdef = [packingFormat,124,18,31]; @symbol_type<0> = [String,124,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 127; @symbol_moduledef = [system_icon_light__question,127,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 127; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [filename,128,18,26]; @symbol_type<0> = [String,128,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__question.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [compress,129,18,26]; @symbol_type<0> = [String,129,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 130; @position = 18; @symbol_constdef = [dithering,130,18,27]; @symbol_type<0> = [String,130,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [automaticPalette,131,18,34]; @symbol_type<0> = [String,131,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 132; @position = 18; @symbol_constdef = [packingFormat,132,18,31]; @symbol_type<0> = [String,132,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 135; @symbol_moduledef = [system_loc__hint_button_left_top,135,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 135; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [exclude,136,18,25]; @symbol_type<0> = [Boolean,136,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 139; @symbol_moduledef = [prompt_font__title,139,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 139; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 140 18 ]
+                symbol [ Graphics %tmp.302 140 34 42 ];
+                %tmp.302 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.303 140 43 62 ];
+                %tmp.303 = getv %tmp.302 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.304 140 63 71 ];
+                %tmp.304 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.305 140 72 92 ];
+                %tmp.305 = getv %tmp.304 :TEXT_JUSTIFY_VCENTER;
+                %tmp.306 = bitor %tmp.303 %tmp.305;
+                putv self :justification %tmp.306;
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 141 18 ]
+                symbol [ Graphics %tmp.307 141 25 33 ];
+                %tmp.307 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.308 141 34 44 ];
+                %tmp.308 = getv %tmp.307 :FONT_XTINY;
+                putv self :font %tmp.308;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 140; @position = 18; @symbol_constdef = [justification,140,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [font,141,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 144; @symbol_moduledef = [system_icon_dark__discard,144,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 144; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [filename,145,18,26]; @symbol_type<0> = [String,145,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__discard.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 146; @position = 18; @symbol_constdef = [compress,146,18,26]; @symbol_type<0> = [String,146,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [dithering,147,18,27]; @symbol_type<0> = [String,147,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 148; @position = 18; @symbol_constdef = [automaticPalette,148,18,34]; @symbol_type<0> = [String,148,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 149; @position = 18; @symbol_constdef = [packingFormat,149,18,31]; @symbol_type<0> = [String,149,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 152; @symbol_moduledef = [system_size__menu_item,152,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 152; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 153; @position = 18; @symbol_constdef = [width,153,18,23]; @symbol_type<0> = [Number,153,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 154; @position = 18; @symbol_constdef = [height,154,18,24]; @symbol_type<0> = [Number,154,28,34]; ]
+            const height as Number = 105;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 157; @symbol_moduledef = [system_color_dark__text,157,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 157; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 159 18 ]
+                symbol [ Graphics %tmp.309 159 31 39 ];
+                %tmp.309 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.310 159 40 57 ];
+                %tmp.310 = getv %tmp.309 :COLOR_TRANSPARENT;
+                putv self :background %tmp.310;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [color,158,18,23]; @symbol_type<0> = [Number,158,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 159; @position = 18; @symbol_constdef = [background,159,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 162; @symbol_moduledef = [system_icon_destructive__discard,162,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 162; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [filename,163,18,26]; @symbol_type<0> = [String,163,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__discard.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [dithering,164,18,27]; @symbol_type<0> = [String,164,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [packingFormat,165,18,31]; @symbol_type<0> = [String,165,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 168; @symbol_moduledef = [system_icon_dark__hint_action_menu,168,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [filename,169,18,26]; @symbol_type<0> = [String,169,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_action_menu.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [dithering,170,18,27]; @symbol_type<0> = [String,170,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [packingFormat,171,18,31]; @symbol_type<0> = [String,171,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 174; @symbol_moduledef = [prompt_size__title,174,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [width,175,18,23]; @symbol_type<0> = [Number,175,27,33]; ]
+            const width as Number = 176;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [height,176,18,24]; @symbol_type<0> = [Number,176,28,34]; ]
+            const height as Number = 75;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 179; @symbol_moduledef = [confirmation_font__body,179,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 179; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 180 18 ]
+                symbol [ Graphics %tmp.311 180 34 42 ];
+                %tmp.311 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.312 180 43 62 ];
+                %tmp.312 = getv %tmp.311 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.313 180 63 71 ];
+                %tmp.313 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.314 180 72 92 ];
+                %tmp.314 = getv %tmp.313 :TEXT_JUSTIFY_VCENTER;
+                %tmp.315 = bitor %tmp.312 %tmp.314;
+                putv self :justification %tmp.315;
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 181 18 ]
+                symbol [ Graphics %tmp.316 181 25 33 ];
+                %tmp.316 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.317 181 34 43 ];
+                %tmp.317 = getv %tmp.316 :FONT_TINY;
+                putv self :font %tmp.317;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [justification,180,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [font,181,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 184; @symbol_moduledef = [system_color_dark__background,184,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 184; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [color,185,18,23]; @symbol_type<0> = [Number,185,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [background,186,18,28]; @symbol_type<0> = [Number,186,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 189; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,189,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 189; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [exclude,190,18,25]; @symbol_type<0> = [Boolean,190,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 193; @symbol_moduledef = [system_size__launch_icon,193,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 193; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [scaleX,194,18,24]; @symbol_type<0> = [Number,194,28,34]; ]
+            const scaleX as Number = 70;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [scaleY,195,18,24]; @symbol_type<0> = [Number,195,28,34]; ]
+            const scaleY as Number = 70;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 196; @position = 18; @symbol_constdef = [scaleRelativeTo,196,18,33]; @symbol_type<0> = [String,196,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 199; @symbol_moduledef = [confirmation_input__confirm,199,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 199; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 200; @position = 18; @symbol_constdef = [y1,200,18,20]; @symbol_type<0> = [Number,200,24,30]; ]
+            const y1 as Number = 322;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [x1,201,18,20]; @symbol_type<0> = [Number,201,24,30]; ]
+            const x1 as Number = 79;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 202; @position = 18; @symbol_constdef = [y2,202,18,20]; @symbol_type<0> = [Number,202,24,30]; ]
+            const y2 as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [x2,203,18,20]; @symbol_type<0> = [Number,203,24,30]; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 206; @symbol_moduledef = [prompt_font__body_with_title,206,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 206; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 207 18 ]
+                symbol [ Graphics %tmp.318 207 34 42 ];
+                %tmp.318 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.319 207 43 62 ];
+                %tmp.319 = getv %tmp.318 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.319;
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 208 18 ]
+                symbol [ Graphics %tmp.320 208 25 33 ];
+                %tmp.320 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.321 208 34 43 ];
+                %tmp.321 = getv %tmp.320 :FONT_TINY;
+                putv self :font %tmp.321;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [justification,207,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [font,208,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 211; @symbol_moduledef = [confirmation_loc__body,211,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 211; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [x,212,18,19]; @symbol_type<0> = [Number,212,23,29]; ]
+            const x as Number = 85;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [y,213,18,19]; @symbol_type<0> = [Number,213,23,29]; ]
+            const y as Number = 83;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 216; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,216,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [exclude,217,18,25]; @symbol_type<0> = [Boolean,217,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 220; @symbol_moduledef = [prompt_color_dark__background,220,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 221; @position = 18; @symbol_constdef = [color,221,18,23]; @symbol_type<0> = [Number,221,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [background,222,18,28]; @symbol_type<0> = [Number,222,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 225; @symbol_moduledef = [system_icon_destructive__hint_action_menu,225,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 226; @position = 18; @symbol_constdef = [filename,226,18,26]; @symbol_type<0> = [String,226,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_action_menu.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [dithering,227,18,27]; @symbol_type<0> = [String,227,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [packingFormat,228,18,31]; @symbol_type<0> = [String,228,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 231; @symbol_moduledef = [system_loc__hint_action_menu,231,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 231; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 232; @position = 18; @symbol_constdef = [x,232,18,19]; @symbol_type<0> = [Number,232,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 233; @position = 18; @symbol_constdef = [horizontalJustification,233,18,41]; @symbol_type<0> = [String,233,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [y,234,18,19]; @symbol_type<0> = [Number,234,23,29]; ]
+            const y as Number = 332;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 237; @symbol_moduledef = [confirmation_icon__hint_confirm,237,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 237; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 238; @position = 18; @symbol_constdef = [filename,238,18,26]; @symbol_type<0> = [String,238,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [dithering,239,18,27]; @symbol_type<0> = [String,239,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [packingFormat,240,18,31]; @symbol_type<0> = [String,240,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 243; @symbol_moduledef = [system_loc__hint_button_left_middle,243,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [exclude,244,18,25]; @symbol_type<0> = [Boolean,244,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 247; @symbol_moduledef = [prompt_size__body_no_title,247,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 247; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [width,248,18,23]; @symbol_type<0> = [Number,248,27,33]; ]
+            const width as Number = 333;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [height,249,18,24]; @symbol_type<0> = [Number,249,28,34]; ]
+            const height as Number = 270;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 252; @symbol_moduledef = [system_icon_light__hint_button_left_top,252,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 252; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 253; @position = 18; @symbol_constdef = [exclude,253,18,25]; @symbol_type<0> = [Boolean,253,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 256; @symbol_moduledef = [prompt_color_light__background,256,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 256; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 257; @position = 18; @symbol_constdef = [color,257,18,23]; @symbol_type<0> = [Number,257,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [background,258,18,28]; @symbol_type<0> = [Number,258,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 261; @symbol_moduledef = [confirmation_input__delete,261,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 261; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 262 18 ]
+                symbol [ WatchUi %tmp.322 262 27 34 ];
+                %tmp.322 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.323 262 35 44 ];
+                %tmp.323 = getv %tmp.322 :KEY_ENTER;
+                putv self :button %tmp.323;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [button,262,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 265; @symbol_moduledef = [system_icon_dark__hint_button_left_top,265,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 265; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 266; @position = 18; @symbol_constdef = [exclude,266,18,25]; @symbol_type<0> = [Boolean,266,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 269; @symbol_moduledef = [system_input__action_menu,269,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 269; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [y1,270,18,20]; @symbol_type<0> = [Number,270,24,30]; ]
+            const y1 as Number = 338;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 271; @position = 18; @symbol_constdef = [x1,271,18,20]; @symbol_type<0> = [Number,271,24,30]; ]
+            const x1 as Number = 0;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 272; @position = 18; @symbol_constdef = [y2,272,18,20]; @symbol_type<0> = [Number,272,24,30]; ]
+            const y2 as Number = 390;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 273; @position = 18; @symbol_constdef = [x2,273,18,20]; @symbol_type<0> = [Number,273,24,30]; ]
+            const x2 as Number = 390;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 276; @symbol_moduledef = [system_icon_light__save,276,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 276; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 277; @position = 18; @symbol_constdef = [filename,277,18,26]; @symbol_type<0> = [String,277,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__save.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 278; @position = 18; @symbol_constdef = [compress,278,18,26]; @symbol_type<0> = [String,278,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [dithering,279,18,27]; @symbol_type<0> = [String,279,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [automaticPalette,280,18,34]; @symbol_type<0> = [String,280,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 281; @position = 18; @symbol_constdef = [packingFormat,281,18,31]; @symbol_type<0> = [String,281,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 284; @symbol_moduledef = [prompt_color_light__body,284,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 284; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 286 18 ]
+                symbol [ Graphics %tmp.324 286 31 39 ];
+                %tmp.324 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.325 286 40 57 ];
+                %tmp.325 = getv %tmp.324 :COLOR_TRANSPARENT;
+                putv self :background %tmp.325;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 285; @position = 18; @symbol_constdef = [color,285,18,23]; @symbol_type<0> = [Number,285,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 286; @position = 18; @symbol_constdef = [background,286,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 289; @symbol_moduledef = [system_loc__subwindow,289,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 289; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 290; @position = 18; @symbol_constdef = [exclude,290,18,25]; @symbol_type<0> = [Boolean,290,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 293; @symbol_moduledef = [system_icon_light__warning,293,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 293; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [filename,294,18,26]; @symbol_type<0> = [String,294,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__warning.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [compress,295,18,26]; @symbol_type<0> = [String,295,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [dithering,296,18,27]; @symbol_type<0> = [String,296,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 297; @position = 18; @symbol_constdef = [automaticPalette,297,18,34]; @symbol_type<0> = [String,297,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 298; @position = 18; @symbol_constdef = [packingFormat,298,18,31]; @symbol_type<0> = [String,298,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 301; @symbol_moduledef = [confirmation_color_light__body,301,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 301; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 303 18 ]
+                symbol [ Graphics %tmp.326 303 31 39 ];
+                %tmp.326 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.327 303 40 57 ];
+                %tmp.327 = getv %tmp.326 :COLOR_TRANSPARENT;
+                putv self :background %tmp.327;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 302; @position = 18; @symbol_constdef = [color,302,18,23]; @symbol_type<0> = [Number,302,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 303; @position = 18; @symbol_constdef = [background,303,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 306; @symbol_moduledef = [confirmation_icon_light__hint_keep,306,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [filename,307,18,26]; @symbol_type<0> = [String,307,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [dithering,308,18,27]; @symbol_type<0> = [String,308,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 309; @position = 18; @symbol_constdef = [packingFormat,309,18,31]; @symbol_type<0> = [String,309,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 312; @symbol_moduledef = [activity_color_light__background,312,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 312; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [color,313,18,23]; @symbol_type<0> = [Number,313,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [background,314,18,28]; @symbol_type<0> = [Number,314,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 317; @symbol_moduledef = [system_icon_positive__hint_button_right_top,317,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 317; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [filename,318,18,26]; @symbol_type<0> = [String,318,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [dithering,319,18,27]; @symbol_type<0> = [String,319,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 320; @position = 18; @symbol_constdef = [packingFormat,320,18,31]; @symbol_type<0> = [String,320,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 323; @symbol_moduledef = [system_size__screen,323,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [width,324,18,23]; @symbol_type<0> = [Number,324,27,33]; ]
+            const width as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [height,325,18,24]; @symbol_type<0> = [Number,325,28,34]; ]
+            const height as Number = 416;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 328; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,328,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 328; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [filename,329,18,26]; @symbol_type<0> = [String,329,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [dithering,330,18,27]; @symbol_type<0> = [String,330,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 331; @position = 18; @symbol_constdef = [packingFormat,331,18,31]; @symbol_type<0> = [String,331,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 334; @symbol_moduledef = [system_color_light__background,334,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 334; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 335; @position = 18; @symbol_constdef = [color,335,18,23]; @symbol_type<0> = [Number,335,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 336; @position = 18; @symbol_constdef = [background,336,18,28]; @symbol_type<0> = [Number,336,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 339; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,339,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 339; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 340; @position = 18; @symbol_constdef = [filename,340,18,26]; @symbol_type<0> = [String,340,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 341; @position = 18; @symbol_constdef = [dithering,341,18,27]; @symbol_type<0> = [String,341,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [packingFormat,342,18,31]; @symbol_type<0> = [String,342,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 345; @symbol_moduledef = [confirmation_loc__hint_confirm,345,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 345; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 346; @position = 18; @symbol_constdef = [x,346,18,19]; @symbol_type<0> = [Number,346,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 347; @position = 18; @symbol_constdef = [horizontalJustification,347,18,41]; @symbol_type<0> = [String,347,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [y,348,18,19]; @symbol_type<0> = [Number,348,23,29]; ]
+            const y as Number = 317;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 351; @symbol_moduledef = [activity_color_dark__text,351,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 351; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 353 18 ]
+                symbol [ Graphics %tmp.328 353 31 39 ];
+                %tmp.328 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.329 353 40 57 ];
+                %tmp.329 = getv %tmp.328 :COLOR_TRANSPARENT;
+                putv self :background %tmp.329;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 352; @position = 18; @symbol_constdef = [color,352,18,23]; @symbol_type<0> = [Number,352,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [background,353,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 356; @symbol_moduledef = [confirmation_input__keep,356,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 356; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 357 18 ]
+                symbol [ WatchUi %tmp.330 357 27 34 ];
+                %tmp.330 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.331 357 35 42 ];
+                %tmp.331 = getv %tmp.330 :KEY_ESC;
+                putv self :button %tmp.331;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [button,357,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 360; @symbol_moduledef = [prompt_loc__body_with_title,360,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 360; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [x,361,18,19]; @symbol_type<0> = [Number,361,23,29]; ]
+            const x as Number = 42;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [y,362,18,19]; @symbol_type<0> = [Number,362,23,29]; ]
+            const y as Number = 104;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 365; @symbol_moduledef = [system_icon_dark__search,365,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [filename,366,18,26]; @symbol_type<0> = [String,366,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__search.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [compress,367,18,26]; @symbol_type<0> = [String,367,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [dithering,368,18,27]; @symbol_type<0> = [String,368,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [automaticPalette,369,18,34]; @symbol_type<0> = [String,369,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 370; @position = 18; @symbol_constdef = [packingFormat,370,18,31]; @symbol_type<0> = [String,370,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 373; @symbol_moduledef = [activity_color_light__text,373,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 373; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 375 18 ]
+                symbol [ Graphics %tmp.332 375 31 39 ];
+                %tmp.332 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.333 375 40 57 ];
+                %tmp.333 = getv %tmp.332 :COLOR_TRANSPARENT;
+                putv self :background %tmp.333;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [color,374,18,23]; @symbol_type<0> = [Number,374,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 375; @position = 18; @symbol_constdef = [background,375,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 378; @symbol_moduledef = [confirmation_icon__hint_keep,378,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 379; @position = 18; @symbol_constdef = [filename,379,18,26]; @symbol_type<0> = [String,379,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 380; @position = 18; @symbol_constdef = [dithering,380,18,27]; @symbol_type<0> = [String,380,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 381; @position = 18; @symbol_constdef = [packingFormat,381,18,31]; @symbol_type<0> = [String,381,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 384; @symbol_moduledef = [system_icon_dark__save,384,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 384; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 385; @position = 18; @symbol_constdef = [filename,385,18,26]; @symbol_type<0> = [String,385,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__save.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [compress,386,18,26]; @symbol_type<0> = [String,386,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [dithering,387,18,27]; @symbol_type<0> = [String,387,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [automaticPalette,388,18,34]; @symbol_type<0> = [String,388,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 389; @position = 18; @symbol_constdef = [packingFormat,389,18,31]; @symbol_type<0> = [String,389,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 392; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,392,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [exclude,393,18,25]; @symbol_type<0> = [Boolean,393,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 396; @symbol_moduledef = [system_icon_light__search,396,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [filename,397,18,26]; @symbol_type<0> = [String,397,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__search.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [compress,398,18,26]; @symbol_type<0> = [String,398,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 399; @position = 18; @symbol_constdef = [dithering,399,18,27]; @symbol_type<0> = [String,399,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 400; @position = 18; @symbol_constdef = [automaticPalette,400,18,34]; @symbol_type<0> = [String,400,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 401; @position = 18; @symbol_constdef = [packingFormat,401,18,31]; @symbol_type<0> = [String,401,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 404; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,404,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 404; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [exclude,405,18,25]; @symbol_type<0> = [Boolean,405,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 408; @symbol_moduledef = [system_icon_positive__hint_button_left_top,408,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [exclude,409,18,25]; @symbol_type<0> = [Boolean,409,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 412; @symbol_moduledef = [system_loc__hint_button_right_bottom,412,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 412; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 413; @position = 18; @symbol_constdef = [x,413,18,19]; @symbol_type<0> = [Number,413,23,29]; ]
+            const x as Number = 332;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [y,414,18,19]; @symbol_type<0> = [Number,414,23,29]; ]
+            const y as Number = 258;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 417; @symbol_moduledef = [confirmation_icon_dark__hint_reject,417,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 417; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [filename,418,18,26]; @symbol_type<0> = [String,418,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [dithering,419,18,27]; @symbol_type<0> = [String,419,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 420; @position = 18; @symbol_constdef = [packingFormat,420,18,31]; @symbol_type<0> = [String,420,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 423; @symbol_moduledef = [confirmation_color_dark__body,423,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 423; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 425 18 ]
+                symbol [ Graphics %tmp.334 425 31 39 ];
+                %tmp.334 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.335 425 40 57 ];
+                %tmp.335 = getv %tmp.334 :COLOR_TRANSPARENT;
+                putv self :background %tmp.335;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [color,424,18,23]; @symbol_type<0> = [Number,424,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [background,425,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 428; @symbol_moduledef = [confirmation_icon_light__hint_confirm,428,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 428; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 429; @position = 18; @symbol_constdef = [filename,429,18,26]; @symbol_type<0> = [String,429,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [dithering,430,18,27]; @symbol_type<0> = [String,430,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [packingFormat,431,18,31]; @symbol_type<0> = [String,431,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 434; @symbol_moduledef = [prompt_color_dark__title,434,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 434; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 436 18 ]
+                symbol [ Graphics %tmp.336 436 31 39 ];
+                %tmp.336 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.337 436 40 57 ];
+                %tmp.337 = getv %tmp.336 :COLOR_TRANSPARENT;
+                putv self :background %tmp.337;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [color,435,18,23]; @symbol_type<0> = [Number,435,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [background,436,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 439; @symbol_moduledef = [system_icon_destructive__cancel,439,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 439; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [filename,440,18,26]; @symbol_type<0> = [String,440,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [dithering,441,18,27]; @symbol_type<0> = [String,441,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [packingFormat,442,18,31]; @symbol_type<0> = [String,442,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 445; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,445,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [dithering,447,18,27]; @symbol_type<0> = [String,447,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [packingFormat,448,18,31]; @symbol_type<0> = [String,448,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 451; @symbol_moduledef = [prompt_loc__title,451,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 452; @position = 18; @symbol_constdef = [x,452,18,19]; @symbol_type<0> = [Number,452,23,29]; ]
+            const x as Number = 120;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [y,453,18,19]; @symbol_type<0> = [Number,453,23,29]; ]
+            const y as Number = 20;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 456; @symbol_moduledef = [confirmation_font_enhanced_readability__body,456,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [exclude,457,18,25]; @symbol_type<0> = [Boolean,457,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 460; @symbol_moduledef = [prompt_color_light__title,460,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 460; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 462 18 ]
+                symbol [ Graphics %tmp.338 462 31 39 ];
+                %tmp.338 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.339 462 40 57 ];
+                %tmp.339 = getv %tmp.338 :COLOR_TRANSPARENT;
+                putv self :background %tmp.339;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [color,461,18,23]; @symbol_type<0> = [Number,461,27,33]; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [background,462,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 465; @symbol_moduledef = [system_icon_dark__hint_button_right_top,465,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [filename,466,18,26]; @symbol_type<0> = [String,466,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [dithering,467,18,27]; @symbol_type<0> = [String,467,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [packingFormat,468,18,31]; @symbol_type<0> = [String,468,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 471; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,471,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 471; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 472; @position = 18; @symbol_constdef = [exclude,472,18,25]; @symbol_type<0> = [Boolean,472,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 475; @symbol_moduledef = [confirmation_icon_dark__hint_keep,475,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 475; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [filename,476,18,26]; @symbol_type<0> = [String,476,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 477; @position = 18; @symbol_constdef = [dithering,477,18,27]; @symbol_type<0> = [String,477,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [packingFormat,478,18,31]; @symbol_type<0> = [String,478,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 481; @symbol_moduledef = [system_icon_light__cancel,481,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 481; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [filename,482,18,26]; @symbol_type<0> = [String,482,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__cancel.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 483; @position = 18; @symbol_constdef = [compress,483,18,26]; @symbol_type<0> = [String,483,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 484; @position = 18; @symbol_constdef = [dithering,484,18,27]; @symbol_type<0> = [String,484,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [automaticPalette,485,18,34]; @symbol_type<0> = [String,485,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [packingFormat,486,18,31]; @symbol_type<0> = [String,486,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 489; @symbol_moduledef = [confirmation_icon_light__hint_reject,489,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [filename,490,18,26]; @symbol_type<0> = [String,490,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [dithering,491,18,27]; @symbol_type<0> = [String,491,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [packingFormat,492,18,31]; @symbol_type<0> = [String,492,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 495; @symbol_moduledef = [system_icon_light__about,495,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [filename,496,18,26]; @symbol_type<0> = [String,496,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__about.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [compress,497,18,26]; @symbol_type<0> = [String,497,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 498; @position = 18; @symbol_constdef = [dithering,498,18,27]; @symbol_type<0> = [String,498,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [automaticPalette,499,18,34]; @symbol_type<0> = [String,499,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 500; @position = 18; @symbol_constdef = [packingFormat,500,18,31]; @symbol_type<0> = [String,500,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 503; @symbol_moduledef = [system_size__toast_icon,503,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 503; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [scaleX,504,18,24]; @symbol_type<0> = [Number,504,28,34]; ]
+            const scaleX as Number = 56;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [scaleY,505,18,24]; @symbol_type<0> = [Number,505,28,34]; ]
+            const scaleY as Number = 56;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [scaleRelativeTo,506,18,33]; @symbol_type<0> = [String,506,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 509; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,509,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [exclude,510,18,25]; @symbol_type<0> = [Boolean,510,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 513; @symbol_moduledef = [confirmation_icon__hint_reject,513,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 513; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [filename,514,18,26]; @symbol_type<0> = [String,514,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [dithering,515,18,27]; @symbol_type<0> = [String,515,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [packingFormat,516,18,31]; @symbol_type<0> = [String,516,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 519; @symbol_moduledef = [system_icon_light__hint_action_menu,519,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 519; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 520; @position = 18; @symbol_constdef = [filename,520,18,26]; @symbol_type<0> = [String,520,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_action_menu.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 521; @position = 18; @symbol_constdef = [dithering,521,18,27]; @symbol_type<0> = [String,521,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [packingFormat,522,18,31]; @symbol_type<0> = [String,522,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 525; @symbol_moduledef = [system_icon_light__hint_button_right_middle,525,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 525; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 526; @position = 18; @symbol_constdef = [exclude,526,18,25]; @symbol_type<0> = [Boolean,526,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 529; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,529,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [exclude,530,18,25]; @symbol_type<0> = [Boolean,530,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 533; @symbol_moduledef = [confirmation_loc__hint_reject,533,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 533; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [x,534,18,19]; @symbol_type<0> = [Number,534,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 535; @position = 18; @symbol_constdef = [horizontalJustification,535,18,41]; @symbol_type<0> = [String,535,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 536; @position = 18; @symbol_constdef = [y,536,18,19]; @symbol_type<0> = [Number,536,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 539; @symbol_moduledef = [confirmation_icon_dark__hint_delete,539,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [filename,540,18,26]; @symbol_type<0> = [String,540,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [dithering,541,18,27]; @symbol_type<0> = [String,541,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 542; @position = 18; @symbol_constdef = [packingFormat,542,18,31]; @symbol_type<0> = [String,542,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 545; @symbol_moduledef = [activity_color_dark__background,545,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 545; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [color,546,18,23]; @symbol_type<0> = [Number,546,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 547; @position = 18; @symbol_constdef = [background,547,18,28]; @symbol_type<0> = [Number,547,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 550; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,550,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 550; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [exclude,551,18,25]; @symbol_type<0> = [Boolean,551,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 554; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,554,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 554; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [exclude,555,18,25]; @symbol_type<0> = [Boolean,555,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 558; @symbol_moduledef = [system_size__menu_icon,558,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 558; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 559; @position = 18; @symbol_constdef = [scaleX,559,18,24]; @symbol_type<0> = [Number,559,28,34]; ]
+            const scaleX as Number = 45;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [scaleY,560,18,24]; @symbol_type<0> = [Number,560,28,34]; ]
+            const scaleY as Number = 45;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [scaleRelativeTo,561,18,33]; @symbol_type<0> = [String,561,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 564; @symbol_moduledef = [system_icon_destructive__warning,564,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 564; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [filename,565,18,26]; @symbol_type<0> = [String,565,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_destructive__warning.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [dithering,566,18,27]; @symbol_type<0> = [String,566,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [packingFormat,567,18,31]; @symbol_type<0> = [String,567,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 570; @symbol_moduledef = [system_loc__hint_button_right_middle,570,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 570; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 571; @position = 18; @symbol_constdef = [exclude,571,18,25]; @symbol_type<0> = [Boolean,571,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 574; @symbol_moduledef = [system_icon_dark__cancel,574,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 574; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [filename,575,18,26]; @symbol_type<0> = [String,575,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [compress,576,18,26]; @symbol_type<0> = [String,576,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 577; @position = 18; @symbol_constdef = [dithering,577,18,27]; @symbol_type<0> = [String,577,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 578; @position = 18; @symbol_constdef = [automaticPalette,578,18,34]; @symbol_type<0> = [String,578,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [packingFormat,579,18,31]; @symbol_type<0> = [String,579,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 582; @symbol_moduledef = [prompt_size__body_with_title,582,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 582; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 583; @position = 18; @symbol_constdef = [width,583,18,23]; @symbol_type<0> = [Number,583,27,33]; ]
+            const width as Number = 333;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [height,584,18,24]; @symbol_type<0> = [Number,584,28,34]; ]
+            const height as Number = 229;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 587; @symbol_moduledef = [system_loc__hint_button_right_top,587,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 587; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [x,588,18,19]; @symbol_type<0> = [Number,588,23,29]; ]
+            const x as Number = 345;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 589; @position = 18; @symbol_constdef = [y,589,18,19]; @symbol_type<0> = [Number,589,23,29]; ]
+            const y as Number = 67;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 592; @symbol_moduledef = [system_color_light__text,592,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 592; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 594 18 ]
+                symbol [ Graphics %tmp.340 594 31 39 ];
+                %tmp.340 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.341 594 40 57 ];
+                %tmp.341 = getv %tmp.340 :COLOR_TRANSPARENT;
+                putv self :background %tmp.341;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [color,593,18,23]; @symbol_type<0> = [Number,593,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [background,594,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_light__check,597,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__check.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [compress,599,18,26]; @symbol_type<0> = [String,599,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [dithering,600,18,27]; @symbol_type<0> = [String,600,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [automaticPalette,601,18,34]; @symbol_type<0> = [String,601,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 602; @position = 18; @symbol_constdef = [packingFormat,602,18,31]; @symbol_type<0> = [String,602,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 605; @symbol_moduledef = [confirmation_input__reject,605,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 605; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [y1,606,18,20]; @symbol_type<0> = [Number,606,24,30]; ]
+            const y1 as Number = 0;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [x1,607,18,20]; @symbol_type<0> = [Number,607,24,30]; ]
+            const x1 as Number = 79;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [y2,608,18,20]; @symbol_type<0> = [Number,608,24,30]; ]
+            const y2 as Number = 70;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [x2,609,18,20]; @symbol_type<0> = [Number,609,24,30]; ]
+            const x2 as Number = 311;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 612; @symbol_moduledef = [system_icon_light__revert,612,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 612; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [filename,613,18,26]; @symbol_type<0> = [String,613,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__revert.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 614; @position = 18; @symbol_constdef = [compress,614,18,26]; @symbol_type<0> = [String,614,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [dithering,615,18,27]; @symbol_type<0> = [String,615,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [automaticPalette,616,18,34]; @symbol_type<0> = [String,616,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [packingFormat,617,18,31]; @symbol_type<0> = [String,617,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 620; @symbol_moduledef = [system_size__subwindow,620,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 620; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [exclude,621,18,25]; @symbol_type<0> = [Boolean,621,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 624; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,624,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 624; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [exclude,625,18,25]; @symbol_type<0> = [Boolean,625,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 628; @symbol_moduledef = [system_icon_dark__check,628,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 628; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [filename,629,18,26]; @symbol_type<0> = [String,629,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__check.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [compress,630,18,26]; @symbol_type<0> = [String,630,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [dithering,631,18,27]; @symbol_type<0> = [String,631,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [automaticPalette,632,18,34]; @symbol_type<0> = [String,632,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [packingFormat,633,18,31]; @symbol_type<0> = [String,633,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 636; @symbol_moduledef = [confirmation_loc__hint_keep,636,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [x,637,18,19]; @symbol_type<0> = [Number,637,23,29]; ]
+            const x as Number = 313;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [y,638,18,19]; @symbol_type<0> = [Number,638,23,29]; ]
+            const y as Number = 234;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 641; @symbol_moduledef = [confirmation_loc__hint_delete,641,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 641; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [x,642,18,19]; @symbol_type<0> = [Number,642,23,29]; ]
+            const x as Number = 324;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 643; @position = 18; @symbol_constdef = [y,643,18,19]; @symbol_type<0> = [Number,643,23,29]; ]
+            const y as Number = 19;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 646; @symbol_moduledef = [system_icon_positive__hint_action_menu,646,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 646; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [filename,647,18,26]; @symbol_type<0> = [String,647,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_action_menu.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [dithering,648,18,27]; @symbol_type<0> = [String,648,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [packingFormat,649,18,31]; @symbol_type<0> = [String,649,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 652; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,652,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 652; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [exclude,653,18,25]; @symbol_type<0> = [Boolean,653,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 656; @symbol_moduledef = [system_icon_light__hint_button_left_middle,656,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 656; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 657; @position = 18; @symbol_constdef = [exclude,657,18,25]; @symbol_type<0> = [Boolean,657,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 660; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,660,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 660; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [filename,661,18,26]; @symbol_type<0> = [String,661,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [dithering,662,18,27]; @symbol_type<0> = [String,662,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [packingFormat,663,18,31]; @symbol_type<0> = [String,663,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 666; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,666,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 666; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 667; @position = 18; @symbol_constdef = [filename,667,18,26]; @symbol_type<0> = [String,667,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [dithering,668,18,27]; @symbol_type<0> = [String,668,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [packingFormat,669,18,31]; @symbol_type<0> = [String,669,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 672; @symbol_moduledef = [system_icon_dark__revert,672,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 672; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 673; @position = 18; @symbol_constdef = [filename,673,18,26]; @symbol_type<0> = [String,673,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__revert.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 674; @position = 18; @symbol_constdef = [compress,674,18,26]; @symbol_type<0> = [String,674,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [dithering,675,18,27]; @symbol_type<0> = [String,675,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [automaticPalette,676,18,34]; @symbol_type<0> = [String,676,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [packingFormat,677,18,31]; @symbol_type<0> = [String,677,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 680; @symbol_moduledef = [confirmation_icon_light__hint_delete,680,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 680; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 681; @position = 18; @symbol_constdef = [filename,681,18,26]; @symbol_type<0> = [String,681,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [dithering,682,18,27]; @symbol_type<0> = [String,682,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [packingFormat,683,18,31]; @symbol_type<0> = [String,683,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 686; @symbol_moduledef = [system_icon_dark__question,686,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 686; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 687; @position = 18; @symbol_constdef = [filename,687,18,26]; @symbol_type<0> = [String,687,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__question.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 688; @position = 18; @symbol_constdef = [compress,688,18,26]; @symbol_type<0> = [String,688,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [dithering,689,18,27]; @symbol_type<0> = [String,689,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [automaticPalette,690,18,34]; @symbol_type<0> = [String,690,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 691; @position = 18; @symbol_constdef = [packingFormat,691,18,31]; @symbol_type<0> = [String,691,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 694; @symbol_moduledef = [system_icon_light__discard,694,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 694; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [filename,695,18,26]; @symbol_type<0> = [String,695,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__discard.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 696; @position = 18; @symbol_constdef = [compress,696,18,26]; @symbol_type<0> = [String,696,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [dithering,697,18,27]; @symbol_type<0> = [String,697,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 698; @position = 18; @symbol_constdef = [automaticPalette,698,18,34]; @symbol_type<0> = [String,698,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 699; @position = 18; @symbol_constdef = [packingFormat,699,18,31]; @symbol_type<0> = [String,699,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 702; @symbol_moduledef = [device_info,702,15,26]; ]
+        module device_info {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 702; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 704 18 ]
+                symbol [ Toybox %tmp.343 704 32 38 ];
+                %tmp.343 = getv ? :Toybox;
+                symbol [ System %tmp.344 704 39 45 ];
+                %tmp.344 = getv %tmp.343 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.345 704 46 64 ];
+                %tmp.345 = getv %tmp.344 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.345;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 703; @position = 18; @symbol_constdef = [screenWidth,703,18,29]; @symbol_type<0> = [Number,703,33,39]; ]
+            const screenWidth as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 704; @position = 18; @symbol_constdef = [screenShape,704,18,29]; ]
+            const screenShape;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 705; @position = 18; @symbol_constdef = [hasNightMode,705,18,30]; @symbol_type<0> = [Boolean,705,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 706; @position = 18; @symbol_constdef = [hasGpu,706,18,24]; @symbol_type<0> = [Boolean,706,28,35]; ]
+            const hasGpu as Boolean = true;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 707; @position = 18; @symbol_constdef = [screenHeight,707,18,30]; @symbol_type<0> = [Number,707,34,40]; ]
+            const screenHeight as Number = 416;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 708; @position = 18; @symbol_constdef = [hasTouchScreen,708,18,32]; @symbol_type<0> = [Boolean,708,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 709; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,709,18,44]; @symbol_type<0> = [Boolean,709,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 712; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,712,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 712; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 713; @position = 18; @symbol_constdef = [filename,713,18,26]; @symbol_type<0> = [String,713,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 714; @position = 18; @symbol_constdef = [dithering,714,18,27]; @symbol_type<0> = [String,714,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 715; @position = 18; @symbol_constdef = [packingFormat,715,18,31]; @symbol_type<0> = [String,715,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 718; @symbol_moduledef = [prompt_font__body_no_title,718,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 718; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 719 18 ]
+                symbol [ Graphics %tmp.346 719 34 42 ];
+                %tmp.346 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.347 719 43 62 ];
+                %tmp.347 = getv %tmp.346 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.348 719 63 71 ];
+                %tmp.348 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.349 719 72 92 ];
+                %tmp.349 = getv %tmp.348 :TEXT_JUSTIFY_VCENTER;
+                %tmp.350 = bitor %tmp.347 %tmp.349;
+                putv self :justification %tmp.350;
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 720 18 ]
+                symbol [ Graphics %tmp.351 720 25 33 ];
+                %tmp.351 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.352 720 34 43 ];
+                %tmp.352 = getv %tmp.351 :FONT_TINY;
+                putv self :font %tmp.352;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 719; @position = 18; @symbol_constdef = [justification,719,18,31]; ]
+            const justification;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 720; @position = 18; @symbol_constdef = [font,720,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 723; @symbol_moduledef = [prompt_size__title_icon,723,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 723; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 724; @position = 18; @symbol_constdef = [scaleX,724,18,24]; @symbol_type<0> = [Float,724,28,33]; ]
+            const scaleX as Float = 0.12;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 725; @position = 18; @symbol_constdef = [scaleRelativeTo,725,18,33]; @symbol_type<0> = [String,725,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 728; @symbol_moduledef = [system_icon_dark__warning,728,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 728; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 729; @position = 18; @symbol_constdef = [filename,729,18,26]; @symbol_type<0> = [String,729,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_dark__warning.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 730; @position = 18; @symbol_constdef = [compress,730,18,26]; @symbol_type<0> = [String,730,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 731; @position = 18; @symbol_constdef = [dithering,731,18,27]; @symbol_type<0> = [String,731,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 732; @position = 18; @symbol_constdef = [automaticPalette,732,18,34]; @symbol_type<0> = [String,732,38,44]; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 733; @position = 18; @symbol_constdef = [packingFormat,733,18,31]; @symbol_type<0> = [String,733,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 736; @symbol_moduledef = [prompt_loc__title_icon,736,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 736; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 737; @position = 18; @symbol_constdef = [x,737,18,19]; @symbol_type<0> = [Number,737,23,29]; ]
+            const x as Number = 208;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 738; @position = 18; @symbol_constdef = [y,738,18,19]; @symbol_type<0> = [Number,738,23,29]; ]
+            const y as Number = 42;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 739; @position = 18; @symbol_constdef = [horizontalJustification,739,18,41]; @symbol_type<0> = [String,739,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 740; @position = 18; @symbol_constdef = [verticalJustification,740,18,39]; @symbol_type<0> = [String,740,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 743; @symbol_moduledef = [prompt_font_enhanced_readability__title,743,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 743; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 744; @position = 18; @symbol_constdef = [exclude,744,18,25]; @symbol_type<0> = [Boolean,744,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 747; @symbol_moduledef = [prompt_color_dark__body,747,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 747; ]
+            <init> {
+[ "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen" 749 18 ]
+                symbol [ Graphics %tmp.353 749 31 39 ];
+                %tmp.353 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.354 749 40 57 ];
+                %tmp.354 = getv %tmp.353 :COLOR_TRANSPARENT;
+                putv self :background %tmp.354;
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 748; @position = 18; @symbol_constdef = [color,748,18,23]; @symbol_type<0> = [Number,748,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 749; @position = 18; @symbol_constdef = [background,749,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 752; @symbol_moduledef = [confirmation_icon__hint_delete,752,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 752; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 753; @position = 18; @symbol_constdef = [filename,753,18,26]; @symbol_type<0> = [String,753,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 754; @position = 18; @symbol_constdef = [dithering,754,18,27]; @symbol_type<0> = [String,754,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 755; @position = 18; @symbol_constdef = [packingFormat,755,18,31]; @symbol_type<0> = [String,755,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 758; @symbol_moduledef = [system_icon_light__hint_button_right_top,758,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 758; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 759; @position = 18; @symbol_constdef = [filename,759,18,26]; @symbol_type<0> = [String,759,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 760; @position = 18; @symbol_constdef = [dithering,760,18,27]; @symbol_type<0> = [String,760,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 761; @position = 18; @symbol_constdef = [packingFormat,761,18,31]; @symbol_type<0> = [String,761,35,41]; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 764; @symbol_moduledef = [confirmation_size__body,764,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 764; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 765; @position = 18; @symbol_constdef = [width,765,18,23]; @symbol_type<0> = [Number,765,27,33]; ]
+            const width as Number = 246;
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 766; @position = 18; @symbol_constdef = [height,766,18,24]; @symbol_type<0> = [Number,766,28,34]; ]
+            const height as Number = 250;
+        }
+        [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 769; @symbol_moduledef = [system_icon_positive__check,769,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 769; ]
+            <init> {
+            }
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 770; @position = 18; @symbol_constdef = [filename,770,18,26]; @symbol_type<0> = [String,770,30,36]; ]
+            const filename as String = "C:\\Users\\mirka\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu2\\system_icon_positive__check.svg";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 771; @position = 18; @symbol_constdef = [dithering,771,18,27]; @symbol_type<0> = [String,771,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 772; @position = 18; @symbol_constdef = [packingFormat,772,18,31]; @symbol_type<0> = [String,772,35,41]; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\Users\mirka\Vs-projects\Casio\bin\gen\006-B3703-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

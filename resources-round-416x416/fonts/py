@@ -1,0 +1,8 @@
+//generate world map
+py tilemapper.py -i world_map.png -o worldMap -r 140 
+//generate analogue clock
+py tilemapper.py -i dial* -o resources-round-416x416/dial -r 120
+py tilemapper.py -i analogue-hour* -o resources-round-416x416/hour-0-29 -m rotate -u 0 -v -174 -s -6 -r 120
+py tilemapper.py -i analogue-hour* -o resources-round-416x416/hour-30-59 -m rotate -u -180 -v -354 -s -6 -r 120
+py tilemapper.py -i analogue-minute* -o resources-round-416x416/minute-0-29 -m rotate -u 0 -v -174 -s -6 -r 120
+py tilemapper.py -i analogue-minute* -o resources-round-416x416/minute-30-59 -m rotate -u -180 -v -354 -s -6 -r 120

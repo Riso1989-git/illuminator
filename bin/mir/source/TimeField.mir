@@ -1,0 +1,356 @@
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Gfx,2,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Lang,3,13,17]; @symbol_usingAlias = [Lang,3,21,25]; ]
+using Toybox.Lang as :Lang;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Time,4,13,17]; ]
+using Toybox.Time;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Time,5,13,17]; @symbol_usingdef<2> = [Gregorian,5,18,27]; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 7; @symbol_classdef = [TimeField,7,6,15]; @symbol_extends<0> = [Ui,7,24,26]; @symbol_extends<1> = [Drawable,7,27,35]; ]
+class TimeField extends Ui.Drawable {
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 9; @position = 16; @symbol_vardef = [bigTextFont,9,16,27]; ]
+    private
+    var bigTextFont;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 10; @position = 16; @symbol_vardef = [smallTextFont,10,16,29]; ]
+    private
+    var smallTextFont;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 11; @position = 16; @symbol_vardef = [mediumTextFont,11,16,30]; ]
+    private
+    var mediumTextFont;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 12; @position = 16; @symbol_vardef = [posX,12,16,20]; ]
+    private
+    var posX;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 13; @position = 16; @symbol_vardef = [posY,13,16,20]; ]
+    private
+    var posY;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 15; @symbol_typedef = [TimeParams,15,12,22]; @symbol_type<0> = [Lang,16,22,26]; @symbol_type<1> = [Number,16,27,33]; @symbol_type<2> = [Lang,17,22,26]; @symbol_type<3> = [Number,17,27,33]; @symbol_type_const<0> = [positionX,16,9,18]; @symbol_type_const<1> = [positionY,17,9,18]; ]
+    type TimeParams as {:positionX as Lang.Number, :positionY as Lang.Number};
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 20; @symbol_functiondef = [initialize,20,13,23]; @symbol_param<0> = [params,20,24,30]; @symbol_param<0>_type<0> = [TimeParams,20,34,44]; ]
+    function initialize(params as TimeParams) as Void {
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_20_46_32_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 22 8 ]
+        symbol [ Drawable %tmp.2 22 8 16 ];
+        %tmp.2 = getv ? :Drawable;
+        symbol [ initialize %tmp.3 22 17 27 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = newd 1;
+        %tmp.6 = const :identifier;
+        symbol [ identifier %tmp.6 23 13 23 const ];
+        %tmp.7 = "TimeField";
+        %tmp.8 = dup %tmp.4;
+        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
+        invoke %tmp.2 %tmp.3(%tmp.9);
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 26 8 ]
+        %tmp.10 = lgetv %params;
+        symbol [ params %tmp.10 26 15 21 ];
+        %tmp.12 = const :positionX;
+        symbol [ positionX %tmp.12 26 23 32 const ];
+        %tmp.13 = agetv %tmp.10 %tmp.12;
+        symbol [ posX ? 26 8 12 ];
+        putv self :posX %tmp.13;
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 27 8 ]
+        %tmp.14 = lgetv %params;
+        symbol [ params %tmp.14 27 15 21 ];
+        %tmp.16 = const :positionY;
+        symbol [ positionY %tmp.16 27 23 32 const ];
+        %tmp.17 = agetv %tmp.14 %tmp.16;
+        symbol [ posY ? 27 8 12 ];
+        putv self :posY %tmp.17;
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 29 8 ]
+        symbol [ Ui %tmp.18 29 24 26 ];
+        %tmp.18 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.19 29 27 39 ];
+        %tmp.19 = getv function %tmp.18 :loadResource;
+        symbol [ Rez %tmp.21 29 40 43 ];
+        %tmp.21 = getv ? :Rez;
+        symbol [ Fonts %tmp.22 29 44 49 ];
+        %tmp.22 = getv %tmp.21 :Fonts;
+        symbol [ text_big %tmp.23 29 50 58 ];
+        %tmp.23 = getv %tmp.22 :text_big;
+        %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+        symbol [ bigTextFont ? 29 8 19 ];
+        putv self :bigTextFont %tmp.24;
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 30 8 ]
+        symbol [ Ui %tmp.25 30 27 29 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.26 30 30 42 ];
+        %tmp.26 = getv function %tmp.25 :loadResource;
+        symbol [ Rez %tmp.28 30 43 46 ];
+        %tmp.28 = getv ? :Rez;
+        symbol [ Fonts %tmp.29 30 47 52 ];
+        %tmp.29 = getv %tmp.28 :Fonts;
+        symbol [ text_medium %tmp.30 30 53 64 ];
+        %tmp.30 = getv %tmp.29 :text_medium;
+        %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
+        symbol [ mediumTextFont ? 30 8 22 ];
+        putv self :mediumTextFont %tmp.31;
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 31 8 ]
+        symbol [ Ui %tmp.32 31 24 26 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.33 31 27 39 ];
+        %tmp.33 = getv function %tmp.32 :loadResource;
+        symbol [ Rez %tmp.35 31 40 43 ];
+        %tmp.35 = getv ? :Rez;
+        symbol [ Fonts %tmp.36 31 44 49 ];
+        %tmp.36 = getv %tmp.35 :Fonts;
+        symbol [ text %tmp.37 31 50 54 ];
+        %tmp.37 = getv %tmp.36 :text;
+        %tmp.38 = invoke %tmp.32 %tmp.33(%tmp.37);
+        symbol [ smallTextFont ? 31 8 21 ];
+        putv self :smallTextFont %tmp.38;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_20_46_32_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 34; @symbol_functiondef = [draw,34,13,17]; @symbol_param<0> = [dc,34,18,20]; @symbol_param<0>_type<0> = [Gfx,34,24,27]; @symbol_param<0>_type<1> = [Dc,34,28,30]; ]
+    function draw(dc as Gfx.Dc) as Void {
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 37 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %g.1 = local;
+        symbol [ g %g.1 37 12 13 ];
+        symbol [ Gregorian %tmp.1 37 16 25 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 37 26 30 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.3 37 31 35 ];
+        %tmp.3 = getm $.Toybox.Time;
+        symbol [ now %tmp.4 37 36 39 ];
+        %tmp.4 = getv function %tmp.3 :now;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        symbol [ Time %tmp.6 37 43 47 ];
+        %tmp.6 = getm $.Toybox.Time;
+        symbol [ FORMAT_MEDIUM %tmp.7 37 48 61 ];
+        %tmp.7 = getv %tmp.6 :FORMAT_MEDIUM;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+        lputv %g.1 %tmp.8;
+        symbol [ g %g.1 37 12 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 40 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %HH.2 = local;
+        symbol [ HH %HH.2 40 12 14 ];
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_begin:
+        %tmp.9 = lgetv %g.1;
+        symbol [ g %tmp.9 40 18 19 ];
+        symbol [ hour %tmp.10 40 20 24 ];
+        %tmp.10 = getv %tmp.9 :hour;
+        %tmp.11 = 10;
+        %tmp.12 = lt %tmp.10 %tmp.11;
+        bf %tmp.12 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_else_false;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_true:
+        %tmp.13 = "0";
+        push %tmp.13;
+        goto @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_end;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_else_false:
+        %tmp.14 = "";
+        push %tmp.14;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_end:
+        %tmp.15 = phi [%tmp.12 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_begin] [%tmp.13 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_true] [%tmp.14 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_else_false] [%tmp.15 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_40_18_40_38_end];
+        %tmp.16 = lgetv %g.1;
+        symbol [ g %tmp.16 40 44 45 ];
+        symbol [ hour %tmp.17 40 46 50 ];
+        %tmp.17 = getv %tmp.16 :hour;
+        %tmp.18 = add %tmp.15 %tmp.17;
+        lputv %HH.2 %tmp.18;
+        symbol [ HH %HH.2 40 12 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 41 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %MM.3 = local;
+        symbol [ MM %MM.3 41 12 14 ];
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_begin:
+        %tmp.19 = lgetv %g.1;
+        symbol [ g %tmp.19 41 18 19 ];
+        symbol [ min %tmp.20 41 20 23 ];
+        %tmp.20 = getv %tmp.19 :min;
+        %tmp.21 = 10;
+        %tmp.22 = lt %tmp.20 %tmp.21;
+        bf %tmp.22 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_else_false;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_true:
+        %tmp.23 = "0";
+        push %tmp.23;
+        goto @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_end;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_else_false:
+        %tmp.24 = "";
+        push %tmp.24;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_end:
+        %tmp.25 = phi [%tmp.22 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_begin] [%tmp.23 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_true] [%tmp.24 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_else_false] [%tmp.25 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_41_18_41_38_end];
+        %tmp.26 = lgetv %g.1;
+        symbol [ g %tmp.26 41 44 45 ];
+        symbol [ min %tmp.27 41 46 49 ];
+        %tmp.27 = getv %tmp.26 :min;
+        %tmp.28 = add %tmp.25 %tmp.27;
+        lputv %MM.3 %tmp.28;
+        symbol [ MM %MM.3 41 12 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 42 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %SS.4 = local;
+        symbol [ SS %SS.4 42 12 14 ];
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_begin:
+        %tmp.29 = lgetv %g.1;
+        symbol [ g %tmp.29 42 18 19 ];
+        symbol [ sec %tmp.30 42 20 23 ];
+        %tmp.30 = getv %tmp.29 :sec;
+        %tmp.31 = 10;
+        %tmp.32 = lt %tmp.30 %tmp.31;
+        bf %tmp.32 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_else_false;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_true:
+        %tmp.33 = "0";
+        push %tmp.33;
+        goto @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_end;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_else_false:
+        %tmp.34 = "";
+        push %tmp.34;
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_end:
+        %tmp.35 = phi [%tmp.32 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_begin] [%tmp.33 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_true] [%tmp.34 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_else_false] [%tmp.35 @C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_42_18_42_38_end];
+        %tmp.36 = lgetv %g.1;
+        symbol [ g %tmp.36 42 44 45 ];
+        symbol [ sec %tmp.37 42 46 49 ];
+        %tmp.37 = getv %tmp.36 :sec;
+        %tmp.38 = add %tmp.35 %tmp.37;
+        lputv %SS.4 %tmp.38;
+        symbol [ SS %SS.4 42 12 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 44 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %timeString.5 = local;
+        symbol [ timeString %timeString.5 44 12 22 ];
+        %tmp.39 = lgetv %HH.2;
+        symbol [ HH %tmp.39 44 25 27 ];
+        %tmp.40 = ":";
+        %tmp.41 = add %tmp.39 %tmp.40;
+        %tmp.42 = lgetv %MM.3;
+        symbol [ MM %tmp.42 44 36 38 ];
+        %tmp.43 = add %tmp.41 %tmp.42;
+        lputv %timeString.5 %tmp.43;
+        symbol [ timeString %timeString.5 44 12 22 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 45 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %secString.6 = local;
+        symbol [ secString %secString.6 45 12 21 ];
+        %tmp.44 = lgetv %SS.4;
+        symbol [ SS %tmp.44 45 25 27 ];
+        lputv %secString.6 %tmp.44;
+        symbol [ secString %secString.6 45 12 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 47 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 47 8 10 ];
+        symbol [ setColor %tmp.46 47 11 19 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        symbol [ Gfx %tmp.47 47 20 23 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.48 47 24 35 ];
+        %tmp.48 = getv %tmp.47 :COLOR_WHITE;
+        symbol [ Gfx %tmp.49 47 37 40 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.50 47 41 58 ];
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 50 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 50 8 10 ];
+        symbol [ drawText %tmp.52 50 11 19 ];
+        %tmp.52 = getv function %tmp.51 :drawText;
+        symbol [ posX %tmp.54 51 12 16 ];
+        %tmp.54 = getv ? :posX;
+        symbol [ posY %tmp.56 52 12 16 ];
+        %tmp.56 = getv ? :posY;
+        symbol [ bigTextFont %tmp.58 53 12 23 ];
+        %tmp.58 = getv ? :bigTextFont;
+        %tmp.59 = lgetv %timeString.5;
+        symbol [ timeString %tmp.59 54 12 22 ];
+        symbol [ Gfx %tmp.60 55 12 15 ];
+        %tmp.60 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.61 55 16 33 ];
+        %tmp.61 = getv %tmp.60 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56, %tmp.58, %tmp.59, %tmp.61);
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 59 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %dims.7 = local;
+        symbol [ dims %dims.7 59 12 16 ];
+        %tmp.62 = lgetv %dc;
+        symbol [ dc %tmp.62 59 19 21 ];
+        symbol [ getTextDimensions %tmp.63 59 22 39 ];
+        %tmp.63 = getv function %tmp.62 :getTextDimensions;
+        %tmp.64 = lgetv %timeString.5;
+        symbol [ timeString %tmp.64 59 40 50 ];
+        symbol [ bigTextFont %tmp.66 59 52 63 ];
+        %tmp.66 = getv ? :bigTextFont;
+        %tmp.67 = invoke %tmp.62 %tmp.63(%tmp.64, %tmp.66);
+        lputv %dims.7 %tmp.67;
+        symbol [ dims %dims.7 59 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 60 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %timeWidth.8 = local;
+        symbol [ timeWidth %timeWidth.8 60 12 21 ];
+        %tmp.68 = lgetv %dims.7;
+        symbol [ dims %tmp.68 60 25 29 ];
+        %tmp.69 = 0;
+        %tmp.70 = agetv %tmp.68 %tmp.69;
+        lputv %timeWidth.8 %tmp.70;
+        symbol [ timeWidth %timeWidth.8 60 12 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 61 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %timeHeight.9 = local;
+        symbol [ timeHeight %timeHeight.9 61 12 22 ];
+        %tmp.71 = lgetv %dims.7;
+        symbol [ dims %tmp.71 61 25 29 ];
+        %tmp.72 = 1;
+        %tmp.73 = agetv %tmp.71 %tmp.72;
+        lputv %timeHeight.9 %tmp.73;
+        symbol [ timeHeight %timeHeight.9 61 12 22 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 64 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %secX.10 = local;
+        symbol [ secX %secX.10 64 12 16 ];
+        symbol [ posX %tmp.75 64 19 23 ];
+        %tmp.75 = getv ? :posX;
+        %tmp.76 = lgetv %timeWidth.8;
+        symbol [ timeWidth %tmp.76 64 26 35 ];
+        %tmp.77 = add %tmp.75 %tmp.76;
+        lputv %secX.10 %tmp.77;
+        symbol [ secX %secX.10 64 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 65 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_start" "C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop" ]
+        %secY.11 = local;
+        symbol [ secY %secY.11 65 12 16 ];
+        symbol [ posY %tmp.79 65 19 23 ];
+        %tmp.79 = getv ? :posY;
+        %tmp.80 = lgetv %timeHeight.9;
+        symbol [ timeHeight %tmp.80 65 26 36 ];
+        %tmp.81 = 3;
+        %tmp.82 = div %tmp.80 %tmp.81;
+        %tmp.83 = add %tmp.79 %tmp.82;
+        %tmp.84 = 10;
+        %tmp.85 = add %tmp.83 %tmp.84;
+        lputv %secY.11 %tmp.85;
+        symbol [ secY %secY.11 65 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc" 68 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 68 8 10 ];
+        symbol [ drawText %tmp.87 68 11 19 ];
+        %tmp.87 = getv function %tmp.86 :drawText;
+        %tmp.88 = lgetv %secX.10;
+        symbol [ secX %tmp.88 69 12 16 ];
+        %tmp.89 = lgetv %secY.11;
+        symbol [ secY %tmp.89 70 12 16 ];
+        symbol [ mediumTextFont %tmp.91 71 12 26 ];
+        %tmp.91 = getv ? :mediumTextFont;
+        %tmp.92 = lgetv %secString.6;
+        symbol [ secString %tmp.92 72 12 21 ];
+        symbol [ Gfx %tmp.93 73 12 15 ];
+        %tmp.93 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.94 73 16 33 ];
+        %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89, %tmp.91, %tmp.92, %tmp.94);
+C__Users_mirka_Vs_projects_Casio_source_TimeField_mc_34_40_75_4_stop:
+    }
+}
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\TimeField.mc"; @line = 1; ]
+<init> {
+}

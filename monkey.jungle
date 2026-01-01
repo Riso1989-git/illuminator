@@ -1,0 +1,3 @@
+project.manifest = manifest.xml
+
+venu2.resourcePath = $(venu2.resourcePath);resources-round-416x416

@@ -1,0 +1,45 @@
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <string id="AppName">Casio</string>
+
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="ForegroundColorTitle">Foreground Color</string>
+    <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
+
+    <string id="ColorBlack">Black</string>
+    <string id="ColorDarkGray">Dark Gray</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorRed">Red</string>
+
+	<string id="FieldCountTitle">Number Of Data Fields in the middle of screen</string>
+	<string id="FieldCountMiddleTitle">Number Of Data Fields under time</string>
+	<string id="FieldCountBottomTitle">Number Of Data Fields at the bottom of screen</string>
+
+	<string id="DataField1Title">Data Field 1</string>
+	<string id="DataField2Title">Data Field 2</string>
+	<string id="DataField3Title">Data Field 3</string>
+
+	<string id="DataFieldMiddle1Title">Data Field 4</string>
+	<string id="DataFieldMiddle2Title">Data Field 5</string>
+
+	<string id="DataFieldBottom1Title">Data Field 6</string>
+
+	<string id="HeartRate">Heart Rate</string>
+	<string id="BatteryNoIcon">Battery (Hide Icon)</string>
+	<string id="Battery">Battery</string>
+	<string id="Notifications">Notifications</string>
+	<string id="Calories">Calories</string>
+	<string id="Distance">Distance</string>
+	<string id="Alarms">Alarms</string>
+	<string id="Altitude">Altitude</string>
+	<string id="Temperature">Thermometer</string>
+	<string id="SunriseSunset">Sunrise/Sunset</string>
+	<string id="Weather">Weather</string>
+	<string id="Humidity">Humidity</string>
+	<string id="Pressure">Pressure</string>
+	<string id="Sunrise">Sunrise</string>
+	<string id="Sunset">Sunset</string>
+	<string id="WeatherTemperature">Weather Temperature</string>
+</strings>

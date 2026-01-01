@@ -1,0 +1,24 @@
+<resources>
+    <fonts>
+      <font id="worldMap" filename="worldMap.fnt" antialias="true"/>
+
+      <font id="garmin_icons" filename="garmin-icons.fnt" antialias="true"/>
+
+
+      <font id="text" filename="cas_digital.fnt" antialias="true"/>
+      <font id="text_medium" filename="cas_digital_medium.fnt" antialias="true"/>
+      <font id="text_big" filename="cas_digital_big.fnt" antialias="true"/>
+
+      <font id="dial" filename="dial.fnt" antialias="true"/>
+      <font id="hour_0_29" filename="hour-0-29.fnt" antialias="true"/>
+      <font id="hour_30_59" filename="hour-30-59.fnt" antialias="true"/>
+      <font id="minute_0_29" filename="minute-0-29.fnt" antialias="true"/>
+      <font id="minute_30_59" filename="minute-30-59.fnt" antialias="true"/>
+    </fonts>
+    <jsonData id="worldMapJson" filename="worldMap.json"/>
+    <jsonData id="dialJson" filename="dial.json"/>
+    <jsonData id="worldMaminute_0_29Json" filename="minute-0-29.json"/>
+    <jsonData id="worldMaminute_30_59Json" filename="minute-30-59.json"/>
+    <jsonData id="hour_0_29Json" filename="hour-0-29.json"/>
+    <jsonData id="hour_30_59Json" filename="hour-30-59.json"/>
+</resources>
