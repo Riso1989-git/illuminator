@@ -4,7 +4,7 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
-class CasioView extends WatchUi.WatchFace {
+class IlluminatorView extends WatchUi.WatchFace {
 
     // globals
     var debug = false;

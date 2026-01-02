@@ -37,7 +37,7 @@ class DateField extends Ui.Drawable {
         var dd = (g.day   < 10 ? "0" : "") + g.day;
         var mm = (g.month < 10 ? "0" : "") + g.month;
 
-        // Casio-style: MON 05-02
+        // Illuminator-style: MON 05-02
         var text = dayStr + " " + dd + "-" + mm;
 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);

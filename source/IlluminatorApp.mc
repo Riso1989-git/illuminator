@@ -33,7 +33,7 @@ function setStorageValue(key as PropertyKeyType, value as PropertyValueType) as 
     Storage.setValue(key, value);
 }
 
-class CasioApp extends Application.AppBase {
+class IlluminatorApp extends Application.AppBase {
 
     var mView;
     var mTopFields as Array<Number> = [];
@@ -51,7 +51,7 @@ class CasioApp extends Application.AppBase {
     }
 
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        mView = new CasioView();
+        mView = new IlluminatorView();
         onSettingsChanged(); // After creating view
         return [mView];
     }
@@ -167,6 +167,6 @@ class CasioApp extends Application.AppBase {
 }
 
 // Global helper function (similar to Crystal)
-function getApp() as CasioApp {
-    return Application.getApp() as CasioApp;
+function getApp() as IlluminatorApp {
+    return Application.getApp() as IlluminatorApp;
 }

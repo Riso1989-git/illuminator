@@ -3,7 +3,7 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class Background extends WatchUi.Drawable {
+class IlluminatorBackground extends WatchUi.Drawable {
 
     function initialize() {
         var dictionary = {
