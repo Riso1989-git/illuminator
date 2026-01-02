@@ -32,12 +32,9 @@ class MoveBar extends Ui.Drawable {
     function draw(dc as Gfx.Dc) as Void {
 
         var info = ActivityMonitor.getInfo();
-        var level = 3;
+        var level = info.moveBarLevel == null ? 0 : info.moveBarLevel;
 
         var maxBars = ActivityMonitor.MOVE_BAR_LEVEL_MAX;
-        if (level <= 0) {
-            return;
-        }
 
         // Compute bar width
         var totalSeparatorWidth = (maxBars - 1) * separator;
