@@ -68,7 +68,7 @@ class WorldMap extends Ui.Drawable {
         // Load resources once
         mMapFont = Ui.loadResource(Rez.Fonts.worldMap);
         mMapData = Ui.loadResource(Rez.JsonData.worldMapJson);
-        
+
         // Build lookup tables
         buildLookupTables();
     }
@@ -83,12 +83,11 @@ class WorldMap extends Ui.Drawable {
         mGridCosLat = new [mGridYCount];
         mGridLon = new [mGridXCount];
 
-        var latRange = MAP_LAT_TOP - MAP_LAT_BOTTOM;
 
         // Pre-compute latitude trig values for each Y position
         for (var yi = 0; yi < mGridYCount; yi++) {
             var y = yi * GRID_STEP;
-            var lat = MAP_LAT_TOP - (y.toFloat() / mapPixelHeight) * latRange;
+            var lat = 90.0 - (y.toFloat() / mapPixelHeight) * 180.0;
             var latRad = lat * degToRad;
             mGridSinLat[yi] = Math.sin(latRad);
             mGridCosLat[yi] = Math.cos(latRad);
