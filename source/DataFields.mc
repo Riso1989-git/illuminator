@@ -351,7 +351,7 @@ private function drawField(dc, fieldType, x) {
     }
 
     private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
-		gLocationLat = 48.7164f; gLocationLng = 21.2611f;
+		//gLocationLat = 48.7164f; gLocationLng = 21.2611f;
 
         if (gLocationLat == null || gLocationLng == null) {
             return "gps?";

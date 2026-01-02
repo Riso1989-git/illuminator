@@ -37,8 +37,6 @@ class WorldMap extends Ui.Drawable {
     private var mapPixelHeight;
 
     // Cached values
-    private var mercatorTop;
-    private var mercatorBottom;
     private var mLastNightCalcMinute = -1;
     private var mNightOverlayPoints = [];
 
@@ -70,16 +68,7 @@ class WorldMap extends Ui.Drawable {
         // Load resources once
         mMapFont = Ui.loadResource(Rez.Fonts.worldMap);
         mMapData = Ui.loadResource(Rez.JsonData.worldMapJson);
-
-        // Cache Mercator bounds (constant math)
-        var topRad    = MAP_LAT_TOP * Math.PI / 180.0;
-        var bottomRad = MAP_LAT_BOTTOM * Math.PI / 180.0;
-
-        mercatorTop =
-            Math.ln(Math.tan(Math.PI / 4.0 + topRad / 2.0));
-        mercatorBottom =
-            Math.ln(Math.tan(Math.PI / 4.0 + bottomRad / 2.0));
-
+        
         // Build lookup tables
         buildLookupTables();
     }
@@ -94,10 +83,12 @@ class WorldMap extends Ui.Drawable {
         mGridCosLat = new [mGridYCount];
         mGridLon = new [mGridXCount];
 
+        var latRange = MAP_LAT_TOP - MAP_LAT_BOTTOM;
+
         // Pre-compute latitude trig values for each Y position
         for (var yi = 0; yi < mGridYCount; yi++) {
             var y = yi * GRID_STEP;
-            var lat = 90.0 - (y.toFloat() / mapPixelHeight) * 180.0;
+            var lat = MAP_LAT_TOP - (y.toFloat() / mapPixelHeight) * latRange;
             var latRad = lat * degToRad;
             mGridSinLat[yi] = Math.sin(latRad);
             mGridCosLat[yi] = Math.cos(latRad);
@@ -123,13 +114,13 @@ class WorldMap extends Ui.Drawable {
 
         drawDayNight(dc);
         
-        if (gLocationLat != null) {
+/*         if (gLocationLat != null) {
             var pixelLocation = latLonToPixel(gLocationLat, gLocationLng);
 
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             dc.drawLine(mPositionX + pixelLocation[0], mPositionY, mPositionX + pixelLocation[0], mPositionY + mapPixelHeight);
             dc.drawLine(mPositionX, mPositionY + pixelLocation[1], mPositionX + mapWidth, mPositionY + pixelLocation[1]);
-        }
+        } */
     }
 
     private function drawTiles(
@@ -165,32 +156,24 @@ class WorldMap extends Ui.Drawable {
         }
     }
 
-    function latLonToPixel(
+/*     function latLonToPixel(
         lat as Lang.Float,
         lon as Lang.Float
     ) as Lang.Array {
 
         if (lon < -180) { lon = -180; }
         if (lon > 180)  { lon = 180;  }
-
         if (lat > MAP_LAT_TOP)    { lat = MAP_LAT_TOP; }
         if (lat < MAP_LAT_BOTTOM) { lat = MAP_LAT_BOTTOM; }
 
         var xNorm = (lon + 180.0) / 360.0;
-
-        var latRad    = lat * Math.PI / 180.0;
-        var mercY     =
-            Math.ln(Math.tan(Math.PI / 4.0 + latRad / 2.0));
-
-        var yNorm =
-            (mercatorTop - mercY)
-            / (mercatorTop - mercatorBottom);
+        var yNorm = (MAP_LAT_TOP - lat) / (MAP_LAT_TOP - MAP_LAT_BOTTOM);
 
         return [
             (xNorm * mapWidth).toNumber(),
             (yNorm * mapPixelHeight).toNumber()
         ];
-    }
+    } */
 
     private function drawDayNight(dc as Graphics.Dc) as Void {
         var now = Time.now();
