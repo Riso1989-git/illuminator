@@ -41,6 +41,10 @@ class DataFields extends Ui.Drawable {
 	private var iconFont;
 	private var textFont;
 
+    private var mCachedSunTimesToday = null;
+    private var mCachedSunTimesTomorrow = null;
+    private var mSunTimesCacheDay = -1;
+
     typedef Params as {
         :left   as Lang.Number,
         :right  as Lang.Number,
@@ -322,74 +326,72 @@ private function drawField(dc, fieldType, x) {
             : value;
     }
 
-	private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean ) as Lang.String {
-		// Location must be available
-		if (gLocationLat == null || gLocationLng == null) {
-			return "gps?";
-		}
+	    private function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array<Lang.Number?> {
+        var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var today = nowInfo.day;
 
-		var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        // Invalidate cache if day changed
+        if (mSunTimesCacheDay != today) {
+            mSunTimesCacheDay = today;
+            mCachedSunTimesToday = null;
+            mCachedSunTimesTomorrow = null;
+        }
 
-		// Convert current time to decimal hours (+1 minute tolerance)
-		var now =
-			nowInfo.hour +
-			((nowInfo.min + 1) / 60.0);
+        if (isTomorrow) {
+            if (mCachedSunTimesTomorrow == null) {
+                mCachedSunTimesTomorrow = getSunTimes(gLocationLat, gLocationLng, null, true);
+            }
+            return mCachedSunTimesTomorrow;
+        } else {
+            if (mCachedSunTimesToday == null) {
+                mCachedSunTimesToday = getSunTimes(gLocationLat, gLocationLng, null, false);
+            }
+            return mCachedSunTimesToday;
+        }
+    }
 
-		var eventTime = null;
+    private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
+		gLocationLat = 48.7164f; gLocationLng = 21.2611f;
 
-		// --- Today's sun times ---
-		var sunToday = getSunTimes(gLocationLat, gLocationLng, null, false);
-		var todayEvent = isSunrise ? sunToday[0] : sunToday[1];
+        if (gLocationLat == null || gLocationLng == null) {
+            return "gps?";
+        }
 
-		if (todayEvent != null && now < todayEvent) {
+        var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        var now = nowInfo.hour + ((nowInfo.min + 1) / 60.0);
 
-			// Today's event is still upcoming
-			eventTime = todayEvent;
+        var eventTime = null;
 
-		} else {
+        // Use cached sun times instead of direct calls
+        var sunToday = getCachedSunTimes(false);
+        var todayEvent = isSunrise ? sunToday[0] : sunToday[1];
 
-			// Otherwise, use tomorrow
-			var sunTomorrow = getSunTimes(gLocationLat, gLocationLng, null, true);
-			eventTime = isSunrise ? sunTomorrow[0] : sunTomorrow[1];
-		}
+        if (todayEvent != null && now < todayEvent) {
+            eventTime = todayEvent;
+        } else {
+            var sunTomorrow = getCachedSunTimes(true);
+            eventTime = isSunrise ? sunTomorrow[0] : sunTomorrow[1];
+        }
 
-		// --- Sun never rises/sets (polar conditions) ---
-		if (eventTime == null) {
-			return "---";
-		}
+        if (eventTime == null) {
+            return "---";
+        }
 
-		// --- Convert decimal hours to time ---
-		var h = Math.floor(eventTime).toLong() % 24;
-		var m = Math.floor(
-			(eventTime - Math.floor(eventTime)) * 60
-		).toLong();
+        var h = Math.floor(eventTime).toLong() % 24;
+        var m = Math.floor((eventTime - Math.floor(eventTime)) * 60).toLong();
 
-		// Clamp safety
-		if (m < 0)  { m = 0; }
-		if (m > 59) { m = 59; }
+        if (m < 0)  { m = 0; }
+        if (m > 59) { m = 59; }
 
-		if (is24Hour) {
-
-			// 24-hour format
-			return
-				(h < 10 ? "0" : "") + h +
-				":" +
-				(m < 10 ? "0" : "") + m;
-
-		} else {
-
-			// 12-hour format
-			var amPm = (h < 12) ? " AM" : " PM";
-			var h12 = h % 12;
-			if (h12 == 0) { h12 = 12; }
-
-			return
-				h12 +
-				":" +
-				(m < 10 ? "0" : "") + m +
-				amPm;
-		}
-	}
+        if (is24Hour) {
+            return (h < 10 ? "0" : "") + h + ":" + (m < 10 ? "0" : "") + m;
+        } else {
+            //var amPm = (h < 12) ? " AM" : " PM";
+            var h12 = h % 12;
+            if (h12 == 0) { h12 = 12; }
+            return h12 + ":" + (m < 10 ? "0" : "") + m ; //+ amPm;
+        }
+    }
 
 
 	/**

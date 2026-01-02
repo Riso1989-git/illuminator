@@ -1,0 +1,3053 @@
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Graphics,2,13,21]; @symbol_usingAlias = [Gfx,2,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [System,3,13,19]; @symbol_usingAlias = [Sys,3,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Application,4,13,24]; @symbol_usingAlias = [App,4,28,31]; ]
+using Toybox.Application as :App;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Activity,5,13,21]; @symbol_usingAlias = [Activity,5,25,33]; ]
+using Toybox.Activity as :Activity;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [ActivityMonitor,6,13,28]; @symbol_usingAlias = [ActivityMonitor,6,32,47]; ]
+using Toybox.ActivityMonitor as :ActivityMonitor;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [SensorHistory,7,13,26]; @symbol_usingAlias = [SensorHistory,7,30,43]; ]
+using Toybox.SensorHistory as :SensorHistory;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [Lang,8,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 9; @symbol_usingdef<0> = [Toybox,9,6,12]; @symbol_usingdef<1> = [Application,9,13,24]; @symbol_usingdef<2> = [Properties,9,25,35]; ]
+using Toybox.Application.Properties;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 10; @symbol_usingdef<0> = [Toybox,10,6,12]; @symbol_usingdef<1> = [Time,10,13,17]; @symbol_usingdef<2> = [Gregorian,10,18,27]; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 12; ]
+enum {
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 13; @position = 4; @symbol_enumdec = [FIELD_TYPE_HEART_RATE,13,4,25]; ]
+    FIELD_TYPE_HEART_RATE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 14; @position = 4; @symbol_enumdec = [FIELD_TYPE_BATTERY,14,4,22]; ]
+    FIELD_TYPE_BATTERY,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 15; @position = 4; @symbol_enumdec = [FIELD_TYPE_NOTIFICATIONS,15,4,28]; ]
+    FIELD_TYPE_NOTIFICATIONS,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 16; @position = 4; @symbol_enumdec = [FIELD_TYPE_CALORIES,16,4,23]; ]
+    FIELD_TYPE_CALORIES,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 17; @position = 4; @symbol_enumdec = [FIELD_TYPE_DISTANCE,17,4,23]; ]
+    FIELD_TYPE_DISTANCE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 18; @position = 4; @symbol_enumdec = [FIELD_TYPE_ALARMS,18,4,21]; ]
+    FIELD_TYPE_ALARMS,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 19; @position = 4; @symbol_enumdec = [FIELD_TYPE_ALTITUDE,19,4,23]; ]
+    FIELD_TYPE_ALTITUDE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 20; @position = 4; @symbol_enumdec = [FIELD_TYPE_TEMPERATURE,20,4,26]; ]
+    FIELD_TYPE_TEMPERATURE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 21; @position = 4; @symbol_enumdec = [FIELD_TYPE_PRESSURE,21,4,23]; ]
+    FIELD_TYPE_PRESSURE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 22; @position = 4; @symbol_enumdec = [FIELD_TYPE_HUMIDITY,22,4,23]; ]
+    FIELD_TYPE_HUMIDITY,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 23; @position = 1; @symbol_enumdec = [FIELD_TYPE_SUNRISE,23,1,19]; ]
+    FIELD_TYPE_SUNRISE,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 24; @position = 1; @symbol_enumdec = [FIELD_TYPE_SUNSET,24,1,18]; ]
+    FIELD_TYPE_SUNSET,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 25; @position = 1; @symbol_enumdec = [FIELD_TYPE_BATTERY_NO_ICON,25,1,27]; ]
+    FIELD_TYPE_BATTERY_NO_ICON,
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 26; @position = 1; @symbol_enumdec = [FIELD_TYPE_GARMIN_TEMPERATURE,26,1,30]; ]
+    FIELD_TYPE_GARMIN_TEMPERATURE
+}
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 29; @symbol_classdef = [DataFields,29,6,16]; @symbol_extends<0> = [Ui,29,25,27]; @symbol_extends<1> = [Drawable,29,28,36]; ]
+class DataFields extends Ui.Drawable {
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 29; ]
+    <init> {
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 39 16 ]
+        %tmp.1 = newa 0;
+        putv self :mFieldTypes %tmp.1;
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 29; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 31; @position = 16; @symbol_vardef = [mLeft,31,16,21]; ]
+    private
+    var mLeft;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 32; @position = 16; @symbol_vardef = [mRight,32,16,22]; ]
+    private
+    var mRight;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 33; @position = 16; @symbol_vardef = [mTop,33,16,20]; ]
+    private
+    var mTop;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 34; @position = 16; @symbol_vardef = [mBottom,34,16,23]; ]
+    private
+    var mBottom;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 35; @position = 13; @symbol_vardef = [mfieldPosition,35,13,27]; ]
+    private
+    var mfieldPosition;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 37; @position = 16; @symbol_vardef = [mFieldCount,37,16,27]; ]
+    private
+    var mFieldCount;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 38; @position = 16; @symbol_vardef = [mMaxFieldLength,38,16,31]; ]
+    private
+    var mMaxFieldLength;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 39; @position = 16; @symbol_vardef = [mFieldTypes,39,16,27]; ]
+    private
+    var mFieldTypes;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 41; @position = 13; @symbol_vardef = [iconFont,41,13,21]; ]
+    private
+    var iconFont;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 42; @position = 13; @symbol_vardef = [textFont,42,13,21]; ]
+    private
+    var textFont;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 44; @position = 16; @symbol_vardef = [mCachedSunTimesToday,44,16,36]; ]
+    private
+    var mCachedSunTimesToday = null;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 45; @position = 16; @symbol_vardef = [mCachedSunTimesTomorrow,45,16,39]; ]
+    private
+    var mCachedSunTimesTomorrow = null;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 46; @position = 16; @symbol_vardef = [mSunTimesCacheDay,46,16,33]; ]
+    private
+    var mSunTimesCacheDay = -1;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 48; @symbol_typedef = [Params,48,12,18]; @symbol_type<0> = [Lang,49,19,23]; @symbol_type<1> = [Number,49,24,30]; @symbol_type<2> = [Lang,50,19,23]; @symbol_type<3> = [Number,50,24,30]; @symbol_type<4> = [Lang,51,19,23]; @symbol_type<5> = [Number,51,24,30]; @symbol_type<6> = [Lang,52,19,23]; @symbol_type<7> = [Number,52,24,30]; @symbol_type<8> = [Lang,53,21,25]; @symbol_type<9> = [Symbol,53,26,32]; @symbol_type_const<0> = [left,49,9,13]; @symbol_type_const<1> = [right,50,9,14]; @symbol_type_const<2> = [top,51,9,12]; @symbol_type_const<3> = [bottom,52,9,15]; @symbol_type_const<4> = [mfieldPosition,53,3,17]; ]
+    type Params as {:left as Lang.Number, :right as Lang.Number, :top as Lang.Number, :bottom as Lang.Number, :mfieldPosition as Lang.Symbol};
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 56; @symbol_functiondef = [initialize,56,13,23]; @symbol_param<0> = [params,56,24,30]; @symbol_param<0>_type<0> = [Params,56,34,40]; ]
+    function initialize(params as Params) as Void {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_56_42_69_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 57 8 ]
+        symbol [ Drawable %tmp.2 57 8 16 ];
+        %tmp.2 = getv ? :Drawable;
+        symbol [ initialize %tmp.3 57 17 27 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = lgetv %params;
+        symbol [ params %tmp.4 57 28 34 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 59 8 ]
+        %tmp.5 = lgetv %params;
+        symbol [ params %tmp.5 59 18 24 ];
+        %tmp.7 = const :left;
+        symbol [ left %tmp.7 59 26 30 const ];
+        %tmp.8 = agetv %tmp.5 %tmp.7;
+        symbol [ mLeft ? 59 8 13 ];
+        putv self :mLeft %tmp.8;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 60 8 ]
+        %tmp.9 = lgetv %params;
+        symbol [ params %tmp.9 60 18 24 ];
+        %tmp.11 = const :right;
+        symbol [ right %tmp.11 60 26 31 const ];
+        %tmp.12 = agetv %tmp.9 %tmp.11;
+        symbol [ mRight ? 60 8 14 ];
+        putv self :mRight %tmp.12;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 61 8 ]
+        %tmp.13 = lgetv %params;
+        symbol [ params %tmp.13 61 18 24 ];
+        %tmp.15 = const :top;
+        symbol [ top %tmp.15 61 26 29 const ];
+        %tmp.16 = agetv %tmp.13 %tmp.15;
+        symbol [ mTop ? 61 8 12 ];
+        putv self :mTop %tmp.16;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 62 8 ]
+        %tmp.17 = lgetv %params;
+        symbol [ params %tmp.17 62 18 24 ];
+        %tmp.19 = const :bottom;
+        symbol [ bottom %tmp.19 62 26 32 const ];
+        %tmp.20 = agetv %tmp.17 %tmp.19;
+        symbol [ mBottom ? 62 8 15 ];
+        putv self :mBottom %tmp.20;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 63 2 ]
+        %tmp.21 = lgetv %params;
+        symbol [ params %tmp.21 63 19 25 ];
+        %tmp.23 = const :fieldPosition;
+        symbol [ fieldPosition %tmp.23 63 27 40 const ];
+        %tmp.24 = agetv %tmp.21 %tmp.23;
+        symbol [ mfieldPosition ? 63 2 16 ];
+        putv self :mfieldPosition %tmp.24;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 65 2 ]
+        symbol [ Ui %tmp.25 65 13 15 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.26 65 16 28 ];
+        %tmp.26 = getv function %tmp.25 :loadResource;
+        symbol [ Rez %tmp.28 65 29 32 ];
+        %tmp.28 = getv ? :Rez;
+        symbol [ Fonts %tmp.29 65 33 38 ];
+        %tmp.29 = getv %tmp.28 :Fonts;
+        symbol [ garmin_icons %tmp.30 65 39 51 ];
+        %tmp.30 = getv %tmp.29 :garmin_icons;
+        %tmp.31 = invoke %tmp.25 %tmp.26(%tmp.30);
+        symbol [ iconFont ? 65 2 10 ];
+        putv self :iconFont %tmp.31;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 66 2 ]
+        symbol [ Ui %tmp.32 66 13 15 ];
+        %tmp.32 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.33 66 16 28 ];
+        %tmp.33 = getv function %tmp.32 :loadResource;
+        symbol [ Rez %tmp.35 66 29 32 ];
+        %tmp.35 = getv ? :Rez;
+        symbol [ Fonts %tmp.36 66 33 38 ];
+        %tmp.36 = getv %tmp.35 :Fonts;
+        symbol [ text %tmp.37 66 39 43 ];
+        %tmp.37 = getv %tmp.36 :text;
+        %tmp.38 = invoke %tmp.32 %tmp.33(%tmp.37);
+        symbol [ textFont ? 66 2 10 ];
+        putv self :textFont %tmp.38;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 68 8 ]
+        %tmp.39 = self;
+        symbol [ loadSettings %tmp.40 68 8 20 ];
+        %tmp.40 = getv function %tmp.39 :loadSettings;
+        invoke %tmp.39 %tmp.40();
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_56_42_69_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 71; @symbol_functiondef = [loadSettings,71,13,25]; ]
+    function loadSettings() {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_71_28_98_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 72 2 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_stmt:
+        symbol [ mfieldPosition %tmp.2 72 6 20 ];
+        %tmp.2 = getv ? :mfieldPosition;
+        %tmp.4 = const :upper;
+        symbol [ upper %tmp.4 72 25 30 const ];
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_32_80_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 73 3 ]
+        symbol [ Properties %tmp.6 73 17 27 ];
+        %tmp.6 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.7 73 28 36 ];
+        %tmp.7 = getv function %tmp.6 :getValue;
+        %tmp.8 = "FieldCount";
+        %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
+        symbol [ mFieldCount ? 73 3 14 ];
+        putv self :mFieldCount %tmp.9;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 74 3 ]
+        for @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_test @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_incr @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_init:
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_begin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 74 12 13 ];
+        %tmp.10 = 1;
+        lputv %i.1 %tmp.10;
+        symbol [ i %i.1 74 12 13 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_test:
+        %tmp.11 = lgetv %i.1;
+        symbol [ i %tmp.11 74 19 20 ];
+        symbol [ mFieldCount %tmp.13 74 24 35 ];
+        %tmp.13 = getv ? :mFieldCount;
+        %tmp.14 = lte %tmp.11 %tmp.13;
+        bf %tmp.14 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_begin:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_42_79_3_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 75 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_42_79_3_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_42_79_3_stop" ]
+        %field.2 = local;
+        symbol [ field %field.2 75 8 13 ];
+        symbol [ Properties %tmp.15 75 16 26 ];
+        %tmp.15 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.16 75 27 35 ];
+        %tmp.16 = getv function %tmp.15 :getValue;
+        %tmp.17 = "Field";
+        %tmp.18 = lgetv %i.1;
+        symbol [ i %tmp.18 75 46 47 ];
+        %tmp.19 = add %tmp.17 %tmp.18;
+        %tmp.20 = invoke %tmp.15 %tmp.16(%tmp.19);
+        lputv %field.2 %tmp.20;
+        symbol [ field %field.2 75 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 76 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_4_78_4_if_stmt:
+        %tmp.21 = lgetv %field.2;
+        symbol [ field %tmp.21 76 8 13 ];
+        %tmp.22 = 0;
+        %tmp.23 = gte %tmp.21 %tmp.22;
+        bf %tmp.23 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_4_78_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_4_78_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_20_78_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 77 5 ]
+        symbol [ mFieldTypes %tmp.25 77 5 16 ];
+        %tmp.25 = getv ? :mFieldTypes;
+        symbol [ add %tmp.26 77 17 20 ];
+        %tmp.26 = getv function %tmp.25 :add;
+        %tmp.27 = lgetv %field.2;
+        symbol [ field %tmp.27 77 21 26 ];
+        invoke %tmp.25 %tmp.26(%tmp.27);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_20_78_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_4_78_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_76_4_78_4_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_42_79_3_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_incr:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 74 ]
+        %tmp.30 = lgetv %i.1;
+        symbol [ i %tmp.30 74 37 38 ];
+        %tmp.31 = add %tmp.30 1;
+        lputv %i.1 %tmp.31;
+        symbol [ i %i.1 74 37 38 ];
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_test;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_74_3_79_3_for_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_32_80_2_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_false:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 80 9 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_stmt:
+        symbol [ mfieldPosition %tmp.33 80 13 27 ];
+        %tmp.33 = getv ? :mfieldPosition;
+        %tmp.35 = const :middle;
+        symbol [ middle %tmp.35 80 32 38 const ];
+        %tmp.36 = eq %tmp.33 %tmp.35;
+        bf %tmp.36 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_40_88_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 81 3 ]
+        symbol [ Properties %tmp.37 81 17 27 ];
+        %tmp.37 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.38 81 28 36 ];
+        %tmp.38 = getv function %tmp.37 :getValue;
+        %tmp.39 = "FieldMiddleCount";
+        %tmp.40 = invoke %tmp.37 %tmp.38(%tmp.39);
+        symbol [ mFieldCount ? 81 3 14 ];
+        putv self :mFieldCount %tmp.40;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 82 3 ]
+        for @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_test @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_incr @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_init:
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_begin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_end" ]
+        %i.3 = local;
+        symbol [ i %i.3 82 12 13 ];
+        %tmp.41 = 1;
+        lputv %i.3 %tmp.41;
+        symbol [ i %i.3 82 12 13 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_test:
+        %tmp.42 = lgetv %i.3;
+        symbol [ i %tmp.42 82 19 20 ];
+        symbol [ mFieldCount %tmp.44 82 24 35 ];
+        %tmp.44 = getv ? :mFieldCount;
+        %tmp.45 = lte %tmp.42 %tmp.44;
+        bf %tmp.45 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_begin:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_42_87_3_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 83 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_42_87_3_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_42_87_3_stop" ]
+        %field.4 = local;
+        symbol [ field %field.4 83 8 13 ];
+        symbol [ Properties %tmp.46 83 16 26 ];
+        %tmp.46 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.47 83 27 35 ];
+        %tmp.47 = getv function %tmp.46 :getValue;
+        %tmp.48 = "FieldMiddle";
+        %tmp.49 = lgetv %i.3;
+        symbol [ i %tmp.49 83 52 53 ];
+        %tmp.50 = add %tmp.48 %tmp.49;
+        %tmp.51 = invoke %tmp.46 %tmp.47(%tmp.50);
+        lputv %field.4 %tmp.51;
+        symbol [ field %field.4 83 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 84 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_4_86_4_if_stmt:
+        %tmp.52 = lgetv %field.4;
+        symbol [ field %tmp.52 84 8 13 ];
+        %tmp.53 = 0;
+        %tmp.54 = gte %tmp.52 %tmp.53;
+        bf %tmp.54 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_4_86_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_4_86_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_20_86_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 85 5 ]
+        symbol [ mFieldTypes %tmp.56 85 5 16 ];
+        %tmp.56 = getv ? :mFieldTypes;
+        symbol [ add %tmp.57 85 17 20 ];
+        %tmp.57 = getv function %tmp.56 :add;
+        %tmp.58 = lgetv %field.4;
+        symbol [ field %tmp.58 85 21 26 ];
+        invoke %tmp.56 %tmp.57(%tmp.58);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_20_86_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_4_86_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_84_4_86_4_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_42_87_3_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_incr:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 82 ]
+        %tmp.61 = lgetv %i.3;
+        symbol [ i %tmp.61 82 37 38 ];
+        %tmp.62 = add %tmp.61 1;
+        lputv %i.3 %tmp.62;
+        symbol [ i %i.3 82 37 38 ];
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_test;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_82_3_87_3_for_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_40_88_2_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_88_9_96_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 89 3 ]
+        symbol [ Properties %tmp.63 89 17 27 ];
+        %tmp.63 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.64 89 28 36 ];
+        %tmp.64 = getv function %tmp.63 :getValue;
+        %tmp.65 = "FieldBottomCount";
+        %tmp.66 = invoke %tmp.63 %tmp.64(%tmp.65);
+        symbol [ mFieldCount ? 89 3 14 ];
+        putv self :mFieldCount %tmp.66;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 90 3 ]
+        for @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_test @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_incr @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_init:
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_begin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_end" ]
+        %i.5 = local;
+        symbol [ i %i.5 90 12 13 ];
+        %tmp.67 = 1;
+        lputv %i.5 %tmp.67;
+        symbol [ i %i.5 90 12 13 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_test:
+        %tmp.68 = lgetv %i.5;
+        symbol [ i %tmp.68 90 19 20 ];
+        symbol [ mFieldCount %tmp.70 90 24 35 ];
+        %tmp.70 = getv ? :mFieldCount;
+        %tmp.71 = lte %tmp.68 %tmp.70;
+        bf %tmp.71 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_begin:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_42_95_3_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 91 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_42_95_3_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_42_95_3_stop" ]
+        %field.6 = local;
+        symbol [ field %field.6 91 8 13 ];
+        symbol [ Properties %tmp.72 91 16 26 ];
+        %tmp.72 = getm $.Toybox.Application.Properties;
+        symbol [ getValue %tmp.73 91 27 35 ];
+        %tmp.73 = getv function %tmp.72 :getValue;
+        %tmp.74 = "FieldBottom";
+        %tmp.75 = lgetv %i.5;
+        symbol [ i %tmp.75 91 52 53 ];
+        %tmp.76 = add %tmp.74 %tmp.75;
+        %tmp.77 = invoke %tmp.72 %tmp.73(%tmp.76);
+        lputv %field.6 %tmp.77;
+        symbol [ field %field.6 91 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 92 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_4_94_4_if_stmt:
+        %tmp.78 = lgetv %field.6;
+        symbol [ field %tmp.78 92 8 13 ];
+        %tmp.79 = 0;
+        %tmp.80 = gte %tmp.78 %tmp.79;
+        bf %tmp.80 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_4_94_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_4_94_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_20_94_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 93 5 ]
+        symbol [ mFieldTypes %tmp.82 93 5 16 ];
+        %tmp.82 = getv ? :mFieldTypes;
+        symbol [ add %tmp.83 93 17 20 ];
+        %tmp.83 = getv function %tmp.82 :add;
+        %tmp.84 = lgetv %field.6;
+        symbol [ field %tmp.84 93 21 26 ];
+        invoke %tmp.82 %tmp.83(%tmp.84);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_20_94_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_4_94_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_92_4_94_4_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_42_95_3_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_incr:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 90 ]
+        %tmp.87 = lgetv %i.5;
+        symbol [ i %tmp.87 90 37 38 ];
+        %tmp.88 = add %tmp.87 1;
+        lputv %i.5 %tmp.88;
+        symbol [ i %i.5 90 37 38 ];
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_test;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_90_3_95_3_for_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_88_9_96_2_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_80_9_96_2_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_72_2_96_2_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 97 2 ]
+        %tmp.89 = newa 5;
+        %tmp.90 = 0;
+        %tmp.91 = dup %tmp.89;
+        %tmp.92 = aputv %tmp.91 0 %tmp.90;
+        %tmp.93 = 8;
+        %tmp.94 = dup %tmp.92;
+        %tmp.95 = aputv %tmp.94 1 %tmp.93;
+        %tmp.96 = 6;
+        %tmp.97 = dup %tmp.95;
+        %tmp.98 = aputv %tmp.97 2 %tmp.96;
+        %tmp.99 = 4;
+        %tmp.100 = dup %tmp.98;
+        %tmp.101 = aputv %tmp.100 3 %tmp.99;
+        %tmp.102 = 3;
+        %tmp.103 = dup %tmp.101;
+        %tmp.104 = aputv %tmp.103 4 %tmp.102;
+        symbol [ mFieldCount %tmp.106 97 36 47 ];
+        %tmp.106 = getv ? :mFieldCount;
+        %tmp.107 = agetv %tmp.104 %tmp.106;
+        symbol [ mMaxFieldLength ? 97 2 17 ];
+        putv self :mMaxFieldLength %tmp.107;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_71_28_98_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 100; @symbol_functiondef = [draw,100,13,17]; @symbol_param<0> = [dc,100,18,20]; @symbol_param<0>_type<0> = [Gfx,100,24,27]; @symbol_param<0>_type<1> = [Dc,100,28,30]; ]
+    function draw(dc as Gfx.Dc) {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_100_32_122_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 102 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_100_32_122_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_100_32_122_4_stop" ]
+        %count.1 = local;
+        symbol [ count %count.1 102 12 17 ];
+        symbol [ mFieldTypes %tmp.2 102 20 31 ];
+        %tmp.2 = getv ? :mFieldTypes;
+        symbol [ size %tmp.3 102 32 36 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %count.1 %tmp.4;
+        symbol [ count %count.1 102 12 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 103 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_8_105_8_if_stmt:
+        %tmp.5 = lgetv %count.1;
+        symbol [ count %tmp.5 103 12 17 ];
+        %tmp.6 = 0;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_8_105_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_8_105_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_24_105_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 104 12 ]
+        ret ?;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_24_105_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_8_105_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_103_8_105_8_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 107 8 ]
+        for @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_test @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_incr @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_init:
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_begin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_end" ]
+        %i.2 = local;
+        symbol [ i %i.2 107 17 18 ];
+        %tmp.8 = 0;
+        lputv %i.2 %tmp.8;
+        symbol [ i %i.2 107 17 18 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_test:
+        %tmp.9 = lgetv %i.2;
+        symbol [ i %tmp.9 107 24 25 ];
+        %tmp.10 = lgetv %count.1;
+        symbol [ count %tmp.10 107 28 33 ];
+        %tmp.11 = lt %tmp.9 %tmp.10;
+        bf %tmp.11 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_begin:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_40_121_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 109 12 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_40_121_8_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_40_121_8_stop" ]
+        %x.3 = local;
+        symbol [ x %x.3 109 16 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 110 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_stmt:
+        %tmp.12 = lgetv %count.1;
+        symbol [ count %tmp.12 110 16 21 ];
+        %tmp.13 = 1;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_28_112_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 111 16 ]
+        symbol [ mLeft %tmp.16 111 21 26 ];
+        %tmp.16 = getv ? :mLeft;
+        symbol [ mRight %tmp.18 111 29 35 ];
+        %tmp.18 = getv ? :mRight;
+        %tmp.19 = add %tmp.16 %tmp.18;
+        %tmp.20 = 2;
+        %tmp.21 = div %tmp.19 %tmp.20;
+        lputv %x.3 %tmp.21;
+        symbol [ x %x.3 111 16 17 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_28_112_12_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_false:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 112 19 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_stmt:
+        %tmp.22 = lgetv %count.1;
+        symbol [ count %tmp.22 112 23 28 ];
+        %tmp.23 = 2;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_35_116_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 113 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_begin:
+        %tmp.25 = lgetv %i.2;
+        symbol [ i %tmp.25 113 21 22 ];
+        %tmp.26 = 0;
+        %tmp.27 = eq %tmp.25 %tmp.26;
+        bf %tmp.27 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_true:
+        symbol [ mLeft %tmp.29 114 22 27 ];
+        %tmp.29 = getv ? :mLeft;
+        symbol [ mRight %tmp.31 114 32 38 ];
+        %tmp.31 = getv ? :mRight;
+        symbol [ mLeft %tmp.33 114 41 46 ];
+        %tmp.33 = getv ? :mLeft;
+        %tmp.34 = sub %tmp.31 %tmp.33;
+        %tmp.35 = 0.25;
+        %tmp.36 = mul %tmp.34 %tmp.35;
+        %tmp.37 = add %tmp.29 %tmp.36;
+        push %tmp.37;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_else_false:
+        symbol [ mLeft %tmp.39 115 22 27 ];
+        %tmp.39 = getv ? :mLeft;
+        symbol [ mRight %tmp.41 115 32 38 ];
+        %tmp.41 = getv ? :mRight;
+        symbol [ mLeft %tmp.43 115 41 46 ];
+        %tmp.43 = getv ? :mLeft;
+        %tmp.44 = sub %tmp.41 %tmp.43;
+        %tmp.45 = 0.75;
+        %tmp.46 = mul %tmp.44 %tmp.45;
+        %tmp.47 = add %tmp.39 %tmp.46;
+        push %tmp.47;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_end:
+        %tmp.48 = phi [%tmp.27 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_begin] [%tmp.37 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_true] [%tmp.47 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_else_false] [%tmp.48 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_113_20_115_54_end];
+        lputv %x.3 %tmp.48;
+        symbol [ x %x.3 113 16 17 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_35_116_12_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_116_19_118_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 117 16 ]
+        symbol [ mLeft %tmp.50 117 20 25 ];
+        %tmp.50 = getv ? :mLeft;
+        symbol [ mRight %tmp.52 117 30 36 ];
+        %tmp.52 = getv ? :mRight;
+        symbol [ mLeft %tmp.54 117 39 44 ];
+        %tmp.54 = getv ? :mLeft;
+        %tmp.55 = sub %tmp.52 %tmp.54;
+        %tmp.56 = lgetv %i.2;
+        symbol [ i %tmp.56 117 48 49 ];
+        %tmp.57 = mul %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %count.1;
+        symbol [ count %tmp.58 117 53 58 ];
+        %tmp.59 = 1;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        %tmp.61 = div %tmp.57 %tmp.60;
+        %tmp.62 = add %tmp.50 %tmp.61;
+        lputv %x.3 %tmp.62;
+        symbol [ x %x.3 117 16 17 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_116_19_118_12_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_112_19_118_12_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_110_12_118_12_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 120 12 ]
+        %tmp.63 = self;
+        symbol [ drawField %tmp.64 120 12 21 ];
+        %tmp.64 = getv function %tmp.63 :drawField;
+        %tmp.65 = lgetv %dc;
+        symbol [ dc %tmp.65 120 22 24 ];
+        symbol [ mFieldTypes %tmp.67 120 26 37 ];
+        %tmp.67 = getv ? :mFieldTypes;
+        %tmp.68 = lgetv %i.2;
+        symbol [ i %tmp.68 120 38 39 ];
+        %tmp.69 = agetv %tmp.67 %tmp.68;
+        %tmp.70 = lgetv %x.3;
+        symbol [ x %tmp.70 120 42 43 ];
+        invoke %tmp.63 %tmp.64(%tmp.65, %tmp.69, %tmp.70);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_40_121_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_incr:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 107 ]
+        %tmp.73 = lgetv %i.2;
+        symbol [ i %tmp.73 107 35 36 ];
+        %tmp.74 = add %tmp.73 1;
+        lputv %i.2 %tmp.74;
+        symbol [ i %i.2 107 35 36 ];
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_test;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_107_8_121_8_for_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_100_32_122_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 124; @position = 15; @symbol_constdef = [ICON_TEXT_GAP,124,15,28]; ]
+    private
+    const ICON_TEXT_GAP = 4;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 126; @symbol_functiondef = [drawField,126,17,26]; @symbol_param<0> = [dc,126,27,29]; @symbol_param<1> = [fieldType,126,31,40]; @symbol_param<2> = [x,126,42,43]; ]
+    private
+    function drawField(dc, fieldType, x) {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 128 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %value.1 = local;
+        symbol [ value %value.1 128 8 13 ];
+        %tmp.1 = self;
+        symbol [ getValue %tmp.2 128 16 24 ];
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = lgetv %fieldType;
+        symbol [ fieldType %tmp.3 128 25 34 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %value.1 %tmp.4;
+        symbol [ value %value.1 128 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 131 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %icon.2 = local;
+        symbol [ icon %icon.2 131 8 12 ];
+        %tmp.5 = newd 14;
+        symbol [ FIELD_TYPE_HEART_RATE %tmp.7 132 8 29 ];
+        %tmp.7 = getv ? :FIELD_TYPE_HEART_RATE;
+        %tmp.8 = "i";
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        symbol [ FIELD_TYPE_BATTERY %tmp.12 133 8 26 ];
+        %tmp.12 = getv ? :FIELD_TYPE_BATTERY;
+        %tmp.13 = "Q";
+        %tmp.14 = dup %tmp.10;
+        %tmp.15 = aputv %tmp.14 %tmp.12 %tmp.13;
+        symbol [ FIELD_TYPE_NOTIFICATIONS %tmp.17 134 8 32 ];
+        %tmp.17 = getv ? :FIELD_TYPE_NOTIFICATIONS;
+        %tmp.18 = "H";
+        %tmp.19 = dup %tmp.15;
+        %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
+        symbol [ FIELD_TYPE_CALORIES %tmp.22 135 8 27 ];
+        %tmp.22 = getv ? :FIELD_TYPE_CALORIES;
+        %tmp.23 = "U";
+        %tmp.24 = dup %tmp.20;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        symbol [ FIELD_TYPE_DISTANCE %tmp.27 136 8 27 ];
+        %tmp.27 = getv ? :FIELD_TYPE_DISTANCE;
+        %tmp.28 = "{";
+        %tmp.29 = dup %tmp.25;
+        %tmp.30 = aputv %tmp.29 %tmp.27 %tmp.28;
+        symbol [ FIELD_TYPE_ALARMS %tmp.32 137 8 25 ];
+        %tmp.32 = getv ? :FIELD_TYPE_ALARMS;
+        %tmp.33 = "O";
+        %tmp.34 = dup %tmp.30;
+        %tmp.35 = aputv %tmp.34 %tmp.32 %tmp.33;
+        symbol [ FIELD_TYPE_ALTITUDE %tmp.37 138 8 27 ];
+        %tmp.37 = getv ? :FIELD_TYPE_ALTITUDE;
+        %tmp.38 = "Æ";
+        %tmp.39 = dup %tmp.35;
+        %tmp.40 = aputv %tmp.39 %tmp.37 %tmp.38;
+        symbol [ FIELD_TYPE_TEMPERATURE %tmp.42 139 8 30 ];
+        %tmp.42 = getv ? :FIELD_TYPE_TEMPERATURE;
+        %tmp.43 = "W";
+        %tmp.44 = dup %tmp.40;
+        %tmp.45 = aputv %tmp.44 %tmp.42 %tmp.43;
+        symbol [ FIELD_TYPE_PRESSURE %tmp.47 140 8 27 ];
+        %tmp.47 = getv ? :FIELD_TYPE_PRESSURE;
+        %tmp.48 = "o";
+        %tmp.49 = dup %tmp.45;
+        %tmp.50 = aputv %tmp.49 %tmp.47 %tmp.48;
+        symbol [ FIELD_TYPE_HUMIDITY %tmp.52 141 8 27 ];
+        %tmp.52 = getv ? :FIELD_TYPE_HUMIDITY;
+        %tmp.53 = "M";
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+        symbol [ FIELD_TYPE_SUNRISE %tmp.57 142 2 20 ];
+        %tmp.57 = getv ? :FIELD_TYPE_SUNRISE;
+        %tmp.58 = "n";
+        %tmp.59 = dup %tmp.55;
+        %tmp.60 = aputv %tmp.59 %tmp.57 %tmp.58;
+        symbol [ FIELD_TYPE_SUNSET %tmp.62 143 2 19 ];
+        %tmp.62 = getv ? :FIELD_TYPE_SUNSET;
+        %tmp.63 = "_";
+        %tmp.64 = dup %tmp.60;
+        %tmp.65 = aputv %tmp.64 %tmp.62 %tmp.63;
+        symbol [ FIELD_TYPE_BATTERY_NO_ICON %tmp.67 144 2 28 ];
+        %tmp.67 = getv ? :FIELD_TYPE_BATTERY_NO_ICON;
+        %tmp.68 = null;
+        %tmp.69 = dup %tmp.65;
+        %tmp.70 = aputv %tmp.69 %tmp.67 %tmp.68;
+        symbol [ FIELD_TYPE_GARMIN_TEMPERATURE %tmp.72 145 2 31 ];
+        %tmp.72 = getv ? :FIELD_TYPE_GARMIN_TEMPERATURE;
+        %tmp.73 = "W";
+        %tmp.74 = dup %tmp.70;
+        %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
+        %tmp.76 = lgetv %fieldType;
+        symbol [ fieldType %tmp.76 146 6 15 ];
+        %tmp.77 = agetv %tmp.75 %tmp.76;
+        lputv %icon.2 %tmp.77;
+        symbol [ icon %icon.2 131 8 12 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 149 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_4_161_4_if_stmt:
+        %tmp.78 = lgetv %fieldType;
+        symbol [ fieldType %tmp.78 149 8 17 ];
+        symbol [ FIELD_TYPE_HEART_RATE %tmp.80 149 21 42 ];
+        %tmp.80 = getv ? :FIELD_TYPE_HEART_RATE;
+        %tmp.81 = eq %tmp.78 %tmp.80;
+        bf %tmp.81 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_4_161_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_4_161_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_44_161_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 151 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_44_161_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_44_161_4_stop" ]
+        %hr.3 = local;
+        symbol [ hr %hr.3 151 12 14 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_begin:
+        %tmp.82 = lgetv %value.1;
+        symbol [ value %tmp.82 151 18 23 ];
+        %tmp.83 = null;
+        %tmp.84 = ne %tmp.82 %tmp.83;
+        bf %tmp.84 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_true:
+        %tmp.85 = lgetv %value.1;
+        symbol [ value %tmp.85 151 35 40 ];
+        %tmp.86 = as %tmp.85 { (!Null) };
+        symbol [ toNumber %tmp.87 151 41 49 ];
+        %tmp.87 = getv function %tmp.86 :toNumber;
+        %tmp.88 = invoke %tmp.86 %tmp.87();
+        push %tmp.88;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_else_false:
+        %tmp.89 = 0;
+        push %tmp.89;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_end:
+        %tmp.90 = phi [%tmp.84 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_begin] [%tmp.88 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_true] [%tmp.89 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_else_false] [%tmp.90 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_151_17_151_54_end];
+        lputv %hr.3 %tmp.90;
+        symbol [ hr %hr.3 151 12 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 153 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_stmt:
+        %tmp.91 = lgetv %hr.3;
+        symbol [ hr %tmp.91 153 12 14 ];
+        %tmp.92 = 0;
+        %tmp.93 = gt %tmp.91 %tmp.92;
+        bf %tmp.93 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_20_158_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 154 12 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_20_158_8_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_20_158_8_stop" ]
+        %seconds.4 = local;
+        symbol [ seconds %seconds.4 154 16 23 ];
+        symbol [ System %tmp.95 154 26 32 ];
+        %tmp.95 = getv ? :System;
+        symbol [ getClockTime %tmp.96 154 33 45 ];
+        %tmp.96 = getv function %tmp.95 :getClockTime;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        symbol [ sec %tmp.98 154 48 51 ];
+        %tmp.98 = getv %tmp.97 :sec;
+        lputv %seconds.4 %tmp.98;
+        symbol [ seconds %seconds.4 154 16 23 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 155 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_begin:
+        %tmp.99 = lgetv %seconds.4;
+        symbol [ seconds %tmp.99 155 20 27 ];
+        %tmp.100 = 2;
+        %tmp.101 = mod %tmp.99 %tmp.100;
+        %tmp.102 = 0;
+        %tmp.103 = eq %tmp.101 %tmp.102;
+        bf %tmp.103 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_true:
+        %tmp.104 = "i";
+        push %tmp.104;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_else_false:
+        %tmp.105 = "j";
+        push %tmp.105;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_end:
+        %tmp.106 = phi [%tmp.103 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_begin] [%tmp.104 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_true] [%tmp.105 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_else_false] [%tmp.106 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_155_19_157_18_end];
+        lputv %icon.2 %tmp.106;
+        symbol [ icon %icon.2 155 12 16 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_20_158_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_158_15_160_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 159 12 ]
+        %tmp.107 = "i";
+        lputv %icon.2 %tmp.107;
+        symbol [ icon %icon.2 159 12 16 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_158_15_160_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_153_8_160_8_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_44_161_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_4_161_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_149_4_161_4_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 163 4 ]
+        %tmp.108 = lgetv %dc;
+        symbol [ dc %tmp.108 163 4 6 ];
+        symbol [ setColor %tmp.109 163 7 15 ];
+        %tmp.109 = getv function %tmp.108 :setColor;
+        symbol [ Gfx %tmp.110 163 16 19 ];
+        %tmp.110 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.111 163 20 31 ];
+        %tmp.111 = getv %tmp.110 :COLOR_WHITE;
+        symbol [ Gfx %tmp.112 163 33 36 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.113 163 37 54 ];
+        %tmp.113 = getv %tmp.112 :COLOR_TRANSPARENT;
+        invoke %tmp.108 %tmp.109(%tmp.111, %tmp.113);
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 166 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %iconDims.5 = local;
+        symbol [ iconDims %iconDims.5 166 8 16 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_begin:
+        %tmp.114 = lgetv %icon.2;
+        symbol [ icon %tmp.114 166 20 24 ];
+        %tmp.115 = null;
+        %tmp.116 = ne %tmp.114 %tmp.115;
+        bf %tmp.116 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_true:
+        %tmp.117 = lgetv %dc;
+        symbol [ dc %tmp.117 167 10 12 ];
+        symbol [ getTextDimensions %tmp.118 167 13 30 ];
+        %tmp.118 = getv function %tmp.117 :getTextDimensions;
+        %tmp.119 = lgetv %icon.2;
+        symbol [ icon %tmp.119 167 31 35 ];
+        %tmp.120 = as %tmp.119 { (!Null) };
+        symbol [ iconFont %tmp.122 167 37 45 ];
+        %tmp.122 = getv ? :iconFont;
+        %tmp.123 = invoke %tmp.117 %tmp.118(%tmp.120, %tmp.122);
+        push %tmp.123;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_else_false:
+        %tmp.124 = newa 2;
+        %tmp.125 = 0;
+        %tmp.126 = dup %tmp.124;
+        %tmp.127 = aputv %tmp.126 0 %tmp.125;
+        %tmp.128 = 0;
+        %tmp.129 = dup %tmp.127;
+        %tmp.130 = aputv %tmp.129 1 %tmp.128;
+        push %tmp.130;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_end:
+        %tmp.131 = phi [%tmp.116 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_begin] [%tmp.123 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_true] [%tmp.130 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_else_false] [%tmp.131 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_166_19_168_15_end];
+        lputv %iconDims.5 %tmp.131;
+        symbol [ iconDims %iconDims.5 166 8 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 170 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %textDims.6 = local;
+        symbol [ textDims %textDims.6 170 8 16 ];
+        %tmp.132 = lgetv %dc;
+        symbol [ dc %tmp.132 170 19 21 ];
+        symbol [ getTextDimensions %tmp.133 170 22 39 ];
+        %tmp.133 = getv function %tmp.132 :getTextDimensions;
+        %tmp.134 = lgetv %value.1;
+        symbol [ value %tmp.134 170 40 45 ];
+        symbol [ textFont %tmp.136 170 47 55 ];
+        %tmp.136 = getv ? :textFont;
+        %tmp.137 = invoke %tmp.132 %tmp.133(%tmp.134, %tmp.136);
+        lputv %textDims.6 %tmp.137;
+        symbol [ textDims %textDims.6 170 8 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 172 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %iconW.7 = local;
+        symbol [ iconW %iconW.7 172 8 13 ];
+        %tmp.138 = lgetv %iconDims.5;
+        symbol [ iconDims %tmp.138 172 16 24 ];
+        %tmp.139 = 0;
+        %tmp.140 = agetv %tmp.138 %tmp.139;
+        lputv %iconW.7 %tmp.140;
+        symbol [ iconW %iconW.7 172 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 173 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %iconH.8 = local;
+        symbol [ iconH %iconH.8 173 8 13 ];
+        %tmp.141 = lgetv %iconDims.5;
+        symbol [ iconDims %tmp.141 173 16 24 ];
+        %tmp.142 = 1;
+        %tmp.143 = agetv %tmp.141 %tmp.142;
+        lputv %iconH.8 %tmp.143;
+        symbol [ iconH %iconH.8 173 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 174 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %textH.9 = local;
+        symbol [ textH %textH.9 174 8 13 ];
+        %tmp.144 = lgetv %textDims.6;
+        symbol [ textDims %tmp.144 174 16 24 ];
+        %tmp.145 = 1;
+        %tmp.146 = agetv %tmp.144 %tmp.145;
+        lputv %textH.9 %tmp.146;
+        symbol [ textH %textH.9 174 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 176 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %centerY.10 = local;
+        symbol [ centerY %centerY.10 176 8 15 ];
+        symbol [ mTop %tmp.148 176 19 23 ];
+        %tmp.148 = getv ? :mTop;
+        symbol [ mBottom %tmp.150 176 26 33 ];
+        %tmp.150 = getv ? :mBottom;
+        %tmp.151 = add %tmp.148 %tmp.150;
+        %tmp.152 = 2;
+        %tmp.153 = div %tmp.151 %tmp.152;
+        lputv %centerY.10 %tmp.153;
+        symbol [ centerY %centerY.10 176 8 15 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 179 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %iconY.11 = local;
+        symbol [ iconY %iconY.11 179 8 13 ];
+        %tmp.154 = lgetv %centerY.10;
+        symbol [ centerY %tmp.154 179 16 23 ];
+        lputv %iconY.11 %tmp.154;
+        symbol [ iconY %iconY.11 179 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 180 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %textY.12 = local;
+        symbol [ textY %textY.12 180 8 13 ];
+        %tmp.155 = lgetv %centerY.10;
+        symbol [ centerY %tmp.155 180 16 23 ];
+        %tmp.156 = lgetv %iconH.8;
+        symbol [ iconH %tmp.156 180 27 32 ];
+        %tmp.157 = lgetv %textH.9;
+        symbol [ textH %tmp.157 180 35 40 ];
+        %tmp.158 = sub %tmp.156 %tmp.157;
+        %tmp.159 = add %tmp.155 %tmp.158;
+        lputv %textY.12 %tmp.159;
+        symbol [ textY %textY.12 180 8 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 183 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_4_191_4_if_stmt:
+        %tmp.160 = lgetv %icon.2;
+        symbol [ icon %tmp.160 183 8 12 ];
+        %tmp.161 = null;
+        %tmp.162 = ne %tmp.160 %tmp.161;
+        bf %tmp.162 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_4_191_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_4_191_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_22_191_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 184 8 ]
+        %tmp.163 = lgetv %dc;
+        symbol [ dc %tmp.163 184 8 10 ];
+        symbol [ drawText %tmp.164 184 11 19 ];
+        %tmp.164 = getv function %tmp.163 :drawText;
+        %tmp.165 = lgetv %x;
+        symbol [ x %tmp.165 185 12 13 ];
+        %tmp.166 = lgetv %iconY.11;
+        symbol [ iconY %tmp.166 186 12 17 ];
+        symbol [ iconFont %tmp.168 187 12 20 ];
+        %tmp.168 = getv ? :iconFont;
+        %tmp.169 = lgetv %icon.2;
+        symbol [ icon %tmp.169 188 12 16 ];
+        %tmp.170 = as %tmp.169 { (!Null) };
+        symbol [ Gfx %tmp.171 189 12 15 ];
+        %tmp.171 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.172 189 16 35 ];
+        %tmp.172 = getv %tmp.171 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.163 %tmp.164(%tmp.165, %tmp.166, %tmp.168, %tmp.170, %tmp.172);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_22_191_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_4_191_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_183_4_191_4_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 194 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop" ]
+        %valueX.13 = local;
+        symbol [ valueX %valueX.13 194 8 14 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_begin:
+        %tmp.173 = lgetv %icon.2;
+        symbol [ icon %tmp.173 194 18 22 ];
+        %tmp.174 = null;
+        %tmp.175 = ne %tmp.173 %tmp.174;
+        bf %tmp.175 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_true:
+        %tmp.176 = lgetv %x;
+        symbol [ x %tmp.176 195 10 11 ];
+        %tmp.177 = lgetv %iconW.7;
+        symbol [ iconW %tmp.177 195 15 20 ];
+        %tmp.178 = 2;
+        %tmp.179 = div %tmp.177 %tmp.178;
+        %tmp.180 = add %tmp.176 %tmp.179;
+        symbol [ ICON_TEXT_GAP %tmp.182 195 28 41 ];
+        %tmp.182 = getv ? :ICON_TEXT_GAP;
+        %tmp.183 = add %tmp.180 %tmp.182;
+        push %tmp.183;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_else_false:
+        %tmp.184 = lgetv %x;
+        symbol [ x %tmp.184 196 10 11 ];
+        push %tmp.184;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_end:
+        %tmp.185 = phi [%tmp.175 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_begin] [%tmp.183 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_true] [%tmp.184 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_else_false] [%tmp.185 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_194_17_196_10_end];
+        lputv %valueX.13 %tmp.185;
+        symbol [ valueX %valueX.13 194 8 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 198 4 ]
+        %tmp.186 = lgetv %dc;
+        symbol [ dc %tmp.186 198 4 6 ];
+        symbol [ drawText %tmp.187 198 7 15 ];
+        %tmp.187 = getv function %tmp.186 :drawText;
+        %tmp.188 = lgetv %valueX.13;
+        symbol [ valueX %tmp.188 199 8 14 ];
+        %tmp.189 = lgetv %textY.12;
+        symbol [ textY %tmp.189 200 8 13 ];
+        symbol [ textFont %tmp.191 201 8 16 ];
+        %tmp.191 = getv ? :textFont;
+        %tmp.192 = lgetv %value.1;
+        symbol [ value %tmp.192 202 8 13 ];
+        symbol [ Gfx %tmp.193 203 8 11 ];
+        %tmp.193 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.194 203 12 29 ];
+        %tmp.194 = getv %tmp.193 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.186 %tmp.187(%tmp.188, %tmp.189, %tmp.191, %tmp.192, %tmp.194);
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_126_45_205_0_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 207; @symbol_functiondef = [getValue,207,21,29]; @symbol_param<0> = [type,207,30,34]; @symbol_return<0> = [Lang,207,39,43]; @symbol_return<1> = [String,207,44,50]; ]
+    private
+    function getValue(type) as Lang.String {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 209 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_stop" ]
+        %settings.1 = local;
+        symbol [ settings %settings.1 209 6 14 ];
+        symbol [ Sys %tmp.1 209 17 20 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getDeviceSettings %tmp.2 209 21 38 ];
+        %tmp.2 = getv function %tmp.1 :getDeviceSettings;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %settings.1 %tmp.3;
+        symbol [ settings %settings.1 209 6 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 210 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_stop" ]
+        %info.2 = local;
+        symbol [ info %info.2 210 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 211 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_stop" ]
+        %sample.3 = local;
+        symbol [ sample %sample.3 211 12 18 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 212 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_stop" ]
+        %value.4 = local;
+        symbol [ value %value.4 212 12 17 ];
+        %tmp.4 = "0";
+        lputv %value.4 %tmp.4;
+        symbol [ value %value.4 212 12 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 214 8 ]
+        %tmp.5 = lgetv %type;
+        symbol [ type %tmp.5 214 16 20 ];
+        push %tmp.5;
+        switch %tmp.5 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtBegin:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 216 12 ]
+        %tmp.6 = dup %tmp.5;
+        symbol [ FIELD_TYPE_HEART_RATE %tmp.8 216 17 38 ];
+        %tmp.8 = getv ? :FIELD_TYPE_HEART_RATE;
+        %tmp.9 = getv function %tmp.6 :equals;
+        %tmp.10 = invoke %tmp.6 %tmp.9 (%tmp.8);
+        bt %tmp.10 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_216_12_221_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 223 12 ]
+        %tmp.11 = dup %tmp.5;
+        symbol [ FIELD_TYPE_BATTERY %tmp.13 223 17 35 ];
+        %tmp.13 = getv ? :FIELD_TYPE_BATTERY;
+        %tmp.14 = getv function %tmp.11 :equals;
+        %tmp.15 = invoke %tmp.11 %tmp.14 (%tmp.13);
+        bt %tmp.15 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_223_12_225_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 226 12 ]
+        %tmp.16 = dup %tmp.5;
+        symbol [ FIELD_TYPE_BATTERY_NO_ICON %tmp.18 226 17 43 ];
+        %tmp.18 = getv ? :FIELD_TYPE_BATTERY_NO_ICON;
+        %tmp.19 = getv function %tmp.16 :equals;
+        %tmp.20 = invoke %tmp.16 %tmp.19 (%tmp.18);
+        bt %tmp.20 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_226_12_228_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 230 12 ]
+        %tmp.21 = dup %tmp.5;
+        symbol [ FIELD_TYPE_NOTIFICATIONS %tmp.23 230 17 41 ];
+        %tmp.23 = getv ? :FIELD_TYPE_NOTIFICATIONS;
+        %tmp.24 = getv function %tmp.21 :equals;
+        %tmp.25 = invoke %tmp.21 %tmp.24 (%tmp.23);
+        bt %tmp.25 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_230_12_234_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 236 12 ]
+        %tmp.26 = dup %tmp.5;
+        symbol [ FIELD_TYPE_CALORIES %tmp.28 236 17 36 ];
+        %tmp.28 = getv ? :FIELD_TYPE_CALORIES;
+        %tmp.29 = getv function %tmp.26 :equals;
+        %tmp.30 = invoke %tmp.26 %tmp.29 (%tmp.28);
+        bt %tmp.30 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_236_12_238_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 240 12 ]
+        %tmp.31 = dup %tmp.5;
+        symbol [ FIELD_TYPE_DISTANCE %tmp.33 240 17 36 ];
+        %tmp.33 = getv ? :FIELD_TYPE_DISTANCE;
+        %tmp.34 = getv function %tmp.31 :equals;
+        %tmp.35 = invoke %tmp.31 %tmp.34 (%tmp.33);
+        bt %tmp.35 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_240_12_246_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 248 12 ]
+        %tmp.36 = dup %tmp.5;
+        symbol [ FIELD_TYPE_ALARMS %tmp.38 248 17 34 ];
+        %tmp.38 = getv ? :FIELD_TYPE_ALARMS;
+        %tmp.39 = getv function %tmp.36 :equals;
+        %tmp.40 = invoke %tmp.36 %tmp.39 (%tmp.38);
+        bt %tmp.40 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_248_12_252_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 254 12 ]
+        %tmp.41 = dup %tmp.5;
+        symbol [ FIELD_TYPE_ALTITUDE %tmp.43 254 17 36 ];
+        %tmp.43 = getv ? :FIELD_TYPE_ALTITUDE;
+        %tmp.44 = getv function %tmp.41 :equals;
+        %tmp.45 = invoke %tmp.41 %tmp.44 (%tmp.43);
+        bt %tmp.45 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_254_12_259_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 261 12 ]
+        %tmp.46 = dup %tmp.5;
+        symbol [ FIELD_TYPE_TEMPERATURE %tmp.48 261 17 39 ];
+        %tmp.48 = getv ? :FIELD_TYPE_TEMPERATURE;
+        %tmp.49 = getv function %tmp.46 :equals;
+        %tmp.50 = invoke %tmp.46 %tmp.49 (%tmp.48);
+        bt %tmp.50 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_261_12_275_9_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 277 3 ]
+        %tmp.51 = dup %tmp.5;
+        symbol [ FIELD_TYPE_GARMIN_TEMPERATURE %tmp.53 277 8 37 ];
+        %tmp.53 = getv ? :FIELD_TYPE_GARMIN_TEMPERATURE;
+        %tmp.54 = getv function %tmp.51 :equals;
+        %tmp.55 = invoke %tmp.51 %tmp.54 (%tmp.53);
+        bt %tmp.55 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_277_3_293_9_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 295 12 ]
+        %tmp.56 = dup %tmp.5;
+        symbol [ FIELD_TYPE_PRESSURE %tmp.58 295 17 36 ];
+        %tmp.58 = getv ? :FIELD_TYPE_PRESSURE;
+        %tmp.59 = getv function %tmp.56 :equals;
+        %tmp.60 = invoke %tmp.56 %tmp.59 (%tmp.58);
+        bt %tmp.60 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_295_12_304_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 306 12 ]
+        %tmp.61 = dup %tmp.5;
+        symbol [ FIELD_TYPE_HUMIDITY %tmp.63 306 17 36 ];
+        %tmp.63 = getv ? :FIELD_TYPE_HUMIDITY;
+        %tmp.64 = getv function %tmp.61 :equals;
+        %tmp.65 = invoke %tmp.61 %tmp.64 (%tmp.63);
+        bt %tmp.65 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_306_12_315_21_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 316 3 ]
+        %tmp.66 = dup %tmp.5;
+        symbol [ FIELD_TYPE_SUNRISE %tmp.68 316 8 26 ];
+        %tmp.68 = getv ? :FIELD_TYPE_SUNRISE;
+        %tmp.69 = getv function %tmp.66 :equals;
+        %tmp.70 = invoke %tmp.66 %tmp.69 (%tmp.68);
+        bt %tmp.70 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_316_3_318_9_switchCase;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 319 3 ]
+        %tmp.71 = dup %tmp.5;
+        symbol [ FIELD_TYPE_SUNSET %tmp.73 319 8 25 ];
+        %tmp.73 = getv ? :FIELD_TYPE_SUNSET;
+        %tmp.74 = getv function %tmp.71 :equals;
+        %tmp.75 = invoke %tmp.71 %tmp.74 (%tmp.73);
+        bt %tmp.75 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_319_3_321_9_switchCase;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtDefault:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_defaultCodeBegin;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_216_12_221_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 217 16 ]
+        symbol [ Activity %tmp.76 217 23 31 ];
+        %tmp.76 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.77 217 32 47 ];
+        %tmp.77 = getv function %tmp.76 :getActivityInfo;
+        %tmp.78 = invoke %tmp.76 %tmp.77();
+        lputv %info.2 %tmp.78;
+        symbol [ info %info.2 217 16 20 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 218 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_16_220_16_if_stmt:
+        %tmp.79 = lgetv %info.2;
+        symbol [ info %tmp.79 218 20 24 ];
+        symbol [ currentHeartRate %tmp.80 218 25 41 ];
+        %tmp.80 = getv %tmp.79 :currentHeartRate;
+        %tmp.81 = null;
+        %tmp.82 = ne %tmp.80 %tmp.81;
+        bf %tmp.82 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_16_220_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_16_220_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_51_220_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 219 20 ]
+        %tmp.83 = lgetv %info.2;
+        symbol [ info %tmp.83 219 28 32 ];
+        symbol [ currentHeartRate %tmp.84 219 33 49 ];
+        %tmp.84 = getv %tmp.83 :currentHeartRate;
+        symbol [ format %tmp.85 219 50 56 ];
+        %tmp.85 = getv function %tmp.84 :format;
+        %tmp.86 = "%d";
+        %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
+        lputv %value.4 %tmp.87;
+        symbol [ value %value.4 219 20 25 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_51_220_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_16_220_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_218_16_220_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 221 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_223_12_225_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 224 16 ]
+        symbol [ Math %tmp.89 224 24 28 ];
+        %tmp.89 = getv ? :Math;
+        symbol [ floor %tmp.90 224 29 34 ];
+        %tmp.90 = getv function %tmp.89 :floor;
+        symbol [ Sys %tmp.91 224 35 38 ];
+        %tmp.91 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.92 224 39 53 ];
+        %tmp.92 = getv function %tmp.91 :getSystemStats;
+        %tmp.93 = invoke %tmp.91 %tmp.92();
+        symbol [ battery %tmp.94 224 56 63 ];
+        %tmp.94 = getv %tmp.93 :battery;
+        %tmp.95 = invoke %tmp.89 %tmp.90(%tmp.94);
+        symbol [ format %tmp.96 224 65 71 ];
+        %tmp.96 = getv function %tmp.95 :format;
+        %tmp.97 = "%d";
+        %tmp.98 = invoke %tmp.95 %tmp.96(%tmp.97);
+        %tmp.99 = "%";
+        %tmp.100 = add %tmp.98 %tmp.99;
+        lputv %value.4 %tmp.100;
+        symbol [ value %value.4 224 16 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 225 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_226_12_228_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 227 16 ]
+        symbol [ Math %tmp.102 227 24 28 ];
+        %tmp.102 = getv ? :Math;
+        symbol [ floor %tmp.103 227 29 34 ];
+        %tmp.103 = getv function %tmp.102 :floor;
+        symbol [ Sys %tmp.104 227 35 38 ];
+        %tmp.104 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.105 227 39 53 ];
+        %tmp.105 = getv function %tmp.104 :getSystemStats;
+        %tmp.106 = invoke %tmp.104 %tmp.105();
+        symbol [ battery %tmp.107 227 56 63 ];
+        %tmp.107 = getv %tmp.106 :battery;
+        %tmp.108 = invoke %tmp.102 %tmp.103(%tmp.107);
+        symbol [ format %tmp.109 227 65 71 ];
+        %tmp.109 = getv function %tmp.108 :format;
+        %tmp.110 = "%d";
+        %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
+        %tmp.112 = "%";
+        %tmp.113 = add %tmp.111 %tmp.112;
+        lputv %value.4 %tmp.113;
+        symbol [ value %value.4 227 16 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 228 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_230_12_234_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 231 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_16_233_16_if_stmt:
+        %tmp.114 = lgetv %settings.1;
+        symbol [ settings %tmp.114 231 20 28 ];
+        symbol [ notificationCount %tmp.115 231 29 46 ];
+        %tmp.115 = getv %tmp.114 :notificationCount;
+        %tmp.116 = 0;
+        %tmp.117 = gt %tmp.115 %tmp.116;
+        bf %tmp.117 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_16_233_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_16_233_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_52_233_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 232 20 ]
+        %tmp.118 = lgetv %settings.1;
+        symbol [ settings %tmp.118 232 28 36 ];
+        symbol [ notificationCount %tmp.119 232 37 54 ];
+        %tmp.119 = getv %tmp.118 :notificationCount;
+        symbol [ format %tmp.120 232 55 61 ];
+        %tmp.120 = getv function %tmp.119 :format;
+        %tmp.121 = "%d";
+        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
+        lputv %value.4 %tmp.122;
+        symbol [ value %value.4 232 20 25 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_52_233_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_16_233_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_231_16_233_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 234 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_236_12_238_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 237 16 ]
+        symbol [ ActivityMonitor %tmp.123 237 24 39 ];
+        %tmp.123 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.124 237 40 47 ];
+        %tmp.124 = getv function %tmp.123 :getInfo;
+        %tmp.125 = invoke %tmp.123 %tmp.124();
+        symbol [ calories %tmp.126 237 50 58 ];
+        %tmp.126 = getv %tmp.125 :calories;
+        symbol [ format %tmp.127 237 59 65 ];
+        %tmp.127 = getv function %tmp.126 :format;
+        %tmp.128 = "%d";
+        %tmp.129 = invoke %tmp.126 %tmp.127(%tmp.128);
+        lputv %value.4 %tmp.129;
+        symbol [ value %value.4 237 16 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 238 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_240_12_246_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 241 16 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtBegin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd" ]
+        %dist.5 = local;
+        symbol [ dist %dist.5 241 20 24 ];
+        symbol [ ActivityMonitor %tmp.130 241 27 42 ];
+        %tmp.130 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.131 241 43 50 ];
+        %tmp.131 = getv function %tmp.130 :getInfo;
+        %tmp.132 = invoke %tmp.130 %tmp.131();
+        symbol [ distance %tmp.133 241 53 61 ];
+        %tmp.133 = getv %tmp.132 :distance;
+        symbol [ toFloat %tmp.134 241 62 69 ];
+        %tmp.134 = getv function %tmp.133 :toFloat;
+        %tmp.135 = invoke %tmp.133 %tmp.134();
+        %tmp.136 = 100000;
+        %tmp.137 = div %tmp.135 %tmp.136;
+        lputv %dist.5 %tmp.137;
+        symbol [ dist %dist.5 241 20 24 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 242 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_16_244_16_if_stmt:
+        %tmp.138 = lgetv %settings.1;
+        symbol [ settings %tmp.138 242 20 28 ];
+        symbol [ distanceUnits %tmp.139 242 29 42 ];
+        %tmp.139 = getv %tmp.138 :distanceUnits;
+        symbol [ Sys %tmp.140 242 46 49 ];
+        %tmp.140 = getm $.Toybox.System;
+        symbol [ UNIT_STATUTE %tmp.141 242 50 62 ];
+        %tmp.141 = getv %tmp.140 :UNIT_STATUTE;
+        %tmp.142 = eq %tmp.139 %tmp.141;
+        bf %tmp.142 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_16_244_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_16_244_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_64_244_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 243 20 ]
+        %tmp.143 = lgetv %dist.5;
+        symbol [ dist %tmp.143 243 20 24 ];
+        %tmp.144 = 0.621371;
+        %tmp.145 = mul %tmp.143 %tmp.144;
+        lputv %dist.5 %tmp.145;
+        symbol [ dist %dist.5 243 20 24 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_64_244_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_16_244_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_242_16_244_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 245 16 ]
+        %tmp.146 = lgetv %dist.5;
+        symbol [ dist %tmp.146 245 24 28 ];
+        symbol [ format %tmp.147 245 29 35 ];
+        %tmp.147 = getv function %tmp.146 :format;
+        %tmp.148 = "%.1f";
+        %tmp.149 = invoke %tmp.146 %tmp.147(%tmp.148);
+        lputv %value.4 %tmp.149;
+        symbol [ value %value.4 245 16 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 246 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_248_12_252_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 249 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_16_251_16_if_stmt:
+        %tmp.150 = lgetv %settings.1;
+        symbol [ settings %tmp.150 249 20 28 ];
+        symbol [ alarmCount %tmp.151 249 29 39 ];
+        %tmp.151 = getv %tmp.150 :alarmCount;
+        %tmp.152 = 0;
+        %tmp.153 = gt %tmp.151 %tmp.152;
+        bf %tmp.153 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_16_251_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_16_251_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_45_251_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 250 20 ]
+        %tmp.154 = lgetv %settings.1;
+        symbol [ settings %tmp.154 250 28 36 ];
+        symbol [ alarmCount %tmp.155 250 37 47 ];
+        %tmp.155 = getv %tmp.154 :alarmCount;
+        symbol [ format %tmp.156 250 48 54 ];
+        %tmp.156 = getv function %tmp.155 :format;
+        %tmp.157 = "%d";
+        %tmp.158 = invoke %tmp.155 %tmp.156(%tmp.157);
+        lputv %value.4 %tmp.158;
+        symbol [ value %value.4 250 20 25 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_45_251_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_16_251_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_249_16_251_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 252 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_254_12_259_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 255 16 ]
+        symbol [ Activity %tmp.159 255 23 31 ];
+        %tmp.159 = getm $.Toybox.Activity;
+        symbol [ getActivityInfo %tmp.160 255 32 47 ];
+        %tmp.160 = getv function %tmp.159 :getActivityInfo;
+        %tmp.161 = invoke %tmp.159 %tmp.160();
+        lputv %info.2 %tmp.161;
+        symbol [ info %info.2 255 16 20 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 256 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_16_258_16_if_stmt:
+        %tmp.162 = lgetv %info.2;
+        symbol [ info %tmp.162 256 20 24 ];
+        symbol [ altitude %tmp.163 256 25 33 ];
+        %tmp.163 = getv %tmp.162 :altitude;
+        %tmp.164 = null;
+        %tmp.165 = ne %tmp.163 %tmp.164;
+        bf %tmp.165 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_16_258_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_16_258_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_43_258_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 257 20 ]
+        %tmp.166 = lgetv %info.2;
+        symbol [ info %tmp.166 257 28 32 ];
+        symbol [ altitude %tmp.167 257 33 41 ];
+        %tmp.167 = getv %tmp.166 :altitude;
+        symbol [ format %tmp.168 257 42 48 ];
+        %tmp.168 = getv function %tmp.167 :format;
+        %tmp.169 = "%d";
+        %tmp.170 = invoke %tmp.167 %tmp.168(%tmp.169);
+        lputv %value.4 %tmp.170;
+        symbol [ value %value.4 257 20 25 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_43_258_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_16_258_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_256_16_258_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 259 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_261_12_275_9_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 262 5 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_9_262_88_begin:
+        symbol [ Toybox %tmp.172 262 10 16 ];
+        %tmp.172 = getv ? :Toybox;
+        %tmp.174 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.174 262 22 35 const ];
+        %tmp.175 = canhazplz %tmp.172 %tmp.174;
+        bf %tmp.175 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_40_262_88_true:
+        symbol [ Toybox %tmp.177 262 41 47 ];
+        %tmp.177 = getv ? :Toybox;
+        %tmp.178 = as %tmp.177 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.179 262 48 61 ];
+        %tmp.179 = getv %tmp.178 :SensorHistory;
+        %tmp.181 = const :getTemperatureHistory;
+        symbol [ getTemperatureHistory %tmp.181 262 67 88 const ];
+        %tmp.182 = canhazplz %tmp.179 %tmp.181;
+        push %tmp.182;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_40_262_88_end:
+        %tmp.183 = phi [%tmp.175 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_9_262_88_begin] [%tmp.182 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_40_262_88_true] [%tmp.183 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_40_262_88_end];
+        bf %tmp.183 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_91_273_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 263 5 ]
+        symbol [ SensorHistory %tmp.184 263 14 27 ];
+        %tmp.184 = getm $.Toybox.SensorHistory;
+        symbol [ getTemperatureHistory %tmp.185 263 28 49 ];
+        %tmp.185 = getv function %tmp.184 :getTemperatureHistory;
+        %tmp.186 = null;
+        %tmp.187 = invoke %tmp.184 %tmp.185(%tmp.186);
+        symbol [ next %tmp.188 263 56 60 ];
+        %tmp.188 = getv function %tmp.187 :next;
+        %tmp.189 = invoke %tmp.187 %tmp.188();
+        lputv %sample.3 %tmp.189;
+        symbol [ sample %sample.3 263 5 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 264 5 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_9_264_49_begin:
+        %tmp.190 = lgetv %sample.3;
+        symbol [ sample %tmp.190 264 10 16 ];
+        %tmp.191 = null;
+        %tmp.192 = ne %tmp.190 %tmp.191;
+        bf %tmp.192 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_29_264_49_true:
+        %tmp.193 = lgetv %sample.3;
+        symbol [ sample %tmp.193 264 30 36 ];
+        %tmp.194 = as %tmp.193 { (!Null) };
+        symbol [ data %tmp.195 264 37 41 ];
+        %tmp.195 = getv %tmp.194 :data;
+        %tmp.196 = null;
+        %tmp.197 = ne %tmp.195 %tmp.196;
+        push %tmp.197;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_29_264_49_end:
+        %tmp.198 = phi [%tmp.192 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_9_264_49_begin] [%tmp.197 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_29_264_49_true] [%tmp.198 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_29_264_49_end];
+        bf %tmp.198 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_52_272_5_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 265 6 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_52_272_5_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_52_272_5_stop" ]
+        %temperature.6 = local;
+        symbol [ temperature %temperature.6 265 10 21 ];
+        %tmp.199 = lgetv %sample.3;
+        symbol [ sample %tmp.199 265 24 30 ];
+        %tmp.200 = as %tmp.199 { (!Null) };
+        symbol [ data %tmp.201 265 31 35 ];
+        %tmp.201 = getv %tmp.200 :data;
+        lputv %temperature.6 %tmp.201;
+        symbol [ temperature %temperature.6 265 10 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 267 6 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_6_269_6_if_stmt:
+        %tmp.202 = lgetv %settings.1;
+        symbol [ settings %tmp.202 267 10 18 ];
+        symbol [ temperatureUnits %tmp.203 267 19 35 ];
+        %tmp.203 = getv %tmp.202 :temperatureUnits;
+        symbol [ System %tmp.205 267 39 45 ];
+        %tmp.205 = getv ? :System;
+        symbol [ UNIT_STATUTE %tmp.206 267 46 58 ];
+        %tmp.206 = getv %tmp.205 :UNIT_STATUTE;
+        %tmp.207 = eq %tmp.203 %tmp.206;
+        bf %tmp.207 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_6_269_6_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_6_269_6_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_60_269_6_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 268 7 ]
+        %tmp.208 = lgetv %temperature.6;
+        symbol [ temperature %tmp.208 268 22 33 ];
+        %tmp.209 = 9.0;
+        %tmp.210 = 5;
+        %tmp.211 = div %tmp.209 %tmp.210;
+        %tmp.212 = mul %tmp.208 %tmp.211;
+        %tmp.213 = 32;
+        %tmp.214 = add %tmp.212 %tmp.213;
+        lputv %temperature.6 %tmp.214;
+        symbol [ temperature %temperature.6 268 7 18 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_60_269_6_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_6_269_6_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_267_6_269_6_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 271 6 ]
+        %tmp.215 = lgetv %temperature.6;
+        symbol [ temperature %tmp.215 271 14 25 ];
+        symbol [ format %tmp.216 271 26 32 ];
+        %tmp.216 = getv function %tmp.215 :format;
+        %tmp.217 = "%d";
+        %tmp.218 = invoke %tmp.215 %tmp.216(%tmp.217);
+        lputv %value.4 %tmp.218;
+        symbol [ value %value.4 271 6 11 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_52_272_5_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_264_5_272_5_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_91_273_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_262_5_273_4_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 275 4 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_277_3_293_9_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 278 4 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtBegin" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd" ]
+        %weather.7 = local;
+        symbol [ weather %weather.7 278 8 15 ];
+        symbol [ Weather %tmp.220 278 18 25 ];
+        %tmp.220 = getv ? :Weather;
+        symbol [ getCurrentConditions %tmp.221 278 26 46 ];
+        %tmp.221 = getv function %tmp.220 :getCurrentConditions;
+        %tmp.222 = invoke %tmp.220 %tmp.221();
+        lputv %weather.7 %tmp.222;
+        symbol [ weather %weather.7 278 8 15 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 280 4 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_8_280_50_begin:
+        %tmp.223 = lgetv %weather.7;
+        symbol [ weather %tmp.223 280 8 15 ];
+        %tmp.224 = null;
+        %tmp.225 = ne %tmp.223 %tmp.224;
+        bf %tmp.225 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_27_280_50_true:
+        %tmp.226 = lgetv %weather.7;
+        symbol [ weather %tmp.226 280 27 34 ];
+        %tmp.227 = as %tmp.226 { (!Null) };
+        symbol [ temperature %tmp.228 280 35 46 ];
+        %tmp.228 = getv %tmp.227 :temperature;
+        %tmp.229 = null;
+        %tmp.230 = ne %tmp.228 %tmp.229;
+        push %tmp.230;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_27_280_50_end:
+        %tmp.231 = phi [%tmp.225 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_8_280_50_begin] [%tmp.230 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_27_280_50_true] [%tmp.231 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_27_280_50_end];
+        bf %tmp.231 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_56_290_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 282 5 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_56_290_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_56_290_4_stop" ]
+        %temp.8 = local;
+        symbol [ temp %temp.8 282 9 13 ];
+        %tmp.232 = lgetv %weather.7;
+        symbol [ weather %tmp.232 282 16 23 ];
+        %tmp.233 = as %tmp.232 { (!Null) };
+        symbol [ temperature %tmp.234 282 24 35 ];
+        %tmp.234 = getv %tmp.233 :temperature;
+        lputv %temp.8 %tmp.234;
+        symbol [ temp %temp.8 282 9 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 284 6 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_6_286_6_if_stmt:
+        %tmp.235 = lgetv %settings.1;
+        symbol [ settings %tmp.235 284 10 18 ];
+        symbol [ temperatureUnits %tmp.236 284 19 35 ];
+        %tmp.236 = getv %tmp.235 :temperatureUnits;
+        symbol [ System %tmp.238 284 39 45 ];
+        %tmp.238 = getv ? :System;
+        symbol [ UNIT_STATUTE %tmp.239 284 46 58 ];
+        %tmp.239 = getv %tmp.238 :UNIT_STATUTE;
+        %tmp.240 = eq %tmp.236 %tmp.239;
+        bf %tmp.240 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_6_286_6_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_6_286_6_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_60_286_6_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 285 7 ]
+        %tmp.241 = lgetv %temp.8;
+        symbol [ temp %tmp.241 285 15 19 ];
+        %tmp.242 = 9.0;
+        %tmp.243 = 5;
+        %tmp.244 = div %tmp.242 %tmp.243;
+        %tmp.245 = mul %tmp.241 %tmp.244;
+        %tmp.246 = 32;
+        %tmp.247 = add %tmp.245 %tmp.246;
+        lputv %temp.8 %tmp.247;
+        symbol [ temp %temp.8 285 7 11 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_60_286_6_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_6_286_6_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_284_6_286_6_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 288 5 ]
+        %tmp.248 = lgetv %temp.8;
+        symbol [ temp %tmp.248 288 13 17 ];
+        symbol [ format %tmp.249 288 18 24 ];
+        %tmp.249 = getv function %tmp.248 :format;
+        %tmp.250 = "%d";
+        %tmp.251 = invoke %tmp.248 %tmp.249(%tmp.250);
+        lputv %value.4 %tmp.251;
+        symbol [ value %value.4 288 5 10 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_56_290_4_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_290_11_292_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 291 5 ]
+        %tmp.252 = "--";
+        lputv %value.4 %tmp.252;
+        symbol [ value %value.4 291 5 10 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_290_11_292_4_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_280_4_292_4_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 293 4 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_295_12_304_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 296 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_20_297_65_begin:
+        symbol [ Toybox %tmp.254 296 21 27 ];
+        %tmp.254 = getv ? :Toybox;
+        %tmp.256 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.256 296 33 46 const ];
+        %tmp.257 = canhazplz %tmp.254 %tmp.256;
+        bf %tmp.257 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_20_297_65_true:
+        symbol [ Toybox %tmp.259 297 21 27 ];
+        %tmp.259 = getv ? :Toybox;
+        %tmp.260 = as %tmp.259 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.261 297 28 41 ];
+        %tmp.261 = getv %tmp.260 :SensorHistory;
+        %tmp.263 = const :getPressureHistory;
+        symbol [ getPressureHistory %tmp.263 297 47 65 const ];
+        %tmp.264 = canhazplz %tmp.261 %tmp.263;
+        push %tmp.264;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_20_297_65_end:
+        %tmp.265 = phi [%tmp.257 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_20_297_65_begin] [%tmp.264 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_20_297_65_true] [%tmp.265 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_20_297_65_end];
+        bf %tmp.265 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_68_303_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 299 20 ]
+        symbol [ SensorHistory %tmp.266 299 29 42 ];
+        %tmp.266 = getm $.Toybox.SensorHistory;
+        symbol [ getPressureHistory %tmp.267 299 43 61 ];
+        %tmp.267 = getv function %tmp.266 :getPressureHistory;
+        %tmp.268 = null;
+        %tmp.269 = invoke %tmp.266 %tmp.267(%tmp.268);
+        symbol [ next %tmp.270 299 68 72 ];
+        %tmp.270 = getv function %tmp.269 :next;
+        %tmp.271 = invoke %tmp.269 %tmp.270();
+        lputv %sample.3 %tmp.271;
+        symbol [ sample %sample.3 299 20 26 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 300 20 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_24_300_57_begin:
+        %tmp.272 = lgetv %sample.3;
+        symbol [ sample %tmp.272 300 24 30 ];
+        %tmp.273 = null;
+        %tmp.274 = ne %tmp.272 %tmp.273;
+        bf %tmp.274 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_42_300_57_true:
+        %tmp.275 = lgetv %sample.3;
+        symbol [ sample %tmp.275 300 42 48 ];
+        %tmp.276 = as %tmp.275 { (!Null) };
+        symbol [ data %tmp.277 300 49 53 ];
+        %tmp.277 = getv %tmp.276 :data;
+        %tmp.278 = null;
+        %tmp.279 = ne %tmp.277 %tmp.278;
+        push %tmp.279;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_42_300_57_end:
+        %tmp.280 = phi [%tmp.274 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_24_300_57_begin] [%tmp.279 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_42_300_57_true] [%tmp.280 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_42_300_57_end];
+        bf %tmp.280 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_63_302_20_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 301 24 ]
+        %tmp.281 = lgetv %sample.3;
+        symbol [ sample %tmp.281 301 33 39 ];
+        %tmp.282 = as %tmp.281 { (!Null) };
+        symbol [ data %tmp.283 301 40 44 ];
+        %tmp.283 = getv %tmp.282 :data;
+        %tmp.284 = 100;
+        %tmp.285 = div %tmp.283 %tmp.284;
+        symbol [ format %tmp.286 301 52 58 ];
+        %tmp.286 = getv function %tmp.285 :format;
+        %tmp.287 = "%.0f";
+        %tmp.288 = invoke %tmp.285 %tmp.286(%tmp.287);
+        lputv %value.4 %tmp.288;
+        symbol [ value %value.4 301 24 29 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_63_302_20_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_300_20_302_20_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_297_68_303_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_296_16_303_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 304 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_306_12_315_21_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 307 16 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_20_308_65_begin:
+        symbol [ Toybox %tmp.290 307 21 27 ];
+        %tmp.290 = getv ? :Toybox;
+        %tmp.292 = const :SensorHistory;
+        symbol [ SensorHistory %tmp.292 307 33 46 const ];
+        %tmp.293 = canhazplz %tmp.290 %tmp.292;
+        bf %tmp.293 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_20_308_65_true:
+        symbol [ Toybox %tmp.295 308 21 27 ];
+        %tmp.295 = getv ? :Toybox;
+        %tmp.296 = as %tmp.295 { (interface { var SensorHistory; }) };
+        symbol [ SensorHistory %tmp.297 308 28 41 ];
+        %tmp.297 = getv %tmp.296 :SensorHistory;
+        %tmp.299 = const :getHumidityHistory;
+        symbol [ getHumidityHistory %tmp.299 308 47 65 const ];
+        %tmp.300 = canhazplz %tmp.297 %tmp.299;
+        push %tmp.300;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_20_308_65_end:
+        %tmp.301 = phi [%tmp.293 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_20_308_65_begin] [%tmp.300 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_20_308_65_true] [%tmp.301 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_20_308_65_end];
+        bf %tmp.301 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_68_314_16_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 310 20 ]
+        symbol [ SensorHistory %tmp.302 310 29 42 ];
+        %tmp.302 = getm $.Toybox.SensorHistory;
+        symbol [ getHumidityHistory %tmp.303 310 43 61 ];
+        %tmp.303 = getv function %tmp.302 :getHumidityHistory;
+        %tmp.304 = null;
+        %tmp.305 = invoke %tmp.302 %tmp.303(%tmp.304);
+        symbol [ next %tmp.306 310 68 72 ];
+        %tmp.306 = getv function %tmp.305 :next;
+        %tmp.307 = invoke %tmp.305 %tmp.306();
+        lputv %sample.3 %tmp.307;
+        symbol [ sample %sample.3 310 20 26 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 311 20 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_24_311_57_begin:
+        %tmp.308 = lgetv %sample.3;
+        symbol [ sample %tmp.308 311 24 30 ];
+        %tmp.309 = null;
+        %tmp.310 = ne %tmp.308 %tmp.309;
+        bf %tmp.310 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_42_311_57_true:
+        %tmp.311 = lgetv %sample.3;
+        symbol [ sample %tmp.311 311 42 48 ];
+        %tmp.312 = as %tmp.311 { (!Null) };
+        symbol [ data %tmp.313 311 49 53 ];
+        %tmp.313 = getv %tmp.312 :data;
+        %tmp.314 = null;
+        %tmp.315 = ne %tmp.313 %tmp.314;
+        push %tmp.315;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_42_311_57_end:
+        %tmp.316 = phi [%tmp.310 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_24_311_57_begin] [%tmp.315 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_42_311_57_true] [%tmp.316 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_42_311_57_end];
+        bf %tmp.316 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_63_313_20_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 312 24 ]
+        %tmp.317 = lgetv %sample.3;
+        symbol [ sample %tmp.317 312 32 38 ];
+        %tmp.318 = as %tmp.317 { (!Null) };
+        symbol [ data %tmp.319 312 39 43 ];
+        %tmp.319 = getv %tmp.318 :data;
+        symbol [ format %tmp.320 312 44 50 ];
+        %tmp.320 = getv function %tmp.319 :format;
+        %tmp.321 = "%d";
+        %tmp.322 = invoke %tmp.319 %tmp.320(%tmp.321);
+        %tmp.323 = "%";
+        %tmp.324 = add %tmp.322 %tmp.323;
+        lputv %value.4 %tmp.324;
+        symbol [ value %value.4 312 24 29 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_63_313_20_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_311_20_313_20_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_308_68_314_16_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_307_16_314_16_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 315 16 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_316_3_318_9_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 317 4 ]
+        %tmp.325 = self;
+        symbol [ getSunEventTime %tmp.326 317 12 27 ];
+        %tmp.326 = getv function %tmp.325 :getSunEventTime;
+        %tmp.327 = true;
+        %tmp.328 = lgetv %settings.1;
+        symbol [ settings %tmp.328 317 34 42 ];
+        symbol [ is24Hour %tmp.329 317 43 51 ];
+        %tmp.329 = getv %tmp.328 :is24Hour;
+        %tmp.330 = invoke %tmp.325 %tmp.326(%tmp.327, %tmp.329);
+        lputv %value.4 %tmp.330;
+        symbol [ value %value.4 317 4 9 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 318 4 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_319_3_321_9_switchCase:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 320 4 ]
+        %tmp.331 = self;
+        symbol [ getSunEventTime %tmp.332 320 12 27 ];
+        %tmp.332 = getv function %tmp.331 :getSunEventTime;
+        %tmp.333 = false;
+        %tmp.334 = lgetv %settings.1;
+        symbol [ settings %tmp.334 320 35 43 ];
+        symbol [ is24Hour %tmp.335 320 44 52 ];
+        %tmp.335 = getv %tmp.334 :is24Hour;
+        %tmp.336 = invoke %tmp.331 %tmp.332(%tmp.333, %tmp.335);
+        lputv %value.4 %tmp.336;
+        symbol [ value %value.4 320 4 9 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 321 4 ]
+        goto break @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_defaultCodeBegin:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_214_8_322_8_switchStmtEnd:
+        pop;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 324 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_begin:
+        %tmp.337 = lgetv %value.4;
+        symbol [ value %tmp.337 324 16 21 ];
+        symbol [ length %tmp.338 324 22 28 ];
+        %tmp.338 = getv function %tmp.337 :length;
+        %tmp.339 = invoke %tmp.337 %tmp.338();
+        symbol [ mMaxFieldLength %tmp.341 324 33 48 ];
+        %tmp.341 = getv ? :mMaxFieldLength;
+        %tmp.342 = gt %tmp.339 %tmp.341;
+        bf %tmp.342 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_true:
+        %tmp.343 = lgetv %value.4;
+        symbol [ value %tmp.343 325 14 19 ];
+        symbol [ substring %tmp.344 325 20 29 ];
+        %tmp.344 = getv function %tmp.343 :substring;
+        %tmp.345 = 0;
+        symbol [ mMaxFieldLength %tmp.347 325 33 48 ];
+        %tmp.347 = getv ? :mMaxFieldLength;
+        %tmp.348 = invoke %tmp.343 %tmp.344(%tmp.345, %tmp.347);
+        push %tmp.348;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_else_false:
+        %tmp.349 = lgetv %value.4;
+        symbol [ value %tmp.349 326 14 19 ];
+        push %tmp.349;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_end:
+        %tmp.350 = phi [%tmp.342 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_begin] [%tmp.348 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_true] [%tmp.349 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_else_false] [%tmp.350 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_324_15_326_14_end];
+        ret %tmp.350;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_207_51_327_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 329; @symbol_functiondef = [getCachedSunTimes,329,22,39]; @symbol_param<0> = [isTomorrow,329,40,50]; @symbol_param<0>_type<0> = [Lang,329,54,58]; @symbol_param<0>_type<1> = [Boolean,329,59,66]; @symbol_return<0> = [Lang,329,71,75]; @symbol_return<1> = [Array,329,76,81]; @symbol_return<2> = [Lang,329,82,86]; @symbol_return<3> = [Number,329,87,93]; ]
+    private
+    function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array<Lang.Number or Null> {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 330 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_stop" ]
+        %nowInfo.1 = local;
+        symbol [ nowInfo %nowInfo.1 330 12 19 ];
+        symbol [ Gregorian %tmp.1 330 22 31 ];
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.2 330 32 36 ];
+        %tmp.2 = getv function %tmp.1 :info;
+        symbol [ Time %tmp.4 330 37 41 ];
+        %tmp.4 = getv ? :Time;
+        symbol [ now %tmp.5 330 42 45 ];
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        symbol [ Time %tmp.8 330 49 53 ];
+        %tmp.8 = getv ? :Time;
+        symbol [ FORMAT_SHORT %tmp.9 330 54 66 ];
+        %tmp.9 = getv %tmp.8 :FORMAT_SHORT;
+        %tmp.10 = invoke %tmp.1 %tmp.2(%tmp.6, %tmp.9);
+        lputv %nowInfo.1 %tmp.10;
+        symbol [ nowInfo %nowInfo.1 330 12 19 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 331 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_stop" ]
+        %today.2 = local;
+        symbol [ today %today.2 331 12 17 ];
+        %tmp.11 = lgetv %nowInfo.1;
+        symbol [ nowInfo %tmp.11 331 20 27 ];
+        symbol [ day %tmp.12 331 28 31 ];
+        %tmp.12 = getv %tmp.11 :day;
+        lputv %today.2 %tmp.12;
+        symbol [ today %today.2 331 12 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 334 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_8_338_8_if_stmt:
+        symbol [ mSunTimesCacheDay %tmp.14 334 12 29 ];
+        %tmp.14 = getv ? :mSunTimesCacheDay;
+        %tmp.15 = lgetv %today.2;
+        symbol [ today %tmp.15 334 33 38 ];
+        %tmp.16 = ne %tmp.14 %tmp.15;
+        bf %tmp.16 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_8_338_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_8_338_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_40_338_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 335 12 ]
+        %tmp.17 = lgetv %today.2;
+        symbol [ today %tmp.17 335 32 37 ];
+        symbol [ mSunTimesCacheDay ? 335 12 29 ];
+        putv self :mSunTimesCacheDay %tmp.17;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 336 12 ]
+        %tmp.18 = null;
+        symbol [ mCachedSunTimesToday ? 336 12 32 ];
+        putv self :mCachedSunTimesToday %tmp.18;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 337 12 ]
+        %tmp.19 = null;
+        symbol [ mCachedSunTimesTomorrow ? 337 12 35 ];
+        putv self :mCachedSunTimesTomorrow %tmp.19;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_40_338_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_8_338_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_334_8_338_8_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 340 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_stmt:
+        %tmp.20 = lgetv %isTomorrow;
+        symbol [ isTomorrow %tmp.20 340 12 22 ];
+        bf %tmp.20 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_24_345_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 341 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_12_343_12_if_stmt:
+        symbol [ mCachedSunTimesTomorrow %tmp.22 341 16 39 ];
+        %tmp.22 = getv ? :mCachedSunTimesTomorrow;
+        %tmp.23 = null;
+        %tmp.24 = eq %tmp.22 %tmp.23;
+        bf %tmp.24 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_12_343_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_12_343_12_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_49_343_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 342 16 ]
+        %tmp.25 = self;
+        symbol [ getSunTimes %tmp.26 342 42 53 ];
+        %tmp.26 = getv function %tmp.25 :getSunTimes;
+        symbol [ gLocationLat %tmp.28 342 54 66 ];
+        %tmp.28 = getv ? :gLocationLat;
+        symbol [ gLocationLng %tmp.30 342 68 80 ];
+        %tmp.30 = getv ? :gLocationLng;
+        %tmp.31 = null;
+        %tmp.32 = true;
+        %tmp.33 = invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30, %tmp.31, %tmp.32);
+        symbol [ mCachedSunTimesTomorrow ? 342 16 39 ];
+        putv self :mCachedSunTimesTomorrow %tmp.33;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_49_343_12_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_12_343_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_341_12_343_12_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 344 12 ]
+        symbol [ mCachedSunTimesTomorrow %tmp.35 344 19 42 ];
+        %tmp.35 = getv ? :mCachedSunTimesTomorrow;
+        ret %tmp.35;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_24_345_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_345_15_350_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 346 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_12_348_12_if_stmt:
+        symbol [ mCachedSunTimesToday %tmp.37 346 16 36 ];
+        %tmp.37 = getv ? :mCachedSunTimesToday;
+        %tmp.38 = null;
+        %tmp.39 = eq %tmp.37 %tmp.38;
+        bf %tmp.39 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_12_348_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_12_348_12_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_46_348_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 347 16 ]
+        %tmp.40 = self;
+        symbol [ getSunTimes %tmp.41 347 39 50 ];
+        %tmp.41 = getv function %tmp.40 :getSunTimes;
+        symbol [ gLocationLat %tmp.43 347 51 63 ];
+        %tmp.43 = getv ? :gLocationLat;
+        symbol [ gLocationLng %tmp.45 347 65 77 ];
+        %tmp.45 = getv ? :gLocationLng;
+        %tmp.46 = null;
+        %tmp.47 = false;
+        %tmp.48 = invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45, %tmp.46, %tmp.47);
+        symbol [ mCachedSunTimesToday ? 347 16 36 ];
+        putv self :mCachedSunTimesToday %tmp.48;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_46_348_12_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_12_348_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_346_12_348_12_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 349 12 ]
+        symbol [ mCachedSunTimesToday %tmp.50 349 19 39 ];
+        %tmp.50 = getv ? :mCachedSunTimesToday;
+        ret %tmp.50;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_345_15_350_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_340_8_350_8_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_329_96_351_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 353; @symbol_functiondef = [getSunEventTime,353,21,36]; @symbol_param<0> = [isSunrise,353,37,46]; @symbol_param<0>_type<0> = [Lang,353,50,54]; @symbol_param<0>_type<1> = [Boolean,353,55,62]; @symbol_param<1> = [is24Hour,353,64,72]; @symbol_param<1>_type<0> = [Lang,353,76,80]; @symbol_param<1>_type<1> = [Boolean,353,81,88]; @symbol_return<0> = [Lang,353,93,97]; @symbol_return<1> = [String,353,98,104]; ]
+    private
+    function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 354 2 ]
+        %tmp.1 = 48.7164f;
+        symbol [ gLocationLat ? 354 2 14 ];
+        putv self :gLocationLat %tmp.1;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 354 27 ]
+        %tmp.2 = 21.2611f;
+        symbol [ gLocationLng ? 354 27 39 ];
+        putv self :gLocationLng %tmp.2;
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 356 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_12_356_52_begin:
+        symbol [ gLocationLat %tmp.4 356 12 24 ];
+        %tmp.4 = getv ? :gLocationLat;
+        %tmp.5 = null;
+        %tmp.6 = eq %tmp.4 %tmp.5;
+        bt %tmp.6 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_true;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_36_356_52_false:
+        symbol [ gLocationLng %tmp.8 356 36 48 ];
+        %tmp.8 = getv ? :gLocationLng;
+        %tmp.9 = null;
+        %tmp.10 = eq %tmp.8 %tmp.9;
+        push %tmp.10;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_36_356_52_end:
+        %tmp.11 = phi [%tmp.6 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_12_356_52_begin] [%tmp.10 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_36_356_52_false] [%tmp.11 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_36_356_52_end];
+        bf %tmp.11 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_58_358_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 357 12 ]
+        %tmp.12 = "gps?";
+        ret %tmp.12;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_58_358_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_356_8_358_8_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 360 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %nowInfo.1 = local;
+        symbol [ nowInfo %nowInfo.1 360 12 19 ];
+        symbol [ Gregorian %tmp.13 360 22 31 ];
+        %tmp.13 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.14 360 32 36 ];
+        %tmp.14 = getv function %tmp.13 :info;
+        symbol [ Time %tmp.16 360 37 41 ];
+        %tmp.16 = getv ? :Time;
+        symbol [ now %tmp.17 360 42 45 ];
+        %tmp.17 = getv function %tmp.16 :now;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        symbol [ Time %tmp.20 360 49 53 ];
+        %tmp.20 = getv ? :Time;
+        symbol [ FORMAT_SHORT %tmp.21 360 54 66 ];
+        %tmp.21 = getv %tmp.20 :FORMAT_SHORT;
+        %tmp.22 = invoke %tmp.13 %tmp.14(%tmp.18, %tmp.21);
+        lputv %nowInfo.1 %tmp.22;
+        symbol [ nowInfo %nowInfo.1 360 12 19 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 361 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %now.2 = local;
+        symbol [ now %now.2 361 12 15 ];
+        %tmp.23 = lgetv %nowInfo.1;
+        symbol [ nowInfo %tmp.23 361 18 25 ];
+        symbol [ hour %tmp.24 361 26 30 ];
+        %tmp.24 = getv %tmp.23 :hour;
+        %tmp.25 = lgetv %nowInfo.1;
+        symbol [ nowInfo %tmp.25 361 35 42 ];
+        symbol [ min %tmp.26 361 43 46 ];
+        %tmp.26 = getv %tmp.25 :min;
+        %tmp.27 = 1;
+        %tmp.28 = add %tmp.26 %tmp.27;
+        %tmp.29 = 60.0;
+        %tmp.30 = div %tmp.28 %tmp.29;
+        %tmp.31 = add %tmp.24 %tmp.30;
+        lputv %now.2 %tmp.31;
+        symbol [ now %now.2 361 12 15 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 363 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %eventTime.3 = local;
+        symbol [ eventTime %eventTime.3 363 12 21 ];
+        %tmp.32 = null;
+        lputv %eventTime.3 %tmp.32;
+        symbol [ eventTime %eventTime.3 363 12 21 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 366 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %sunToday.4 = local;
+        symbol [ sunToday %sunToday.4 366 12 20 ];
+        %tmp.33 = self;
+        symbol [ getCachedSunTimes %tmp.34 366 23 40 ];
+        %tmp.34 = getv function %tmp.33 :getCachedSunTimes;
+        %tmp.35 = false;
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        lputv %sunToday.4 %tmp.36;
+        symbol [ sunToday %sunToday.4 366 12 20 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 367 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %todayEvent.5 = local;
+        symbol [ todayEvent %todayEvent.5 367 12 22 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_begin:
+        %tmp.37 = lgetv %isSunrise;
+        symbol [ isSunrise %tmp.37 367 25 34 ];
+        bf %tmp.37 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_true:
+        %tmp.38 = lgetv %sunToday.4;
+        symbol [ sunToday %tmp.38 367 37 45 ];
+        %tmp.39 = 0;
+        %tmp.40 = agetv %tmp.38 %tmp.39;
+        push %tmp.40;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_else_false:
+        %tmp.41 = lgetv %sunToday.4;
+        symbol [ sunToday %tmp.41 367 51 59 ];
+        %tmp.42 = 1;
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        push %tmp.43;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_end:
+        %tmp.44 = phi [%tmp.37 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_begin] [%tmp.40 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_true] [%tmp.43 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_else_false] [%tmp.44 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_367_25_367_61_end];
+        lputv %todayEvent.5 %tmp.44;
+        symbol [ todayEvent %todayEvent.5 367 12 22 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 369 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_stmt:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_12_369_40_begin:
+        %tmp.45 = lgetv %todayEvent.5;
+        symbol [ todayEvent %tmp.45 369 12 22 ];
+        %tmp.46 = null;
+        %tmp.47 = ne %tmp.45 %tmp.46;
+        bf %tmp.47 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_34_369_40_true:
+        %tmp.48 = lgetv %now.2;
+        symbol [ now %tmp.48 369 34 37 ];
+        %tmp.49 = lgetv %todayEvent.5;
+        symbol [ todayEvent %tmp.49 369 40 50 ];
+        %tmp.50 = as %tmp.49 { (!Null) };
+        %tmp.51 = lt %tmp.48 %tmp.50;
+        push %tmp.51;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_34_369_40_end:
+        %tmp.52 = phi [%tmp.47 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_12_369_40_begin] [%tmp.51 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_34_369_40_true] [%tmp.52 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_34_369_40_end];
+        bf %tmp.52 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_52_371_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 370 12 ]
+        %tmp.53 = lgetv %todayEvent.5;
+        symbol [ todayEvent %tmp.53 370 24 34 ];
+        %tmp.54 = as %tmp.53 { (!Null) };
+        lputv %eventTime.3 %tmp.54;
+        symbol [ eventTime %eventTime.3 370 12 21 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_52_371_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_371_15_374_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 372 12 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_371_15_374_8_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_371_15_374_8_stop" ]
+        %sunTomorrow.6 = local;
+        symbol [ sunTomorrow %sunTomorrow.6 372 16 27 ];
+        %tmp.55 = self;
+        symbol [ getCachedSunTimes %tmp.56 372 30 47 ];
+        %tmp.56 = getv function %tmp.55 :getCachedSunTimes;
+        %tmp.57 = true;
+        %tmp.58 = invoke %tmp.55 %tmp.56(%tmp.57);
+        lputv %sunTomorrow.6 %tmp.58;
+        symbol [ sunTomorrow %sunTomorrow.6 372 16 27 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 373 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_begin:
+        %tmp.59 = lgetv %isSunrise;
+        symbol [ isSunrise %tmp.59 373 24 33 ];
+        bf %tmp.59 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_true:
+        %tmp.60 = lgetv %sunTomorrow.6;
+        symbol [ sunTomorrow %tmp.60 373 36 47 ];
+        %tmp.61 = 0;
+        %tmp.62 = agetv %tmp.60 %tmp.61;
+        push %tmp.62;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_else_false:
+        %tmp.63 = lgetv %sunTomorrow.6;
+        symbol [ sunTomorrow %tmp.63 373 53 64 ];
+        %tmp.64 = 1;
+        %tmp.65 = agetv %tmp.63 %tmp.64;
+        push %tmp.65;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_end:
+        %tmp.66 = phi [%tmp.59 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_begin] [%tmp.62 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_true] [%tmp.65 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_else_false] [%tmp.66 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_373_24_373_66_end];
+        lputv %eventTime.3 %tmp.66;
+        symbol [ eventTime %eventTime.3 373 12 21 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_371_15_374_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_369_8_374_8_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 376 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_8_378_8_if_stmt:
+        %tmp.67 = lgetv %eventTime.3;
+        symbol [ eventTime %tmp.67 376 12 21 ];
+        %tmp.68 = null;
+        %tmp.69 = eq %tmp.67 %tmp.68;
+        bf %tmp.69 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_8_378_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_8_378_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_31_378_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 377 12 ]
+        %tmp.70 = "---";
+        ret %tmp.70;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_31_378_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_8_378_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_376_8_378_8_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 380 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %h.7 = local;
+        symbol [ h %h.7 380 12 13 ];
+        symbol [ Math %tmp.72 380 16 20 ];
+        %tmp.72 = getv ? :Math;
+        symbol [ floor %tmp.73 380 21 26 ];
+        %tmp.73 = getv function %tmp.72 :floor;
+        %tmp.74 = lgetv %eventTime.3;
+        symbol [ eventTime %tmp.74 380 27 36 ];
+        %tmp.75 = invoke %tmp.72 %tmp.73(%tmp.74);
+        symbol [ toLong %tmp.76 380 38 44 ];
+        %tmp.76 = getv function %tmp.75 :toLong;
+        %tmp.77 = invoke %tmp.75 %tmp.76();
+        %tmp.78 = 24;
+        %tmp.79 = mod %tmp.77 %tmp.78;
+        lputv %h.7 %tmp.79;
+        symbol [ h %h.7 380 12 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 381 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop" ]
+        %m.8 = local;
+        symbol [ m %m.8 381 12 13 ];
+        symbol [ Math %tmp.81 381 16 20 ];
+        %tmp.81 = getv ? :Math;
+        symbol [ floor %tmp.82 381 21 26 ];
+        %tmp.82 = getv function %tmp.81 :floor;
+        %tmp.83 = lgetv %eventTime.3;
+        symbol [ eventTime %tmp.83 381 28 37 ];
+        symbol [ Math %tmp.85 381 40 44 ];
+        %tmp.85 = getv ? :Math;
+        symbol [ floor %tmp.86 381 45 50 ];
+        %tmp.86 = getv function %tmp.85 :floor;
+        %tmp.87 = lgetv %eventTime.3;
+        symbol [ eventTime %tmp.87 381 51 60 ];
+        %tmp.88 = invoke %tmp.85 %tmp.86(%tmp.87);
+        %tmp.89 = sub %tmp.83 %tmp.88;
+        %tmp.90 = 60;
+        %tmp.91 = mul %tmp.89 %tmp.90;
+        %tmp.92 = invoke %tmp.81 %tmp.82(%tmp.91);
+        symbol [ toLong %tmp.93 381 69 75 ];
+        %tmp.93 = getv function %tmp.92 :toLong;
+        %tmp.94 = invoke %tmp.92 %tmp.93();
+        lputv %m.8 %tmp.94;
+        symbol [ m %m.8 381 12 13 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 383 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_8_383_29_if_stmt:
+        %tmp.95 = lgetv %m.8;
+        symbol [ m %tmp.95 383 12 13 ];
+        %tmp.96 = 0;
+        %tmp.97 = lt %tmp.95 %tmp.96;
+        bf %tmp.97 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_8_383_29_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_8_383_29_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_20_383_29_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 383 22 ]
+        %tmp.98 = 0;
+        lputv %m.8 %tmp.98;
+        symbol [ m %m.8 383 22 23 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_20_383_29_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_8_383_29_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_383_8_383_29_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 384 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_8_384_30_if_stmt:
+        %tmp.99 = lgetv %m.8;
+        symbol [ m %tmp.99 384 12 13 ];
+        %tmp.100 = 59;
+        %tmp.101 = gt %tmp.99 %tmp.100;
+        bf %tmp.101 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_8_384_30_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_8_384_30_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_20_384_30_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 384 22 ]
+        %tmp.102 = 59;
+        lputv %m.8 %tmp.102;
+        symbol [ m %m.8 384 22 23 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_20_384_30_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_8_384_30_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_384_8_384_30_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 386 8 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_stmt:
+        %tmp.103 = lgetv %is24Hour;
+        symbol [ is24Hour %tmp.103 386 12 20 ];
+        bf %tmp.103 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_22_388_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 387 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_begin:
+        %tmp.104 = lgetv %h.7;
+        symbol [ h %tmp.104 387 20 21 ];
+        %tmp.105 = 10;
+        %tmp.106 = lt %tmp.104 %tmp.105;
+        bf %tmp.106 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_true:
+        %tmp.107 = "0";
+        push %tmp.107;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_else_false:
+        %tmp.108 = "";
+        push %tmp.108;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_end:
+        %tmp.109 = phi [%tmp.106 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_begin] [%tmp.107 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_true] [%tmp.108 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_else_false] [%tmp.109 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_20_387_35_end];
+        %tmp.110 = lgetv %h.7;
+        symbol [ h %tmp.110 387 41 42 ];
+        %tmp.111 = add %tmp.109 %tmp.110;
+        %tmp.112 = ":";
+        %tmp.113 = add %tmp.111 %tmp.112;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_begin:
+        %tmp.114 = lgetv %m.8;
+        symbol [ m %tmp.114 387 52 53 ];
+        %tmp.115 = 10;
+        %tmp.116 = lt %tmp.114 %tmp.115;
+        bf %tmp.116 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_true:
+        %tmp.117 = "0";
+        push %tmp.117;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_else_false:
+        %tmp.118 = "";
+        push %tmp.118;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_end:
+        %tmp.119 = phi [%tmp.116 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_begin] [%tmp.117 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_true] [%tmp.118 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_else_false] [%tmp.119 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_387_52_387_67_end];
+        %tmp.120 = add %tmp.113 %tmp.119;
+        %tmp.121 = lgetv %m.8;
+        symbol [ m %tmp.121 387 73 74 ];
+        %tmp.122 = add %tmp.120 %tmp.121;
+        ret %tmp.122;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_22_388_8_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_else_false:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_388_15_393_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 390 12 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_388_15_393_8_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_388_15_393_8_stop" ]
+        %h12.9 = local;
+        symbol [ h12 %h12.9 390 16 19 ];
+        %tmp.123 = lgetv %h.7;
+        symbol [ h %tmp.123 390 22 23 ];
+        %tmp.124 = 12;
+        %tmp.125 = mod %tmp.123 %tmp.124;
+        lputv %h12.9 %tmp.125;
+        symbol [ h12 %h12.9 390 16 19 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 391 12 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_12_391_38_if_stmt:
+        %tmp.126 = lgetv %h12.9;
+        symbol [ h12 %tmp.126 391 16 19 ];
+        %tmp.127 = 0;
+        %tmp.128 = eq %tmp.126 %tmp.127;
+        bf %tmp.128 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_12_391_38_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_12_391_38_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_26_391_38_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 391 28 ]
+        %tmp.129 = 12;
+        lputv %h12.9 %tmp.129;
+        symbol [ h12 %h12.9 391 28 31 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_26_391_38_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_12_391_38_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_391_12_391_38_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 392 12 ]
+        %tmp.130 = lgetv %h12.9;
+        symbol [ h12 %tmp.130 392 19 22 ];
+        %tmp.131 = ":";
+        %tmp.132 = add %tmp.130 %tmp.131;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_begin:
+        %tmp.133 = lgetv %m.8;
+        symbol [ m %tmp.133 392 32 33 ];
+        %tmp.134 = 10;
+        %tmp.135 = lt %tmp.133 %tmp.134;
+        bf %tmp.135 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_true:
+        %tmp.136 = "0";
+        push %tmp.136;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_else_false:
+        %tmp.137 = "";
+        push %tmp.137;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_end:
+        %tmp.138 = phi [%tmp.135 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_begin] [%tmp.136 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_true] [%tmp.137 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_else_false] [%tmp.138 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_392_32_392_47_end];
+        %tmp.139 = add %tmp.132 %tmp.138;
+        %tmp.140 = lgetv %m.8;
+        symbol [ m %tmp.140 392 53 54 ];
+        %tmp.141 = add %tmp.139 %tmp.140;
+        ret %tmp.141;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_388_15_393_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_386_8_393_8_if_end:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_353_105_394_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 415; @symbol_functiondef = [getSunTimes,415,18,29]; @symbol_param<0> = [lat,415,30,33]; @symbol_param<1> = [lng,415,35,38]; @symbol_param<2> = [tz,415,40,42]; @symbol_param<3> = [tomorrow,415,44,52]; @symbol_return<0> = [Lang,415,57,61]; @symbol_return<1> = [Array,415,62,67]; @symbol_return<2> = [Lang,415,68,72]; @symbol_return<3> = [Number,415,73,79]; ]
+    private
+    function getSunTimes(lat, lng, tz, tomorrow) as Lang.Array<Lang.Number or Null> {
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 418 2 ]
+        %tmp.1 = lgetv %lat;
+        symbol [ lat %tmp.1 418 8 11 ];
+        symbol [ toDouble %tmp.2 418 12 20 ];
+        %tmp.2 = getv function %tmp.1 :toDouble;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %lat %tmp.3;
+        symbol [ lat %lat 418 2 5 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 419 2 ]
+        %tmp.4 = lgetv %lng;
+        symbol [ lng %tmp.4 419 8 11 ];
+        symbol [ toDouble %tmp.5 419 12 20 ];
+        %tmp.5 = getv function %tmp.4 :toDouble;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %lng %tmp.6;
+        symbol [ lng %lng 419 2 5 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 421 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 421 6 9 ];
+        symbol [ Time %tmp.8 421 12 16 ];
+        %tmp.8 = getv ? :Time;
+        symbol [ now %tmp.9 421 17 20 ];
+        %tmp.9 = getv function %tmp.8 :now;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        lputv %now.1 %tmp.10;
+        symbol [ now %now.1 421 6 9 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 422 2 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_2_424_2_if_stmt:
+        %tmp.11 = lgetv %tomorrow;
+        symbol [ tomorrow %tmp.11 422 6 14 ];
+        bf %tmp.11 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_2_424_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_2_424_2_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_16_424_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 423 3 ]
+        %tmp.12 = lgetv %now.1;
+        symbol [ now %tmp.12 423 9 12 ];
+        symbol [ add %tmp.13 423 13 16 ];
+        %tmp.13 = getv function %tmp.12 :add;
+        symbol [ Time %tmp.17 423 21 25 ];
+        %tmp.17 = getv ? :Time;
+        symbol [ Duration %tmp.18 423 26 34 ];
+        %tmp.18 = getv function ? %tmp.17 :Duration;
+        %tmp.19 = 24;
+        %tmp.20 = 60;
+        %tmp.21 = mul %tmp.19 %tmp.20;
+        %tmp.22 = 60;
+        %tmp.23 = mul %tmp.21 %tmp.22;
+        %tmp.14 = newc %tmp.18 (%tmp.23);
+        %tmp.24 = invoke %tmp.12 %tmp.13(%tmp.14);
+        lputv %now.1 %tmp.24;
+        symbol [ now %now.1 423 3 6 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_16_424_2_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_2_424_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_422_2_424_2_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 425 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %d.2 = local;
+        symbol [ d %d.2 425 6 7 ];
+        symbol [ Gregorian %tmp.25 425 10 19 ];
+        %tmp.25 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.26 425 20 24 ];
+        %tmp.26 = getv function %tmp.25 :info;
+        symbol [ Time %tmp.28 425 25 29 ];
+        %tmp.28 = getv ? :Time;
+        symbol [ now %tmp.29 425 30 33 ];
+        %tmp.29 = getv function %tmp.28 :now;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        symbol [ Time %tmp.32 425 37 41 ];
+        %tmp.32 = getv ? :Time;
+        symbol [ FORMAT_SHORT %tmp.33 425 42 54 ];
+        %tmp.33 = getv %tmp.32 :FORMAT_SHORT;
+        %tmp.34 = invoke %tmp.25 %tmp.26(%tmp.30, %tmp.33);
+        lputv %d.2 %tmp.34;
+        symbol [ d %d.2 425 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 426 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %rad.3 = local;
+        symbol [ rad %rad.3 426 6 9 ];
+        symbol [ Math %tmp.36 426 12 16 ];
+        %tmp.36 = getv ? :Math;
+        symbol [ PI %tmp.37 426 17 19 ];
+        %tmp.37 = getv %tmp.36 :PI;
+        %tmp.38 = 180.0d;
+        %tmp.39 = div %tmp.37 %tmp.38;
+        lputv %rad.3 %tmp.39;
+        symbol [ rad %rad.3 426 6 9 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 427 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %deg.4 = local;
+        symbol [ deg %deg.4 427 6 9 ];
+        %tmp.40 = 180.0d;
+        symbol [ Math %tmp.42 427 21 25 ];
+        %tmp.42 = getv ? :Math;
+        symbol [ PI %tmp.43 427 26 28 ];
+        %tmp.43 = getv %tmp.42 :PI;
+        %tmp.44 = div %tmp.40 %tmp.43;
+        lputv %deg.4 %tmp.44;
+        symbol [ deg %deg.4 427 6 9 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 430 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %a.5 = local;
+        symbol [ a %a.5 430 6 7 ];
+        symbol [ Math %tmp.46 430 10 14 ];
+        %tmp.46 = getv ? :Math;
+        symbol [ floor %tmp.47 430 15 20 ];
+        %tmp.47 = getv function %tmp.46 :floor;
+        %tmp.48 = 14;
+        %tmp.49 = lgetv %d.2;
+        symbol [ d %tmp.49 430 27 28 ];
+        symbol [ month %tmp.50 430 29 34 ];
+        %tmp.50 = getv %tmp.49 :month;
+        %tmp.51 = sub %tmp.48 %tmp.50;
+        %tmp.52 = 12;
+        %tmp.53 = div %tmp.51 %tmp.52;
+        %tmp.54 = invoke %tmp.46 %tmp.47(%tmp.53);
+        lputv %a.5 %tmp.54;
+        symbol [ a %a.5 430 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 431 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %y.6 = local;
+        symbol [ y %y.6 431 6 7 ];
+        %tmp.55 = lgetv %d.2;
+        symbol [ d %tmp.55 431 10 11 ];
+        symbol [ year %tmp.56 431 12 16 ];
+        %tmp.56 = getv %tmp.55 :year;
+        %tmp.57 = 4800;
+        %tmp.58 = add %tmp.56 %tmp.57;
+        %tmp.59 = lgetv %a.5;
+        symbol [ a %tmp.59 431 26 27 ];
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        lputv %y.6 %tmp.60;
+        symbol [ y %y.6 431 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 432 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %m.7 = local;
+        symbol [ m %m.7 432 6 7 ];
+        %tmp.61 = lgetv %d.2;
+        symbol [ d %tmp.61 432 10 11 ];
+        symbol [ month %tmp.62 432 12 17 ];
+        %tmp.62 = getv %tmp.61 :month;
+        %tmp.63 = 12;
+        %tmp.64 = lgetv %a.5;
+        symbol [ a %tmp.64 432 26 27 ];
+        %tmp.65 = mul %tmp.63 %tmp.64;
+        %tmp.66 = add %tmp.62 %tmp.65;
+        %tmp.67 = 3;
+        %tmp.68 = sub %tmp.66 %tmp.67;
+        lputv %m.7 %tmp.68;
+        symbol [ m %m.7 432 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 433 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %jDate.8 = local;
+        symbol [ jDate %jDate.8 433 6 11 ];
+        %tmp.69 = lgetv %d.2;
+        symbol [ d %tmp.69 433 14 15 ];
+        symbol [ day %tmp.70 433 16 19 ];
+        %tmp.70 = getv %tmp.69 :day;
+        symbol [ Math %tmp.72 434 5 9 ];
+        %tmp.72 = getv ? :Math;
+        symbol [ floor %tmp.73 434 10 15 ];
+        %tmp.73 = getv function %tmp.72 :floor;
+        %tmp.74 = 153;
+        %tmp.75 = lgetv %m.7;
+        symbol [ m %tmp.75 434 24 25 ];
+        %tmp.76 = mul %tmp.74 %tmp.75;
+        %tmp.77 = 2;
+        %tmp.78 = add %tmp.76 %tmp.77;
+        %tmp.79 = 5;
+        %tmp.80 = div %tmp.78 %tmp.79;
+        %tmp.81 = invoke %tmp.72 %tmp.73(%tmp.80);
+        %tmp.82 = add %tmp.70 %tmp.81;
+        %tmp.83 = 365;
+        %tmp.84 = lgetv %y.6;
+        symbol [ y %tmp.84 435 12 13 ];
+        %tmp.85 = mul %tmp.83 %tmp.84;
+        %tmp.86 = add %tmp.82 %tmp.85;
+        symbol [ Math %tmp.88 436 5 9 ];
+        %tmp.88 = getv ? :Math;
+        symbol [ floor %tmp.89 436 10 15 ];
+        %tmp.89 = getv function %tmp.88 :floor;
+        %tmp.90 = lgetv %y.6;
+        symbol [ y %tmp.90 436 16 17 ];
+        %tmp.91 = 4;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        %tmp.93 = invoke %tmp.88 %tmp.89(%tmp.92);
+        %tmp.94 = add %tmp.86 %tmp.93;
+        symbol [ Math %tmp.96 437 5 9 ];
+        %tmp.96 = getv ? :Math;
+        symbol [ floor %tmp.97 437 10 15 ];
+        %tmp.97 = getv function %tmp.96 :floor;
+        %tmp.98 = lgetv %y.6;
+        symbol [ y %tmp.98 437 16 17 ];
+        %tmp.99 = 100;
+        %tmp.100 = div %tmp.98 %tmp.99;
+        %tmp.101 = invoke %tmp.96 %tmp.97(%tmp.100);
+        %tmp.102 = sub %tmp.94 %tmp.101;
+        symbol [ Math %tmp.104 438 5 9 ];
+        %tmp.104 = getv ? :Math;
+        symbol [ floor %tmp.105 438 10 15 ];
+        %tmp.105 = getv function %tmp.104 :floor;
+        %tmp.106 = lgetv %y.6;
+        symbol [ y %tmp.106 438 16 17 ];
+        %tmp.107 = 400;
+        %tmp.108 = div %tmp.106 %tmp.107;
+        %tmp.109 = invoke %tmp.104 %tmp.105(%tmp.108);
+        %tmp.110 = add %tmp.102 %tmp.109;
+        %tmp.111 = 32045;
+        %tmp.112 = sub %tmp.110 %tmp.111;
+        lputv %jDate.8 %tmp.112;
+        symbol [ jDate %jDate.8 433 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 442 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %n.9 = local;
+        symbol [ n %n.9 442 6 7 ];
+        %tmp.113 = lgetv %jDate.8;
+        symbol [ jDate %tmp.113 442 10 15 ];
+        %tmp.114 = 2451545.0d;
+        %tmp.115 = sub %tmp.113 %tmp.114;
+        %tmp.116 = 0.0008d;
+        %tmp.117 = add %tmp.115 %tmp.116;
+        lputv %n.9 %tmp.117;
+        symbol [ n %n.9 442 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 446 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %jStar.10 = local;
+        symbol [ jStar %jStar.10 446 6 11 ];
+        %tmp.118 = lgetv %n.9;
+        symbol [ n %tmp.118 446 14 15 ];
+        %tmp.119 = lgetv %lng;
+        symbol [ lng %tmp.119 446 19 22 ];
+        %tmp.120 = 360.0d;
+        %tmp.121 = div %tmp.119 %tmp.120;
+        %tmp.122 = sub %tmp.118 %tmp.121;
+        lputv %jStar.10 %tmp.122;
+        symbol [ jStar %jStar.10 446 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 450 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %M.11 = local;
+        symbol [ M %M.11 450 6 7 ];
+        %tmp.123 = 357.5291d;
+        %tmp.124 = 0.98560028d;
+        %tmp.125 = lgetv %jStar.10;
+        symbol [ jStar %tmp.125 450 37 42 ];
+        %tmp.126 = mul %tmp.124 %tmp.125;
+        %tmp.127 = add %tmp.123 %tmp.126;
+        lputv %M.11 %tmp.127;
+        symbol [ M %M.11 450 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 451 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %MFloor.12 = local;
+        symbol [ MFloor %MFloor.12 451 6 12 ];
+        symbol [ Math %tmp.129 451 15 19 ];
+        %tmp.129 = getv ? :Math;
+        symbol [ floor %tmp.130 451 20 25 ];
+        %tmp.130 = getv function %tmp.129 :floor;
+        %tmp.131 = lgetv %M.11;
+        symbol [ M %tmp.131 451 26 27 ];
+        %tmp.132 = invoke %tmp.129 %tmp.130(%tmp.131);
+        lputv %MFloor.12 %tmp.132;
+        symbol [ MFloor %MFloor.12 451 6 12 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 452 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %MFrac.13 = local;
+        symbol [ MFrac %MFrac.13 452 6 11 ];
+        %tmp.133 = lgetv %M.11;
+        symbol [ M %tmp.133 452 14 15 ];
+        %tmp.134 = lgetv %MFloor.12;
+        symbol [ MFloor %tmp.134 452 18 24 ];
+        %tmp.135 = sub %tmp.133 %tmp.134;
+        lputv %MFrac.13 %tmp.135;
+        symbol [ MFrac %MFrac.13 452 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 453 2 ]
+        %tmp.136 = lgetv %MFloor.12;
+        symbol [ MFloor %tmp.136 453 6 12 ];
+        symbol [ toLong %tmp.137 453 13 19 ];
+        %tmp.137 = getv function %tmp.136 :toLong;
+        %tmp.138 = invoke %tmp.136 %tmp.137();
+        %tmp.139 = 360;
+        %tmp.140 = mod %tmp.138 %tmp.139;
+        lputv %M.11 %tmp.140;
+        symbol [ M %M.11 453 2 3 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 454 2 ]
+        %tmp.141 = lgetv %M.11;
+        symbol [ M %tmp.141 454 2 3 ];
+        %tmp.142 = lgetv %MFrac.13;
+        symbol [ MFrac %tmp.142 454 7 12 ];
+        %tmp.143 = add %tmp.141 %tmp.142;
+        lputv %M.11 %tmp.143;
+        symbol [ M %M.11 454 2 3 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 458 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %C.14 = local;
+        symbol [ C %C.14 458 6 7 ];
+        %tmp.144 = 1.9148d;
+        symbol [ Math %tmp.146 458 20 24 ];
+        %tmp.146 = getv ? :Math;
+        symbol [ sin %tmp.147 458 25 28 ];
+        %tmp.147 = getv function %tmp.146 :sin;
+        %tmp.148 = lgetv %M.11;
+        symbol [ M %tmp.148 458 29 30 ];
+        %tmp.149 = lgetv %rad.3;
+        symbol [ rad %tmp.149 458 33 36 ];
+        %tmp.150 = mul %tmp.148 %tmp.149;
+        %tmp.151 = invoke %tmp.146 %tmp.147(%tmp.150);
+        %tmp.152 = mul %tmp.144 %tmp.151;
+        %tmp.153 = 0.02d;
+        symbol [ Math %tmp.155 459 13 17 ];
+        %tmp.155 = getv ? :Math;
+        symbol [ sin %tmp.156 459 18 21 ];
+        %tmp.156 = getv function %tmp.155 :sin;
+        %tmp.157 = 2;
+        %tmp.158 = lgetv %M.11;
+        symbol [ M %tmp.158 459 26 27 ];
+        %tmp.159 = mul %tmp.157 %tmp.158;
+        %tmp.160 = lgetv %rad.3;
+        symbol [ rad %tmp.160 459 30 33 ];
+        %tmp.161 = mul %tmp.159 %tmp.160;
+        %tmp.162 = invoke %tmp.155 %tmp.156(%tmp.161);
+        %tmp.163 = mul %tmp.153 %tmp.162;
+        %tmp.164 = add %tmp.152 %tmp.163;
+        %tmp.165 = 0.0003d;
+        symbol [ Math %tmp.167 460 15 19 ];
+        %tmp.167 = getv ? :Math;
+        symbol [ sin %tmp.168 460 20 23 ];
+        %tmp.168 = getv function %tmp.167 :sin;
+        %tmp.169 = 3;
+        %tmp.170 = lgetv %M.11;
+        symbol [ M %tmp.170 460 28 29 ];
+        %tmp.171 = mul %tmp.169 %tmp.170;
+        %tmp.172 = lgetv %rad.3;
+        symbol [ rad %tmp.172 460 32 35 ];
+        %tmp.173 = mul %tmp.171 %tmp.172;
+        %tmp.174 = invoke %tmp.167 %tmp.168(%tmp.173);
+        %tmp.175 = mul %tmp.165 %tmp.174;
+        %tmp.176 = add %tmp.164 %tmp.175;
+        lputv %C.14 %tmp.176;
+        symbol [ C %C.14 458 6 7 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 464 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %lambda.15 = local;
+        symbol [ lambda %lambda.15 464 6 12 ];
+        %tmp.177 = lgetv %M.11;
+        symbol [ M %tmp.177 464 16 17 ];
+        %tmp.178 = lgetv %C.14;
+        symbol [ C %tmp.178 464 20 21 ];
+        %tmp.179 = add %tmp.177 %tmp.178;
+        %tmp.180 = 180;
+        %tmp.181 = add %tmp.179 %tmp.180;
+        %tmp.182 = 102.9372d;
+        %tmp.183 = add %tmp.181 %tmp.182;
+        lputv %lambda.15 %tmp.183;
+        symbol [ lambda %lambda.15 464 6 12 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 465 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %lambdaFloor.16 = local;
+        symbol [ lambdaFloor %lambdaFloor.16 465 6 17 ];
+        symbol [ Math %tmp.185 465 20 24 ];
+        %tmp.185 = getv ? :Math;
+        symbol [ floor %tmp.186 465 25 30 ];
+        %tmp.186 = getv function %tmp.185 :floor;
+        %tmp.187 = lgetv %lambda.15;
+        symbol [ lambda %tmp.187 465 31 37 ];
+        %tmp.188 = invoke %tmp.185 %tmp.186(%tmp.187);
+        lputv %lambdaFloor.16 %tmp.188;
+        symbol [ lambdaFloor %lambdaFloor.16 465 6 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 466 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %lambdaFrac.17 = local;
+        symbol [ lambdaFrac %lambdaFrac.17 466 6 16 ];
+        %tmp.189 = lgetv %lambda.15;
+        symbol [ lambda %tmp.189 466 19 25 ];
+        %tmp.190 = lgetv %lambdaFloor.16;
+        symbol [ lambdaFloor %tmp.190 466 28 39 ];
+        %tmp.191 = sub %tmp.189 %tmp.190;
+        lputv %lambdaFrac.17 %tmp.191;
+        symbol [ lambdaFrac %lambdaFrac.17 466 6 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 467 2 ]
+        %tmp.192 = lgetv %lambdaFloor.16;
+        symbol [ lambdaFloor %tmp.192 467 11 22 ];
+        symbol [ toLong %tmp.193 467 23 29 ];
+        %tmp.193 = getv function %tmp.192 :toLong;
+        %tmp.194 = invoke %tmp.192 %tmp.193();
+        %tmp.195 = 360;
+        %tmp.196 = mod %tmp.194 %tmp.195;
+        lputv %lambda.15 %tmp.196;
+        symbol [ lambda %lambda.15 467 2 8 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 468 2 ]
+        %tmp.197 = lgetv %lambda.15;
+        symbol [ lambda %tmp.197 468 2 8 ];
+        %tmp.198 = lgetv %lambdaFrac.17;
+        symbol [ lambdaFrac %tmp.198 468 12 22 ];
+        %tmp.199 = add %tmp.197 %tmp.198;
+        lputv %lambda.15 %tmp.199;
+        symbol [ lambda %lambda.15 468 2 8 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 472 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %jTransit.18 = local;
+        symbol [ jTransit %jTransit.18 472 6 14 ];
+        %tmp.200 = 2451545.5d;
+        %tmp.201 = lgetv %jStar.10;
+        symbol [ jStar %tmp.201 472 30 35 ];
+        %tmp.202 = add %tmp.200 %tmp.201;
+        %tmp.203 = 0.0053d;
+        symbol [ Math %tmp.205 473 15 19 ];
+        %tmp.205 = getv ? :Math;
+        symbol [ sin %tmp.206 473 20 23 ];
+        %tmp.206 = getv function %tmp.205 :sin;
+        %tmp.207 = lgetv %M.11;
+        symbol [ M %tmp.207 473 24 25 ];
+        %tmp.208 = lgetv %rad.3;
+        symbol [ rad %tmp.208 473 28 31 ];
+        %tmp.209 = mul %tmp.207 %tmp.208;
+        %tmp.210 = invoke %tmp.205 %tmp.206(%tmp.209);
+        %tmp.211 = mul %tmp.203 %tmp.210;
+        %tmp.212 = add %tmp.202 %tmp.211;
+        %tmp.213 = 0.0069d;
+        symbol [ Math %tmp.215 474 15 19 ];
+        %tmp.215 = getv ? :Math;
+        symbol [ sin %tmp.216 474 20 23 ];
+        %tmp.216 = getv function %tmp.215 :sin;
+        %tmp.217 = 2;
+        %tmp.218 = lgetv %lambda.15;
+        symbol [ lambda %tmp.218 474 28 34 ];
+        %tmp.219 = mul %tmp.217 %tmp.218;
+        %tmp.220 = lgetv %rad.3;
+        symbol [ rad %tmp.220 474 37 40 ];
+        %tmp.221 = mul %tmp.219 %tmp.220;
+        %tmp.222 = invoke %tmp.215 %tmp.216(%tmp.221);
+        %tmp.223 = mul %tmp.213 %tmp.222;
+        %tmp.224 = sub %tmp.212 %tmp.223;
+        lputv %jTransit.18 %tmp.224;
+        symbol [ jTransit %jTransit.18 472 6 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 478 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %delta.19 = local;
+        symbol [ delta %delta.19 478 6 11 ];
+        symbol [ Math %tmp.226 478 14 18 ];
+        %tmp.226 = getv ? :Math;
+        symbol [ asin %tmp.227 478 19 23 ];
+        %tmp.227 = getv function %tmp.226 :asin;
+        symbol [ Math %tmp.229 478 24 28 ];
+        %tmp.229 = getv ? :Math;
+        symbol [ sin %tmp.230 478 29 32 ];
+        %tmp.230 = getv function %tmp.229 :sin;
+        %tmp.231 = lgetv %lambda.15;
+        symbol [ lambda %tmp.231 478 33 39 ];
+        %tmp.232 = lgetv %rad.3;
+        symbol [ rad %tmp.232 478 42 45 ];
+        %tmp.233 = mul %tmp.231 %tmp.232;
+        %tmp.234 = invoke %tmp.229 %tmp.230(%tmp.233);
+        symbol [ Math %tmp.236 478 49 53 ];
+        %tmp.236 = getv ? :Math;
+        symbol [ sin %tmp.237 478 54 57 ];
+        %tmp.237 = getv function %tmp.236 :sin;
+        %tmp.238 = 23.44d;
+        %tmp.239 = lgetv %rad.3;
+        symbol [ rad %tmp.239 478 67 70 ];
+        %tmp.240 = mul %tmp.238 %tmp.239;
+        %tmp.241 = invoke %tmp.236 %tmp.237(%tmp.240);
+        %tmp.242 = mul %tmp.234 %tmp.241;
+        %tmp.243 = invoke %tmp.226 %tmp.227(%tmp.242);
+        lputv %delta.19 %tmp.243;
+        symbol [ delta %delta.19 478 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 482 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %cosOmega.20 = local;
+        symbol [ cosOmega %cosOmega.20 482 6 14 ];
+        symbol [ Math %tmp.245 482 18 22 ];
+        %tmp.245 = getv ? :Math;
+        symbol [ sin %tmp.246 482 23 26 ];
+        %tmp.246 = getv function %tmp.245 :sin;
+        %tmp.247 = -0.83d;
+        %tmp.248 = lgetv %rad.3;
+        symbol [ rad %tmp.248 482 36 39 ];
+        %tmp.249 = mul %tmp.247 %tmp.248;
+        %tmp.250 = invoke %tmp.245 %tmp.246(%tmp.249);
+        symbol [ Math %tmp.252 482 43 47 ];
+        %tmp.252 = getv ? :Math;
+        symbol [ sin %tmp.253 482 48 51 ];
+        %tmp.253 = getv function %tmp.252 :sin;
+        %tmp.254 = lgetv %lat;
+        symbol [ lat %tmp.254 482 52 55 ];
+        %tmp.255 = lgetv %rad.3;
+        symbol [ rad %tmp.255 482 58 61 ];
+        %tmp.256 = mul %tmp.254 %tmp.255;
+        %tmp.257 = invoke %tmp.252 %tmp.253(%tmp.256);
+        symbol [ Math %tmp.259 482 65 69 ];
+        %tmp.259 = getv ? :Math;
+        symbol [ sin %tmp.260 482 70 73 ];
+        %tmp.260 = getv function %tmp.259 :sin;
+        %tmp.261 = lgetv %delta.19;
+        symbol [ delta %tmp.261 482 74 79 ];
+        %tmp.262 = invoke %tmp.259 %tmp.260(%tmp.261);
+        %tmp.263 = mul %tmp.257 %tmp.262;
+        %tmp.264 = sub %tmp.250 %tmp.263;
+        symbol [ Math %tmp.266 483 6 10 ];
+        %tmp.266 = getv ? :Math;
+        symbol [ cos %tmp.267 483 11 14 ];
+        %tmp.267 = getv function %tmp.266 :cos;
+        %tmp.268 = lgetv %lat;
+        symbol [ lat %tmp.268 483 15 18 ];
+        %tmp.269 = lgetv %rad.3;
+        symbol [ rad %tmp.269 483 21 24 ];
+        %tmp.270 = mul %tmp.268 %tmp.269;
+        %tmp.271 = invoke %tmp.266 %tmp.267(%tmp.270);
+        symbol [ Math %tmp.273 483 28 32 ];
+        %tmp.273 = getv ? :Math;
+        symbol [ cos %tmp.274 483 33 36 ];
+        %tmp.274 = getv function %tmp.273 :cos;
+        %tmp.275 = lgetv %delta.19;
+        symbol [ delta %tmp.275 483 37 42 ];
+        %tmp.276 = invoke %tmp.273 %tmp.274(%tmp.275);
+        %tmp.277 = mul %tmp.271 %tmp.276;
+        %tmp.278 = div %tmp.264 %tmp.277;
+        lputv %cosOmega.20 %tmp.278;
+        symbol [ cosOmega %cosOmega.20 482 6 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 487 2 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_2_489_2_if_stmt:
+        %tmp.279 = lgetv %cosOmega.20;
+        symbol [ cosOmega %tmp.279 487 6 14 ];
+        %tmp.280 = 1;
+        %tmp.281 = gt %tmp.279 %tmp.280;
+        bf %tmp.281 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_2_489_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_2_489_2_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_20_489_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 488 3 ]
+        %tmp.282 = newa 2;
+        %tmp.283 = null;
+        %tmp.284 = dup %tmp.282;
+        %tmp.285 = aputv %tmp.284 0 %tmp.283;
+        %tmp.286 = -1;
+        %tmp.287 = dup %tmp.285;
+        %tmp.288 = aputv %tmp.287 1 %tmp.286;
+        ret %tmp.288;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_20_489_2_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_2_489_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_487_2_489_2_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 492 2 ]
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_2_494_2_if_stmt:
+        %tmp.289 = lgetv %cosOmega.20;
+        symbol [ cosOmega %tmp.289 492 6 14 ];
+        %tmp.290 = -1;
+        %tmp.291 = lt %tmp.289 %tmp.290;
+        bf %tmp.291 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_2_494_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_2_494_2_if_true:
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_21_494_2_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 493 3 ]
+        %tmp.292 = newa 2;
+        %tmp.293 = -1;
+        %tmp.294 = dup %tmp.292;
+        %tmp.295 = aputv %tmp.294 0 %tmp.293;
+        %tmp.296 = null;
+        %tmp.297 = dup %tmp.295;
+        %tmp.298 = aputv %tmp.297 1 %tmp.296;
+        ret %tmp.298;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_21_494_2_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_2_494_2_if_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_492_2_494_2_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 497 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %omega.21 = local;
+        symbol [ omega %omega.21 497 6 11 ];
+        symbol [ Math %tmp.300 497 14 18 ];
+        %tmp.300 = getv ? :Math;
+        symbol [ acos %tmp.301 497 19 23 ];
+        %tmp.301 = getv function %tmp.300 :acos;
+        %tmp.302 = lgetv %cosOmega.20;
+        symbol [ cosOmega %tmp.302 497 24 32 ];
+        %tmp.303 = invoke %tmp.300 %tmp.301(%tmp.302);
+        %tmp.304 = lgetv %deg.4;
+        symbol [ deg %tmp.304 497 36 39 ];
+        %tmp.305 = mul %tmp.303 %tmp.304;
+        lputv %omega.21 %tmp.305;
+        symbol [ omega %omega.21 497 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 498 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %jSet.22 = local;
+        symbol [ jSet %jSet.22 498 6 10 ];
+        %tmp.306 = lgetv %jTransit.18;
+        symbol [ jTransit %tmp.306 498 13 21 ];
+        %tmp.307 = lgetv %omega.21;
+        symbol [ omega %tmp.307 498 25 30 ];
+        %tmp.308 = 360.0;
+        %tmp.309 = div %tmp.307 %tmp.308;
+        %tmp.310 = add %tmp.306 %tmp.309;
+        lputv %jSet.22 %tmp.310;
+        symbol [ jSet %jSet.22 498 6 10 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 499 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %jRise.23 = local;
+        symbol [ jRise %jRise.23 499 6 11 ];
+        %tmp.311 = lgetv %jTransit.18;
+        symbol [ jTransit %tmp.311 499 14 22 ];
+        %tmp.312 = lgetv %omega.21;
+        symbol [ omega %tmp.312 499 26 31 ];
+        %tmp.313 = 360.0;
+        %tmp.314 = div %tmp.312 %tmp.313;
+        %tmp.315 = sub %tmp.311 %tmp.314;
+        lputv %jRise.23 %tmp.315;
+        symbol [ jRise %jRise.23 499 6 11 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 500 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %deltaJSet.24 = local;
+        symbol [ deltaJSet %deltaJSet.24 500 6 15 ];
+        %tmp.316 = lgetv %jSet.22;
+        symbol [ jSet %tmp.316 500 18 22 ];
+        %tmp.317 = lgetv %jDate.8;
+        symbol [ jDate %tmp.317 500 25 30 ];
+        %tmp.318 = sub %tmp.316 %tmp.317;
+        lputv %deltaJSet.24 %tmp.318;
+        symbol [ deltaJSet %deltaJSet.24 500 6 15 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 501 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %deltaJRise.25 = local;
+        symbol [ deltaJRise %deltaJRise.25 501 6 16 ];
+        %tmp.319 = lgetv %jRise.23;
+        symbol [ jRise %tmp.319 501 19 24 ];
+        %tmp.320 = lgetv %jDate.8;
+        symbol [ jDate %tmp.320 501 27 32 ];
+        %tmp.321 = sub %tmp.319 %tmp.320;
+        lputv %deltaJRise.25 %tmp.321;
+        symbol [ deltaJRise %deltaJRise.25 501 6 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 503 2 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_start" "C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop" ]
+        %tzOffset.26 = local;
+        symbol [ tzOffset %tzOffset.26 503 6 14 ];
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_begin:
+        %tmp.322 = lgetv %tz;
+        symbol [ tz %tmp.322 503 18 20 ];
+        %tmp.323 = null;
+        %tmp.324 = eq %tmp.322 %tmp.323;
+        bf %tmp.324 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_else_false;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_true:
+        symbol [ Sys %tmp.325 503 33 36 ];
+        %tmp.325 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.326 503 37 49 ];
+        %tmp.326 = getv function %tmp.325 :getClockTime;
+        %tmp.327 = invoke %tmp.325 %tmp.326();
+        symbol [ timeZoneOffset %tmp.328 503 52 66 ];
+        %tmp.328 = getv %tmp.327 :timeZoneOffset;
+        %tmp.329 = 3600;
+        %tmp.330 = div %tmp.328 %tmp.329;
+        push %tmp.330;
+        goto @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_end;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_else_false:
+        %tmp.331 = lgetv %tz;
+        symbol [ tz %tmp.331 503 77 79 ];
+        %tmp.332 = as %tmp.331 { (!Null) };
+        push %tmp.332;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_end:
+        %tmp.333 = phi [%tmp.324 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_begin] [%tmp.330 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_true] [%tmp.332 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_else_false] [%tmp.333 @C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_503_17_503_77_end];
+        lputv %tzOffset.26 %tmp.333;
+        symbol [ tzOffset %tzOffset.26 503 6 14 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc" 504 2 ]
+        %tmp.334 = newa 2;
+        %tmp.335 = lgetv %deltaJRise.25;
+        symbol [ deltaJRise %tmp.335 505 20 30 ];
+        %tmp.336 = 24;
+        %tmp.337 = mul %tmp.335 %tmp.336;
+        %tmp.338 = lgetv %tzOffset.26;
+        symbol [ tzOffset %tmp.338 505 39 47 ];
+        %tmp.339 = add %tmp.337 %tmp.338;
+        %tmp.340 = dup %tmp.334;
+        %tmp.341 = aputv %tmp.340 0 %tmp.339;
+        %tmp.342 = lgetv %deltaJSet.24;
+        symbol [ deltaJSet %tmp.342 506 19 28 ];
+        %tmp.343 = 24;
+        %tmp.344 = mul %tmp.342 %tmp.343;
+        %tmp.345 = lgetv %tzOffset.26;
+        symbol [ tzOffset %tmp.345 506 37 45 ];
+        %tmp.346 = add %tmp.344 %tmp.345;
+        %tmp.347 = dup %tmp.341;
+        %tmp.348 = aputv %tmp.347 1 %tmp.346;
+        ret %tmp.348;
+C__Users_mirka_Vs_projects_Casio_source_DataFields_mc_415_82_508_1_stop:
+    }
+}
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\DataFields.mc"; @line = 1; ]
+<init> {
+}

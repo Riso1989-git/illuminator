@@ -22,7 +22,6 @@
 		</settingConfig>
 	</setting>
 
-
     <setting propertyKey="@Properties.Field2" title="@Strings.DataField2Title">
 		<settingConfig type="list">
 			<listEntry value="0">@Strings.HeartRate</listEntry>

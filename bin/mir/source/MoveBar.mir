@@ -1,0 +1,280 @@
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; @symbol_usingAlias = [Ui,1,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [ActivityMonitor,2,13,28]; @symbol_usingAlias = [ActivityMonitor,2,32,47]; ]
+using Toybox.ActivityMonitor as :ActivityMonitor;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [Graphics,3,13,21]; @symbol_usingAlias = [Gfx,3,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Lang,4,13,17]; ]
+using Toybox.Lang;
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 6; @symbol_classdef = [MoveBar,6,6,13]; @symbol_extends<0> = [Ui,6,22,24]; @symbol_extends<1> = [Drawable,6,25,33]; ]
+class MoveBar extends Ui.Drawable {
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 8; @position = 16; @symbol_vardef = [x,8,16,17]; ]
+    private
+    var x;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 9; @position = 16; @symbol_vardef = [y,9,16,17]; ]
+    private
+    var y;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 10; @position = 16; @symbol_vardef = [width,10,16,21]; ]
+    private
+    var width;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 11; @position = 16; @symbol_vardef = [height,11,16,22]; ]
+    private
+    var height;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 12; @position = 16; @symbol_vardef = [separator,12,16,25]; ]
+    private
+    var separator;
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 14; @symbol_typedef = [Params,14,12,18]; @symbol_type<0> = [Lang,15,22,26]; @symbol_type<1> = [Number,15,27,33]; @symbol_type<2> = [Lang,16,22,26]; @symbol_type<3> = [Number,16,27,33]; @symbol_type<4> = [Lang,17,22,26]; @symbol_type<5> = [Number,17,27,33]; @symbol_type<6> = [Lang,18,22,26]; @symbol_type<7> = [Number,18,27,33]; @symbol_type<8> = [Lang,19,22,26]; @symbol_type<9> = [Number,19,27,33]; @symbol_type_const<0> = [x,15,9,10]; @symbol_type_const<1> = [y,16,9,10]; @symbol_type_const<2> = [width,17,9,14]; @symbol_type_const<3> = [height,18,9,15]; @symbol_type_const<4> = [separator,19,9,18]; ]
+    type Params as {:x as Lang.Number, :y as Lang.Number, :width as Lang.Number, :height as Lang.Number, :separator as Lang.Number};
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 22; @symbol_functiondef = [initialize,22,13,23]; @symbol_param<0> = [params,22,24,30]; @symbol_param<0>_type<0> = [Params,22,34,40]; ]
+    function initialize(params as Params) as Void {
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_22_42_30_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 23 8 ]
+        symbol [ Drawable %tmp.2 23 8 16 ];
+        %tmp.2 = getv ? :Drawable;
+        symbol [ initialize %tmp.3 23 17 27 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.4 = lgetv %params;
+        symbol [ params %tmp.4 23 28 34 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 25 8 ]
+        %tmp.5 = lgetv %params;
+        symbol [ params %tmp.5 25 20 26 ];
+        %tmp.7 = const :x;
+        symbol [ x %tmp.7 25 28 29 const ];
+        %tmp.8 = agetv %tmp.5 %tmp.7;
+        symbol [ x ? 25 8 9 ];
+        putv self :x %tmp.8;
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 26 8 ]
+        %tmp.9 = lgetv %params;
+        symbol [ params %tmp.9 26 20 26 ];
+        %tmp.11 = const :y;
+        symbol [ y %tmp.11 26 28 29 const ];
+        %tmp.12 = agetv %tmp.9 %tmp.11;
+        symbol [ y ? 26 8 9 ];
+        putv self :y %tmp.12;
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 27 8 ]
+        %tmp.13 = lgetv %params;
+        symbol [ params %tmp.13 27 20 26 ];
+        %tmp.15 = const :width;
+        symbol [ width %tmp.15 27 28 33 const ];
+        %tmp.16 = agetv %tmp.13 %tmp.15;
+        symbol [ width ? 27 8 13 ];
+        putv self :width %tmp.16;
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 28 8 ]
+        %tmp.17 = lgetv %params;
+        symbol [ params %tmp.17 28 20 26 ];
+        %tmp.19 = const :height;
+        symbol [ height %tmp.19 28 28 34 const ];
+        %tmp.20 = agetv %tmp.17 %tmp.19;
+        symbol [ height ? 28 8 14 ];
+        putv self :height %tmp.20;
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 29 8 ]
+        %tmp.21 = lgetv %params;
+        symbol [ params %tmp.21 29 20 26 ];
+        %tmp.23 = const :separator;
+        symbol [ separator %tmp.23 29 28 37 const ];
+        %tmp.24 = agetv %tmp.21 %tmp.23;
+        symbol [ separator ? 29 8 17 ];
+        putv self :separator %tmp.24;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_22_42_30_4_stop:
+    }
+    [ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 32; @symbol_functiondef = [draw,32,13,17]; @symbol_param<0> = [dc,32,18,20]; @symbol_param<0>_type<0> = [Gfx,32,24,27]; @symbol_param<0>_type<1> = [Dc,32,28,30]; ]
+    function draw(dc as Gfx.Dc) as Void {
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 34 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %info.1 = local;
+        symbol [ info %info.1 34 12 16 ];
+        symbol [ ActivityMonitor %tmp.1 34 19 34 ];
+        %tmp.1 = getm $.Toybox.ActivityMonitor;
+        symbol [ getInfo %tmp.2 34 35 42 ];
+        %tmp.2 = getv function %tmp.1 :getInfo;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %info.1 %tmp.3;
+        symbol [ info %info.1 34 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 35 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %level.2 = local;
+        symbol [ level %level.2 35 12 17 ];
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_begin:
+        %tmp.4 = lgetv %info.1;
+        symbol [ info %tmp.4 35 20 24 ];
+        symbol [ moveBarLevel %tmp.5 35 25 37 ];
+        %tmp.5 = getv %tmp.4 :moveBarLevel;
+        %tmp.6 = null;
+        %tmp.7 = eq %tmp.5 %tmp.6;
+        bf %tmp.7 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_else_false;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_true:
+        %tmp.8 = 0;
+        push %tmp.8;
+        goto @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_end;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_else_false:
+        %tmp.9 = lgetv %info.1;
+        symbol [ info %tmp.9 35 52 56 ];
+        symbol [ moveBarLevel %tmp.10 35 57 69 ];
+        %tmp.10 = getv %tmp.9 :moveBarLevel;
+        push %tmp.10;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_end:
+        %tmp.11 = phi [%tmp.7 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_begin] [%tmp.8 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_true] [%tmp.10 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_else_false] [%tmp.11 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_35_20_35_57_end];
+        lputv %level.2 %tmp.11;
+        symbol [ level %level.2 35 12 17 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 37 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %maxBars.3 = local;
+        symbol [ maxBars %maxBars.3 37 12 19 ];
+        symbol [ ActivityMonitor %tmp.12 37 22 37 ];
+        %tmp.12 = getm $.Toybox.ActivityMonitor;
+        symbol [ MOVE_BAR_LEVEL_MAX %tmp.13 37 38 56 ];
+        %tmp.13 = getv %tmp.12 :MOVE_BAR_LEVEL_MAX;
+        lputv %maxBars.3 %tmp.13;
+        symbol [ maxBars %maxBars.3 37 12 19 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 40 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %totalSeparatorWidth.4 = local;
+        symbol [ totalSeparatorWidth %totalSeparatorWidth.4 40 12 31 ];
+        %tmp.14 = lgetv %maxBars.3;
+        symbol [ maxBars %tmp.14 40 35 42 ];
+        %tmp.15 = 1;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        symbol [ separator %tmp.18 40 50 59 ];
+        %tmp.18 = getv ? :separator;
+        %tmp.19 = mul %tmp.16 %tmp.18;
+        lputv %totalSeparatorWidth.4 %tmp.19;
+        symbol [ totalSeparatorWidth %totalSeparatorWidth.4 40 12 31 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 41 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %barWidth.5 = local;
+        symbol [ barWidth %barWidth.5 41 12 20 ];
+        symbol [ width %tmp.21 41 24 29 ];
+        %tmp.21 = getv ? :width;
+        %tmp.22 = lgetv %totalSeparatorWidth.4;
+        symbol [ totalSeparatorWidth %tmp.22 41 32 51 ];
+        %tmp.23 = sub %tmp.21 %tmp.22;
+        %tmp.24 = lgetv %maxBars.3;
+        symbol [ maxBars %tmp.24 41 55 62 ];
+        %tmp.25 = div %tmp.23 %tmp.24;
+        lputv %barWidth.5 %tmp.25;
+        symbol [ barWidth %barWidth.5 41 12 20 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 43 8 ]
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_start" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop" ]
+        %barX.6 = local;
+        symbol [ barX %barX.6 43 12 16 ];
+        symbol [ x %tmp.27 43 19 20 ];
+        %tmp.27 = getv ? :x;
+        lputv %barX.6 %tmp.27;
+        symbol [ barX %barX.6 43 12 16 ];
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 45 8 ]
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 45 8 10 ];
+        symbol [ setColor %tmp.29 45 11 19 ];
+        %tmp.29 = getv function %tmp.28 :setColor;
+        symbol [ Gfx %tmp.30 45 20 23 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.31 45 24 35 ];
+        %tmp.31 = getv %tmp.30 :COLOR_WHITE;
+        symbol [ Gfx %tmp.32 45 37 40 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.33 45 41 58 ];
+        %tmp.33 = getv %tmp.32 :COLOR_TRANSPARENT;
+        invoke %tmp.28 %tmp.29(%tmp.31, %tmp.33);
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 47 8 ]
+        for @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_test @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_incr @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_end;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_init:
+        [ "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_begin" "C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_end" ]
+        %i.7 = local;
+        symbol [ i %i.7 47 17 18 ];
+        %tmp.34 = 1;
+        lputv %i.7 %tmp.34;
+        symbol [ i %i.7 47 17 18 ];
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_test:
+        %tmp.35 = lgetv %i.7;
+        symbol [ i %tmp.35 47 24 25 ];
+        %tmp.36 = lgetv %maxBars.3;
+        symbol [ maxBars %tmp.36 47 29 36 ];
+        %tmp.37 = lte %tmp.35 %tmp.36;
+        bf %tmp.37 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_end;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_begin:
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_43_63_8_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 50 12 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 50 12 14 ];
+        symbol [ drawRectangle %tmp.39 50 15 28 ];
+        %tmp.39 = getv function %tmp.38 :drawRectangle;
+        %tmp.40 = lgetv %barX.6;
+        symbol [ barX %tmp.40 50 29 33 ];
+        symbol [ y %tmp.42 50 35 36 ];
+        %tmp.42 = getv ? :y;
+        %tmp.43 = lgetv %barWidth.5;
+        symbol [ barWidth %tmp.43 50 38 46 ];
+        symbol [ height %tmp.45 50 48 54 ];
+        %tmp.45 = getv ? :height;
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.42, %tmp.43, %tmp.45);
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 53 12 ]
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_12_60_12_if_stmt:
+        %tmp.46 = lgetv %i.7;
+        symbol [ i %tmp.46 53 16 17 ];
+        %tmp.47 = lgetv %level.2;
+        symbol [ level %tmp.47 53 21 26 ];
+        %tmp.48 = lte %tmp.46 %tmp.47;
+        bf %tmp.48 @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_12_60_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_12_60_12_if_true:
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_28_60_12_start:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 54 16 ]
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 54 16 18 ];
+        symbol [ fillRectangle %tmp.50 54 19 32 ];
+        %tmp.50 = getv function %tmp.49 :fillRectangle;
+        %tmp.51 = lgetv %barX.6;
+        symbol [ barX %tmp.51 55 20 24 ];
+        %tmp.52 = 1;
+        %tmp.53 = add %tmp.51 %tmp.52;
+        symbol [ y %tmp.55 56 20 21 ];
+        %tmp.55 = getv ? :y;
+        %tmp.56 = 1;
+        %tmp.57 = add %tmp.55 %tmp.56;
+        %tmp.58 = lgetv %barWidth.5;
+        symbol [ barWidth %tmp.58 57 20 28 ];
+        %tmp.59 = 2;
+        %tmp.60 = sub %tmp.58 %tmp.59;
+        symbol [ height %tmp.62 58 20 26 ];
+        %tmp.62 = getv ? :height;
+        %tmp.63 = 2;
+        %tmp.64 = sub %tmp.62 %tmp.63;
+        invoke %tmp.49 %tmp.50(%tmp.53, %tmp.57, %tmp.60, %tmp.64);
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_28_60_12_stop:
+        goto @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_12_60_12_if_end;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_53_12_60_12_if_end:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 62 12 ]
+        %tmp.65 = lgetv %barX.6;
+        symbol [ barX %tmp.65 62 12 16 ];
+        %tmp.66 = lgetv %barWidth.5;
+        symbol [ barWidth %tmp.66 62 20 28 ];
+        symbol [ separator %tmp.68 62 31 40 ];
+        %tmp.68 = getv ? :separator;
+        %tmp.69 = add %tmp.66 %tmp.68;
+        %tmp.70 = add %tmp.65 %tmp.69;
+        lputv %barX.6 %tmp.70;
+        symbol [ barX %barX.6 62 12 16 ];
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_43_63_8_stop:
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_incr:
+[ "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc" 47 ]
+        %tmp.73 = lgetv %i.7;
+        symbol [ i %tmp.73 47 38 39 ];
+        %tmp.74 = add %tmp.73 1;
+        lputv %i.7 %tmp.74;
+        symbol [ i %i.7 47 38 39 ];
+        goto @C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_test;
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_47_8_63_8_for_end:
+C__Users_mirka_Vs_projects_Casio_source_MoveBar_mc_32_40_64_4_stop:
+    }
+}
+[ @file = "C:\Users\mirka\Vs-projects\Casio\source\MoveBar.mc"; @line = 1; ]
+<init> {
+}
