@@ -4,6 +4,8 @@
     <property id="ForegroundColor" type="number">0xFF0000</property>
     <property id="UseMilitaryFormat" type="boolean">false</property>
 
+    <property id="AnalogueTimezoneOffset" type="number">0</property>
+
     <property id="FieldCount" type="number">3</property>
 	<property id="Field1" type="number">0</property>
 	<property id="Field2" type="number">4</property>

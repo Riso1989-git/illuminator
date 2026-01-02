@@ -2,6 +2,7 @@ using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Lang as Lang;
 using Toybox.System as Sys;
+using Toybox.Time;
 
 class Analogue extends Ui.Drawable {
 
@@ -107,8 +108,42 @@ class Analogue extends Ui.Drawable {
     private function drawHands(dc as Gfx.Dc) {
 
         var now = Sys.getClockTime();
-        var hour   = now.hour % 12;
+        var hour   = now.hour;
         var minute = now.min;
+
+        // Apply timezone offset from settings
+        var tzOffset = getPropertyValue("AnalogueTimezoneOffset");
+        if (tzOffset != null && tzOffset != 0) {
+            // tzOffset is stored as: hours * 100 + minutes (e.g., 530 = +5:30, -500 = -5:00)
+            // value of 1 means UTC+0 (to distinguish from 0 = local time)
+            if (tzOffset == 1) {
+                // UTC+0: subtract local timezone offset
+                var localOffsetMinutes = now.timeZoneOffset / 60;
+                var totalMinutes = hour * 60 + minute - localOffsetMinutes;
+                hour = ((totalMinutes / 60) % 24 + 24) % 24;
+                minute = ((totalMinutes % 60) + 60) % 60;
+            } else {
+                // Custom timezone: convert to UTC first, then apply target timezone
+                var localOffsetMinutes = now.timeZoneOffset / 60;
+
+                // Parse target timezone offset (e.g., 530 -> 5 hours 30 min, -800 -> -8 hours 0 min)
+                var targetHours = tzOffset / 100;
+                var targetMinutes = (tzOffset % 100).abs();
+                if (tzOffset < 0) {
+                    targetMinutes = -targetMinutes;
+                }
+                var targetOffsetMinutes = targetHours * 60 + targetMinutes;
+
+                // Calculate: local time -> UTC -> target timezone
+                var totalMinutes = hour * 60 + minute - localOffsetMinutes + targetOffsetMinutes;
+
+                // Normalize to 0-23 hours and 0-59 minutes
+                hour = ((totalMinutes / 60) % 24 + 24) % 24;
+                minute = ((totalMinutes % 60) + 60) % 60;
+            }
+        }
+
+        hour = hour % 12;
 
         /* ---- Hour hand ---- */
         var hourIndex =

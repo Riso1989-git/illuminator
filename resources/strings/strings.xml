@@ -42,4 +42,34 @@
 	<string id="Sunrise">Sunrise</string>
 	<string id="Sunset">Sunset</string>
 	<string id="WeatherTemperature">Weather Temperature</string>
+
+	<string id="AnalogueTimezoneTitle">Analogue Clock Timezone</string>
+	<string id="TzLocal">Local Time</string>
+	<string id="TzMinus12">UTC-12 (Baker Island)</string>
+	<string id="TzMinus11">UTC-11 (Samoa)</string>
+	<string id="TzMinus10">UTC-10 (Hawaii)</string>
+	<string id="TzMinus9">UTC-9 (Alaska)</string>
+	<string id="TzMinus8">UTC-8 (Los Angeles)</string>
+	<string id="TzMinus7">UTC-7 (Denver)</string>
+	<string id="TzMinus6">UTC-6 (Chicago)</string>
+	<string id="TzMinus5">UTC-5 (New York)</string>
+	<string id="TzMinus4">UTC-4 (Atlantic)</string>
+	<string id="TzMinus3">UTC-3 (São Paulo)</string>
+	<string id="TzMinus2">UTC-2 (Mid-Atlantic)</string>
+	<string id="TzMinus1">UTC-1 (Azores)</string>
+	<string id="TzUtc">UTC+0 (London)</string>
+	<string id="TzPlus1">UTC+1 (Paris)</string>
+	<string id="TzPlus2">UTC+2 (Cairo)</string>
+	<string id="TzPlus3">UTC+3 (Moscow)</string>
+	<string id="TzPlus4">UTC+4 (Dubai)</string>
+	<string id="TzPlus5">UTC+5 (Karachi)</string>
+	<string id="TzPlus530">UTC+5:30 (Mumbai)</string>
+	<string id="TzPlus6">UTC+6 (Dhaka)</string>
+	<string id="TzPlus7">UTC+7 (Bangkok)</string>
+	<string id="TzPlus8">UTC+8 (Singapore)</string>
+	<string id="TzPlus9">UTC+9 (Tokyo)</string>
+	<string id="TzPlus930">UTC+9:30 (Adelaide)</string>
+	<string id="TzPlus10">UTC+10 (Sydney)</string>
+	<string id="TzPlus11">UTC+11 (Solomon Is.)</string>
+	<string id="TzPlus12">UTC+12 (Auckland)</string>
 </strings>

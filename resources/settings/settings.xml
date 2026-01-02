@@ -1,5 +1,38 @@
 <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
 
+	<setting propertyKey="@Properties.AnalogueTimezoneOffset" title="@Strings.AnalogueTimezoneTitle">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.TzLocal</listEntry>
+			<listEntry value="-1200">@Strings.TzMinus12</listEntry>
+			<listEntry value="-1100">@Strings.TzMinus11</listEntry>
+			<listEntry value="-1000">@Strings.TzMinus10</listEntry>
+			<listEntry value="-900">@Strings.TzMinus9</listEntry>
+			<listEntry value="-800">@Strings.TzMinus8</listEntry>
+			<listEntry value="-700">@Strings.TzMinus7</listEntry>
+			<listEntry value="-600">@Strings.TzMinus6</listEntry>
+			<listEntry value="-500">@Strings.TzMinus5</listEntry>
+			<listEntry value="-400">@Strings.TzMinus4</listEntry>
+			<listEntry value="-300">@Strings.TzMinus3</listEntry>
+			<listEntry value="-200">@Strings.TzMinus2</listEntry>
+			<listEntry value="-100">@Strings.TzMinus1</listEntry>
+			<listEntry value="1">@Strings.TzUtc</listEntry>
+			<listEntry value="100">@Strings.TzPlus1</listEntry>
+			<listEntry value="200">@Strings.TzPlus2</listEntry>
+			<listEntry value="300">@Strings.TzPlus3</listEntry>
+			<listEntry value="400">@Strings.TzPlus4</listEntry>
+			<listEntry value="500">@Strings.TzPlus5</listEntry>
+			<listEntry value="530">@Strings.TzPlus530</listEntry>
+			<listEntry value="600">@Strings.TzPlus6</listEntry>
+			<listEntry value="700">@Strings.TzPlus7</listEntry>
+			<listEntry value="800">@Strings.TzPlus8</listEntry>
+			<listEntry value="900">@Strings.TzPlus9</listEntry>
+			<listEntry value="930">@Strings.TzPlus930</listEntry>
+			<listEntry value="1000">@Strings.TzPlus10</listEntry>
+			<listEntry value="1100">@Strings.TzPlus11</listEntry>
+			<listEntry value="1200">@Strings.TzPlus12</listEntry>
+		</settingConfig>
+	</setting>
+
 	<setting propertyKey="@Properties.FieldCount" title="@Strings.FieldCountTitle">
 		<settingConfig type="numeric" min="0" max="3" required="true"/>
 	</setting>
