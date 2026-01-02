@@ -102,7 +102,7 @@ class WorldMap extends Ui.Drawable {
 
     function draw(dc as Graphics.Dc) as Void {
 
-        dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         drawTiles(
             mMapData[0],
             mMapFont,
