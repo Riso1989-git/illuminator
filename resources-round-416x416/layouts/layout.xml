@@ -19,8 +19,8 @@
 			<param name="positionY">220</param>
 		</drawable>
 		<drawable id="MoveBarDisplay" class="MoveBar">
-			<param name="x">197</param>
-			<param name="y">140</param>
+			<param name="posX">197</param>
+			<param name="posY">140</param>
 			<param name="width">205</param>
 			<param name="height">12</param>
 			<param name="separator">4</param>

@@ -5,16 +5,21 @@ using Toybox.Lang;
 
 class GoalMeter extends Ui.Drawable {
 
-    private var posX;
-    private var posY;
-    private var width;
-    private var height;
-    private var gap;
-    private var separator;
+    private var posX as Lang.Number;
+    private var posY as Lang.Number;
+    private var width as Lang.Number;
+    private var height as Lang.Number;
+    private var gap as Lang.Number;
+    private var separator as Lang.Number;
 
     private var iconFont;
+
+    // Constants
     private const ICON_SIZE = 20;
     private const ICON_GAP  = 8;
+    private const MAX_BARS  = 9;
+    private const STEPS_ICON_Y_OFFSET  = -25;
+    private const FLOORS_ICON_Y_OFFSET = -5;
 
     // Icons (from garmin_icons font)
     private const STEPS_ICON  = "N";
@@ -46,13 +51,17 @@ class GoalMeter extends Ui.Drawable {
 
         var info   = ActivityMonitor.getInfo();
         var steps  = info.steps == null ? 0 : info.steps;
-        var stesGoal = info.stepGoal == null ? 10000 : info.stepGoal;
+        var stepsGoal = info.stepGoal == null ? 10000 : info.stepGoal;
 
         var floors = info.floorsClimbed == null ? 0 : info.floorsClimbed;
-        var floorsGoal = info.floorsClimbedGoal  == null ? 10 : info.floorsClimbedGoal;
+        var floorsGoal = info.floorsClimbedGoal == null ? 10 : info.floorsClimbedGoal;
+
+        // Prevent division by zero
+        if (stepsGoal <= 0) { stepsGoal = 1; }
+        if (floorsGoal <= 0) { floorsGoal = 1; }
 
         // Compute ratios
-        var stepsRatio  = steps.toFloat()  / stesGoal;
+        var stepsRatio  = steps.toFloat()  / stepsGoal;
         var floorsRatio = floors.toFloat() / floorsGoal;
 
         if (stepsRatio  > 1) { stepsRatio  = 1; }
@@ -61,8 +70,6 @@ class GoalMeter extends Ui.Drawable {
         // Bar width excluding icon
         var barX     = posX + ICON_SIZE + ICON_GAP;
         var barWidth = width - ICON_SIZE - ICON_GAP;
-
-        var maxBars = 9;
 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
@@ -73,22 +80,22 @@ class GoalMeter extends Ui.Drawable {
         // Draw icon
         dc.drawText(
             posX,
-            posY - 25,
+            posY + STEPS_ICON_Y_OFFSET,
             iconFont,
             STEPS_ICON,
             Gfx.TEXT_JUSTIFY_LEFT
         );
 
-        var stepsBars = Math.round(maxBars * stepsRatio);
-        var stepBarWidth = (barWidth - (maxBars - 1) * separator) / maxBars;
+        var stepsBars = Math.round(MAX_BARS * stepsRatio);
+        var barSegmentWidth = (barWidth - (MAX_BARS - 1) * separator) / MAX_BARS;
 
         var barPosX = barX;
-        for (var i = 1; i <= maxBars; i++) {
-            dc.drawRectangle(barPosX, posY, stepBarWidth, height);
+        for (var i = 1; i <= MAX_BARS; i++) {
+            dc.drawRectangle(barPosX, posY, barSegmentWidth, height);
             if (i <= stepsBars) {
-                dc.fillRectangle(barPosX + 1, posY + 1, stepBarWidth - 2, height - 2);
+                dc.fillRectangle(barPosX + 1, posY + 1, barSegmentWidth - 2, height - 2);
             }
-            barPosX += stepBarWidth + separator;
+            barPosX += barSegmentWidth + separator;
         }
 
         // ------------------
@@ -100,20 +107,20 @@ class GoalMeter extends Ui.Drawable {
         // Draw icon
         dc.drawText(
             posX,
-            floorsY - 5,
+            floorsY + FLOORS_ICON_Y_OFFSET,
             iconFont,
             FLOORS_ICON,
             Gfx.TEXT_JUSTIFY_LEFT
         );
 
-        var floorsBars = Math.round(maxBars * floorsRatio);
+        var floorsBars = Math.round(MAX_BARS * floorsRatio);
         barPosX = barX;
-        for (var i = 1; i <= maxBars; i++) {
-            dc.drawRectangle(barPosX, floorsY, stepBarWidth, height);
+        for (var i = 1; i <= MAX_BARS; i++) {
+            dc.drawRectangle(barPosX, floorsY, barSegmentWidth, height);
             if (i <= floorsBars) {
-                dc.fillRectangle(barPosX + 1, floorsY + 1, stepBarWidth - 2, height - 2);
+                dc.fillRectangle(barPosX + 1, floorsY + 1, barSegmentWidth - 2, height - 2);
             }
-            barPosX += stepBarWidth + separator;
+            barPosX += barSegmentWidth + separator;
         }
     }
 }

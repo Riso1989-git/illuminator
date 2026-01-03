@@ -2,18 +2,12 @@ using Toybox.WatchUi as Ui;
 using Toybox.Graphics;
 using Toybox.Lang;
 using Toybox.System;
+using Toybox.Time;
 using Toybox.Time.Gregorian;
 
 import Toybox.Application;
 
 class WorldMap extends Ui.Drawable {
-
-    /* =======================
-     * Configuration Constants
-     * ======================= */
-
-    const MAP_LAT_TOP    = 75.0;
-    const MAP_LAT_BOTTOM = -60.0;
 
     // Packed tile bit masks
     const TILE_CHAR_MASK = 0x00000FFF;
@@ -23,29 +17,36 @@ class WorldMap extends Ui.Drawable {
     // Night overlay grid step (larger = faster but less precise)
     const GRID_STEP = 2;
 
+    // Solar elevation threshold for civil twilight (sun ~6° below horizon)
+    const TWILIGHT_THRESHOLD = 0.05;
+
+    // Days in month lookup tables (avoid recreating arrays every frame)
+    const DAYS_IN_MONTH_NORMAL = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+    const DAYS_IN_MONTH_LEAP   = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+
     /* =======================
      * Instance State
      * ======================= */
 
-    private var mPositionX;
-    private var mPositionY;
-    private var mMapFont;
-    private var mMapData;
+    private var mPositionX as Lang.Number;
+    private var mPositionY as Lang.Number;
+    private var mMapFont as Graphics.FontResource;
+    private var mMapData as Lang.Array;
 
     // Projection dimensions
-    private var mapWidth;
-    private var mapPixelHeight;
+    private var mapWidth as Lang.Number;
+    private var mapPixelHeight as Lang.Number;
 
     // Cached values
-    private var mLastNightCalcMinute = -1;
-    private var mNightOverlayPoints = [];
+    private var mLastNightCalcMinute as Lang.Number = -1;
+    private var mNightOverlayPoints as Lang.Array = [];  // Packed as (x << 16) | y
 
     // Pre-computed lookup tables
-    private var mGridSinLat;    // sin(lat) for each Y grid point
-    private var mGridCosLat;    // cos(lat) for each Y grid point
-    private var mGridLon;       // longitude for each X grid point (in radians for hour angle calc)
-    private var mGridXCount;
-    private var mGridYCount;
+    private var mGridSinLat as Lang.Array;    // sin(lat) for each Y grid point
+    private var mGridCosLat as Lang.Array;    // cos(lat) for each Y grid point
+    private var mGridLon as Lang.Array;       // longitude for each X grid point
+    private var mGridXCount as Lang.Number;
+    private var mGridYCount as Lang.Number;
 
     typedef WorldMapParams as {
         :positionX as Lang.Number,
@@ -83,7 +84,6 @@ class WorldMap extends Ui.Drawable {
         mGridCosLat = new [mGridYCount];
         mGridLon = new [mGridXCount];
 
-
         // Pre-compute latitude trig values for each Y position
         for (var yi = 0; yi < mGridYCount; yi++) {
             var y = yi * GRID_STEP;
@@ -112,19 +112,11 @@ class WorldMap extends Ui.Drawable {
         );
 
         drawDayNight(dc);
-        
-/*         if (gLocationLat != null) {
-            var pixelLocation = latLonToPixel(gLocationLat, gLocationLng);
-
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawLine(mPositionX + pixelLocation[0], mPositionY, mPositionX + pixelLocation[0], mPositionY + mapPixelHeight);
-            dc.drawLine(mPositionX, mPositionY + pixelLocation[1], mPositionX + mapWidth, mPositionY + pixelLocation[1]);
-        } */
     }
 
     private function drawTiles(
         tileData as Lang.Array,
-        font,
+        font as Graphics.FontResource,
         dc as Graphics.Dc,
         xoff as Lang.Number,
         yoff as Lang.Number
@@ -155,25 +147,6 @@ class WorldMap extends Ui.Drawable {
         }
     }
 
-/*     function latLonToPixel(
-        lat as Lang.Float,
-        lon as Lang.Float
-    ) as Lang.Array {
-
-        if (lon < -180) { lon = -180; }
-        if (lon > 180)  { lon = 180;  }
-        if (lat > MAP_LAT_TOP)    { lat = MAP_LAT_TOP; }
-        if (lat < MAP_LAT_BOTTOM) { lat = MAP_LAT_BOTTOM; }
-
-        var xNorm = (lon + 180.0) / 360.0;
-        var yNorm = (MAP_LAT_TOP - lat) / (MAP_LAT_TOP - MAP_LAT_BOTTOM);
-
-        return [
-            (xNorm * mapWidth).toNumber(),
-            (yNorm * mapPixelHeight).toNumber()
-        ];
-    } */
-
     private function drawDayNight(dc as Graphics.Dc) as Void {
         var now = Time.now();
         var g = Gregorian.info(now, Time.FORMAT_SHORT);
@@ -186,24 +159,29 @@ class WorldMap extends Ui.Drawable {
         
         dc.setFill(Graphics.createColor(128, 0, 0, 0));
         for (var i = 0; i < mNightOverlayPoints.size(); i++) {
-            var point = mNightOverlayPoints[i];
+            var packed = mNightOverlayPoints[i];
+            var x = (packed >> 16) & 0xFFFF;
+            var y = packed & 0xFFFF;
             dc.fillRectangle(
-                mPositionX + point[0],
-                mPositionY + point[1],
+                mPositionX + x,
+                mPositionY + y,
                 GRID_STEP,
                 GRID_STEP
             );
         }
     }
 
-    private function calculateNightOverlayOptimized(g) as Void {
+    /**
+     * Calculate night overlay points using optimized lookup tables.
+     * Uses solar position algorithm to determine which areas are in darkness.
+     * @param g Gregorian time info (local time)
+     */
+    private function calculateNightOverlayOptimized(g as Gregorian.Info) as Void {
         mNightOverlayPoints = [];
         
         // Day of year calculation
         var isLeapYear = (g.year % 4 == 0 && g.year % 100 != 0) || (g.year % 400 == 0);
-        var daysInMonth = isLeapYear && g.month > 2
-            ? [0,31,60,91,121,152,182,213,244,274,305,335]
-            : [0,31,59,90,120,151,181,212,243,273,304,334];
+        var daysInMonth = isLeapYear ? DAYS_IN_MONTH_LEAP : DAYS_IN_MONTH_NORMAL;
         var doy = g.day + daysInMonth[g.month - 1];
         
         // Solar declination (only changes daily)
@@ -212,9 +190,15 @@ class WorldMap extends Ui.Drawable {
         var sinDecl = Math.sin(decl);
         var cosDecl = Math.cos(decl);
         
-        // Subsolar longitude (changes with time)
-        var utcHours = g.hour + g.min / 60.0;
-        var subLon = (12.0 - utcHours + 0.8) * 15.0;
+        // Convert local time to UTC using device timezone offset
+        var clockTime = System.getClockTime();
+        var timezoneOffsetHours = clockTime.timeZoneOffset / 3600.0;
+        var utcHours = g.hour + g.min / 60.0 - timezoneOffsetHours;
+
+        // Subsolar longitude calculation
+        // 12.0 = solar noon at 0° longitude
+        // * 15.0 = degrees per hour (360° / 24h)
+        var subLon = (12.0 - utcHours) * 15.0;
         var degToRad = Math.PI / 180.0;
 
         // Pre-compute cosine of hour angle for each longitude
@@ -235,9 +219,10 @@ class WorldMap extends Ui.Drawable {
                 
                 var solarElevation = sinLat * sinDecl + cosLat * cosDecl * cosHA;
                 
-                if (solarElevation < 0.05) {
+                if (solarElevation < TWILIGHT_THRESHOLD) {
                     var y = yi * GRID_STEP;
-                    mNightOverlayPoints.add([x, y]);
+                    // Pack x and y into single integer to reduce memory allocations
+                    mNightOverlayPoints.add((x << 16) | y);
                 }
             }
         }

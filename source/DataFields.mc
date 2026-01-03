@@ -8,6 +8,9 @@ using Toybox.SensorHistory as SensorHistory;
 using Toybox.Lang;
 using Toybox.Application.Properties;
 using Toybox.Time.Gregorian;
+using Toybox.Weather;
+import Toybox.Math;
+import Toybox.Time;
 
 enum {
     FIELD_TYPE_HEART_RATE,
@@ -71,25 +74,28 @@ class DataFields extends Ui.Drawable {
     function loadSettings() {
 		if (mfieldPosition == :upper) {
 			mFieldCount = Properties.getValue("FieldCount");
+			if (mFieldCount == null) { mFieldCount = 0; }
 			for (var i = 1; i <= mFieldCount; i++) {
 				var field = Properties.getValue("Field" + i);
-				if (field >= 0) {
+				if (field != null && field >= 0) {
 					mFieldTypes.add(field);
 				}
 			}
 		} else if (mfieldPosition == :middle) {
 			mFieldCount = Properties.getValue("FieldMiddleCount");
+			if (mFieldCount == null) { mFieldCount = 0; }
 			for (var i = 1; i <= mFieldCount; i++) {
 				var field = Properties.getValue("FieldMiddle" + i);
-				if (field >= 0) {
+				if (field != null && field >= 0) {
 					mFieldTypes.add(field);
 				}
 			}
 		} else {
 			mFieldCount = Properties.getValue("FieldBottomCount");
+			if (mFieldCount == null) { mFieldCount = 0; }
 			for (var i = 1; i <= mFieldCount; i++) {
 				var field = Properties.getValue("FieldBottom" + i);
-				if (field >= 0) {
+				if (field != null && field >= 0) {
 					mFieldTypes.add(field);
 				}
 			}
@@ -123,86 +129,86 @@ class DataFields extends Ui.Drawable {
 
 	private const ICON_TEXT_GAP = 4;
 
-private function drawField(dc, fieldType, x) {
+    private function drawField(dc, fieldType, x) {
 
-    var value = getValue(fieldType);
+        var value = getValue(fieldType);
 
-    // --- Base icon mapping ---
-    var icon = {
-        FIELD_TYPE_HEART_RATE        => "i",
-        FIELD_TYPE_BATTERY           => "Q",
-        FIELD_TYPE_NOTIFICATIONS     => "H",
-        FIELD_TYPE_CALORIES          => "U",
-        FIELD_TYPE_DISTANCE          => "{",
-        FIELD_TYPE_ALARMS            => "O",
-        FIELD_TYPE_ALTITUDE          => "Æ",
-        FIELD_TYPE_TEMPERATURE       => "W",
-        FIELD_TYPE_PRESSURE          => "o",
-        FIELD_TYPE_HUMIDITY          => "M",
-		FIELD_TYPE_SUNRISE	         => "n",
-		FIELD_TYPE_SUNSET	         => "_",
-		FIELD_TYPE_BATTERY_NO_ICON	 => null,
-		FIELD_TYPE_GARMIN_TEMPERATURE => "W"
-    }[fieldType];
+        // --- Base icon mapping ---
+        var icon = {
+            FIELD_TYPE_HEART_RATE        => "i",
+            FIELD_TYPE_BATTERY           => "Q",
+            FIELD_TYPE_NOTIFICATIONS     => "H",
+            FIELD_TYPE_CALORIES          => "U",
+            FIELD_TYPE_DISTANCE          => "{",
+            FIELD_TYPE_ALARMS            => "O",
+            FIELD_TYPE_ALTITUDE          => "Æ",
+            FIELD_TYPE_TEMPERATURE       => "W",
+            FIELD_TYPE_PRESSURE          => "o",
+            FIELD_TYPE_HUMIDITY          => "M",
+            FIELD_TYPE_SUNRISE	         => "n",
+            FIELD_TYPE_SUNSET	         => "_",
+            FIELD_TYPE_BATTERY_NO_ICON	 => null,
+            FIELD_TYPE_GARMIN_TEMPERATURE => "W"
+        }[fieldType];
 
-    // --- Heart-rate animation logic ---
-    if (fieldType == FIELD_TYPE_HEART_RATE) {
+        // --- Heart-rate animation logic ---
+        if (fieldType == FIELD_TYPE_HEART_RATE) {
 
-        var hr = (value != null) ? value.toNumber() : 0;
+            var hr = (value != null) ? value.toNumber() : 0;
 
-        if (hr > 0) {
-            var seconds = System.getClockTime().sec;
-            icon = (seconds % 2 == 0)
-                ? "i"   // empty heart
-                : "j";  // full heart
-        } else {
-            icon = "i";
+            if (hr > 0) {
+                var seconds = System.getClockTime().sec;
+                icon = (seconds % 2 == 0)
+                    ? "i"   // empty heart
+                    : "j";  // full heart
+            } else {
+                icon = "i";
+            }
         }
-    }
 
-    dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
-    // --- Measure glyphs ---
-    var iconDims = (icon != null)
-        ? dc.getTextDimensions(icon, iconFont)
-        : [0, 0];
+        // --- Measure glyphs ---
+        var iconDims = (icon != null)
+            ? dc.getTextDimensions(icon, iconFont)
+            : [0, 0];
 
-    var textDims = dc.getTextDimensions(value, textFont);
+        var textDims = dc.getTextDimensions(value, textFont);
 
-    var iconW = iconDims[0];
-    var iconH = iconDims[1];
-    var textH = textDims[1];
+        var iconW = iconDims[0];
+        var iconH = iconDims[1];
+        var textH = textDims[1];
 
-    var centerY = (mTop + mBottom) / 2;
+        var centerY = (mTop + mBottom) / 2;
 
-    // Top-left positioning (no VCENTER)
-    var iconY = centerY;
-    var textY = centerY + (iconH - textH);
+        // Top-left positioning (no VCENTER)
+        var iconY = centerY;
+        var textY = centerY + (iconH - textH);
 
-    // --- Draw icon ---
-    if (icon != null) {
+        // --- Draw icon ---
+        if (icon != null) {
+            dc.drawText(
+                x,
+                iconY,
+                iconFont,
+                icon,
+                Gfx.TEXT_JUSTIFY_CENTER
+            );
+        }
+
+        // --- Draw value ---
+        var valueX = (icon != null)
+            ? x + (iconW / 2) + ICON_TEXT_GAP
+            : x;
+
         dc.drawText(
-            x,
-            iconY,
-            iconFont,
-            icon,
-            Gfx.TEXT_JUSTIFY_CENTER
+            valueX,
+            textY,
+            textFont,
+            value,
+            Gfx.TEXT_JUSTIFY_LEFT
         );
     }
-
-    // --- Draw value ---
-    var valueX = (icon != null)
-        ? x + (iconW / 2) + ICON_TEXT_GAP
-        : x;
-
-    dc.drawText(
-        valueX,
-        textY,
-        textFont,
-        value,
-        Gfx.TEXT_JUSTIFY_LEFT
-    );
-}
 
     private function getValue(type) as Lang.String {
 
@@ -351,7 +357,6 @@ private function drawField(dc, fieldType, x) {
     }
 
     private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
-		//gLocationLat = 48.7164f; gLocationLng = 21.2611f;
 
         if (gLocationLat == null || gLocationLng == null) {
             return "gps?";
@@ -417,12 +422,12 @@ private function drawField(dc, fieldType, x) {
 		// Use double precision where possible, as floating point errors can affect result by minutes.
 		lat = lat.toDouble();
 		lng = lng.toDouble();
-
 		var now = Time.now();
+
 		if (tomorrow) {
 			now = now.add(new Time.Duration(24 * 60 * 60));
 		}
-		var d = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+		var d = Gregorian.info(now, Time.FORMAT_SHORT);
 		var rad = Math.PI / 180.0d;
 		var deg = 180.0d / Math.PI;
 		
