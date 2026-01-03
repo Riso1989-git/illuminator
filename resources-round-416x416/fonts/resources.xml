@@ -17,8 +17,8 @@
     </fonts>
     <jsonData id="worldMapJson" filename="worldMap.json"/>
     <jsonData id="dialJson" filename="dial.json"/>
-    <jsonData id="worldMaminute_0_29Json" filename="minute-0-29.json"/>
-    <jsonData id="worldMaminute_30_59Json" filename="minute-30-59.json"/>
+    <jsonData id="minute_0_29Json" filename="minute-0-29.json"/>
+    <jsonData id="minute_30_59Json" filename="minute-30-59.json"/>
     <jsonData id="hour_0_29Json" filename="hour-0-29.json"/>
     <jsonData id="hour_30_59Json" filename="hour-30-59.json"/>
 </resources>

@@ -7,11 +7,14 @@ using Toybox.Time;
 class Analogue extends Ui.Drawable {
 
     /* =======================
-     * Tile bit masks
+     * Constants
      * ======================= */
     const TILE_CHAR_MASK = 0x00000FFF;
     const TILE_X_MASK    = 0x003FF000;
     const TILE_Y_MASK    = 0xFFC00000;
+
+    /** Number of hour hand positions per hour (60 positions / 12 hours) */
+    const HOUR_SEGMENTS_PER_ROTATION = 5;
 
     /* =======================
      * Resources
@@ -32,7 +35,6 @@ class Analogue extends Ui.Drawable {
     /* =======================
      * Position
      * ======================= */
-
     private var posX;
     private var posY;
 
@@ -44,7 +46,6 @@ class Analogue extends Ui.Drawable {
     /* =======================
      * Lifecycle
      * ======================= */
-
     function initialize(params as AnalogueParams) {
 
         Drawable.initialize({
@@ -64,8 +65,8 @@ class Analogue extends Ui.Drawable {
 
         minFont0_29 = Ui.loadResource(Rez.Fonts.minute_0_29);
         minFont30_59 = Ui.loadResource(Rez.Fonts.minute_30_59);
-        minData0_29 = Ui.loadResource(Rez.JsonData.worldMaminute_0_29Json);
-        minData30_59 = Ui.loadResource(Rez.JsonData.worldMaminute_30_59Json);
+        minData0_29 = Ui.loadResource(Rez.JsonData.minute_0_29Json);
+        minData30_59 = Ui.loadResource(Rez.JsonData.minute_30_59Json);
     }
 
     /* =======================
@@ -80,7 +81,6 @@ class Analogue extends Ui.Drawable {
     /* =======================
      * Dial
      * ======================= */
-
     private function drawDial(dc as Gfx.Dc) {
 
         if (dialData == null || dialData.size() == 0) {
@@ -108,46 +108,13 @@ class Analogue extends Ui.Drawable {
     private function drawHands(dc as Gfx.Dc) {
 
         var now = Sys.getClockTime();
-        var hour   = now.hour;
-        var minute = now.min;
-
-        // Apply timezone offset from settings
-        var tzOffset = getPropertyValue("AnalogueTimezoneOffset");
-        if (tzOffset != null && tzOffset != 0) {
-            // tzOffset is stored as: hours * 100 + minutes (e.g., 530 = +5:30, -500 = -5:00)
-            // value of 1 means UTC+0 (to distinguish from 0 = local time)
-            if (tzOffset == 1) {
-                // UTC+0: subtract local timezone offset
-                var localOffsetMinutes = now.timeZoneOffset / 60;
-                var totalMinutes = hour * 60 + minute - localOffsetMinutes;
-                hour = ((totalMinutes / 60) % 24 + 24) % 24;
-                minute = ((totalMinutes % 60) + 60) % 60;
-            } else {
-                // Custom timezone: convert to UTC first, then apply target timezone
-                var localOffsetMinutes = now.timeZoneOffset / 60;
-
-                // Parse target timezone offset (e.g., 530 -> 5 hours 30 min, -800 -> -8 hours 0 min)
-                var targetHours = tzOffset / 100;
-                var targetMinutes = (tzOffset % 100).abs();
-                if (tzOffset < 0) {
-                    targetMinutes = -targetMinutes;
-                }
-                var targetOffsetMinutes = targetHours * 60 + targetMinutes;
-
-                // Calculate: local time -> UTC -> target timezone
-                var totalMinutes = hour * 60 + minute - localOffsetMinutes + targetOffsetMinutes;
-
-                // Normalize to 0-23 hours and 0-59 minutes
-                hour = ((totalMinutes / 60) % 24 + 24) % 24;
-                minute = ((totalMinutes % 60) + 60) % 60;
-            }
-        }
-
-        hour = hour % 12;
+        var timeValues = applyTimezoneOffset(now.hour, now.min, now.timeZoneOffset);
+        var hour = timeValues[0] % 12;
+        var minute = timeValues[1];
 
         /* ---- Hour hand ---- */
         var hourIndex =
-            ((hour + (minute / 60.0)) * 5).toNumber() % 60;
+            ((hour + (minute / 60.0)) * HOUR_SEGMENTS_PER_ROTATION).toNumber() % 60;
 
         var hFont;
         var hData;
@@ -164,7 +131,9 @@ class Analogue extends Ui.Drawable {
         }
 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        drawTiles(hData[hIdx], hFont, dc, posX, posY);
+        if (hData != null && hIdx >= 0 && hIdx < hData.size()) {
+            drawTiles(hData[hIdx], hFont, dc, posX, posY);
+        }
 
         /* ---- Minute hand ---- */
         var mFont;
@@ -181,13 +150,58 @@ class Analogue extends Ui.Drawable {
             mIdx  = minute;
         }
 
-        drawTiles(mData[mIdx], mFont, dc, posX, posY);
+        if (mData != null && mIdx >= 0 && mIdx < mData.size()) {
+            drawTiles(mData[mIdx], mFont, dc, posX, posY);
+        }
+    }
+
+    /* =======================
+     * Timezone Helper
+     * ======================= */
+    /**
+     * Applies timezone offset to the given hour and minute.
+     * @param hour Current hour (0-23)
+     * @param minute Current minute (0-59)
+     * @param localTimeZoneOffset Device's timezone offset in seconds
+     * @return Array with [adjustedHour, adjustedMinute]
+     */
+    private function applyTimezoneOffset(hour as Lang.Number, minute as Lang.Number, localTimeZoneOffset as Lang.Number) as Lang.Array<Lang.Number> {
+        var tzOffset = getPropertyValue("AnalogueTimezoneOffset");
+
+        if (tzOffset == null || tzOffset == 0) {
+            return [hour, minute];
+        }
+
+        var localOffsetMinutes = localTimeZoneOffset / 60;
+        var totalMinutes;
+
+        if (tzOffset == 1) {
+            // UTC+0: subtract local timezone offset
+            totalMinutes = hour * 60 + minute - localOffsetMinutes;
+        } else {
+            // Custom timezone: convert to UTC first, then apply target timezone
+            // tzOffset format: hours * 100 + minutes (e.g., 530 = +5:30, -800 -> -8 hours 0 min)
+            var targetHours = tzOffset / 100;
+            var targetMinutes = (tzOffset % 100).abs();
+            if (tzOffset < 0) {
+                targetMinutes = -targetMinutes;
+            }
+            var targetOffsetMinutes = targetHours * 60 + targetMinutes;
+
+            // Calculate: local time -> UTC -> target timezone
+            totalMinutes = hour * 60 + minute - localOffsetMinutes + targetOffsetMinutes;
+        }
+
+        // Normalize to valid ranges (0-23 hours, 0-59 minutes)
+        var adjustedHour = ((totalMinutes / 60) % 24 + 24) % 24;
+        var adjustedMinute = ((totalMinutes % 60) + 60) % 60;
+
+        return [adjustedHour, adjustedMinute];
     }
 
     /* =======================
      * Tile renderer
      * ======================= */
-     
     private function drawTiles(
         tileData as Lang.Array,
         font,
