@@ -44,8 +44,8 @@ class DataFields extends Ui.Drawable {
     private var iconFont as Gfx.FontResource;
     private var textFont as Gfx.FontResource;
 
-    private var mCachedSunTimesToday as Lang.Array<Lang.Number?>?;
-    private var mCachedSunTimesTomorrow as Lang.Array<Lang.Number?>?;
+    private var mCachedSunTimesToday as Lang.Array<Lang.Double?>?;
+    private var mCachedSunTimesTomorrow as Lang.Array<Lang.Double?>?;
     private var mSunTimesCacheDay as Lang.Number = -1;
 
     typedef Params as {
@@ -321,7 +321,7 @@ class DataFields extends Ui.Drawable {
             : value;
     }
 
-    private function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array<Lang.Number?> {
+    private function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array<Lang.Double?> {
         var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var today = nowInfo.day;
 
@@ -335,12 +335,12 @@ class DataFields extends Ui.Drawable {
             if (mCachedSunTimesTomorrow == null) {
                 mCachedSunTimesTomorrow = getSunTimes(gLocationLat, gLocationLng, null, true);
             }
-            return mCachedSunTimesTomorrow as Lang.Array<Lang.Number?>;
+            return mCachedSunTimesTomorrow as Lang.Array<Lang.Double?>;
         } else {
             if (mCachedSunTimesToday == null) {
                 mCachedSunTimesToday = getSunTimes(gLocationLat, gLocationLng, null, false);
             }
-            return mCachedSunTimesToday as Lang.Array<Lang.Number?>;
+            return mCachedSunTimesToday as Lang.Array<Lang.Double?>;
         }
     }
 
@@ -352,7 +352,7 @@ class DataFields extends Ui.Drawable {
         var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var now = nowInfo.hour + ((nowInfo.min + 1) / 60.0);
 
-        var eventTime as Lang.Number? = null;
+        var eventTime as Lang.Double? = null;
 
         var sunToday = getCachedSunTimes(false);
         var todayEvent = isSunrise ? sunToday[0] : sunToday[1];
@@ -383,9 +383,9 @@ class DataFields extends Ui.Drawable {
         }
     }
 
-    private function getSunTimes(lat as Lang.Double?, lng as Lang.Double?, tz as Lang.Number?, tomorrow as Lang.Boolean) as Lang.Array<Lang.Number?> {
+    private function getSunTimes(lat as Lang.Double?, lng as Lang.Double?, tz as Lang.Number?, tomorrow as Lang.Boolean) as Lang.Array<Lang.Double?> {
         if (lat == null || lng == null) {
-            return [null, null] as Lang.Array<Lang.Number?>;
+            return [null, null] as Lang.Array<Lang.Double?>;
         }
 
         var latD = lat.toDouble();
@@ -440,11 +440,11 @@ class DataFields extends Ui.Drawable {
             / (Math.cos(latD * rad) * Math.cos(delta));
 
         if (cosOmega > 1) {
-            return [null, -1] as Lang.Array<Lang.Number?>;
+            return [null, -1.0d] as Lang.Array<Lang.Double?>;
         }
 
         if (cosOmega < -1) {
-            return [-1, null] as Lang.Array<Lang.Number?>;
+            return [-1.0d, null] as Lang.Array<Lang.Double?>;
         }
 
         var omega = Math.acos(cosOmega) * deg;
@@ -455,8 +455,8 @@ class DataFields extends Ui.Drawable {
 
         var tzOffset = (tz == null) ? (Sys.getClockTime().timeZoneOffset / 3600) : tz;
         return [
-            ((deltaJRise * 24) + tzOffset) as Lang.Number,
-            ((deltaJSet * 24) + tzOffset) as Lang.Number
-        ] as Lang.Array<Lang.Number?>;
+            ((deltaJRise * 24) + tzOffset) as Lang.Double,
+            ((deltaJSet * 24) + tzOffset) as Lang.Double
+        ] as Lang.Array<Lang.Double?>;
     }
 }
