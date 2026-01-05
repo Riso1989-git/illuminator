@@ -221,90 +221,107 @@ class DataFields extends Ui.Drawable {
 
             case FIELD_TYPE_HEART_RATE:
                 info = Activity.getActivityInfo();
-                if (info.currentHeartRate != null) {
+                if (info != null && info.currentHeartRate != null) {
                     value = info.currentHeartRate.format("%d");
                 }
                 break;
 
             case FIELD_TYPE_BATTERY:
-                value = Math.floor(Sys.getSystemStats().battery).format("%d") + "%";
+                var stats = Sys.getSystemStats();
+                if (stats != null) {
+                    value = Math.floor(stats.battery).format("%d") + "%";
+                }
                 break;
+
             case FIELD_TYPE_BATTERY_NO_ICON:
-                value = Math.floor(Sys.getSystemStats().battery).format("%d") + "%";
+                var statsNoIcon = Sys.getSystemStats();
+                if (statsNoIcon != null) {
+                    value = Math.floor(statsNoIcon.battery).format("%d") + "%";
+                }
                 break;
 
             case FIELD_TYPE_NOTIFICATIONS:
-                if (settings.notificationCount > 0) {
+                if (settings != null && settings.notificationCount > 0) {
                     value = settings.notificationCount.format("%d");
                 }
                 break;
 
+
             case FIELD_TYPE_CALORIES:
-                value = ActivityMonitor.getInfo().calories.format("%d");
+                var actInfoCal = ActivityMonitor.getInfo();
+                if (actInfoCal != null && actInfoCal.calories != null) {
+                    value = actInfoCal.calories.format("%d");
+                }
                 break;
 
             case FIELD_TYPE_DISTANCE:
-                var dist = ActivityMonitor.getInfo().distance.toFloat() / 100000;
-                if (settings.distanceUnits == Sys.UNIT_STATUTE) {
-                    dist *= 0.621371;
+                var actInfoDist = ActivityMonitor.getInfo();
+                if (actInfoDist != null && actInfoDist.distance != null) {
+                    var dist = actInfoDist.distance.toFloat() / 100000;
+                    if (settings != null && settings.distanceUnits == Sys.UNIT_STATUTE) {
+                        dist *= 0.621371;
+                    }
+                    value = dist.format("%.1f");
                 }
-                value = dist.format("%.1f");
                 break;
 
             case FIELD_TYPE_ALARMS:
-                if (settings.alarmCount > 0) {
+                if (settings != null && settings.alarmCount > 0) {
                     value = settings.alarmCount.format("%d");
                 }
                 break;
 
             case FIELD_TYPE_ALTITUDE:
                 info = Activity.getActivityInfo();
-                if (info.altitude != null) {
+                if (info != null && info.altitude != null) {
                     value = info.altitude.format("%d");
                 }
                 break;
 
             case FIELD_TYPE_TEMPERATURE:
- 				if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getTemperatureHistory)) {
-					sample = SensorHistory.getTemperatureHistory(null).next();
-					if ((sample != null) && (sample.data != null)) {
-						var temperature = sample.data;
+                if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getTemperatureHistory)) {
+                    var tempHistory = SensorHistory.getTemperatureHistory(null);
+                    if (tempHistory != null) {
+                        sample = tempHistory.next();
+                        if ((sample != null) && (sample.data != null)) {
+                            var temperature = sample.data;
 
-						if (settings.temperatureUnits == System.UNIT_STATUTE) {
-							temperature = (temperature * (9.0 / 5)) + 32;
-						}
+                            if (settings != null && settings.temperatureUnits == System.UNIT_STATUTE) {
+                                temperature = (temperature * (9.0 / 5)) + 32;
+                            }
 
-						value = temperature.format("%d");
-					}
-				}
-
-				break;
+                            value = temperature.format("%d");
+                        }
+                    }
+                }
+                break;
 			
-			case FIELD_TYPE_GARMIN_TEMPERATURE:
-				var weather = Weather.getCurrentConditions();
+            case FIELD_TYPE_GARMIN_TEMPERATURE:
+                var weather = Weather.getCurrentConditions();
 
-				if (weather != null && weather.temperature != null) {
+                if (weather != null && weather.temperature != null) {
+                    var temp = weather.temperature;
 
-					var temp = weather.temperature;
+                    if (settings != null && settings.temperatureUnits == System.UNIT_STATUTE) {
+                        temp = (temp * (9.0 / 5)) + 32;
+                    }
 
-						if (settings.temperatureUnits == System.UNIT_STATUTE) {
-							temp = (temp * (9.0 / 5)) + 32;
-						}
-
-					value = temp.format("%d");
-
-				} else {
-					value = "--";
-				}
-				break;
+                    value = temp.format("%d");
+                } else {
+                    value = "--";
+                }
+                break;
 
             case FIELD_TYPE_PRESSURE:
                 if ((Toybox has :SensorHistory) &&
                     (Toybox.SensorHistory has :getPressureHistory)) {
 
-                    sample = SensorHistory.getPressureHistory(null).next();
-                    if (sample != null && sample.data != null) {
-                        value = (sample.data / 100).format("%.0f");
+                    var pressHistory = SensorHistory.getPressureHistory(null);
+                    if (pressHistory != null) {
+                        sample = pressHistory.next();
+                        if (sample != null && sample.data != null) {
+                            value = (sample.data / 100).format("%.0f");
+                        }
                     }
                 }
                 break;
@@ -313,18 +330,21 @@ class DataFields extends Ui.Drawable {
                 if ((Toybox has :SensorHistory) &&
                     (Toybox.SensorHistory has :getHumidityHistory)) {
 
-                    sample = SensorHistory.getHumidityHistory(null).next();
-                    if (sample != null && sample.data != null) {
-                        value = sample.data.format("%d") + "%";
+                    var humidHistory = SensorHistory.getHumidityHistory(null);
+                    if (humidHistory != null) {
+                        sample = humidHistory.next();
+                        if (sample != null && sample.data != null) {
+                            value = sample.data.format("%d") + "%";
+                        }
                     }
                 }
                 break;
-			case FIELD_TYPE_SUNRISE:
-				value = getSunEventTime(true, settings.is24Hour);   // Sunrise
-				break;
-			case FIELD_TYPE_SUNSET:
-				value = getSunEventTime(false, settings.is24Hour);   // Sunset
-				break;
+            case FIELD_TYPE_SUNRISE:
+                value = getSunEventTime(true, settings != null ? settings.is24Hour : true);
+                break;
+            case FIELD_TYPE_SUNSET:
+                value = getSunEventTime(false, settings != null ? settings.is24Hour : true);
+                break;
         }
 
         return (value.length() > mMaxFieldLength)
