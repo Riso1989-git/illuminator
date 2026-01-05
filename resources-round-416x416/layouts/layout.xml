@@ -7,12 +7,12 @@
     		<param name="height">60</param>
 		</drawable>
 		<drawable id="AnalogueDisplay" class="Analogue">
-			<param name="positionX">70</param>
-			<param name="positionY">30</param>
+			<param name="positionX">66</param>
+			<param name="positionY">26</param>
 		</drawable>
 		<drawable id="DateFieldDisplay" class="DateField">
 			<param name="positionX">195</param>
-			<param name="positionY">105</param>
+			<param name="positionY">110</param>
 		</drawable>
 		<drawable id="TimeFieldDisplay" class="TimeField">
 			<param name="positionX">25</param>
@@ -20,14 +20,14 @@
 		</drawable>
 		<drawable id="MoveBarDisplay" class="MoveBar">
 			<param name="posX">197</param>
-			<param name="posY">140</param>
+			<param name="posY">145</param>
 			<param name="width">205</param>
 			<param name="height">12</param>
 			<param name="separator">4</param>
 		</drawable>
 		<drawable id="GoalMeterDisplay" class="GoalMeter">
 			<param name="positionX">5</param>
-			<param name="positionY">160</param>
+			<param name="positionY">165</param>
 			<param name="width">395</param>
 			<param name="height">12</param>
 			<param name="gap">8</param>
@@ -36,15 +36,15 @@
 		<drawable id="DataFieldsDisplay" class="DataFields">
 			<param name="left">60</param>
 			<param name="right">305</param>
-			<param name="top">185</param>
-			<param name="bottom">200</param>
+			<param name="top">183</param>
+			<param name="bottom">203</param>
 			<param name="fieldPosition">:upper</param>
 		</drawable>
 		<drawable id="DataFieldsMiddleDisplay" class="DataFields">
 			<param name="left">50</param>
 			<param name="right">300</param>
-			<param name="top">310</param>
-			<param name="bottom">320</param>
+			<param name="top">320</param>
+			<param name="bottom">330</param>
 			<param name="fieldPosition">:middle</param>
 		</drawable>
 		<drawable id="DataFieldsBottomDisplay" class="DataFields">
