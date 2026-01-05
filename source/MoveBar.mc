@@ -20,7 +20,7 @@ class MoveBar extends Ui.Drawable {
     };
 
     function initialize(params as Params) {
-        Drawable.initialize(params);
+        Drawable.initialize({ :identifier => "MoveBar" });
 
         posX      = params[:posX];
         posY      = params[:posY];

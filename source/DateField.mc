@@ -6,8 +6,8 @@ using Toybox.Time.Gregorian;
 
 class DateField extends Ui.Drawable {
 
-    private var mX;
-    private var mY;
+    private var mX as Lang.Number;
+    private var mY as Lang.Number;
     private var mFont;
 
     private const DAYS = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
