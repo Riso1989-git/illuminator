@@ -7,8 +7,8 @@ using Toybox.System as Sys;
 
 class TimeField extends Ui.Drawable {
 
-    private var bigTextFont as Gfx.FontResource;
-    private var mediumTextFont as Gfx.FontResource;
+    private var bigTextFont;
+    private var mediumTextFont;
     private var posX as Lang.Number;
     private var posY as Lang.Number;
 

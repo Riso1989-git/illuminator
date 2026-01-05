@@ -32,7 +32,7 @@ class WorldMap extends Ui.Drawable {
 
     private var mPositionX as Lang.Number;
     private var mPositionY as Lang.Number;
-    private var mMapFont as Graphics.FontResource;
+    private var mMapFont;
     private var mMapData as Lang.Array;
 
     // Projection dimensions
@@ -44,11 +44,11 @@ class WorldMap extends Ui.Drawable {
     private var mNightOverlayPoints as Lang.Array = [];  // Packed as (x << 16) | y
 
     // Pre-computed lookup tables
-    private var mGridSinLat as Lang.Array;    // sin(lat) for each Y grid point
-    private var mGridCosLat as Lang.Array;    // cos(lat) for each Y grid point
-    private var mGridLon as Lang.Array;       // longitude for each X grid point
-    private var mGridXCount as Lang.Number;
-    private var mGridYCount as Lang.Number;
+    private var mGridSinLat as Lang.Array = [];    // sin(lat) for each Y grid point
+    private var mGridCosLat as Lang.Array = [];    // cos(lat) for each Y grid point
+    private var mGridLon as Lang.Array = [];       // longitude for each X grid point
+    private var mGridXCount as Lang.Number = 0;
+    private var mGridYCount as Lang.Number = 0;
 
     typedef WorldMapParams as {
         :positionX as Lang.Number,
@@ -117,7 +117,7 @@ class WorldMap extends Ui.Drawable {
 
     private function drawTiles(
         tileData as Lang.Array,
-        font as Graphics.FontResource,
+        font,
         dc as Graphics.Dc,
         xoff as Lang.Number,
         yoff as Lang.Number

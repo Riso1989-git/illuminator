@@ -41,8 +41,8 @@ class DataFields extends Ui.Drawable {
     private var mMaxFieldLength as Lang.Number = 0;
     private var mFieldTypes as Lang.Array<Lang.Number> = [];
 
-    private var iconFont as Gfx.FontResource;
-    private var textFont as Gfx.FontResource;
+    private var iconFont;
+    private var textFont;
 
     private var mCachedSunTimesToday as Lang.Array<Lang.Double?>?;
     private var mCachedSunTimesTomorrow as Lang.Array<Lang.Double?>?;
@@ -118,7 +118,7 @@ class DataFields extends Ui.Drawable {
         }
 
         for (var i = 0; i < count; i++) {
-            var x as Lang.Number;
+            var x = 0.0d;
             if (count == 1) {
                 x = (mLeft + mRight) / 2;
             } else if (count == 2) {
@@ -138,7 +138,7 @@ class DataFields extends Ui.Drawable {
     private function drawField(dc as Gfx.Dc, fieldType as Lang.Number, x as Lang.Number) as Void {
         var value = getValue(fieldType);
 
-        var icon as Lang.String? = {
+        var icon = {
             FIELD_TYPE_HEART_RATE        => "i",
             FIELD_TYPE_BATTERY           => "Q",
             FIELD_TYPE_NOTIFICATIONS     => "H",
@@ -352,7 +352,7 @@ class DataFields extends Ui.Drawable {
         var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
         var now = nowInfo.hour + ((nowInfo.min + 1) / 60.0);
 
-        var eventTime as Lang.Double? = null;
+        var eventTime = null;
 
         var sunToday = getCachedSunTimes(false);
         var todayEvent = isSunrise ? sunToday[0] : sunToday[1];
