@@ -24,6 +24,8 @@ class WorldMap extends Ui.Drawable {
     const DAYS_IN_MONTH_NORMAL = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
     const DAYS_IN_MONTH_LEAP   = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
 
+    private const DEG_TO_RAD = Math.PI / 180.0;
+
     /* =======================
      * Instance State
      * ======================= */
@@ -75,7 +77,6 @@ class WorldMap extends Ui.Drawable {
     }
 
     private function buildLookupTables() as Void {
-        var degToRad = Math.PI / 180.0;
 
         mGridXCount = (mapWidth / GRID_STEP).toNumber();
         mGridYCount = (mapPixelHeight / GRID_STEP).toNumber();
@@ -88,7 +89,7 @@ class WorldMap extends Ui.Drawable {
         for (var yi = 0; yi < mGridYCount; yi++) {
             var y = yi * GRID_STEP;
             var lat = 90.0 - (y.toFloat() / mapPixelHeight) * 180.0;
-            var latRad = lat * degToRad;
+            var latRad = lat * DEG_TO_RAD;
             mGridSinLat[yi] = Math.sin(latRad);
             mGridCosLat[yi] = Math.cos(latRad);
         }
@@ -199,12 +200,11 @@ class WorldMap extends Ui.Drawable {
         // 12.0 = solar noon at 0° longitude
         // * 15.0 = degrees per hour (360° / 24h)
         var subLon = (12.0 - utcHours) * 15.0;
-        var degToRad = Math.PI / 180.0;
 
         // Pre-compute cosine of hour angle for each longitude
         var gridCosHourAngle = new [mGridXCount];
         for (var xi = 0; xi < mGridXCount; xi++) {
-            var hourAngle = (mGridLon[xi] - subLon) * degToRad;
+            var hourAngle = (mGridLon[xi] - subLon) * DEG_TO_RAD;
             gridCosHourAngle[xi] = Math.cos(hourAngle);
         }
         
