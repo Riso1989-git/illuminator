@@ -51,11 +51,9 @@ class GoalMeter extends Ui.Drawable {
 
         var info   = ActivityMonitor.getInfo();
         var steps  = info.steps == null ? 0 : info.steps;
-        steps = 4000;
         var stepsGoal = info.stepGoal == null ? 10000 : info.stepGoal;
 
         var floors = info.floorsClimbed == null ? 0 : info.floorsClimbed;
-        floors = 6;
         var floorsGoal = info.floorsClimbedGoal == null ? 10 : info.floorsClimbedGoal;
 
         // Prevent division by zero
