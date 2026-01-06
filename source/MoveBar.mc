@@ -33,7 +33,6 @@ class MoveBar extends Ui.Drawable {
 
         var info = ActivityMonitor.getInfo();
         var level = info.moveBarLevel == null ? 0 : info.moveBarLevel;
-        level = 3;
         var maxBars = ActivityMonitor.MOVE_BAR_LEVEL_MAX;
 
         // Compute bar width

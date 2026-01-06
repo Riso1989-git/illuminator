@@ -158,8 +158,17 @@ class WorldMap extends Ui.Drawable {
             calculateNightOverlayOptimized(g);
         }
         
-        dc.setFill(Graphics.createColor(128, 0, 0, 0));
-        for (var i = 0; i < mNightOverlayPoints.size(); i++) {
+        // check if device use alpha channel in drawing context
+        var useAlpha = dc has :setFill;
+        if (useAlpha) {
+            dc.setFill(Graphics.createColor(128, 0, 0, 0));
+        } else {
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        }
+
+        var step = useAlpha ? 1 : 2;
+        
+        for (var i = 0; i < mNightOverlayPoints.size(); i += step) {
             var packed = mNightOverlayPoints[i];
             var x = (packed >> 16) & 0xFFFF;
             var y = packed & 0xFFFF;

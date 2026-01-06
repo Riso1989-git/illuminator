@@ -345,8 +345,6 @@ class DataFields extends Ui.Drawable {
     }
 
     private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
-		gLocationLat = 35.0;
-		gLocationLng = -47.0;
         if (gLocationLat == null || gLocationLng == null) {
             return "gps?";
         }
