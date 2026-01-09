@@ -43,8 +43,7 @@ The watchface supports up to **6 customizable data fields** across three zones:
 | Sunset              | Today's sunset time                  | Calculated from last GPS position |
 
 ## Compatibility
-
-- **Garmin Venu 2** (primary target)
+- Round display 454x454 pixels
 - Round display 416x416 pixels
 
 ## Requirements
@@ -149,4 +148,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 - Inspired by classic Casio digital watch designs
 - Built with Garmin Connect IQ SDK
+
 
