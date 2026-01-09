@@ -1,24 +1,20 @@
 project.manifest = manifest.xml
 
 # 454x454 round AMOLED
-# venu3.resourcePath         = $(venu3.resourcePath);resources-round-416x416
-# venu445mm.resourcePath    = $(venu445mm.resourcePath);resources-round-416x416
-# fenix847mm.resourcePath    = $(fenix847mm.resourcePath);resources-round-416x416
-# fr965.resourcePath         = $(fr965.resourcePath);resources-round-416x416
-# fr970.resourcePath         = $(fr970.resourcePath);resources-round-416x416
-# d2mach2.resourcePath       = $(d2mach2.resourcePath);resources-round-416x416
-# descentmk351mm.resourcePath = $(descentmk351mm.resourcePath);resources-round-416x416
-# epix2pro51mm.resourcePath  = $(epix2pro51mm.resourcePath);resources-round-454x454
-# fenix7x.resourcePath       = $(fenix7x.resourcePath);resources-round-454x454
-# fenix7xpro.resourcePath    = $(fenix7xpro.resourcePath);resources-round-454x454
-# venu3.resourcePath         = $(venu3.resourcePath);resources-round-416x416
+venu3.resourcePath         = $(venu3.resourcePath);resources-round-454x454
+epix2pro51mm.resourcePath  = $(epix2pro51mm.resourcePath);resources-round-454x454
+fenix847mm.resourcePath  = $(fenix847mm.resourcePath);resources-round-454x454
+fenix8pro47mm.resourcePath  = $(fenix8pro47mm.resourcePath);resources-round-454x454
+fr57047mm.resourcePath  = $(fr57047mm.resourcePath);resources-round-454x454
+fr965.resourcePath  = $(fr965.resourcePath);resources-round-454x454
+fr970.resourcePath  = $(fr970.resourcePath);resources-round-454x454
 
 # 390x390 round AMOLED
 # fr165.resourcePath = $(forerunner165.resourcePath);resources-round-390x390
 # fr165m.resourcePath = $(forerunner165m.resourcePath);resources-round-390x390
 # venu441mm.resourcePath    = $(venu441mm.resourcePath);resources-round-416x416
 # venu3s.resourcePath        = $(venu3s.resourcePath);resources-round-416x416
-# epix2pro42mm.resourcePath  = $(epix2pro42mm.resourcePath);resources-round-416x416
+# epix2pro51mm.resourcePath  = $(epix2pro51mm.resourcePath);resources-round-416x416
 # marq2.resourcePath         = $(marq2.resourcePath);resources-round-416x416
 # marq2aviator.resourcePath  = $(marq2aviator.resourcePath);resources-round-416x416
 # instinct3amoled45mm.resourcePath = $(instinct3amoled45mm.resourcePath);resources-round-416x416
