@@ -1,0 +1,58 @@
+<resources>
+	<layout id="WatchFace">
+		<drawable id="WorldMapDisplay" class="WorldMap">
+			<param name="positionX">210</param>
+			<param name="positionY">50</param>
+			<param name="width">150</param>
+    		<param name="height">70</param>
+		</drawable>
+		<drawable id="AnalogueDisplay" class="Analogue">
+			<param name="positionX">60</param>
+			<param name="positionY">35</param>
+		</drawable>
+		<drawable id="DateFieldDisplay" class="DateField">
+			<param name="positionX">214</param>
+			<param name="positionY">130</param>
+		</drawable>
+		<drawable id="TimeFieldDisplay" class="TimeField">
+			<param name="positionX">35</param>
+			<param name="positionY">240</param>
+		</drawable>
+		<drawable id="MoveBarDisplay" class="MoveBar">
+			<param name="posX">213</param>
+			<param name="posY">165</param>
+			<param name="width">221</param>
+			<param name="height">12</param>
+			<param name="separator">4</param>
+		</drawable>
+		<drawable id="GoalMeterDisplay" class="GoalMeter">
+			<param name="positionX">5</param>
+			<param name="positionY">185</param>
+			<param name="width">430</param>
+			<param name="height">12</param>
+			<param name="gap">8</param>
+			<param name="separator">4</param>
+		</drawable>
+		<drawable id="DataFieldsDisplay" class="DataFields">
+			<param name="left">60</param>
+			<param name="right">325</param>
+			<param name="top">203</param>
+			<param name="bottom">223</param>
+			<param name="fieldPosition">:upper</param>
+		</drawable>
+		<drawable id="DataFieldsMiddleDisplay" class="DataFields">
+			<param name="left">50</param>
+			<param name="right">320</param>
+			<param name="top">340</param>
+			<param name="bottom">350</param>
+			<param name="fieldPosition">:middle</param>
+		</drawable>
+		<drawable id="DataFieldsBottomDisplay" class="DataFields">
+			<param name="left">0</param>
+			<param name="right">420</param>
+			<param name="top">410</param>
+			<param name="bottom">430</param>
+			<param name="fieldPosition">:lower</param>
+		</drawable>
+	</layout>
+</resources>
