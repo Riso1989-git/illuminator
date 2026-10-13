@@ -33,6 +33,10 @@
 		</settingConfig>
 	</setting>
 
+	<setting propertyKey="@Properties.ShowSeconds" title="@Strings.ShowSecondsTitle">
+		<settingConfig type="boolean"/>
+	</setting>
+
 	<setting propertyKey="@Properties.FieldCount" title="@Strings.FieldCountTitle">
 		<settingConfig type="numeric" min="0" max="3" required="true"/>
 	</setting>
@@ -47,7 +51,6 @@
 			<listEntry value="5">@Strings.Alarms</listEntry>
 			<listEntry value="6">@Strings.Altitude</listEntry>
 			<listEntry value="8">@Strings.Pressure</listEntry>
-			<listEntry value="7">@Strings.Temperature</listEntry>
 			<listEntry value="10">@Strings.Sunrise</listEntry>
 			<listEntry value="11">@Strings.Sunset</listEntry>
 			<listEntry value="9">@Strings.Humidity</listEntry>
@@ -65,7 +68,6 @@
 			<listEntry value="5">@Strings.Alarms</listEntry>
 			<listEntry value="6">@Strings.Altitude</listEntry>
 			<listEntry value="8">@Strings.Pressure</listEntry>
-			<listEntry value="7">@Strings.Temperature</listEntry>
 			<listEntry value="10">@Strings.Sunrise</listEntry>
 			<listEntry value="11">@Strings.Sunset</listEntry>
 			<listEntry value="9">@Strings.Humidity</listEntry>
@@ -84,7 +86,6 @@
 			<listEntry value="5">@Strings.Alarms</listEntry>
 			<listEntry value="6">@Strings.Altitude</listEntry>
 			<listEntry value="8">@Strings.Pressure</listEntry>
-			<listEntry value="7">@Strings.Temperature</listEntry>
 			<listEntry value="10">@Strings.Sunrise</listEntry>
 			<listEntry value="11">@Strings.Sunset</listEntry>
 			<listEntry value="9">@Strings.Humidity</listEntry>
@@ -106,7 +107,6 @@
 			<listEntry value="5">@Strings.Alarms</listEntry>
 			<listEntry value="6">@Strings.Altitude</listEntry>
 			<listEntry value="8">@Strings.Pressure</listEntry>
-			<listEntry value="7">@Strings.Temperature</listEntry>
 			<listEntry value="10">@Strings.Sunrise</listEntry>
 			<listEntry value="11">@Strings.Sunset</listEntry>
 			<listEntry value="9">@Strings.Humidity</listEntry>
@@ -129,7 +129,6 @@
 			<listEntry value="5">@Strings.Alarms</listEntry>
 			<listEntry value="6">@Strings.Altitude</listEntry>
 			<listEntry value="8">@Strings.Pressure</listEntry>
-			<listEntry value="7">@Strings.Temperature</listEntry>
 			<listEntry value="10">@Strings.Sunrise</listEntry>
 			<listEntry value="11">@Strings.Sunset</listEntry>
 			<listEntry value="9">@Strings.Humidity</listEntry>

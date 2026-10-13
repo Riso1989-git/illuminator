@@ -20,7 +20,7 @@ enum {
     FIELD_TYPE_DISTANCE,
     FIELD_TYPE_ALARMS,
     FIELD_TYPE_ALTITUDE,
-    FIELD_TYPE_TEMPERATURE,
+    FIELD_TYPE_TEMPERATURE,          // removed from settings (Q7); kept so values don't shift
     FIELD_TYPE_PRESSURE,
     FIELD_TYPE_HUMIDITY,
     FIELD_TYPE_SUNRISE,
@@ -41,12 +41,19 @@ class DataFields extends Ui.Drawable {
     private var mMaxFieldLength as Lang.Number = 0;
     private var mFieldTypes as Lang.Array<Lang.Number> = [];
 
-    private var iconFont;
-    private var textFont;
+    // T2.4: field strings are rebuilt once per Cache.generation (once a minute);
+    // only heart rate is refreshed every frame.
+    private var mValues as Lang.Array<Lang.String> = [];
+    private var mXs as Lang.Array<Lang.Number> = [];
+    private var mValuesGen as Lang.Number = -1;
 
-    private var mCachedSunTimesToday as Lang.Array<Lang.Double?>?;
-    private var mCachedSunTimesTomorrow as Lang.Array<Lang.Double?>?;
-    private var mSunTimesCacheDay as Lang.Number = -1;
+    // Icon per field type (index = FIELD_TYPE_*). Replaces a Dictionary that was
+    // allocated for every field on every frame.
+    private const ICONS = ["i", "Q", "H", "U", "{", "O", "Æ", "W", "o", "M", "n", "_", null, "W"];
+
+    private var mCachedSunTimesToday as Lang.Array?;
+    private var mCachedSunTimesTomorrow as Lang.Array?;
+    private var mSunTimesCacheDay as Lang.Number = -1;      // day * 100000 + Loc.version
 
     typedef Params as {
         :left   as Lang.Number,
@@ -65,8 +72,7 @@ class DataFields extends Ui.Drawable {
         mBottom = params[:bottom];
         mfieldPosition = params[:fieldPosition];
 
-        iconFont = Ui.loadResource(Rez.Fonts.garmin_icons);
-        textFont = Ui.loadResource(Rez.Fonts.text);
+        Res.load();
 
         loadSettings();
     }
@@ -79,7 +85,7 @@ class DataFields extends Ui.Drawable {
             mFieldCount = (count != null) ? count as Lang.Number : 0;
             for (var i = 1; i <= mFieldCount; i++) {
                 var field = Properties.getValue("Field" + i);
-                if (field != null && field >= 0) {
+                if (field != null && field >= 0 && field != FIELD_TYPE_TEMPERATURE) {
                     mFieldTypes.add(field as Lang.Number);
                 }
             }
@@ -88,7 +94,7 @@ class DataFields extends Ui.Drawable {
             mFieldCount = (count != null) ? count as Lang.Number : 0;
             for (var i = 1; i <= mFieldCount; i++) {
                 var field = Properties.getValue("FieldMiddle" + i);
-                if (field != null && field >= 0) {
+                if (field != null && field >= 0 && field != FIELD_TYPE_TEMPERATURE) {
                     mFieldTypes.add(field as Lang.Number);
                 }
             }
@@ -97,7 +103,7 @@ class DataFields extends Ui.Drawable {
             mFieldCount = (count != null) ? count as Lang.Number : 0;
             for (var i = 1; i <= mFieldCount; i++) {
                 var field = Properties.getValue("FieldBottom" + i);
-                if (field != null && field >= 0) {
+                if (field != null && field >= 0 && field != FIELD_TYPE_TEMPERATURE) {
                     mFieldTypes.add(field as Lang.Number);
                 }
             }
@@ -109,16 +115,12 @@ class DataFields extends Ui.Drawable {
         mMaxFieldLength = (mFieldCount >= 0 && mFieldCount < lengthLookup.size())
             ? lengthLookup[mFieldCount]
             : 0;
-    }
 
-    function draw(dc as Gfx.Dc) as Void {
+        // x position of every field, computed once
         var count = mFieldTypes.size();
-        if (count == 0) {
-            return;
-        }
-
+        mXs = [];
         for (var i = 0; i < count; i++) {
-            var x = 0.0d;
+            var x;
             if (count == 1) {
                 x = (mLeft + mRight) / 2;
             } else if (count == 2) {
@@ -128,32 +130,37 @@ class DataFields extends Ui.Drawable {
             } else {
                 x = mLeft + ((mRight - mLeft) * i / (count - 1));
             }
+            mXs.add(x);
+        }
+        mValuesGen = -1;            // rebuild strings on the next frame
+    }
 
-            drawField(dc, mFieldTypes[i], x);
+    function draw(dc as Gfx.Dc) as Void {
+        var count = mFieldTypes.size();
+        if (count == 0) {
+            return;
+        }
+
+        if (mValuesGen != Cache.generation || mValues.size() != count) {
+            mValuesGen = Cache.generation;
+            mValues = [];
+            for (var i = 0; i < count; i++) {
+                mValues.add(getValue(mFieldTypes[i]));
+            }
+        }
+
+        for (var i = 0; i < count; i++) {
+            if (mFieldTypes[i] == FIELD_TYPE_HEART_RATE) {
+                mValues[i] = getValue(FIELD_TYPE_HEART_RATE);
+            }
+            drawField(dc, mFieldTypes[i], mValues[i], mXs[i]);
         }
     }
 
     private const ICON_TEXT_GAP as Lang.Number = 4;
 
-    private function drawField(dc as Gfx.Dc, fieldType as Lang.Number, x as Lang.Number) as Void {
-        var value = getValue(fieldType);
-
-        var icon = {
-            FIELD_TYPE_HEART_RATE        => "i",
-            FIELD_TYPE_BATTERY           => "Q",
-            FIELD_TYPE_NOTIFICATIONS     => "H",
-            FIELD_TYPE_CALORIES          => "U",
-            FIELD_TYPE_DISTANCE          => "{",
-            FIELD_TYPE_ALARMS            => "O",
-            FIELD_TYPE_ALTITUDE          => "Æ",
-            FIELD_TYPE_TEMPERATURE       => "W",
-            FIELD_TYPE_PRESSURE          => "o",
-            FIELD_TYPE_HUMIDITY          => "M",
-            FIELD_TYPE_SUNRISE           => "n",
-            FIELD_TYPE_SUNSET            => "_",
-            FIELD_TYPE_BATTERY_NO_ICON   => null,
-            FIELD_TYPE_GARMIN_TEMPERATURE => "W"
-        }[fieldType] as Lang.String?;
+    private function drawField(dc as Gfx.Dc, fieldType as Lang.Number, value as Lang.String, x as Lang.Number) as Void {
+        var icon = (fieldType >= 0 && fieldType < ICONS.size()) ? (ICONS[fieldType] as Lang.String?) : null;
 
         if (fieldType == FIELD_TYPE_HEART_RATE) {
             var hr = (value != null) ? value.toNumber() : 0;
@@ -168,10 +175,10 @@ class DataFields extends Ui.Drawable {
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
         var iconDims = (icon != null)
-            ? dc.getTextDimensions(icon, iconFont)
+            ? dc.getTextDimensions(icon, Res.iconFont)
             : [0, 0] as Lang.Array<Lang.Number>;
 
-        var textDims = dc.getTextDimensions(value, textFont);
+        var textDims = dc.getTextDimensions(value, Res.textFont);
 
         var iconW = iconDims[0] as Lang.Number;
         var iconH = iconDims[1] as Lang.Number;
@@ -182,15 +189,15 @@ class DataFields extends Ui.Drawable {
         var textY = centerY + (iconH - textH);
 
         if (icon != null) {
-            dc.drawText(x, iconY, iconFont, icon, Gfx.TEXT_JUSTIFY_CENTER);
+            dc.drawText(x, iconY, Res.iconFont, icon, Gfx.TEXT_JUSTIFY_CENTER);
         }
 
         var valueX = (icon != null) ? x + (iconW / 2) + ICON_TEXT_GAP : x;
-        dc.drawText(valueX, textY, textFont, value, Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(valueX, textY, Res.textFont, value, Gfx.TEXT_JUSTIFY_LEFT);
     }
 
     private function getValue(type as Lang.Number) as Lang.String {
-        var settings = Sys.getDeviceSettings();
+        var settings = Cache.settings;          // T2.4: fetched once a minute
         var info;
         var sample;
         var value = "0";
@@ -224,14 +231,14 @@ class DataFields extends Ui.Drawable {
                 break;
 
             case FIELD_TYPE_CALORIES:
-                var actInfoCal = ActivityMonitor.getInfo();
+                var actInfoCal = Cache.activity;
                 if (actInfoCal != null && actInfoCal.calories != null) {
                     value = actInfoCal.calories.format("%d");
                 }
                 break;
 
             case FIELD_TYPE_DISTANCE:
-                var actInfoDist = ActivityMonitor.getInfo();
+                var actInfoDist = Cache.activity;
                 if (actInfoDist != null && actInfoDist.distance != null) {
                     var dist = actInfoDist.distance.toFloat() / 100000;
                     if (settings != null && settings.distanceUnits == Sys.UNIT_STATUTE) {
@@ -250,23 +257,11 @@ class DataFields extends Ui.Drawable {
             case FIELD_TYPE_ALTITUDE:
                 info = Activity.getActivityInfo();
                 if (info != null && info.altitude != null) {
-                    value = info.altitude.format("%d");
-                }
-                break;
-
-            case FIELD_TYPE_TEMPERATURE:
-                if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getTemperatureHistory)) {
-                    var tempHistory = SensorHistory.getTemperatureHistory(null);
-                    if (tempHistory != null) {
-                        sample = tempHistory.next();
-                        if ((sample != null) && (sample.data != null)) {
-                            var temperature = sample.data;
-                            if (settings != null && settings.temperatureUnits == System.UNIT_STATUTE) {
-                                temperature = (temperature * (9.0 / 5)) + 32;
-                            }
-                            value = temperature.format("%d");
-                        }
+                    var alt = info.altitude;
+                    if (settings != null && settings.elevationUnits == Sys.UNIT_STATUTE) {
+                        alt = alt * 3.28084;            // metres -> feet
                     }
+                    value = alt.format("%d");
                 }
                 break;
 
@@ -285,7 +280,10 @@ class DataFields extends Ui.Drawable {
 
             case FIELD_TYPE_PRESSURE:
                 if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getPressureHistory)) {
-                    var pressHistory = SensorHistory.getPressureHistory(null);
+                    var pressHistory = SensorHistory.getPressureHistory({
+                        :period => 1,
+                        :order => SensorHistory.ORDER_NEWEST_FIRST
+                    });
                     if (pressHistory != null) {
                         sample = pressHistory.next();
                         if (sample != null && sample.data != null) {
@@ -296,14 +294,12 @@ class DataFields extends Ui.Drawable {
                 break;
 
             case FIELD_TYPE_HUMIDITY:
-                if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHumidityHistory)) {
-                    var humidHistory = SensorHistory.getHumidityHistory(null);
-                    if (humidHistory != null) {
-                        sample = humidHistory.next();
-                        if (sample != null && sample.data != null) {
-                            value = sample.data.format("%d") + "%";
-                        }
-                    }
+                // watches have no humidity sensor; the value comes from Garmin weather
+                var cc = Weather.getCurrentConditions();
+                if (cc != null && cc.relativeHumidity != null) {
+                    value = cc.relativeHumidity.format("%d") + "%";
+                } else {
+                    value = "--";
                 }
                 break;
 
@@ -321,71 +317,83 @@ class DataFields extends Ui.Drawable {
             : value;
     }
 
-    private function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array<Lang.Double?> {
-        var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-        var today = nowInfo.day;
+    // ---- sunrise / sunset (T3.2) ----------------------------------------------------
+    // getSunTimes() returns [rise, set, state] in local decimal hours (may lie outside
+    // 0..24 for far-east/far-west longitudes); state: SUN_NORMAL / SUN_POLAR_DAY / SUN_POLAR_NIGHT.
 
-        if (mSunTimesCacheDay != today) {
-            mSunTimesCacheDay = today;
+    private const SUN_NORMAL = 0;
+    private const SUN_POLAR_DAY = 1;
+    private const SUN_POLAR_NIGHT = 2;
+
+    private function getCachedSunTimes(isTomorrow as Lang.Boolean) as Lang.Array {
+        var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        // recompute on a new day or when the location changed (Loc.version)
+        var key = (nowInfo.day as Lang.Number) * 100000 + Loc.version;
+
+        if (mSunTimesCacheDay != key) {
+            mSunTimesCacheDay = key;
             mCachedSunTimesToday = null;
             mCachedSunTimesTomorrow = null;
         }
 
         if (isTomorrow) {
             if (mCachedSunTimesTomorrow == null) {
-                mCachedSunTimesTomorrow = getSunTimes(gLocationLat, gLocationLng, null, true);
+                mCachedSunTimesTomorrow = getSunTimes(Loc.lat, Loc.lng, true);
             }
-            return mCachedSunTimesTomorrow as Lang.Array<Lang.Double?>;
+            return mCachedSunTimesTomorrow as Lang.Array;
         } else {
             if (mCachedSunTimesToday == null) {
-                mCachedSunTimesToday = getSunTimes(gLocationLat, gLocationLng, null, false);
+                mCachedSunTimesToday = getSunTimes(Loc.lat, Loc.lng, false);
             }
-            return mCachedSunTimesToday as Lang.Array<Lang.Double?>;
+            return mCachedSunTimesToday as Lang.Array;
         }
     }
 
+    // Next sunrise/sunset as text. Polar day shows "24h" (sun up all day),
+    // polar night "0h" (sun never rises) - both fit the 4-character field limit.
     private function getSunEventTime(isSunrise as Lang.Boolean, is24Hour as Lang.Boolean) as Lang.String {
-        if (gLocationLat == null || gLocationLng == null) {
+        if (Loc.lat == null || Loc.lng == null) {
             return "gps?";
         }
 
-        var nowInfo = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
-        var now = nowInfo.hour + ((nowInfo.min + 1) / 60.0);
+        var ct = Sys.getClockTime();
+        var now = ct.hour + ((ct.min + 1) / 60.0);
 
-        var eventTime = null;
+        var sun = getCachedSunTimes(false);
+        var state = sun[2];
+        var eventTime = (state == SUN_NORMAL) ? (isSunrise ? sun[0] : sun[1]) : null;
 
-        var sunToday = getCachedSunTimes(false);
-        var todayEvent = isSunrise ? sunToday[0] : sunToday[1];
-
-        if (todayEvent != null && now < todayEvent) {
-            eventTime = todayEvent;
-        } else {
-            var sunTomorrow = getCachedSunTimes(true);
-            eventTime = isSunrise ? sunTomorrow[0] : sunTomorrow[1];
+        if (state == SUN_NORMAL && (eventTime == null || now >= eventTime)) {
+            // today's event has passed -> tomorrow's
+            sun = getCachedSunTimes(true);
+            state = sun[2];
+            eventTime = (state == SUN_NORMAL) ? (isSunrise ? sun[0] : sun[1]) : null;
         }
 
-        if (eventTime == null) {
-            return "---";
+        if (state == SUN_POLAR_DAY) {
+            return "24h";
+        }
+        if (state == SUN_POLAR_NIGHT || eventTime == null) {
+            return "0h";
         }
 
-        var h = Math.floor(eventTime).toLong() % 24;
-        var m = Math.floor((eventTime - Math.floor(eventTime)) * 60).toLong();
+        // normalise into 0..24, round to the nearest minute
+        var totalMin = Math.round(eventTime * 60.0).toNumber();
+        totalMin = ((totalMin % 1440) + 1440) % 1440;
+        var h = totalMin / 60;
+        var m = totalMin % 60;
 
-        if (m < 0)  { m = 0; }
-        if (m > 59) { m = 59; }
-
-        if (is24Hour) {
-            return (h < 10 ? "0" : "") + h + ":" + (m < 10 ? "0" : "") + m;
-        } else {
-            var h12 = h % 12;
-            if (h12 == 0) { h12 = 12; }
-            return h12 + ":" + (m < 10 ? "0" : "") + m;
+        if (!is24Hour) {
+            h = h % 12;
+            if (h == 0) { h = 12; }
+            return h + ":" + m.format("%02d");
         }
+        return h.format("%02d") + ":" + m.format("%02d");
     }
 
-    private function getSunTimes(lat as Lang.Double?, lng as Lang.Double?, tz as Lang.Number?, tomorrow as Lang.Boolean) as Lang.Array<Lang.Double?> {
+    private function getSunTimes(lat, lng, tomorrow as Lang.Boolean) as Lang.Array {
         if (lat == null || lng == null) {
-            return [null, null] as Lang.Array<Lang.Double?>;
+            return [null, null, SUN_NORMAL];
         }
 
         var latD = lat.toDouble();
@@ -440,11 +448,10 @@ class DataFields extends Ui.Drawable {
             / (Math.cos(latD * rad) * Math.cos(delta));
 
         if (cosOmega > 1) {
-            return [null, -1.0d] as Lang.Array<Lang.Double?>;
+            return [null, null, SUN_POLAR_NIGHT];
         }
-
         if (cosOmega < -1) {
-            return [-1.0d, null] as Lang.Array<Lang.Double?>;
+            return [null, null, SUN_POLAR_DAY];
         }
 
         var omega = Math.acos(cosOmega) * deg;
@@ -453,10 +460,12 @@ class DataFields extends Ui.Drawable {
         var deltaJSet = jSet - jDate;
         var deltaJRise = jRise - jDate;
 
-        var tzOffset = (tz == null) ? (Sys.getClockTime().timeZoneOffset / 3600) : tz;
+        // fractional hours: +5:30 India, +5:45 Nepal etc. (was integer division)
+        var tzOffset = Sys.getClockTime().timeZoneOffset / 3600.0d;
         return [
-            ((deltaJRise * 24) + tzOffset) as Lang.Double,
-            ((deltaJSet * 24) + tzOffset) as Lang.Double
-        ] as Lang.Array<Lang.Double?>;
+            (deltaJRise * 24) + tzOffset,
+            (deltaJSet * 24) + tzOffset,
+            SUN_NORMAL
+        ];
     }
 }

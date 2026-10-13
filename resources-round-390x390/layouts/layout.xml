@@ -1,58 +1,69 @@
 <resources>
 	<layout id="WatchFace">
+		<!-- width/height MUST equal the worldMap artwork (132x66); see docs/task.md T1.1 -->
 		<drawable id="WorldMapDisplay" class="WorldMap">
-			<param name="positionX">200</param>
-			<param name="positionY">30</param>
-			<param name="width">140</param>
-    		<param name="height">60</param>
+			<param name="positionX">188</param>
+			<param name="positionY">28</param>
+			<param name="width">132</param>
+    		<param name="height">66</param>
 		</drawable>
 		<drawable id="AnalogueDisplay" class="Analogue">
-			<param name="positionX">66</param>
-			<param name="positionY">26</param>
+			<param name="positionX">62</param>
+			<param name="positionY">24</param>
 		</drawable>
 		<drawable id="DateFieldDisplay" class="DateField">
-			<param name="positionX">195</param>
-			<param name="positionY">110</param>
+			<param name="positionX">183</param>
+			<param name="positionY">103</param>
 		</drawable>
 		<drawable id="TimeFieldDisplay" class="TimeField">
-			<param name="positionX">25</param>
-			<param name="positionY">220</param>
+			<param name="positionX">33</param>
+			<param name="positionY">206</param>
 		</drawable>
 		<drawable id="MoveBarDisplay" class="MoveBar">
-			<param name="posX">197</param>
-			<param name="posY">145</param>
-			<param name="width">205</param>
-			<param name="height">12</param>
+			<param name="posX">185</param>
+			<param name="posY">136</param>
+			<param name="width">188</param>
+			<param name="height">11</param>
 			<param name="separator">4</param>
 		</drawable>
 		<drawable id="GoalMeterDisplay" class="GoalMeter">
 			<param name="positionX">5</param>
-			<param name="positionY">165</param>
-			<param name="width">395</param>
-			<param name="height">12</param>
-			<param name="gap">8</param>
+			<param name="positionY">155</param>
+			<param name="width">370</param>
+			<param name="height">11</param>
+			<param name="gap">6</param>
 			<param name="separator">4</param>
 		</drawable>
 		<drawable id="DataFieldsDisplay" class="DataFields">
-			<param name="left">60</param>
-			<param name="right">305</param>
-			<param name="top">183</param>
-			<param name="bottom">203</param>
+			<param name="left">56</param>
+			<param name="right">286</param>
+			<param name="top">172</param>
+			<param name="bottom">190</param>
 			<param name="fieldPosition">:upper</param>
 		</drawable>
 		<drawable id="DataFieldsMiddleDisplay" class="DataFields">
-			<param name="left">50</param>
-			<param name="right">300</param>
-			<param name="top">320</param>
-			<param name="bottom">330</param>
+			<param name="left">27</param>
+			<param name="right">282</param>
+			<param name="top">300</param>
+			<param name="bottom">309</param>
 			<param name="fieldPosition">:middle</param>
 		</drawable>
 		<drawable id="DataFieldsBottomDisplay" class="DataFields">
 			<param name="left">0</param>
-			<param name="right">380</param>
-			<param name="top">390</param>
-			<param name="bottom">410</param>
+			<param name="right">340</param>
+			<param name="top">366</param>
+			<param name="bottom">384</param>
 			<param name="fieldPosition">:lower</param>
+		</drawable>
+	</layout>
+	<!-- T2.1: always-on screen (time + date; hands and dimmed map come from the
+	     WatchFace drawables). Positions match TimeField / DateField. -->
+	<layout id="AlwaysOn">
+		<drawable id="AodDisplay" class="AodFace">
+			<param name="timeX">33</param>
+			<param name="timeY">206</param>
+			<param name="dateX">183</param>
+			<param name="dateY">103</param>
 		</drawable>
 	</layout>
 </resources>

@@ -9,9 +9,10 @@ class Analogue extends Ui.Drawable {
     /* =======================
      * Constants
      * ======================= */
-    const TILE_CHAR_MASK = 0x00000FFF;
-    const TILE_X_MASK    = 0x003FF000;
-    const TILE_Y_MASK    = 0xFFC00000;
+    // Packed tile format: char | x << 12 | y << 22. Shift first, then mask:
+    // 0xFFC00000 does not fit a signed 32-bit Number (SDK 8.x rejects it).
+    const TILE_CHAR_MASK = 0xFFF;
+    const TILE_POS_MASK  = 0x3FF;
 
     /** Number of hour hand positions per hour (60 positions / 12 hours) */
     const HOUR_SEGMENTS_PER_ROTATION = 5;
@@ -37,6 +38,9 @@ class Analogue extends Ui.Drawable {
      * ======================= */
     private var posX;
     private var posY;
+
+    // T2.4: second-time-zone setting, read once (not every frame)
+    private var mTzOffset = 0;
 
     typedef AnalogueParams as {
         :positionX as Lang.Number,
@@ -67,6 +71,13 @@ class Analogue extends Ui.Drawable {
         minFont30_59 = Ui.loadResource(Rez.Fonts.minute_30_59);
         minData0_29 = Ui.loadResource(Rez.JsonData.minute_0_29Json);
         minData30_59 = Ui.loadResource(Rez.JsonData.minute_30_59Json);
+
+        loadSettings();
+    }
+
+    // Call again when settings change (T3.6).
+    function loadSettings() as Void {
+        mTzOffset = getPropertyValue("AnalogueTimezoneOffset");
     }
 
     /* =======================
@@ -106,6 +117,15 @@ class Analogue extends Ui.Drawable {
      * Hands
      * ======================= */
     private function drawHands(dc as Gfx.Dc) {
+        drawHandsAt(dc, posX, posY, Gfx.COLOR_WHITE);
+    }
+
+    // T2.1: always-on screen - hands only (no dial), light grey, shifted for burn-in.
+    function drawHandsOnly(dc as Gfx.Dc, dx as Lang.Number, dy as Lang.Number) as Void {
+        drawHandsAt(dc, posX + dx, posY + dy, Gfx.COLOR_LT_GRAY);
+    }
+
+    private function drawHandsAt(dc as Gfx.Dc, x as Lang.Number, y as Lang.Number, color) as Void {
 
         var now = Sys.getClockTime();
         var timeValues = applyTimezoneOffset(now.hour, now.min, now.timeZoneOffset);
@@ -130,9 +150,9 @@ class Analogue extends Ui.Drawable {
             hIdx  = hourIndex;
         }
 
-        dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
+        dc.setColor(color, Gfx.COLOR_TRANSPARENT);
         if (hData != null && hIdx >= 0 && hIdx < hData.size()) {
-            drawTiles(hData[hIdx], hFont, dc, posX, posY);
+            drawTiles(hData[hIdx], hFont, dc, x, y);
         }
 
         /* ---- Minute hand ---- */
@@ -151,7 +171,7 @@ class Analogue extends Ui.Drawable {
         }
 
         if (mData != null && mIdx >= 0 && mIdx < mData.size()) {
-            drawTiles(mData[mIdx], mFont, dc, posX, posY);
+            drawTiles(mData[mIdx], mFont, dc, x, y);
         }
     }
 
@@ -166,7 +186,7 @@ class Analogue extends Ui.Drawable {
      * @return Array with [adjustedHour, adjustedMinute]
      */
     private function applyTimezoneOffset(hour as Lang.Number, minute as Lang.Number, localTimeZoneOffset as Lang.Number) as Lang.Array<Lang.Number> {
-        var tzOffset = getPropertyValue("AnalogueTimezoneOffset");
+        var tzOffset = mTzOffset;
 
         if (tzOffset == null || tzOffset == 0) {
             return [hour, minute];
@@ -222,8 +242,8 @@ class Analogue extends Ui.Drawable {
             }
 
             var char = packed & TILE_CHAR_MASK;
-            var xpos = (packed & TILE_X_MASK) >> 12;
-            var ypos = (packed & TILE_Y_MASK) >> 22;
+            var xpos = (packed >> 12) & TILE_POS_MASK;
+            var ypos = (packed >> 22) & TILE_POS_MASK;
 
             dc.drawText(
                 xoff + xpos,

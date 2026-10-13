@@ -1,19 +1,22 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics as Gfx;
 using Toybox.Lang as Lang;
-using Toybox.Time;
-using Toybox.Time.Gregorian;
 using Toybox.System as Sys;
 
 class TimeField extends Ui.Drawable {
 
-    private var bigTextFont;
-    private var mediumTextFont;
     private var posX as Lang.Number;
     private var posY as Lang.Number;
 
-    // Constants
-    private const SECONDS_Y_OFFSET = 10;
+
+    // T2.5: "Show seconds" setting (high power only; AOD never draws seconds)
+    private var mShowSeconds as Lang.Boolean = true;
+
+    // T2.4: HH:MM string and its size rebuilt once a minute, not every frame
+    private var mTimeString as Lang.String = "";
+    private var mSecX as Lang.Number = 0;
+    private var mSecY as Lang.Number = 0;
+    private var mGen as Lang.Number = -1;
 
     typedef TimeParams as {
         :positionX as Lang.Number,
@@ -29,61 +32,49 @@ class TimeField extends Ui.Drawable {
         posX = params[:positionX];
         posY = params[:positionY];
 
-        bigTextFont    = Ui.loadResource(Rez.Fonts.text_big);
-        mediumTextFont = Ui.loadResource(Rez.Fonts.text_medium);
+        Res.load();
+        loadSettings();
+    }
+
+    // Call again when settings change (T3.6).
+    function loadSettings() as Void {
+        var v = getPropertyValue("ShowSeconds");
+        mShowSeconds = (v == null) ? true : (v as Lang.Boolean);
+        mGen = -1;
     }
 
     function draw(dc as Gfx.Dc) as Void {
+        var ct = Sys.getClockTime();
 
-        // Current local time
-        var g = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        var deviceSettings = Sys.getDeviceSettings();
+        if (mGen != Cache.generation) {
+            mGen = Cache.generation;
 
-        // Handle 12-hour format
-        var hour = g.hour;
-        if (!deviceSettings.is24Hour) {
-            if (hour == 0) {
-                hour = 12;
-            } else if (hour > 12) {
-                hour = hour - 12;
+            // Handle 12-hour format
+            var hour = ct.hour;
+            if (Cache.settings != null && !Cache.settings.is24Hour) {
+                if (hour == 0) {
+                    hour = 12;
+                } else if (hour > 12) {
+                    hour = hour - 12;
+                }
             }
+            mTimeString = hour.format("%02d") + ":" + ct.min.format("%02d");
+
+            var dims = dc.getTextDimensions(mTimeString, Res.bigFont);
+            mSecX = posX + dims[0];
+            // Bottom-align the seconds with HH:MM: same baseline for both fonts.
+            // (Works for every font size; the old "height / 3 + 10" only fitted 416/454.)
+            mSecY = posY + Gfx.getFontAscent(Res.bigFont) - Gfx.getFontAscent(Res.mediumFont);
         }
-
-        // Zero-padded components
-        var HH = (hour < 10 ? "0" : "") + hour;
-        var MM = (g.min  < 10 ? "0" : "") + g.min;
-        var SS = (g.sec  < 10 ? "0" : "") + g.sec;
-
-        var timeString = HH + ":" + MM;
-        var secString  = SS;
 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
 
         // Draw main time (HH:MM)
-        dc.drawText(
-            posX,
-            posY,
-            bigTextFont,
-            timeString,
-            Gfx.TEXT_JUSTIFY_LEFT
-        );
+        dc.drawText(posX, posY, Res.bigFont, mTimeString, Gfx.TEXT_JUSTIFY_LEFT);
 
-        // Measure dimensions of main time
-        var dims = dc.getTextDimensions(timeString, bigTextFont);
-        var timeWidth  = dims[0];
-        var timeHeight = dims[1];
-
-        // Position seconds BELOW the main time
-        var secX = posX + timeWidth;
-        var secY = posY + timeHeight / 3 + SECONDS_Y_OFFSET;
-
-        // Draw seconds (SS)
-        dc.drawText(
-            secX,
-            secY,
-            mediumTextFont,
-            secString,
-            Gfx.TEXT_JUSTIFY_LEFT
-        );
+        // Draw seconds (SS) to the right of the main time
+        if (mShowSeconds) {
+            dc.drawText(mSecX, mSecY, Res.mediumFont, ct.sec.format("%02d"), Gfx.TEXT_JUSTIFY_LEFT);
+        }
     }
 }

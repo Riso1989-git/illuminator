@@ -1,10 +1,11 @@
 <resources>
 	<layout id="WatchFace">
+		<!-- width/height MUST equal the worldMap artwork (160x80); see docs/task.md T1.1 -->
 		<drawable id="WorldMapDisplay" class="WorldMap">
 			<param name="positionX">210</param>
 			<param name="positionY">50</param>
-			<param name="width">150</param>
-    		<param name="height">70</param>
+			<param name="width">160</param>
+    		<param name="height">80</param>
 		</drawable>
 		<drawable id="AnalogueDisplay" class="Analogue">
 			<param name="positionX">60</param>
@@ -53,6 +54,16 @@
 			<param name="top">410</param>
 			<param name="bottom">430</param>
 			<param name="fieldPosition">:lower</param>
+		</drawable>
+	</layout>
+	<!-- T2.1: always-on screen (time + date; hands and dimmed map come from the
+	     WatchFace drawables). Positions match TimeField / DateField. -->
+	<layout id="AlwaysOn">
+		<drawable id="AodDisplay" class="AodFace">
+			<param name="timeX">35</param>
+			<param name="timeY">240</param>
+			<param name="dateX">214</param>
+			<param name="dateY">130</param>
 		</drawable>
 	</layout>
 </resources>

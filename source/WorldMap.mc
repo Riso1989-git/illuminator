@@ -1,239 +1,297 @@
 using Toybox.WatchUi as Ui;
 using Toybox.Graphics;
 using Toybox.Lang;
-using Toybox.System;
+using Toybox.Math;
 using Toybox.Time;
-using Toybox.Time.Gregorian;
 
-import Toybox.Application;
+import Toybox.Lang;
 
+// World map with a live day/night overlay.
+//
+// How it works (see docs/ANALYSIS.md, WM-1..WM-4, and docs/task.md T1.2/T1.3/T1.5):
+//  * The sun position is computed from UTC epoch seconds (USNO "approximate solar
+//    coordinates": declination + equation of time), every RECALC_SECONDS.
+//  * For every map column the night part is exactly ONE contiguous latitude interval,
+//    computed in closed form -> one span per column, no per-pixel loop, no allocation.
+//  * Adjacent columns with the same span are merged into one rectangle when drawing.
+//  * The composed map (tiles + overlay) is cached in a BufferedBitmap and only redrawn
+//    when the spans change, so a high-power frame costs a single drawBitmap().
+//
+// The layout's width/height MUST equal the map artwork (140x70 on 390/416, 160x80 on 454),
+// otherwise latitudes/longitudes are scaled wrongly (this was the Antarctica bug).
 class WorldMap extends Ui.Drawable {
 
-    // Packed tile bit masks
-    const TILE_CHAR_MASK = 0x00000FFF;
-    const TILE_X_MASK    = 0x003FF000;
-    const TILE_Y_MASK    = 0xFFC00000;
+    // ---- tuning ---------------------------------------------------------------------------
 
-    // Night overlay grid step (larger = faster but less precise)
-    const GRID_STEP = 2;
+    // sin(-0.833 deg): sun's upper limb on the horizon incl. refraction (sunrise/sunset)
+    private const NIGHT_SIN_ALT = -0.01454;
+    // sin(-6 deg): end of civil twilight
+    private const TWILIGHT_SIN_ALT = -0.10453;
 
-    // Solar elevation threshold for civil twilight (sun ~6° below horizon)
-    const TWILIGHT_THRESHOLD = 0.05;
+    // T1.5 (Q3): civil-twilight band. true = twilight 25 % dark, night 50 % dark.
+    // false = hard edge, night 50 % dark (previous look). Flip to false if the band
+    // doesn't look right on the watch.
+    private const SHOW_TWILIGHT = true;
 
-    // Days in month lookup tables (avoid recreating arrays every frame)
-    const DAYS_IN_MONTH_NORMAL = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
-    const DAYS_IN_MONTH_LEAP   = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+    // T1.3: cache the composed map in a BufferedBitmap. Flip to false if the overlay
+    // doesn't render correctly inside the bitmap on some device.
+    private const USE_BITMAP_CACHE = true;
 
-    private const DEG_TO_RAD = Math.PI / 180.0;
+    // The terminator moves ~1 px every 9-10 minutes on a 140-160 px wide map.
+    private const RECALC_SECONDS = 300;
 
-    /* =======================
-     * Instance State
-     * ======================= */
+    // Packed tile format from tilemapper: char | x << 12 | y << 22
+    private const TILE_CHAR_MASK = 0xFFF;
+    private const TILE_POS_MASK  = 0x3FF;
 
-    private var mPositionX as Lang.Number;
-    private var mPositionY as Lang.Number;
-    private var mMapFont;
-    private var mMapData as Lang.Array;
+    // ---- state ----------------------------------------------------------------------------
 
-    // Projection dimensions
-    private var mapWidth as Lang.Number;
-    private var mapPixelHeight as Lang.Number;
+    private var mX as Number;
+    private var mY as Number;
+    private var mW as Number;
+    private var mH as Number;
+    private var mFont;
+    private var mTiles as Array<Number>;
 
-    // Cached values
-    private var mLastNightCalcMinute as Lang.Number = -1;
-    private var mNightOverlayPoints as Lang.Array = [];  // Packed as (x << 16) | y
+    // Per column: (top << 8) | bottom of the dark interval, -1 = no darkness in that column
+    private var mNightSpans as Array<Number>;      // sun below -0.833 deg
+    private var mDeepSpans as Array<Number>;       // sun below -6 deg (only with SHOW_TWILIGHT)
+    private var mLastCalc as Number = 0;
 
-    // Pre-computed lookup tables
-    private var mGridSinLat as Lang.Array = [];    // sin(lat) for each Y grid point
-    private var mGridCosLat as Lang.Array = [];    // cos(lat) for each Y grid point
-    private var mGridLon as Lang.Array = [];       // longitude for each X grid point
-    private var mGridXCount as Lang.Number = 0;
-    private var mGridYCount as Lang.Number = 0;
+    private var mUseAlpha as Boolean = false;
+    private var mFillOuter = null;                 // drawn over mNightSpans
+    private var mFillInner = null;                 // drawn over mDeepSpans
+
+    private var mBufRef = null;                    // Graphics.BufferedBitmapReference
+    private var mBufValid as Boolean = false;
 
     typedef WorldMapParams as {
-        :positionX as Lang.Number,
-        :positionY as Lang.Number,
-        :width     as Lang.Number,
-        :height    as Lang.Number
+        :positionX as Number,
+        :positionY as Number,
+        :width     as Number,
+        :height    as Number
     };
 
     function initialize(params as WorldMapParams) {
+        Drawable.initialize({ :identifier => "WorldMap" });
 
-        Drawable.initialize({
-            :identifier => "WorldMap"
-        });
+        mX = params[:positionX] as Number;
+        mY = params[:positionY] as Number;
+        mW = params[:width] as Number;
+        mH = params[:height] as Number;
 
-        mPositionX      = params[:positionX];
-        mPositionY      = params[:positionY];
-        mapWidth        = params[:width];
-        mapPixelHeight  = params[:height];
+        mFont = Ui.loadResource(Rez.Fonts.worldMap);
+        mTiles = (Ui.loadResource(Rez.JsonData.worldMapJson) as Array<Array<Number>>)[0];
 
-        // Load resources once
-        mMapFont = Ui.loadResource(Rez.Fonts.worldMap);
-        mMapData = Ui.loadResource(Rez.JsonData.worldMapJson);
-
-        // Build lookup tables
-        buildLookupTables();
-    }
-
-    private function buildLookupTables() as Void {
-
-        mGridXCount = (mapWidth / GRID_STEP).toNumber();
-        mGridYCount = (mapPixelHeight / GRID_STEP).toNumber();
-
-        mGridSinLat = new [mGridYCount];
-        mGridCosLat = new [mGridYCount];
-        mGridLon = new [mGridXCount];
-
-        // Pre-compute latitude trig values for each Y position
-        for (var yi = 0; yi < mGridYCount; yi++) {
-            var y = yi * GRID_STEP;
-            var lat = 90.0 - (y.toFloat() / mapPixelHeight) * 180.0;
-            var latRad = lat * DEG_TO_RAD;
-            mGridSinLat[yi] = Math.sin(latRad);
-            mGridCosLat[yi] = Math.cos(latRad);
+        mNightSpans = new Array<Number>[mW];
+        mDeepSpans = new Array<Number>[mW];
+        for (var i = 0; i < mW; i++) {
+            mNightSpans[i] = -1;
+            mDeepSpans[i] = -1;
         }
 
-        // Pre-compute longitude (in degrees) for each X position
-        for (var xi = 0; xi < mGridXCount; xi++) {
-            var x = xi * GRID_STEP;
-            mGridLon[xi] = (x.toFloat() / mapWidth) * 360.0 - 180.0;
+        mUseAlpha = (Graphics has :createColor);
+        if (mUseAlpha) {
+            if (SHOW_TWILIGHT) {
+                // two layers: 25 % over all darkness, +1/3 over deep night -> 50 % total
+                mFillOuter = Graphics.createColor(64, 0, 0, 0);
+                mFillInner = Graphics.createColor(85, 0, 0, 0);
+            } else {
+                mFillOuter = Graphics.createColor(128, 0, 0, 0);
+            }
         }
     }
+
+    // ---- drawing --------------------------------------------------------------------------
 
     function draw(dc as Graphics.Dc) as Void {
-
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        drawTiles(
-            mMapData[0],
-            mMapFont,
-            dc,
-            mPositionX,
-            mPositionY
-        );
-
-        drawDayNight(dc);
-    }
-
-    private function drawTiles(
-        tileData as Lang.Array,
-        font,
-        dc as Graphics.Dc,
-        xoff as Lang.Number,
-        yoff as Lang.Number
-    ) as Void {
-
-        if (tileData == null || tileData.size() == 0) {
-            return;
+        if (updateSpansIfNeeded()) {
+            mBufValid = false;
         }
 
-        for (var i = 0; i < tileData.size(); i++) {
+        if (USE_BITMAP_CACHE && (Graphics has :createBufferedBitmap)) {
+            if (mBufRef == null) {
+                mBufRef = Graphics.createBufferedBitmap({ :width => mW, :height => mH });
+                mBufValid = false;
+            }
+            var bb = mBufRef.get();                // null if the graphics pool purged it
+            if (bb != null) {
+                if (!mBufValid) {
+                    var bdc = bb.getDc();
+                    bdc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+                    bdc.clear();
+                    drawMap(bdc, 0, 0);
+                    mBufValid = true;
+                }
+                dc.drawBitmap(mX, mY, mBufRef);
+                return;
+            }
+            mBufRef = null;                        // re-create on the next frame
+        }
 
-            var packed = tileData[i];
-            if (packed == null) {
+        drawMap(dc, mX, mY);
+    }
+
+    // Returns true when the spans were recomputed.
+    function updateSpansIfNeeded() as Boolean {
+        var now = Time.now().value();
+        if (now - mLastCalc >= RECALC_SECONDS || now < mLastCalc) {
+            mLastCalc = now;
+            computeSpans(now);
+            return true;
+        }
+        return false;
+    }
+
+    // Map tiles in white plus the night overlay, with the map's top-left at (ox, oy).
+    function drawMap(dc as Graphics.Dc, ox as Number, oy as Number) as Void {
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        drawTiles(dc, ox, oy);
+
+        if (mUseAlpha && (dc has :setFill)) {
+            dc.setFill(mFillOuter);
+            fillSpans(dc, mNightSpans, ox, oy);
+            if (SHOW_TWILIGHT) {
+                dc.setFill(mFillInner);
+                fillSpans(dc, mDeepSpans, ox, oy);
+            }
+        } else {
+            // No alpha: redraw the land in dark grey clipped to the night spans
+            // (the ocean stays black).
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            var x = 0;
+            while (x < mW) {
+                var s = mNightSpans[x];
+                var x2 = runEnd(mNightSpans, x);
+                if (s >= 0) {
+                    var top = s >> 8;
+                    dc.setClip(ox + x, oy + top, x2 - x, (s & 0xFF) - top + 1);
+                    drawTiles(dc, ox, oy);
+                }
+                x = x2;
+            }
+            dc.clearClip();
+        }
+    }
+
+    // T2.1 always-on version: land in dark grey, night side erased to black, so only
+    // the day land is lit (~2 % of the display). Drawn directly (no bitmap cache),
+    // shifted by the burn-in offset (dx, dy).
+    function drawDimmed(dc as Graphics.Dc, dx as Number, dy as Number) as Void {
+        if (updateSpansIfNeeded()) {
+            mBufValid = false;
+        }
+        var ox = mX + dx;
+        var oy = mY + dy;
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        drawTiles(dc, ox, oy);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
+        if (dc has :setFill) {
+            dc.setFill(Graphics.COLOR_BLACK);      // in case an alpha fill is still set
+        }
+        fillSpans(dc, mNightSpans, ox, oy);
+    }
+
+    private function drawTiles(dc as Graphics.Dc, ox as Number, oy as Number) as Void {
+        for (var i = 0; i < mTiles.size(); i++) {
+            var p = mTiles[i];
+            if (p == null) {
                 continue;
             }
-
-            var char = packed & TILE_CHAR_MASK;
-            var xpos = (packed & TILE_X_MASK) >> 12;
-            var ypos = (packed & TILE_Y_MASK) >> 22;
-
             dc.drawText(
-                xoff + xpos,
-                yoff + ypos,
-                font,
-                (char.toNumber()).toChar(),
+                ox + ((p >> 12) & TILE_POS_MASK),
+                oy + ((p >> 22) & TILE_POS_MASK),
+                mFont,
+                (p & TILE_CHAR_MASK).toChar(),
                 Graphics.TEXT_JUSTIFY_LEFT
             );
         }
     }
 
-    private function drawDayNight(dc as Graphics.Dc) as Void {
-        var now = Time.now();
-        var g = Gregorian.info(now, Time.FORMAT_SHORT);
-        
-        var currentMinute = g.hour * 60 + g.min;
-        if (currentMinute != mLastNightCalcMinute) {
-            mLastNightCalcMinute = currentMinute;
-            calculateNightOverlayOptimized(g);
-        }
-        
-        // check if device use alpha channel in drawing context
-        var useAlpha = dc has :setFill;
-        if (useAlpha) {
-            dc.setFill(Graphics.createColor(128, 0, 0, 0));
-        } else {
-            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        }
-
-        var step = useAlpha ? 1 : 2;
-        
-        for (var i = 0; i < mNightOverlayPoints.size(); i += step) {
-            var packed = mNightOverlayPoints[i];
-            var x = (packed >> 16) & 0xFFFF;
-            var y = packed & 0xFFFF;
-            dc.fillRectangle(
-                mPositionX + x,
-                mPositionY + y,
-                GRID_STEP,
-                GRID_STEP
-            );
+    // One rectangle per run of equal neighbouring columns.
+    private function fillSpans(dc as Graphics.Dc, spans as Array<Number>, ox as Number, oy as Number) as Void {
+        var x = 0;
+        while (x < mW) {
+            var s = spans[x];
+            var x2 = runEnd(spans, x);
+            if (s >= 0) {
+                var top = s >> 8;
+                dc.fillRectangle(ox + x, oy + top, x2 - x, (s & 0xFF) - top + 1);
+            }
+            x = x2;
         }
     }
 
-    /**
-     * Calculate night overlay points using optimized lookup tables.
-     * Uses solar position algorithm to determine which areas are in darkness.
-     * @param g Gregorian time info (local time)
-     */
-    private function calculateNightOverlayOptimized(g as Gregorian.Info) as Void {
-        mNightOverlayPoints = [];
-        
-        // Day of year calculation
-        var isLeapYear = (g.year % 4 == 0 && g.year % 100 != 0) || (g.year % 400 == 0);
-        var daysInMonth = isLeapYear ? DAYS_IN_MONTH_LEAP : DAYS_IN_MONTH_NORMAL;
-        var doy = g.day + daysInMonth[g.month - 1];
-        
-        // Solar declination (only changes daily)
-        var dayAngle = 2.0 * Math.PI * (doy - 80) / 365.0;
-        var decl = 0.4093 * Math.sin(dayAngle);
+    private function runEnd(spans as Array<Number>, x as Number) as Number {
+        var s = spans[x];
+        var x2 = x + 1;
+        while (x2 < mW && spans[x2] == s) {
+            x2++;
+        }
+        return x2;
+    }
+
+    // ---- astronomy ------------------------------------------------------------------------
+
+    // t = UTC epoch seconds (Time.now().value()).
+    private function computeSpans(t as Number) as Void {
+        var d = t / 86400.0d - 10957.5d;                                  // days since J2000.0
+        var g = Math.toRadians(wrap360(357.529d + 0.98560028d * d));     // mean anomaly
+        var q = wrap360(280.459d + 0.98564736d * d);                     // mean longitude [deg]
+        var lam = Math.toRadians(q + 1.915d * Math.sin(g) + 0.020d * Math.sin(2 * g));
+        var eps = Math.toRadians(23.439d - 0.00000036d * d);             // obliquity
+        var ra = Math.toDegrees(Math.atan2(Math.cos(eps) * Math.sin(lam), Math.cos(lam)));
+        var decl = Math.asin(Math.sin(eps) * Math.sin(lam));
+        var eotMin = 4.0d * (wrap360(q - ra + 180.0d) - 180.0d);         // equation of time [min]
+        var subLon = -15.0d * ((t % 86400) / 3600.0d - 12.0d + eotMin / 60.0d);
+
         var sinDecl = Math.sin(decl);
         var cosDecl = Math.cos(decl);
-        
-        // Convert local time to UTC using device timezone offset
-        var clockTime = System.getClockTime();
-        var timezoneOffsetHours = clockTime.timeZoneOffset / 3600.0;
-        var utcHours = g.hour + g.min / 60.0 - timezoneOffsetHours;
-
-        // Subsolar longitude calculation
-        // 12.0 = solar noon at 0° longitude
-        // * 15.0 = degrees per hour (360° / 24h)
-        var subLon = (12.0 - utcHours) * 15.0;
-
-        // Pre-compute cosine of hour angle for each longitude
-        var gridCosHourAngle = new [mGridXCount];
-        for (var xi = 0; xi < mGridXCount; xi++) {
-            var hourAngle = (mGridLon[xi] - subLon) * DEG_TO_RAD;
-            gridCosHourAngle[xi] = Math.cos(hourAngle);
+        fillColumnSpans(mNightSpans, sinDecl, cosDecl, subLon, NIGHT_SIN_ALT);
+        if (SHOW_TWILIGHT) {
+            fillColumnSpans(mDeepSpans, sinDecl, cosDecl, subLon, TWILIGHT_SIN_ALT);
         }
-        
-        // Use lookup tables for fast iteration
-        for (var xi = 0; xi < mGridXCount; xi++) {
-            var x = xi * GRID_STEP;
-            var cosHA = gridCosHourAngle[xi];
-            
-            for (var yi = 0; yi < mGridYCount; yi++) {
-                var sinLat = mGridSinLat[yi];
-                var cosLat = mGridCosLat[yi];
-                
-                var solarElevation = sinLat * sinDecl + cosLat * cosDecl * cosHA;
-                
-                if (solarElevation < TWILIGHT_THRESHOLD) {
-                    var y = yi * GRID_STEP;
-                    // Pack x and y into single integer to reduce memory allocations
-                    mNightOverlayPoints.add((x << 16) | y);
-                }
+    }
+
+    // Sun elevation along a column: a*sin(lat) + b*cos(lat) = r*sin(lat + psi).
+    // For sinAlt <= 0 the set {elevation < sinAlt} is one interval centred on the
+    // darkest latitude (3*pi/2 - psi) with half-width pi/2 + asin(sinAlt / r).
+    private function fillColumnSpans(out as Array<Number>, a, cosDecl, subLon, sinAlt) as Void {
+        var halfPi = Math.PI / 2;
+        for (var x = 0; x < mW; x++) {
+            out[x] = -1;
+            var lon = (x + 0.5d) * 360.0d / mW - 180.0d;
+            var b = cosDecl * Math.cos(Math.toRadians(lon - subLon));
+            var r = Math.sqrt(a * a + b * b);
+            if (r < 0.000001d || sinAlt / r <= -1.0d) {
+                continue;                                                 // never dark here
+            }
+            var half = halfPi + Math.asin(sinAlt / r);
+            var c = wrapPi(3 * halfPi - Math.atan2(b, a));
+            var latLo = c - half;
+            var latHi = c + half;
+            if (latLo < -halfPi) { latLo = -halfPi; }
+            if (latHi > halfPi) { latHi = halfPi; }
+            if (latLo >= latHi) {
+                continue;
+            }
+            // row y covers latitude 90 - (y + 0.5) * 180 / H at its centre
+            var y0 = Math.ceil((halfPi - latHi) / Math.PI * mH - 0.5d).toNumber();
+            var y1 = Math.floor((halfPi - latLo) / Math.PI * mH - 0.5d).toNumber();
+            if (y0 < 0) { y0 = 0; }
+            if (y1 > mH - 1) { y1 = mH - 1; }
+            if (y0 <= y1) {
+                out[x] = (y0 << 8) | y1;
             }
         }
+    }
+
+    private function wrap360(v) {
+        return v - 360.0d * Math.floor(v / 360.0d);
+    }
+
+    private function wrapPi(v) {                                          // -> [-PI, PI)
+        var twoPi = 2 * Math.PI;
+        return v - twoPi * Math.floor((v + Math.PI) / twoPi);
     }
 }

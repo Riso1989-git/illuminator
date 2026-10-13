@@ -8,9 +8,12 @@ class DateField extends Ui.Drawable {
 
     private var mX as Lang.Number;
     private var mY as Lang.Number;
-    private var mFont;
 
     private const DAYS = [ "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" ];
+
+    // T2.4: text rebuilt once a minute
+    private var mText as Lang.String = "";
+    private var mGen as Lang.Number = -1;
 
     typedef Params as {
         :positionX as Lang.Number,
@@ -22,25 +25,23 @@ class DateField extends Ui.Drawable {
 
         mX = params[:positionX];
         mY = params[:positionY];
-        mFont = Ui.loadResource(Rez.Fonts.text);
+        Res.load();
     }
 
     function draw(dc as Gfx.Dc) as Void {
 
-        // Local time → Gregorian
-        var g = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+        if (mGen != Cache.generation) {
+            mGen = Cache.generation;
 
-        // Day of week (1–7)
-        var dayStr = DAYS[g.day_of_week - 1];
+            // Local time → Gregorian
+            var g = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
 
-        // Manual zero-padding avoids format allocations
-        var dd = (g.day   < 10 ? "0" : "") + g.day;
-        var mm = (g.month < 10 ? "0" : "") + g.month;
-
-        // Illuminator-style: MON 05-02
-        var text = dayStr + " " + dd + "-" + mm;
+            // Illuminator-style: MON 05-02
+            mText = DAYS[(g.day_of_week as Lang.Number) - 1] + " " + (g.day as Lang.Number).format("%02d")
+                + "-" + (g.month as Lang.Number).format("%02d");
+        }
 
         dc.setColor(Gfx.COLOR_WHITE, Gfx.COLOR_TRANSPARENT);
-        dc.drawText(mX, mY, mFont, text, Gfx.TEXT_JUSTIFY_LEFT);
+        dc.drawText(mX, mY, Res.textFont, mText, Gfx.TEXT_JUSTIFY_LEFT);
     }
 }

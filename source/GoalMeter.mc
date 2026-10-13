@@ -12,7 +12,6 @@ class GoalMeter extends Ui.Drawable {
     private var gap as Lang.Number;
     private var separator as Lang.Number;
 
-    private var iconFont;
 
     // Constants
     private const ICON_SIZE = 20;
@@ -44,12 +43,12 @@ class GoalMeter extends Ui.Drawable {
         gap       = params[:gap];
         separator = params[:separator];
 
-        iconFont = Ui.loadResource(Rez.Fonts.garmin_icons);
+        Res.load();
     }
 
     function draw(dc as Gfx.Dc) as Void {
 
-        var info   = ActivityMonitor.getInfo();
+        var info   = Cache.activity;          // T2.4: fetched once a minute
         var steps  = info.steps == null ? 0 : info.steps;
         var stepsGoal = info.stepGoal == null ? 10000 : info.stepGoal;
 
@@ -81,7 +80,7 @@ class GoalMeter extends Ui.Drawable {
         dc.drawText(
             posX,
             posY + STEPS_ICON_Y_OFFSET,
-            iconFont,
+            Res.iconFont,
             STEPS_ICON,
             Gfx.TEXT_JUSTIFY_LEFT
         );
@@ -108,7 +107,7 @@ class GoalMeter extends Ui.Drawable {
         dc.drawText(
             posX,
             floorsY + FLOORS_ICON_Y_OFFSET,
-            iconFont,
+            Res.iconFont,
             FLOORS_ICON,
             Gfx.TEXT_JUSTIFY_LEFT
         );

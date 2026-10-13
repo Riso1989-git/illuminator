@@ -1,4 +1,5 @@
-<layout id="WatchFace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <drawable class="Background" />
-    <label id="TimeLabel" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+<!-- Fallback layout. Every supported device uses resources-round-WxH/layouts/layout.xml,
+     which overrides this. Kept minimal and valid (it referenced a non-existent
+     "Background" class before). -->
+<layout id="WatchFace">
 </layout>

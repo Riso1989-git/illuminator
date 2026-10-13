@@ -31,7 +31,7 @@ class MoveBar extends Ui.Drawable {
 
     function draw(dc as Gfx.Dc) as Void {
 
-        var info = ActivityMonitor.getInfo();
+        var info = Cache.activity;            // T2.4: fetched once a minute
         var level = info.moveBarLevel == null ? 0 : info.moveBarLevel;
         var maxBars = ActivityMonitor.MOVE_BAR_LEVEL_MAX;
 

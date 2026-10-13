@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <fonts>
-        <font id="worldMap" filename="fonts/worldMap.fnt" />
-    </fonts>
-    <jsonData id="worldMapJson" filename="fonts/worldMap.json" />
-</resources>
