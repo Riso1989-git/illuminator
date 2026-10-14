@@ -52,8 +52,19 @@ class GoalMeter extends Ui.Drawable {
         var steps  = info.steps == null ? 0 : info.steps;
         var stepsGoal = info.stepGoal == null ? 10000 : info.stepGoal;
 
-        var floors = info.floorsClimbed == null ? 0 : info.floorsClimbed;
-        var floorsGoal = info.floorsClimbedGoal == null ? 10 : info.floorsClimbedGoal;
+        // Watches without a barometer (e.g. vivoactive 5/6) have no floorsClimbed /
+        // floorsClimbedGoal members at all - reading them crashes with
+        // "Symbol Not Found". Check first; the floors bar is skipped on those watches.
+        var hasFloors = false;
+        var floors = 0;
+        var floorsGoal = 10;
+        if (info has :floorsClimbed) {
+            if (info has :floorsClimbedGoal) {
+                hasFloors = true;
+                if (info.floorsClimbed != null) { floors = info.floorsClimbed; }
+                if (info.floorsClimbedGoal != null) { floorsGoal = info.floorsClimbedGoal; }
+            }
+        }
 
         // Prevent division by zero
         if (stepsGoal <= 0) { stepsGoal = 1; }
@@ -100,6 +111,10 @@ class GoalMeter extends Ui.Drawable {
         // ------------------
         // FLOORS BAR (bottom)
         // ------------------
+
+        if (!hasFloors) {
+            return;
+        }
 
         var floorsY = posY + height + gap;
 

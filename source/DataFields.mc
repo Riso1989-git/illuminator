@@ -279,6 +279,7 @@ class DataFields extends Ui.Drawable {
                 break;
 
             case FIELD_TYPE_PRESSURE:
+                value = "--";                   // no barometer (e.g. vivoactive 5/6)
                 if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getPressureHistory)) {
                     var pressHistory = SensorHistory.getPressureHistory({
                         :period => 1,
